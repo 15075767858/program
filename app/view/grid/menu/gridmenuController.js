@@ -181,15 +181,25 @@ Ext.define('program.view.grid.menu.gridmenuController', {
                         listeners: {
                             edit: function (editor, context, eOpts) {
                                 var record = context.record;
+
                                 if (record.data.name == "time") {
-                                    if (context.value > 500 || context.value < 100) {
+                                    var value = parseInt(context.value) || context.originalValue
+                                    record.set("value", value)
+
+                                    if (value > 500 || value < 100) {
                                         Ext.Msg.alert('Exception', 'Changes failure max value is 500 ,min value is 100.');
-                                        record.set("value", context.originalValue)
+                                        record.set("value", parseInt(context.originalValue))
                                     }
+                                    //record.commit()
                                 }
-                            },
-                            /*beforeedit:function(){
-                             return false;
+                            }
+                            /*beforeedit: function (editor, context, eOpts) {
+                             testeditor=editor;
+                             editor.setConfig("field",{
+                             xtype:"numberfield"
+                             })
+                             console.log(arguments)
+                             return true;
                              }*/
                         }
                     })

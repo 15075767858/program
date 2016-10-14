@@ -122,7 +122,7 @@ Ext.define('program.view.grid.TypeGridController', {
         }
         ;
 
-        if(panel.datas.type==80){
+        if (panel.datas.type == 80) {
             Ext.create('Ext.data.Store', {
                 storeId: "store" + panel.getId(),
                 fields: ['name', 'value'],
@@ -295,11 +295,11 @@ Ext.define('program.view.grid.TypeGridController', {
                             changeTitle(panel, menu);
 
                             /*isPidMenu(panel, menu);
-                            isLogicMenu(panel, menu);
-                            isSCFMMenu(panel, menu);
-                            isScaleMenu(panel, menu);
-                            isdoubleBOMenu(panel,menu)*/
-                            isTypeGridProperty(panel,menu);
+                             isLogicMenu(panel, menu);
+                             isSCFMMenu(panel, menu);
+                             isScaleMenu(panel, menu);
+                             isdoubleBOMenu(panel,menu)*/
+                            isTypeGridProperty(panel, menu);
 
                             menu.getComponent("cut").setDisabled(false);
                             menu.getComponent("copy").setDisabled(false);
@@ -376,9 +376,11 @@ Ext.define('program.view.grid.TypeGridController', {
     girditemdblclick: function (me, record, item, index, e, eopts) {
         console.log(arguments)
         var gridPanel = this.view;
-        if (record.data.name == "Out") {
+        var dataName = record.data.name;
+        if (dataName == "Out" || dataName == "open" || dataName == 'close') {
             return;
         }
+
         var win = Ext.create("Ext.window.Window", {
             title: "ChangeValue",
             width: 260,
@@ -510,6 +512,7 @@ Ext.define('program.view.grid.TypeGridController', {
     }
     ,
     griditemmouseup: function (item, record, itemHtml, index, e, eOpts) {
+
         console.log(this)
         var me = this.view;
         console.log(arguments)
@@ -527,7 +530,9 @@ Ext.define('program.view.grid.TypeGridController', {
                         show: function (menu, eOpts) {
                             var gridTitle = me.datas.title || getNameByType(me.datas.type);
 
-                            d3.select(menu.el.dom).attr("data-targetid", d3.select(item).attr("data-targetid"));
+
+                            d3.select(menu.el.dom).attr("data-targetid", d3.select(itemHtml).attr("data-targetid"));
+
                             if (record.data.name == "In") {
 
                                 if (me.store.data.length > slotsJson[gridTitle].initData().length) {
@@ -543,12 +548,8 @@ Ext.define('program.view.grid.TypeGridController', {
                                     addSlot.setDisabled(false);
                                 }
                             }
-/*                            isPidMenu(me, menu);
-                            isLogicMenu(me, menu);
-                            isSCFMMenu(me, menu);
-                            isScaleMenu(me, menu);
-                            isdoubleBOMenu(me,menu);*/
-                            isTypeGridProperty(me,menu);
+
+                            isTypeGridProperty(me, menu);
 
                             menu.getComponent("cut").setDisabled(false);
                             menu.getComponent("copy").setDisabled(false);
@@ -577,7 +578,7 @@ function changeTitle(girdpanel, menu) {
 }
 
 
-function isTypeGridProperty(gridpanel,menu){
+function isTypeGridProperty(gridpanel, menu) {
     isPidMenu(gridpanel, menu);
     isLogicMenu(gridpanel, menu);
     isSCFMMenu(gridpanel, menu);

@@ -493,7 +493,7 @@ var slotsJson = {
             var arr=new Array();
             arr[0] = {'name': 'Out', 'value': "0"};
             arr[1] = {'name': 'In', 'value': "0"};
-            arr[2] = {'name': 'open', 'value': "1"};
+            arr[2] = {'name': 'open', 'value': "0"};
             arr[3] = {'name': 'close', 'value': "0"};
             return arr;
         },

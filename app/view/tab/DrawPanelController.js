@@ -497,6 +497,7 @@ function createTypeGrid(items, index) {
     }
     isDev(typegrid, items)
     isLogicShowRows(typegrid)
+
     function isLogicShowRows(typegrid) {
         if (typegrid.datas.type == 56) {
             var columns = Ext.getCmp("win" + typegrid.id).down("grid").getColumns();
