@@ -3,7 +3,8 @@ Ext.define("program.view.tree.DevTree", {
     xtype: 'devtree',
     requires: [
         "program.view.tree.DevTreeController",
-        "program.view.tree.DevTreeModel"
+        "program.view.tree.DevTreeModel",
+        "program.view.grid.PropertypeGrid"
     ],
     expanded: true,
     controller: "imgtree",

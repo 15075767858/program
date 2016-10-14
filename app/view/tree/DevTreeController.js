@@ -1631,7 +1631,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                 }
                             },
                             items: [
-                                Ext.create("propertypegrid", {
+                                Ext.widget("propertypegrid", {
                                     title: "Parameters",
                                     th: th,
                                     record: record,

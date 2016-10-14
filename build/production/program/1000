@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+ <plant  name="001">
+  <master_node  number="1">
+   <type>57</type>
+   <slots  number="1">
+    <default>0</default>
+   </slots>
+  </master_node>
+  <master_node  number="2">
+   <type>58</type>
+   <slots  number="1">
+    <default>0</default>
+   </slots>
+  </master_node>
+  <master_node  number="3">
+   <type>56</type>
+   <slots  number="1">
+    <default>0</default>
+   </slots>
+   <list  number="0">
+    <default  number="0">0</default>
+   </list>
+   <list  number="1">
+    <default  number="0">0</default>
+   </list>
+  </master_node>
+ </plant>
+</root>

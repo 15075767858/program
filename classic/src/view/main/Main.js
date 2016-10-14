@@ -32,7 +32,7 @@ Ext.define('program.view.main.Main', {
         'program.view.main.MainModel',
         "program.view.main.toolbar.TopToolbar",
         "program.view.tab.BasicTabs",
-        //"svgxml.view.tab.FramedTabs",
+        "program.view.tab.FramedTabs",
         //"program.view.Viewport",
         "Ext.chart.*",
         "Ext.window.*"
@@ -75,11 +75,11 @@ Ext.define('program.view.main.Main', {
             collapsible: true,
             split: true
         },
-        /*Ext.create("svgxml.view.tab.FramedTabs", {
+        Ext.create("program.view.tab.FramedTabs", {
             region: "center",
             height: "200%",
             width: "200%",
-        })*/
+        })
     ]
 });
 
@@ -116,3 +116,8 @@ function myAjax(url, success, params) {
         success: success
     });
 }
+
+var testwin = null
+var teststore = null;
+
+var isDebug=false;
