@@ -42,11 +42,11 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
 
                         }
                     },{
-                    text: 'Delete Time',
-                    handler: function () {
-                        div.remove()
+                        text: 'Delete Time',
+                        handler: function () {
+                            div.remove()
+                        }
                     }
-                }
                 ]
             });
             return false;
@@ -97,9 +97,9 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
             console.log(newWeeks)
             var oldWeeks = document.querySelectorAll(".old" + WeekArr[i]);
             var isPubWeek = !(oldWeeks.length ==me.dwPars.WeekArrJson[i].oldCount)
-                if(newWeeks.length>0){
-                    isPubWeek=true;
-                }
+            if(newWeeks.length>0){
+                isPubWeek=true;
+            }
             console.info(isPubWeek)
             weekly.Weekly_Schedule[WeekArr[i]] = []
             var pubTimeArr = []

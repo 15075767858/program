@@ -11,6 +11,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
     viewModel: {
         type: "window-drawweekswindow"
     },
+
     height: 768,
     width: 1024,
     constrainHeader: true,//禁止移出父窗口
@@ -67,7 +68,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                     },
                     success: function (response) {
                         var text = response.responseText;
-                        delayToast("Status", "Changes saved successfully .", 1000)
+                        delayToast("Status", "Changes saved successfully .", 1000);
                     }
                 });
                 if (me.sDevName != getNetNumberValue()) {
@@ -132,8 +133,9 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                 grid: true,
                 minimum: 2649600000,
                 maximum: 2736000000,
-                renderer: function (label, layout, lastLabel) {
-                    var chaTime = (2736000000 - label) + 2649600000;
+                renderer: function (label, value, lastLabel) {
+                    console.log(arguments)
+                    var chaTime = (2736000000 - value) + 2649600000;
                     var time = new Date(chaTime)
                     var hours = time.getHours();
                     var min = time.getMinutes();
@@ -239,7 +241,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                     text: 'Start time', dataIndex: 'StartTime', flex: 1, editor: {
                     xtype: 'spinnerfield',
                     allowBlank: false,
-                    validator: isTime,
+                    validator: My.isTime,
                     onSpinUp: function () {
                         var oldValue = this.getValue().split(":");
                         var time = new Date(1970, 1, 1, oldValue[0], oldValue[1], oldValue[2]).getTime()
@@ -268,7 +270,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                     , editor: {
                     xtype: 'spinnerfield',
                     allowBlank: false,
-                    validator: isTime,
+                    validator: My.isTime,
                     onSpinUp: function () {
                         var oldValue = this.getValue().split(":");
                         var time = new Date(1970, 1, 1, oldValue[0], oldValue[1], oldValue[2]).getTime()
@@ -295,7 +297,6 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             ]
         }
     ],
-
     listeners: {
 
         boxready: function () {
@@ -367,7 +368,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                                     boxready:function(menu){
                                         console.log(me.copydiv)
                                         if(me.copydiv){
-                                        menu.setDisabled(false);
+                                            menu.setDisabled(false);
                                         }
                                     }
                                 }

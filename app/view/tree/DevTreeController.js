@@ -1739,9 +1739,16 @@ function getNetNumberValue(filename) {
             rw: "r"
         },
         success: function (response) {
-            var text = response.responseText
-            var xml = $($.parseXML(text));
-            str = xml.find("root net").text()
+            //var text = response.responseText
+            //console.log(response)
+            //var xml = $($.parseXML(text));
+            var xml = response.responseXML;
+            if(xml){
+                str = xml.find("root net").text()
+            }else{
+
+                Ext.Msg.alert("Exception ", "bac_config is not fount .")
+            }
 
         }
     })
