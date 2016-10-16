@@ -602,9 +602,9 @@ Ext.define('program.view.tree.DevTreeController', {
                 },
                 items: [
                     {
-                        bind: {
+                       /* bind: {
                             disabled: "{!linkDataBase}"
-                        },
+                        },*/
                         itemId:"deviceinforamation",
                         text: "deviceinforamation",
                         handler: function () {
@@ -1739,14 +1739,15 @@ function getNetNumberValue(filename) {
             rw: "r"
         },
         success: function (response) {
+            console.log(arguments)
             //var text = response.responseText
             //console.log(response)
-            //var xml = $($.parseXML(text));
-            var xml = response.responseXML;
+            var xml = $($.parseXML(response.responseText));
+            console.log(xml)
+            //var xml = response.responseXML;
             if(xml){
                 str = xml.find("root net").text()
             }else{
-
                 Ext.Msg.alert("Exception ", "bac_config is not fount .")
             }
 

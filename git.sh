@@ -5,3 +5,4 @@ echo $val
 git add .
 git commit -m $val
 git push origin master
+sh run.sh

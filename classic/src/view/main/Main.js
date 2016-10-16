@@ -35,7 +35,8 @@ Ext.define('program.view.main.Main', {
         "program.view.tab.FramedTabs",
         //"program.view.Viewport",
         "Ext.chart.*",
-        "Ext.window.*"
+        "Ext.window.*",
+        "Ext.data.*"
     ],
     style: {
         //background: "rgb(21,127,214)"
