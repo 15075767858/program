@@ -937,10 +937,34 @@ function addCurrentDrawPanelPlant(plant) {
     store.setData(data);
 }
 
-function delCurrentDrawPanelPlant(index) {
-    getCurrentDrawPanel().datas.plants.splice(index, 1)
+function delCurrentDrawPanelPlant(index, grid) {
+    getCurrentDrawPanel().datas.plants.splice(index, 1);
+    var data = getCurrentDrawPanel().datas.data;
+    data.splice(index, 1);
+    grid.store.setData(data);
+
+    setTimeout(function () {
+        setCurrentPlant(0, grid)
+    }, 100)
+    //setTimeout(function () {
+    //    var model = grid.store.getAt(0);
+    //    if (model) {
+    //        model.set("selected", true)
+    //        setCurrentPlant(index)
+    //    }
+//
+    //    for (var i = 1; i < grid.store.data.length; i++) {
+    //        var model = grid.store.getAt(i);
+    //        if (model) {
+    //            model.set("selected", false)
+    //        }
+    //    }
+    //}, 1000)
+
 }
-function setCurrentPlant(index) {
+
+
+function setCurrentPlant(index, grid) {
     //var plant = getCurrentDrawPanelPlantByIndex(index);
     //plant.selected = true;
     var plants = getCurrentDrawPanelPlants();
@@ -952,6 +976,18 @@ function setCurrentPlant(index) {
         }
         updateCurrentDrawPanelPlant(plants[i], i)
     }
+    selectPlant(getCurrentPlant())
+    var ostore = grid.getStore();
+
+    for (var i = 0; i < ostore.data.length; i++) {
+        var model = ostore.getAt(i);
+        if (i == index) {
+            model.set("selected", true)
+        } else {
+            model.set("selected", false)
+        }
+    }
+    drawlines()
 
 }
 

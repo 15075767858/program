@@ -82,18 +82,21 @@ Ext.define("program.view.tab.DrawPanel", {
             notifyDrop: function (ddSource, e, data) {
                 var selectRecord = ddSource.dragData.records[0].data;
                 var aData, type = selectRecord.type, typeName = getNameByType(selectRecord.type), value = selectRecord.value, title = selectRecord.text;
-
-                getCurrentDrawPanel().add(createDevGrid(selectRecord))
-
+                if (getCurrentPlant()) {
+                    getCurrentDrawPanel().add(createDevGrid(selectRecord))
+                } else {
+                    Ext.Msg.alert('Massage',"Please select a Plant .")
+                    return ;
+                }
                 function createDevGrid(selectRecord, defaultValue) {
                     var aData, type = selectRecord.type, typeName = getNameByType(selectRecord.type), value = selectRecord.value, title = selectRecord.text;
 
                     /*if (defaultValue == undefined) {
-                        aData = slotsJson[typeName].initData();
-                        Ext.Msg.alert("Waring","INPUT Default Value .")
-                    } else {
-                        aData = slotsJson[typeName].initData(defaultValue);
-                    }*/
+                     aData = slotsJson[typeName].initData();
+                     Ext.Msg.alert("Waring","INPUT Default Value .")
+                     } else {
+                     aData = slotsJson[typeName].initData(defaultValue);
+                     }*/
 
                     aData = slotsJson[typeName].initData(defaultValue);
 

@@ -23,11 +23,13 @@ Ext.define('program.view.tab.BasicController', {
             })
 
             dd.afterDragDrop = function (target, e, id) {
-
-
                 var typeName = Ext.get(el).select(".x-grid-cell-inner").elements[1].innerHTML;
                 console.log(typeName)
-
+                if (getCurrentPlant()) {
+                } else {
+                    Ext.Msg.alert('Massage',"Please select a Plant .")
+                    return ;
+                }
                 var store = Ext.create(typeName, {})
 
                 store.setData(slotsJson[typeName].initData())

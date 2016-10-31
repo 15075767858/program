@@ -161,31 +161,10 @@ Ext.define('program.view.tab.DrawPanelController', {
                 },
                 itemclick: function (grid, record, item, index, e, eOpts) {
                     //console.log(grid.el.dom.childNodes[0].childNodes[index])
-
                     ogridpanle.datas = {index: index}
-                    setCurrentPlant(index)
-                    selectPlant(getCurrentPlant())
 
+                    setCurrentPlant(index,grid)
                     //双击事件的操作
-                    var ostore = grid.getStore();
-
-                    var aItems = th.datas.data;
-
-                    for (var i = 0; i < aItems.length; i++) {
-                        if (i == index) {
-                            aItems[i].selected = true;
-                        }
-                        else {
-                            aItems[i].selected = false;
-                        }
-                    }
-
-                    ostore.setData(aItems)
-
-                    grid.setStore(ostore)
-
-                    drawlines()
-
                     //grid.el.dom.childNodes[0].childNodes[index].style.backgroundColor = "skyblue";
                 },
                 edit: function (grid, e) {
@@ -241,18 +220,20 @@ Ext.define('program.view.tab.DrawPanelController', {
                             var plant = getCurrentDrawPanelPlantByIndex(rowIndex);
                             var aGirdPanels = getCurrentDrawPanelGirdPanels();
                             console.log(aGirdPanels)
+
+                            if(!aGirdPanels.length){
+                                delCurrentDrawPanelPlant(rowIndex,grid);
+
+                            }
+
                             for (var i = 0; aGirdPanels.length; i++) {
                                 console.log(aGirdPanels[i])
-
-
                                 if (!aGirdPanels[i]) {
-                                    delCurrentDrawPanelPlant(rowIndex);
-                                    var data = getCurrentDrawPanel().datas.data;
-                                    data.splice(rowIndex, 1);
-                                    grid.store.setData(data);
+                                    delCurrentDrawPanelPlant(rowIndex,grid);
                                     break;
                                     return;
                                 }
+
                                 if (aGirdPanels[i].datas.plantId == plant.id) {
                                     Ext.Msg.show({
                                         title: 'Massage',
@@ -261,10 +242,7 @@ Ext.define('program.view.tab.DrawPanelController', {
                                         icon: Ext.Msg.WARNING,
                                         fn: function (btn) {
                                             if (btn === 'yes') {
-                                                delCurrentDrawPanelPlant(rowIndex);
-                                                var data = getCurrentDrawPanel().datas.data;
-                                                data.splice(rowIndex, 1);
-                                                grid.store.setData(data);
+                                                delCurrentDrawPanelPlant(rowIndex,grid);
                                                 for (var j = 0; j < aGirdPanels.length; j++) {
                                                     if (aGirdPanels[j].datas.plantId == plant.id) {
                                                         aGirdPanels[j].close();

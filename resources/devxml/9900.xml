@@ -1,121 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <root>
- <AI_count>6</AI_count>
+ <AI_count>0</AI_count>
  <AO_count>4</AO_count>
  <AV_count>5</AV_count>
  <BI_count>12</BI_count>
  <BO_count>4</BO_count>
  <BV_count>5</BV_count>
  <SCHEDULE_count>1</SCHEDULE_count>
- <key  number="1001001">
-  <Object_Name>a11</Object_Name>
-  <Offset>0.100</Offset>
-  <Description>ANALOG INPUT 1</Description>
-  <Device_Type>BI</Device_Type>
-  <Units>98</Units>
-  <Min_Pres_Value>0.00</Min_Pres_Value>
-  <Max_Pres_Value>100.000</Max_Pres_Value>
-  <COV_Increment>1.000</COV_Increment>
-  <High_Limit>100.000</High_Limit>
-  <Low_Limit>0.000</Low_Limit>
-  <Deadband>0.000</Deadband>
-  <Limit_Enable>0</Limit_Enable>
-  <Event_Enable>0</Event_Enable>
-  <Notify_Type>0</Notify_Type>
-  <Time_Delay>0</Time_Delay>
-  <Notification_Class>1</Notification_Class>
- </key>
- <key  number="1001002">
-  <Object_Name>UI1</Object_Name>
-  <Offset>0.000</Offset>
-  <Description>ANALOG INPUT2</Description>
-  <Device_Type>BI</Device_Type>
-  <Units>98</Units>
-  <Min_Pres_Value>0.000</Min_Pres_Value>
-  <Max_Pres_Value>100.000</Max_Pres_Value>
-  <COV_Increment>1.000</COV_Increment>
-  <High_Limit>100.000</High_Limit>
-  <Low_Limit>0.000</Low_Limit>
-  <Deadband>0.000</Deadband>
-  <Limit_Enable>0</Limit_Enable>
-  <Event_Enable>0</Event_Enable>
-  <Notify_Type>0</Notify_Type>
-  <Time_Delay>0</Time_Delay>
-  <Notification_Class>1</Notification_Class>
- </key>
- <key  number="1001003">
-  <Object_Name>UI3112</Object_Name>
-  <Offset>0.000</Offset>
-  <Description>ANALOG INPUT3</Description>
-  <Device_Type>BI</Device_Type>
-  <Units>98</Units>
-  <Min_Pres_Value>0.000</Min_Pres_Value>
-  <Max_Pres_Value>100.000</Max_Pres_Value>
-  <COV_Increment>1.000</COV_Increment>
-  <High_Limit>100.000</High_Limit>
-  <Low_Limit>0.000</Low_Limit>
-  <Deadband>0.000</Deadband>
-  <Limit_Enable>0</Limit_Enable>
-  <Event_Enable>0</Event_Enable>
-  <Notify_Type>0</Notify_Type>
-  <Time_Delay>0</Time_Delay>
-  <Notification_Class>1</Notification_Class>
- </key>
- <key  number="1001004">
-  <Object_Name>UI12</Object_Name>
-  <Offset>0.000</Offset>
-  <Description>ANALOG INPUT4</Description>
-  <Device_Type>BI</Device_Type>
-  <Units>98</Units>
-  <Min_Pres_Value>0.000</Min_Pres_Value>
-  <Max_Pres_Value>100.000</Max_Pres_Value>
-  <COV_Increment>1.000</COV_Increment>
-  <High_Limit>100.000</High_Limit>
-  <Low_Limit>0.000</Low_Limit>
-  <Deadband>0.000</Deadband>
-  <Limit_Enable>0</Limit_Enable>
-  <Event_Enable>0</Event_Enable>
-  <Notify_Type>0</Notify_Type>
-  <Time_Delay>0</Time_Delay>
-  <Notification_Class>1</Notification_Class>
- </key>
- <key  number="1001005">
-  <Object_Name>UI5 </Object_Name>
-  <Offset>0.000</Offset>
-  <Description>ANALOG INPUT3</Description>
-  <Device_Type>NTC20K</Device_Type>
-  <Units>98</Units>
-  <Min_Pres_Value>0.000</Min_Pres_Value>
-  <Max_Pres_Value>100.000</Max_Pres_Value>
-  <COV_Increment>1.000</COV_Increment>
-  <High_Limit>100.000</High_Limit>
-  <Low_Limit>0.000</Low_Limit>
-  <Deadband>0.000</Deadband>
-  <Limit_Enable>0</Limit_Enable>
-  <Event_Enable>0</Event_Enable>
-  <Notify_Type>0</Notify_Type>
-  <Time_Delay>0</Time_Delay>
-  <Notification_Class>1</Notification_Class>
- </key>
- <key  number="1001006">
-  <Object_Name>UI1</Object_Name>
-  <Offset>0.000</Offset>
-  <Description>ANALOG INPUT3</Description>
-  <Device_Type>NTC20K</Device_Type>
-  <Units>98</Units>
-  <Min_Pres_Value>0.000</Min_Pres_Value>
-  <Max_Pres_Value>100.000</Max_Pres_Value>
-  <COV_Increment>1.000</COV_Increment>
-  <High_Limit>100.000</High_Limit>
-  <Low_Limit>0.000</Low_Limit>
-  <Deadband>0.000</Deadband>
-  <Limit_Enable>0</Limit_Enable>
-  <Event_Enable>0</Event_Enable>
-  <Notify_Type>0</Notify_Type>
-  <Time_Delay>0</Time_Delay>
-  <Notification_Class>1</Notification_Class>
- </key>
- <key  number="1001101">
+ <key  number="9900101">
   <Object_Name>ANALOG OUTPUT1</Object_Name>
   <Offset>1.000</Offset>
   <Description>ANALOG OUTPUT1</Description>
@@ -130,7 +22,7 @@
   <Time_Delay>0</Time_Delay>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001102">
+ <key  number="9900102">
   <Object_Name>ANALOG OUTPUT2</Object_Name>
   <Offset>1.000</Offset>
   <Description>ANALOG OUTPUT2</Description>
@@ -145,7 +37,7 @@
   <Time_Delay>0</Time_Delay>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001103">
+ <key  number="9900103">
   <Object_Name>ANALOG OUTPUT3</Object_Name>
   <Offset>1.000</Offset>
   <Description>ANALOG OUTPUT 3</Description>
@@ -160,7 +52,7 @@
   <Time_Delay>0</Time_Delay>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001104">
+ <key  number="9900104">
   <Object_Name>ANALOG OUTPUT4</Object_Name>
   <Offset>1.000</Offset>
   <Description>ANALOG OUTPUT4</Description>
@@ -175,7 +67,7 @@
   <Time_Delay>0</Time_Delay>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001201">
+ <key  number="9900201">
   <Object_Name>ANALOG VALUE1</Object_Name>
   <Description>ANALOG VALUE 1</Description>
   <COV_Increment>0.500</COV_Increment>
@@ -188,7 +80,7 @@
   <Time_Delay>0</Time_Delay>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001202">
+ <key  number="9900202">
   <Object_Name>ANALOG VALUE2</Object_Name>
   <Description>ANALOG VALUE 2</Description>
   <COV_Increment>0.500</COV_Increment>
@@ -201,7 +93,7 @@
   <Time_Delay>0</Time_Delay>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001203">
+ <key  number="9900203">
   <Object_Name>ANALOG VALUE3</Object_Name>
   <Description>ANALOG VALUE3</Description>
   <COV_Increment>0.500</COV_Increment>
@@ -214,7 +106,7 @@
   <Time_Delay>0</Time_Delay>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001204">
+ <key  number="9900204">
   <Object_Name>ANALOG VALUE4</Object_Name>
   <Description>ANALOG VALUE4</Description>
   <COV_Increment>0.500</COV_Increment>
@@ -227,7 +119,7 @@
   <Time_Delay>0</Time_Delay>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001205">
+ <key  number="9900205">
   <Object_Name>ANALOG VALUE5</Object_Name>
   <Description>ANALOG VALUE5</Description>
   <COV_Increment>0.500</COV_Increment>
@@ -240,7 +132,7 @@
   <Time_Delay>0</Time_Delay>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001301">
+ <key  number="9900301">
   <Object_Name>BINARY_INPUT1</Object_Name>
   <Description>BINARY_INPUT 1</Description>
   <Device_Type>normal open</Device_Type>
@@ -249,10 +141,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001302">
+ <key  number="9900302">
   <Object_Name>BINARY_INPUT2</Object_Name>
   <Description>BINARY_INPUT 2</Description>
   <Device_Type>normal open</Device_Type>
@@ -261,10 +154,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001303">
+ <key  number="9900303">
   <Object_Name>BINARY_INPUT3</Object_Name>
   <Description>BINARY_INPUT 3</Description>
   <Device_Type>normal open</Device_Type>
@@ -273,10 +167,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001304">
+ <key  number="9900304">
   <Object_Name>BINARY_INPUT4</Object_Name>
   <Description>BINARY_INPUT 4</Description>
   <Device_Type>normal open</Device_Type>
@@ -285,10 +180,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001305">
+ <key  number="9900305">
   <Object_Name>BINARY_INPUT5</Object_Name>
   <Description>BINARY_INPUT 5</Description>
   <Device_Type>normal open</Device_Type>
@@ -297,10 +193,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001306">
+ <key  number="9900306">
   <Object_Name>BINARY_INPUT6</Object_Name>
   <Description>BINARY_INPUT 6</Description>
   <Device_Type>normal open</Device_Type>
@@ -309,10 +206,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001307">
+ <key  number="9900307">
   <Object_Name>BINARY_INPUT7</Object_Name>
   <Description>BINARY_INPUT 7</Description>
   <Device_Type>normal open</Device_Type>
@@ -321,10 +219,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001308">
+ <key  number="9900308">
   <Object_Name>BINARY_INPUT8</Object_Name>
   <Description>BINARY_INPUT 8</Description>
   <Device_Type>normal open</Device_Type>
@@ -333,10 +232,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001309">
+ <key  number="9900309">
   <Object_Name>BINARY_INPUT9</Object_Name>
   <Description>BINARY_INPUT 9</Description>
   <Device_Type>normal open</Device_Type>
@@ -345,10 +245,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001310">
+ <key  number="9900310">
   <Object_Name>BINARY_INPUT10</Object_Name>
   <Description>BINARY_INPUT10</Description>
   <Device_Type>normal open</Device_Type>
@@ -357,10 +258,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001311">
+ <key  number="9900311">
   <Object_Name>BINARY_INPUT11</Object_Name>
   <Description>BINARY_INPUT11</Description>
   <Device_Type>normal open</Device_Type>
@@ -369,10 +271,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001312">
+ <key  number="9900312">
   <Object_Name>BINARY_INPUT12</Object_Name>
   <Description>BINARY_INPUT12</Description>
   <Device_Type>normal open</Device_Type>
@@ -381,10 +284,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001401">
+ <key  number="9900401">
   <Object_Name>BINARY_OUTPUT 1</Object_Name>
   <Description>BINARY_OUTPUT 1</Description>
   <Device_Type>normal</Device_Type>
@@ -393,10 +297,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001402">
+ <key  number="9900402">
   <Object_Name>BINARY_OUTPUT 2</Object_Name>
   <Description>BINARY_OUTPUT 2</Description>
   <Device_Type>normal</Device_Type>
@@ -405,10 +310,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001403">
+ <key  number="9900403">
   <Object_Name>BINARY_OUTPUT 3</Object_Name>
   <Description>BINARY_OUTPUT 3</Description>
   <Device_Type>normal</Device_Type>
@@ -417,10 +323,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001404">
+ <key  number="9900404">
   <Object_Name>BINARY_OUTPUT 4</Object_Name>
   <Description>BINARY_OUTPUT4</Description>
   <Device_Type>normal</Device_Type>
@@ -429,10 +336,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001501">
+ <key  number="9900501">
   <Object_Name>BINARY_VALUE1</Object_Name>
   <Description>BINARY_VALUE1</Description>
   <Device_Type>normal</Device_Type>
@@ -441,10 +349,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001502">
+ <key  number="9900502">
   <Object_Name>BINARY_VALUE2</Object_Name>
   <Description>BINARY_VALUE2</Description>
   <Device_Type>normal</Device_Type>
@@ -453,10 +362,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001503">
+ <key  number="9900503">
   <Object_Name>BINARY_VALUE3</Object_Name>
   <Description>BINARY_VALUE3</Description>
   <Device_Type>normal</Device_Type>
@@ -465,10 +375,11 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001504">
+ <key  number="9900504">
   <Object_Name>BINARY_VALUE4</Object_Name>
   <Description>BINARY_VALUE4</Description>
   <Device_Type>normal</Device_Type>
@@ -477,29 +388,31 @@
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001505">
+ <key  number="9900505">
   <Object_Name>BINARY_VALUE5</Object_Name>
   <Description>BINARY_VALUE5</Description>
   <Device_Type>normal</Device_Type>
   <Inactive_Text>Off</Inactive_Text>
-  <Active_Text>Off</Active_Text>
+  <Active_Text>On</Active_Text>
   <Event_Enable>0</Event_Enable>
   <Notify_Type>0</Notify_Type>
   <Time_Delay>0</Time_Delay>
-  <Alarm_Value>0</Alarm_Value>
+  <Alarm_Value>
+  </Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001601">
-  <Object_Name>SCHEDULE1</Object_Name>
-  <Description>SCHEDULE1</Description>
-  <Priority_For_Writing>10</Priority_For_Writing>
+ <key  number="9900601">
+  <Object_Name>SCHEDULE 2</Object_Name>
+  <Description>SCHEDULE 2</Description>
+  <Priority_For_Writing>8</Priority_For_Writing>
   <Alarm>
   </Alarm>
  </key>
- <key  number="1001801">
-  <Object_Name>i1024Controller</Object_Name>
+ <key  number="9900801">
+  <Object_Name>i830Controller</Object_Name>
  </key>
 </root>

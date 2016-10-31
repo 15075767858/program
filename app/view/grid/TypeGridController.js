@@ -119,15 +119,14 @@ Ext.define('program.view.grid.TypeGridController', {
                     }
                 }
             });
-        }
-        ;
+        };
 
         if (panel.datas.type == 80) {
             Ext.create('Ext.data.Store', {
                 storeId: "store" + panel.getId(),
                 fields: ['name', 'value'],
                 data: panel.datas.propertyStore || [
-                    {'name': 'time', 'value': "100"},
+                    {'name': 'time', 'value': "110"},
                 ],
                 listeners: {
                     update: function (me, record, operation, modifiedFieldNames, details, eOpts) {

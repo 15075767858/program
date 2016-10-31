@@ -1,70 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <root>
  <plant  name="001">
-  <master_node  number="1">
-   <type>80</type>
-   <slots  number="1">
-    <node>2</node>
-    <slot_number>0</slot_number>
-   </slots>
-   <slots  number="2">
-    <default>0</default>
-   </slots>
-   <slots  number="3">
-    <default>0</default>
-   </slots>
-   <slots  number="4">
-    <default>325</default>
-   </slots>
-  </master_node>
-  <master_node  number="2">
-   <type>80</type>
-   <slots  number="1">
-    <default>0</default>
-   </slots>
-   <slots  number="2">
-    <default>0</default>
-   </slots>
-   <slots  number="3">
-    <default>0</default>
-   </slots>
-   <slots  number="4">
-    <default>100</default>
-   </slots>
-  </master_node>
-  <master_node  number="3">
-   <type>51</type>
-   <slots  number="1">
-    <default>0</default>
-   </slots>
-   <slots  number="2">
-    <default>0</default>
-   </slots>
-  </master_node>
-  <master_node  number="4">
-   <type>58</type>
-   <slots  number="1">
-    <default>0</default>
-   </slots>
-  </master_node>
-  <master_node  number="5">
-   <type>61</type>
-   <mode>0</mode>
-   <slots  number="1">
-    <default>0</default>
-   </slots>
-   <slots  number="2">
-    <default>0</default>
-   </slots>
-  </master_node>
-  <master_node  number="6">
-   <type>62</type>
-   <slots  number="1">
-    <default>0</default>
-   </slots>
-   <slots  number="2">
-    <default>0</default>
-   </slots>
-  </master_node>
+ </plant>
+ <plant  name="002">
  </plant>
 </root>
