@@ -384,6 +384,30 @@
   <Alarm_Value>0</Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
+ <key  number="1001405">
+  <Object_Name>BINARY_OUTPUT5</Object_Name>
+  <Description>BINARY_OUTPUT5</Description>
+  <Device_Type>normal</Device_Type>
+  <Inactive_Text>Off</Inactive_Text>
+  <Active_Text>On</Active_Text>
+  <Event_Enable>0</Event_Enable>
+  <Notify_Type>0</Notify_Type>
+  <Time_Delay>0</Time_Delay>
+  <Alarm_Value>0</Alarm_Value>
+  <Notification_Class>1</Notification_Class>
+ </key>
+  <key  number="1001406">
+  <Object_Name>BINARY_OUTPUT6</Object_Name>
+  <Description>BINARY_OUTPUT6</Description>
+  <Device_Type>normal</Device_Type>
+  <Inactive_Text>Off</Inactive_Text>
+  <Active_Text>On</Active_Text>
+  <Event_Enable>0</Event_Enable>
+  <Notify_Type>0</Notify_Type>
+  <Time_Delay>0</Time_Delay>
+  <Alarm_Value>0</Alarm_Value>
+  <Notification_Class>1</Notification_Class>
+ </key>
  <key  number="1001501">
   <Object_Name>BINARY_VALUE1</Object_Name>
   <Description>BINARY_VALUE1</Description>
