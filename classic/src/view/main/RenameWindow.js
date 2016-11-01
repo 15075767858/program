@@ -698,7 +698,7 @@ Ext.define("program.view.window.RenameWindow", {
             text: "Save ...",
             handler: function () {
                 var me = this.up("window");
-                Ext.MessageBox.prompt("Save ...", "please input filename", function (ms, v) {
+                Ext.MessageBox.prompt("Save ...", "please input device number", function (ms, v) {
                     if (ms == 'ok') {
                         if (isNaN(v) || v.length != 4) {
                             Ext.Msg.alert("Key Exception", "The key ,Does not meet the requirements")

@@ -116,7 +116,7 @@
   <Notification_Class>1</Notification_Class>
  </key>
  <key  number="1001101">
-  <Object_Name>AOANALOG OUTPUT1</Object_Name>
+  <Object_Name>ANALOG OUTPUT1</Object_Name>
   <Offset>1.000</Offset>
   <Description>ANALOG OUTPUT1</Description>
   <Device_Type>0-10=0-100</Device_Type>
@@ -374,7 +374,7 @@
  </key>
  <key  number="1001404">
   <Object_Name>BINARY_OUTPUT 4</Object_Name>
-  <Description>BINARY_OUTPUT4</Description>
+  <Description>BINARY_OUTPUT 4</Description>
   <Device_Type>normal</Device_Type>
   <Inactive_Text>Off</Inactive_Text>
   <Active_Text>On</Active_Text>
@@ -385,8 +385,8 @@
   <Notification_Class>1</Notification_Class>
  </key>
  <key  number="1001405">
-  <Object_Name>BINARY_OUTPUT5</Object_Name>
-  <Description>BINARY_OUTPUT5</Description>
+  <Object_Name>BINARY_OUTPUT 5</Object_Name>
+  <Description>BINARY_OUTPUT 5</Description>
   <Device_Type>normal</Device_Type>
   <Inactive_Text>Off</Inactive_Text>
   <Active_Text>On</Active_Text>
@@ -396,9 +396,9 @@
   <Alarm_Value>0</Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
-  <key  number="1001406">
-  <Object_Name>BINARY_OUTPUT6</Object_Name>
-  <Description>BINARY_OUTPUT6</Description>
+ <key  number="1001406">
+  <Object_Name>BINARY_OUTPUT 6</Object_Name>
+  <Description>BINARY_OUTPUT 6</Description>
   <Device_Type>normal</Device_Type>
   <Inactive_Text>Off</Inactive_Text>
   <Active_Text>On</Active_Text>
@@ -471,7 +471,7 @@
  <key  number="1001601">
   <Object_Name>SCHEDULE1</Object_Name>
   <Description>SCHEDULE1</Description>
-  <Priority_For_Writing>10</Priority_For_Writing>
+  <Priority_For_Writing>8</Priority_For_Writing>
  </key>
  <key  number="1001801">
   <Object_Name>i1024Controller</Object_Name>

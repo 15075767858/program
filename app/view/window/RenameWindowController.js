@@ -84,11 +84,14 @@ Ext.define('program.view.window.RenameWindowController', {
                 })
             }
 
+            console.log(button.devType)
+
             var keyField = Ext.create("Ext.form.field.Text", {
                 margin: 10,
                 fieldLabel: "Key",
-                value: (me.devName||"9900")+"201"
+                value: (me.devName||"9900")+button.devType+"01"
             })
+
             var win = Ext.create('Ext.window.Window', {
                 title: 'Add •••',
                 frame: true,
@@ -114,8 +117,8 @@ Ext.define('program.view.window.RenameWindowController', {
                             change: function (field, newValue, oldValue) {
                                 var value = Ext.String.leftPad(newValue, 4, "0");
                                 var values = keyField.getValue().split("");
-                                values[0] = value[0]
-                                values[1] = value[1]
+                                values[0] = value[0];
+                                values[1] = value[1];
                                 console.log(values)
                                 keyField.setValue(values.join(''))
                                 //Ext.String.insert //补0
