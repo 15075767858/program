@@ -147,6 +147,52 @@ Ext.define('program.view.main.toolbar.TopToolbarController', {
             ]
         })
     },
+    replaceClick: function () {
+
+        var win = Ext.create("program.view.window.EditFile", {
+            showCombo: true,
+            showFileButton: false,
+            okHandler: function () {
+
+                Ext.Ajax.request({
+                    url: "resources/xmlRW.php",
+                    async: false,
+                    method:"POST",
+                    params: {
+                        fileName:"devsinfo/" + win.combo.value,
+                        content: win.textArea.value,
+                        rw: "w"
+                    },
+                    success: function (response) {
+                        if(win.textArea.value.length==response.responseText){
+                            delayToast("Maasage","save success ."+response.responseText);
+                        }else{
+                            Ext.Msg.alert("Error",response.responseText);
+                        }
+                        console.log(arguments)
+                    }
+                })
+
+
+            },
+            combo: Ext.create("Ext.form.field.ComboBox", {
+                fieldLabel: "Select File",
+                store: getDevInfoFileNames(),
+                editable: false,
+
+                listeners: {
+                    change: function (combo, newValue) {
+                        console.log(arguments)
+
+                        myAjax('resources/devsinfo/' + newValue, function (response) {
+                            win.textArea.setValue(response.responseText);
+                            console.log(arguments)
+                        })
+                    }
+                }
+            })
+        })
+    },
     downloadClick: function () {
 
         var data;

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <root>
  <plant  name="001">
- </plant>
- <plant  name="002">
+  <master_node  number="1">
+   <type>58</type>
+   <slots  number="1">
+    <default>0</default>
+   </slots>
+  </master_node>
  </plant>
 </root>

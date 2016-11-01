@@ -24,6 +24,8 @@ Ext.define('program.view.main.MainController', {
             })
         }, 60 * 1000)
 
+
+
     },
     onClick: function () {
         alert("aaa");

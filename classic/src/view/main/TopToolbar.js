@@ -6,7 +6,8 @@ Ext.define("program.view.main.toolbar.TopToolbar", {
         "program.view.main.toolbar.TopToolbarController",
         "program.view.main.toolbar.TopToolbarModel",
         "program.view.window.UploadWindow",
-        "Ext.window.*"
+        "Ext.window.*",
+        "program.view.window.EditFile"
     ],
     controller: "main-toolbar-toptoolbar",
     viewModel: {
@@ -21,13 +22,7 @@ Ext.define("program.view.main.toolbar.TopToolbar", {
                     glyph: 70,
                     menu: [{
                         text: 'New',
-                        handler: function () {
-                            //saveGridpanelsConfigs()
-                            //saveXml()
-                        },
-                        listeners: {
-                            click: "newClick"
-                        }
+                        handler: "newClick"
                     },
                         {
                             text: 'Open',
@@ -38,28 +33,22 @@ Ext.define("program.view.main.toolbar.TopToolbar", {
                             text: 'Save',
                             handler: function () {
                                 var title = getCurrentDrawPanel().title;
-
-                                //saveGridpanelsConfigs(title);
                                 var startTime = new Date().getTime()
                                 saveXml(title);
                                 console.log("saveXml" + (new Date().getTime() - startTime) + "毫秒")
-
                             }
                         }, {
                             text: "Save as •••",
-                            listeners: {
-                                click: "saveAsClick"
-                            }
+                            handler:"saveAsClick"
                         }, {
+                            text:"replace •••",
+                            handler:"replaceClick"
+                        },{
                             text: "Download •••",
-                            listeners: {
-                                click: "downloadClick"
-                            }
+                            handler:"downloadClick"
                         }, {
                             text: "Upload •••",
-                            listeners: {
-                                click: "uploadClick"
-                            }
+                            handler:"uploadClick"
                         }, {
                             text: "Backup •••", handler: "backupClick"
                         }, {
@@ -179,7 +168,7 @@ Ext.define("program.view.main.toolbar.TopToolbar", {
                         }, {
                             text: "About",
                             handler: function () {
-                                Ext.Msg.alert('Version', 'SmartIO Programtools 2.19  ');
+                                Ext.Msg.alert('Version', 'SmartIO Programtools 2.20  ');
                             }
                         }
                     ]
