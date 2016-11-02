@@ -37,7 +37,7 @@ Ext.define('program.view.window.RenameWindowController', {
                         devType: i,
                         text: "+",
                         flex: 1,
-                        handler: addType
+                        handler: addType.bind(me)
                     }, {
                         xtype: "button",
                         text: "-",
@@ -85,11 +85,11 @@ Ext.define('program.view.window.RenameWindowController', {
             }
 
             console.log(button.devType)
-
+            console.log(me)
             var keyField = Ext.create("Ext.form.field.Text", {
                 margin: 10,
                 fieldLabel: "Key",
-                value: (me.devName||"9900")+button.devType+"01"
+                value: (me.devName||"9901")+button.devType+"01"
             })
 
             var win = Ext.create('Ext.window.Window', {
@@ -112,7 +112,7 @@ Ext.define('program.view.window.RenameWindowController', {
                         editable: false,
                         queryMode: 'local',
                         autoSelect: false,
-                        value: me.devName||"9900",
+                        value: me.devName||"9901",
                         listeners: {
                             change: function (field, newValue, oldValue) {
                                 var value = Ext.String.leftPad(newValue, 4, "0");
@@ -199,7 +199,9 @@ Ext.define('program.view.window.RenameWindowController', {
                 buttons: [
                     {
                         text: 'Ok', handler: function () {
+
                         var text = keyField.getValue();
+
                         /*if (text == null) {
                             Ext.Msg.alert('Info', 'Plase select file name.');
                             return;

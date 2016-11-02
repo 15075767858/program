@@ -1,7 +1,7 @@
 Ext.define("program.view.window.RenameWindow", {
     extend: "Ext.window.Window",
 
-    xtype:"renamewindow",
+    xtype: "renamewindow",
     requires: [
         "program.view.window.RenameWindowController",
         "program.view.window.RenameWindowModel",
@@ -58,8 +58,8 @@ Ext.define("program.view.window.RenameWindow", {
                     var Object_Name = keys[i].querySelector("Object_Name").innerHTML;
                     var keyType = keys[i].getAttribute("number").substr(4, 1);
                     if (keyType == '3' || keyType == '4') {
-                        var devName = keys[i].getAttribute('number').substr(0,4)
-                        me.devName=devName;
+                        var devName = keys[i].getAttribute('number').substr(0, 4)
+                        me.devName = devName;
                     }
                     //var fieldsItems = [];
                     var types = me["type" + keyType];
@@ -270,6 +270,20 @@ Ext.define("program.view.window.RenameWindow", {
                 var me = this;
 
                 me.header.remove(me.p)
+
+                var type = me.key.substr(4, 1);
+
+                var deviceType = me.query("[name=Device_Type]")[0];
+                if (!!deviceType) {
+                    if (deviceType.value == "BI" & type == "0") {
+                        console.log(deviceType.value)
+                        return;
+                    }
+                    if (deviceType.value == "hide") {
+                        console.log(deviceType.value)
+                        return;
+                    }
+                }
                 var p = Ext.create('Ext.ProgressBar', {
                     width: 200,
                     buttonAlign: "left",
@@ -281,9 +295,10 @@ Ext.define("program.view.window.RenameWindow", {
                 var formSize = items.length;
 
                 for (var i = 0; i < items.length; i++) {
+
                     (function (me, field, delay) {
                         setTimeout(function () {
-                            console.log((delay + 1) / formSize)
+                            //console.log((delay + 1) / formSize)
                             p.setValue((delay + 1) / formSize)
                             changeDevValue(me.key, field.name, field.value)
                         }, delay * 10)
