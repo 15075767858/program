@@ -847,6 +847,7 @@ Ext.define("program.view.window.RenameWindow", {
         }
         },
         {
+
             text: "Close", handler: function (button) {
             var me = button.up('window');
             me.close();
