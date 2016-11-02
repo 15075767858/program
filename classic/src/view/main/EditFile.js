@@ -17,36 +17,43 @@ Ext.define('program.view.window.EditFile', {
         margin: 10
     },
 
-    title:"Edit",
+    title: "Edit",
     showTextArea: true,//是否显示textarea
     showFileButton: true,//是否使用fileButton
     showCombo: false,
-    okHandler:null,
+    okHandler: null,
+    fileName:null,//button按钮上传的文件名
 
-    textArea: Ext.create("Ext.form.field.TextArea", {
-        width: "100%",
-        border: false,
-        height: 500
-    }),
-    fileButton: Ext.create("Ext.form.field.FileButton", {
-        xtype: "filebutton",
-        text: "Select File",
-        listeners: {
-            change: function (menu, target, eOpts) {
-                var win = menu.up("window")
-                var files = target.target.files;
-                if (files.length) {
-                    var file = files[0];
-                    var reader = new FileReader();
-                    reader.onload = function () {
-                        win.textArea.setValue(this.result);
-                    };
-                    reader.readAsText(file);
+   /* textArea: function () {
+        return Ext.create("Ext.form.field.TextArea", {
+            width: "100%",
+            border: false,
+            height: 500
+        })
+
+    },
+    fileButton: function () {
+       return  Ext.create("Ext.form.field.FileButton", {
+            xtype: "filebutton",
+            text: "Select File",
+            listeners: {
+                change: function (menu, target, eOpts) {
+                    var win = menu.up("window")
+                    var files = target.target.files;
+                    if (files.length) {
+                        var file = files[0];
+                        var reader = new FileReader();
+                        reader.onload = function () {
+                            win.textArea.setValue(this.result);
+                        };
+                        reader.readAsText(file);
+                    }
                 }
             }
-        }
-    }),
+        })
+    },*/
     //combo: null,
+
     initComponent: function () {
         var me = this;
         me.items = []
@@ -57,25 +64,50 @@ Ext.define('program.view.window.EditFile', {
             me.items.push(me.combo);
         }
         if (me.showFileButton) {
+            me.fileButton=Ext.create("Ext.form.field.FileButton", {
+                xtype: "filebutton",
+                text: "Select File",
+                listeners: {
+                    change: function (menu, target, eOpts) {
+                        var win = menu.up("window")
+
+                        var files = target.target.files;
+                        if (files.length) {
+                            var file = files[0];
+                            win.fileName=file.name;
+                            console.log(file)
+                            var reader = new FileReader();
+                            reader.onload = function () {
+                                win.textArea.setValue(this.result);
+                            };
+                            reader.readAsText(file);
+                        }
+                    }
+                }
+            })
+
             me.items.push(me.fileButton);
         }
         if (me.showTextArea) {
+            me.textArea= Ext.create("Ext.form.field.TextArea", {
+                width: "100%",
+                border: false,
+                height: 500
+            })
+
             me.items.push(me.textArea)
         }
-
-
-
-
         me.buttons = [
             {
-                text:"replace",handler:"replaceClick"
+                text: "replace", handler: "replaceClick"
             },
             "->",
             {
                 text: 'OK',
                 itemId: "Ok",
-                handler:me.okHandler|| function (menu) {
+                handler: me.okHandler || function (menu) {
                     menu.setDisabled(true);
+
                     var jsonData = Ext.decode(textarea.getValue())
                     var str = "<div style='color: darkturquoise;'>";
                     for (var name in jsonData) {

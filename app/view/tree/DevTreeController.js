@@ -582,30 +582,30 @@ Ext.define('program.view.tree.DevTreeController', {
                 autoShow: true,
                 x: e.pageX,
                 y: e.pageY,
-                listeners:{
-                  boxready:function(){
-                      var me=this;
-                      return ;
-                      var menu= me.getComponent("deviceinforamation");
+                listeners: {
+                    boxready: function () {
+                        var me = this;
+                        return;
+                        var menu = me.getComponent("deviceinforamation");
 //                      var fileName = record.data.text;
-                      var fileName ="devxml/" + record.data.text + ".xml";
+                        var fileName = "devxml/" + record.data.text + ".xml";
 
-                      fileExists(fileName,function(response){
-                          console.log(response.responseText!=1)
-                          if(response.responseText!=1){
-                              setTimeout(function(){
-                                  menu.setDisabled(true)
-                              },100)
-                          }
-                      })
-                  }
+                        fileExists(fileName, function (response) {
+                            console.log(response.responseText != 1)
+                            if (response.responseText != 1) {
+                                setTimeout(function () {
+                                    menu.setDisabled(true)
+                                }, 100)
+                            }
+                        })
+                    }
                 },
                 items: [
                     {
-                       /* bind: {
-                            disabled: "{!linkDataBase}"
-                        },*/
-                        itemId:"deviceinforamation",
+                        /* bind: {
+                         disabled: "{!linkDataBase}"
+                         },*/
+                        itemId: "deviceinforamation",
                         text: "deviceinforamation",
                         handler: function () {
                             console.log(record)
@@ -618,180 +618,214 @@ Ext.define('program.view.tree.DevTreeController', {
                         }
                     },
                     {
-                        text: "build",
-                        handler: function () {
+                        text: "build", menu: [
+                        {
+                            text: "build",
+                            handler: function () {
 
-                            /* var store=Ext.create("Ext.data.XmlStore",{
-                             url:"resources/devxml/1000.xml",
-                             //record:"key",
-                             fields:["key"]
-                             })
+                                var textarea = Ext.create("Ext.form.field.TextArea", {
+                                    width: "100%",
+                                    border: false,
+                                    height: 500,
+                                    bind: {
+                                        hidden: "{!showtextarea.checked}"
+                                    }
+                                })
+                                var checkbox = Ext.create("Ext.form.field.Checkbox", {
+                                    reference: "showtextarea",
+                                    checked: false,
+                                    dock: 'right',
+                                    boxLabel: 'Show Xml'
+                                })
+                                var p = Ext.create('Ext.ProgressBar', {
+                                    width: 300,
+                                    buttonAlign: "left"
+                                });
 
-                             var grid = Ext.create("Ext.grid.Panel", {
-                             store:store,
-                             colums:[{
-                             dataIndex:"key"
-                             }]
-                             })*/
-                            var textarea = Ext.create("Ext.form.field.TextArea", {
-                                width: "100%",
-                                border: false,
-                                height: 500,
-                                bind: {
-                                    hidden: "{!showtextarea.checked}"
+                                var win = Ext.create("Ext.window.Window", {
+                                    //title: record.data.text + ' build',
+
+                                    title: "1000 biuld",
+                                    viewModel: Ext.create("program.view.tree.DevTreeModel"),
+                                    width: 800,
+                                    //height: 500,
+                                    //bodyPadding: 10,
+                                    frame: true,
+                                    autoShow: true,
+                                    closable: true,
+                                    layout: "auto",
+                                    tbar: [
+                                        {
+                                            xtype: "filebutton",
+                                            text: "Select File",
+                                            listeners: {
+                                                change: function (menu, target, eOpts) {
+                                                    var files = target.target.files;
+
+                                                    if (files.length) {
+                                                        var file = files[0];
+                                                        var reader = new FileReader();
+                                                        reader.onload = function () {
+                                                            //document.getElementById("filecontent").innerHTML = this.result;
+
+                                                            textarea.setValue(this.result);
+                                                            checkbox.setValue(true)
+                                                        };
+                                                        reader.readAsText(file);
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        checkbox
+                                    ],
+                                    items: textarea,
+                                    buttons: [
+                                        p,
+                                        "->",
+                                        {
+                                            text: 'OK',
+                                            itemId: "Ok",
+                                            handler: function (menu) {
+                                                menu.setDisabled(true);
+                                                //me.CloseButton.setD
+                                                var packet = Ext.create('Ext.data.amf.Packet');
+                                                var xml = packet.parseXml(textarea.getValue())
+                                                var keys = xml.querySelectorAll("key");
+                                                var aAll = 0;
+                                                console.log(aAll)
+                                                for (var i = 0; i < keys.length; i++) {
+                                                    aAll += keys[i].getElementsByTagName("*").length;
+                                                }
+                                                var count = 0;
+                                                var delayCount = 0;
+                                                for (var i = 0; i < keys.length; i++) {
+                                                    //var tags = keys[i].children;
+                                                    var tags = keys[i].getElementsByTagName("*");
+                                                    var devname = keys[i].getAttribute("number");
+                                                    for (var j = 0; j < tags.length; j++) {
+                                                        count++;
+                                                        var progressNumber = count / aAll;
+                                                        if (count % 10 == 0) {
+                                                            delayCount++
+                                                        }
+
+                                                        (function (progressNumber, devname, tag) {
+                                                            console.log(arguments)
+                                                            var type = tag.tagName;
+                                                            var value = tag.innerHTML;
+                                                            setTimeout(function () {
+                                                                p.setValue(progressNumber)
+                                                                /* if (tag.tagName == "Set_Alarm") {
+                                                                 var setalermpars = tag.children;
+                                                                 var setAlermJson = {
+                                                                 Set_Alarm: [{}]
+                                                                 }
+                                                                 for (var i = 0; i < setalermpars.length; i++) {
+                                                                 setAlermJson.Set_Alarm[0][setalermpars[i].tagName.toLocaleLowerCase()] = setalermpars[i].innerHTML;
+                                                                 }
+                                                                 console.log(tag.tagName)
+                                                                 type = tag.tagName;
+                                                                 value = Ext.encode(setAlermJson)
+                                                                 }*/
+
+                                                                if (tag.tagName != "hide") {
+                                                                    myAjax("resources/test1.php?par=changevalue&nodename=" + devname + "&type=" + type + "&value=" + value, function () {
+                                                                        delayToast('Success', devname + ' Changes ' + type + ' saved successfully,New value is  .' + value, count * 150)
+                                                                    })
+                                                                }
+
+                                                            }, count * 50 + 1000 * delayCount)
+
+                                                        })(progressNumber, devname, tags[j])
+                                                    }
+                                                    console.log(count)
+                                                }
+
+                                                var devName = record.data.text;
+                                                setTimeout(function () {
+                                                    menu.setDisabled(false);
+
+                                                    devPublish(devName + ".8.*", devName + "701\r\nPresent_Value\r\n1");
+                                                }, count * 50 + 1000 * delayCount + 1000)
+                                                console.log(xml)
+                                                console.log(this)
+                                            }
+                                        }, {
+                                            text: "Close",
+                                            itemId: "Close",
+                                            handler: function () {
+                                                win.close()
+                                            }
+                                        }
+                                    ]
+                                })
+                                testwin = win;
+                                console.log(win);
+
+
+                            }
+
+                        },
+                        {
+                            text: "upload", handler: function () {
+
+                            var win = Ext.create("program.view.window.EditFile", {
+                                title: "upload ",
+                                okHandler: function () {
+
+
+                                    Ext.MessageBox.prompt("Save", "please input file name", function (ms, v) {
+                                        if (ms == 'ok') {
+                                            if(!v){
+                                                Ext.Msg.alert("Error",'file')
+                                            }
+
+                                            Ext.Ajax.request({
+                                                url: "resources/xmlRW.php",
+                                                async: false,
+                                                method: "POST",
+                                                params: {
+                                                    fileName: "devxml/" + v,
+                                                    content: win.textArea.value,
+                                                    rw: "w"
+                                                },
+                                                success: function (response) {
+                                                    if (win.textArea.value.length == response.responseText) {
+                                                        delayToast("Maasage", "save success ." + response.responseText);
+                                                    } else {
+                                                        Ext.Msg.alert("Error", response.responseText);
+                                                    }
+                                                    console.log(arguments)
+                                                }
+                                            })
+                                        }
+
+                                    }, this, "", win.fileName)
+
+
+
                                 }
                             })
-                            var checkbox = Ext.create("Ext.form.field.Checkbox", {
-                                reference: "showtextarea",
-                                checked: false,
-                                dock: 'right',
-                                boxLabel: 'Show Xml'
-                            })
-                            var p = Ext.create('Ext.ProgressBar', {
-                                width: 300,
-                                buttonAlign: "left"
-                            });
-
-                            var win = Ext.create("Ext.window.Window", {
-                                //title: record.data.text + ' build',
-
-                                title: "1000 biuld",
-                                viewModel: Ext.create("program.view.tree.DevTreeModel"),
-                                width: 800,
-                                //height: 500,
-                                //bodyPadding: 10,
-                                frame: true,
-                                autoShow: true,
-                                closable: true,
-                                layout: "auto",
-                                tbar: [
-                                    {
-                                        xtype: "filebutton",
-                                        text: "Select File",
-                                        listeners: {
-                                            change: function (menu, target, eOpts) {
-                                                var files = target.target.files;
-
-                                                if (files.length) {
-                                                    var file = files[0];
-                                                    var reader = new FileReader();
-                                                    reader.onload = function () {
-                                                        //document.getElementById("filecontent").innerHTML = this.result;
-
-                                                        textarea.setValue(this.result);
-                                                        checkbox.setValue(true)
-                                                    };
-                                                    reader.readAsText(file);
-                                                }
-                                            }
-                                        }
-                                    },
-                                    checkbox
-                                ],
-                                items: textarea,
-                                buttons: [
-                                    p,
-                                    "->",
-                                    {
-                                        text: 'OK',
-                                        itemId: "Ok",
-                                        handler: function (menu) {
-                                            menu.setDisabled(true);
-                                            //me.CloseButton.setD
-                                            var packet = Ext.create('Ext.data.amf.Packet');
-                                            var xml = packet.parseXml(textarea.getValue())
-                                            var keys = xml.querySelectorAll("key");
-                                            var aAll = 0;
-                                            console.log(aAll)
-                                            for (var i = 0; i < keys.length; i++) {
-                                                aAll += keys[i].getElementsByTagName("*").length;
-                                            }
-                                            var count = 0;
-                                            var delayCount = 0;
-                                            for (var i = 0; i < keys.length; i++) {
-                                                //var tags = keys[i].children;
-                                                var tags = keys[i].getElementsByTagName("*");
-                                                var devname = keys[i].getAttribute("number");
-                                                for (var j = 0; j < tags.length; j++) {
-                                                    count++;
-                                                    var progressNumber = count / aAll;
-                                                    if (count % 10 == 0) {
-                                                        delayCount++
-                                                    }
-
-                                                    (function (progressNumber, devname, tag) {
-                                                        console.log(arguments)
-                                                        var type = tag.tagName;
-                                                        var value = tag.innerHTML;
-                                                        setTimeout(function () {
-                                                            p.setValue(progressNumber)
-                                                            /* if (tag.tagName == "Set_Alarm") {
-                                                             var setalermpars = tag.children;
-                                                             var setAlermJson = {
-                                                             Set_Alarm: [{}]
-                                                             }
-                                                             for (var i = 0; i < setalermpars.length; i++) {
-                                                             setAlermJson.Set_Alarm[0][setalermpars[i].tagName.toLocaleLowerCase()] = setalermpars[i].innerHTML;
-                                                             }
-                                                             console.log(tag.tagName)
-                                                             type = tag.tagName;
-                                                             value = Ext.encode(setAlermJson)
-                                                             }*/
-
-                                                            if (tag.tagName != "hide") {
-                                                                myAjax("resources/test1.php?par=changevalue&nodename=" + devname + "&type=" + type + "&value=" + value, function () {
-                                                                    delayToast('Success', devname + ' Changes ' + type + ' saved successfully,New value is  .' + value, count * 150)
-                                                                })
-                                                            }
-
-                                                        }, count * 50 + 1000 * delayCount)
-
-                                                    })(progressNumber, devname, tags[j])
-                                                }
-                                                console.log(count)
-                                            }
-
-                                            var devName = record.data.text;
-                                            setTimeout(function () {
-                                                menu.setDisabled(false);
-
-                                                devPublish(devName + ".8.*", devName + "701\r\nPresent_Value\r\n1");
-                                            }, count * 50 + 1000 * delayCount + 1000)
-                                            console.log(xml)
-                                            console.log(this)
-                                        }
-                                    }, {
-                                        text: "Close",
-                                        itemId: "Close",
-                                        handler: function () {
-                                            win.close()
-                                        }
-                                    }
-                                ]
-                            })
-                            testwin = win;
-                            console.log(win);
-
-
                         }
-
+                        }
+                    ]
                     },
+
                     {
                         text: "backup",
                         handler: function () {
-                            var fileName ="devxml/" + record.data.text + ".xml";
-                            fileExists(fileName,function (response) {
+                            var fileName = "devxml/" + record.data.text + ".xml";
+                            fileExists(fileName, function (response) {
                                 if (response.responseText == 1) {
-                                    location.href = "resources/test1.php?par=backup&filename="+fileName
+                                    location.href = "resources/test1.php?par=backup&filename=" + fileName
                                 } else {
                                     Ext.Msg.alert("Massage", "file does not exist .");
                                 }
                             })
 
 
-
-                           /* myAjax("resources/test1.php?par=file_exists&filename=devxml/" + record.data.text + ".xml",
-                            )*/
+                            /* myAjax("resources/test1.php?par=file_exists&filename=devxml/" + record.data.text + ".xml",
+                             )*/
                         }
                     },
 
@@ -1254,7 +1288,7 @@ Ext.define('program.view.tree.DevTreeController', {
                             text: "References",
                             handler: function () {
 
-                                var sDevName=(sDevNodeName+"").substr(0,4)
+                                var sDevName = (sDevNodeName + "").substr(0, 4)
                                 myAjax("resources/test1.php?par=getreferencesdev&nodename=" + sDevNodeName, function (response) {
                                     var text = eval(response.responseText.trim());
                                     console.log(text)
@@ -1745,9 +1779,9 @@ function getNetNumberValue(filename) {
             var xml = $($.parseXML(response.responseText));
             console.log(xml)
             //var xml = response.responseXML;
-            if(xml){
+            if (xml) {
                 str = xml.find("root net").text()
-            }else{
+            } else {
                 Ext.Msg.alert("Exception ", "bac_config is not fount .")
             }
 
@@ -1774,9 +1808,9 @@ function getNameByType(type) {
     if (type == 5) {
         return "BV"
     }
-    if(type>=10){
-        for(var data in slotsJson){
-            if(slotsJson[data].type==type){
+    if (type >= 10) {
+        for (var data in slotsJson) {
+            if (slotsJson[data].type == type) {
                 return data
             }
         }

@@ -2,40 +2,741 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5634e344-e363-4954-913f-d691016cfd59" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/ext/ext-watermark/Read Me.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/ext/ext-watermark/demo-files/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/ext/ext-watermark/demo-files/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/ext/ext-watermark/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/ext/ext-watermark/fonts/ext-watermark.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/ext/ext-watermark/fonts/ext-watermark.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/ext/ext-watermark/fonts/ext-watermark.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/ext/ext-watermark/fonts/ext-watermark.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/ext/ext-watermark/selection.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/ext/ext-watermark/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/font-ext/fonts/ExtJS.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/font-ext/fonts/ExtJS.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/font-ext/fonts/ExtJS.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/font-ext/fonts/ExtJS.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/check.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/clear_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/disclosure.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/disclosure2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/dotgrid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/action.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/add1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/add_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/address_book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/arrow_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/arrow_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/arrow_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/arrow_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/at.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/atom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/attachment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/attachment2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/attachment3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/attachment_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/backspace.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/battery_full.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/battery_low.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/battery_power.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/blank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/bolt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/bolt_side.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/bookmark1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/bookmark2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/bookmark_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/bookmarks.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/briefcase1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/briefcase2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/brightness1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/brightness2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/broadcast.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/bug.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/bulb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/bullseye1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/bullseye2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/calendar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/calendar2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/calendar_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/card1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/card2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/chart1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/chart2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/chart3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/chat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/chat1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/chat2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/chat3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/chat4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/chat_black1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/chat_black2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/check1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/check2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/check_black1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/check_black2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/check_dotted.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/circle2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/circle3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/circle4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/clash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/cloud.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/cloud_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/cloud_black_upload1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/cloud_black_upload2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/cloud_bolt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/cloud_download.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/code1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/code2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/code3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/compass1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/compass2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/compass3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/compose.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/compose1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/compose2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/compose3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/compose_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/contract.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/cube.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/data.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/delete1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/delete_black1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/delete_black2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/doc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/doc2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/doc_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/doc_black_landscape.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/doc_compose1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/doc_compose2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/doc_delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/doc_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/doc_drawer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/doc_list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/doc_new.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/doc_send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/doc_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/docs1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/docs2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/docs_black1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/docs_black2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/download.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/download1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/download2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/download_screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/eject.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/empty1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/empty2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/equalizer1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/equalizer2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/event_complete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/expand.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/favorites.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/favorites1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/favorites_circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/fforward.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/find.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/flag.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/flickr2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/folder.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/folder_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/folder_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/folder_black_open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/folder_delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/folder_delete2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/folder_lock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/folder_open2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/font.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/forbidden.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/forward_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/globe1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/globe2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/globe_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/headphones.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/heart_circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/help.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/help_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/home2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/hot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/inbox1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/inbox2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/inbox3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/infinite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/infinite2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/info.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/info2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/info_plain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/info_plain2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/json.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/lab.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/layout.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/link1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/link2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/link_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/locate.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/locate1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/locate2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/locate3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/locate4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/lock_closed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/lock_open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/look.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/loop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/loop2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/loop_circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/magic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/mail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/mail1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/mail2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/mail3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/mail4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/mail5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/maps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/mic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/minus1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/minus2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/minus_black1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/minus_black2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/monitor1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/monitor2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/monitor3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/monitor4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/more.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/more2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/mouse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/move.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/music1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/music2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/nodes1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/nodes2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/note1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/note2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/note3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/note_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/nuclear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/organize.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/outbox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/pause.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/phone1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/phone2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/phone_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/phone_ring1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/phone_ring2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/photo1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/photo2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/photo3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/photo_black1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/photo_black2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/photos1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/photos2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/photos4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/pictos-web.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/pictos-web.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/pictos-web.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/pictos-web.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/piechart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/play1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/play2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/play_black1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/play_black2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/podcast.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/power_on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/power_socket.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/print.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/print2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/quote1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/quote2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/quote_black1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/quote_black2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/quote_black3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/refresh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/refresh1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/refresh2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/refresh3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/refresh5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/reply.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/replytoall.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/resize.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/resize_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/rewind.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/right2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/rss.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/rss2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/rss_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/rss_black1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/rss_black2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/screens.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/search1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/search2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/search_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/server.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/servers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/settings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/settings1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/settings10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/settings11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/settings3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/settings4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/settings5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/settings6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/settings7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/settings8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/settings9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/settings_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/share.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/shield1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/shield2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/shop1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/shop2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/shuffle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/sign_backforth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/sign_cross.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/sign_leftright.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/sign_leftright2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/sign_split.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/sign_switch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/sign_uturn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/spaces1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/spaces2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/speedometer1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/speedometer2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/speedometer_black1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/speedometer_black2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/star.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/stop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/stop1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/stop2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/sync.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/tabbed_book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/tag.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/tag_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/tags.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/team.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/team1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/time.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/time_repeat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/trash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/trash2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/trash_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/tree.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/tv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/tweak.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/twitter1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/twitter2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/up1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/up2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/up_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/upload2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/user.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/user3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/user_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/user_business.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/user_fave.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/user_list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/user_list2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/user_remote1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/user_remove2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/user_send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/video.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/video_black1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/video_black2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/volume.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/volume_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/volume_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/volume_mute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/volume_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/warning_black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/warning_dotted.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/wifi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/wifi2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/wifi3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/wifi4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pictos/window.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/pullarrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/select_mask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/tip2_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/tip2_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/tip_bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/tip_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/tip_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/tip_top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/togglebg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/togglemask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/togglethumb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/togglethumbbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/togglethumbmask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/images/trackmask_outer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/program-all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern/resources/ux/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/fonts/OpenSans-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/fonts/OpenSans-BoldItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/fonts/OpenSans-ExtraBold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/fonts/OpenSans-ExtraBoldItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/fonts/OpenSans-Italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/fonts/OpenSans-Light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/fonts/OpenSans-LightItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/fonts/OpenSans-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/fonts/OpenSans-Semibold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/fonts/OpenSans-SemiboldItalic.ttf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program.tar.gz" afterPath="$PROJECT_DIR$/build/production/program.tar.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn-group/btn-group-default-framed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn-group/btn-group-default-framed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn-group/btn-group-default-framed-notitle-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn-group/btn-group-default-framed-notitle-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn-group/btn-group-default-framed-notitle-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn-group/btn-group-default-framed-notitle-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn-group/btn-group-default-framed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn-group/btn-group-default-framed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-disabled-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-disabled-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-disabled-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-disabled-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-disabled-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-disabled-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-disabled-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-disabled-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-disabled-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-disabled-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-disabled-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-disabled-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-disabled-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-disabled-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-disabled-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-disabled-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-disabled-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-disabled-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-disabled-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-disabled-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-disabled-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-disabled-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-disabled-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-disabled-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-disabled-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-disabled-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-disabled-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-disabled-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-disabled-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-disabled-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-disabled-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-disabled-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-disabled-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-disabled-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-disabled-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-disabled-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-pressed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-pressed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-pressed-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-pressed-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-pressed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-pressed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-bottom-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-bottom-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-bottom-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-bottom-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-bottom-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-bottom-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-bottom-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-bottom-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-left-corners-rtl.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-left-corners-rtl.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-left-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-left-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-left-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-left-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-right-corners-rtl.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-right-corners-rtl.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-right-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-right-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-right-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-right-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-top-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-top-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-top-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-top-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-left-corners-rtl.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-left-corners-rtl.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-left-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-left-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-left-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-left-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-right-corners-rtl.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-right-corners-rtl.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-right-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-right-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-right-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-right-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-top-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-top-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-top-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-top-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-bottom-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-bottom-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-bottom-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-bottom-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-bottom-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-bottom-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-bottom-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-bottom-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-left-corners-rtl.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-left-corners-rtl.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-left-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-left-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-left-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-left-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-right-corners-rtl.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-right-corners-rtl.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-right-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-right-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-right-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-right-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-top-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-top-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-top-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-top-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-left-corners-rtl.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-left-corners-rtl.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-left-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-left-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-left-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-left-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-right-corners-rtl.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-right-corners-rtl.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-right-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-right-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-right-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-right-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-top-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-top-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-top-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-top-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel/panel-default-framed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel/panel-default-framed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel/panel-default-framed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel/panel-default-framed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel/panel-light-framed-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel/panel-light-framed-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel/panel-light-framed-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel/panel-light-framed-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-active-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-active-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-active-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-active-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-active-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-active-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-disabled-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-disabled-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-disabled-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-disabled-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-disabled-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-disabled-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-active-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-active-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-active-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-active-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-active-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-active-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-active-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-active-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-active-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-active-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-active-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-active-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-disabled-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-disabled-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-disabled-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-disabled-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-disabled-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-disabled-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-active-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-active-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-active-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-active-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-active-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-active-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-active-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-active-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-active-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-active-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-active-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-active-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-disabled-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-disabled-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-disabled-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-disabled-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-disabled-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-disabled-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-active-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-active-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-active-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-active-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-active-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-active-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-active-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-active-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-active-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-active-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-active-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-active-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-disabled-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-disabled-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-disabled-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-disabled-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-disabled-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-disabled-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-active-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-active-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-active-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-active-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-active-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-active-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-over-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-over-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-over-fbg.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-over-fbg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-over-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-over-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tip/tip-default-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tip/tip-default-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tip/tip-default-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tip/tip-default-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tip/tip-form-invalid-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tip/tip-form-invalid-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tip/tip-form-invalid-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/tip/tip-form-invalid-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-bottom-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-bottom-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-bottom-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-bottom-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-bottom-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-bottom-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-bottom-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-bottom-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-left-corners-rtl.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-left-corners-rtl.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-left-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-left-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-left-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-left-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-right-corners-rtl.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-right-corners-rtl.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-right-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-right-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-right-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-right-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-top-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-top-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-top-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-top-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-left-corners-rtl.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-left-corners-rtl.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-left-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-left-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-left-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-left-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-right-corners-rtl.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-right-corners-rtl.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-right-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-right-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-right-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-right-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-top-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-top-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-top-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-top-sides.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window/window-default-corners.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window/window-default-corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window/window-default-sides.gif" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/images/window/window-default-sides.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1000" afterPath="$PROJECT_DIR$/1000" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1000.json" afterPath="$PROJECT_DIR$/1000.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/main/MainController.js" afterPath="$PROJECT_DIR$/app/view/main/MainController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js" afterPath="$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/tree/DevTreeController.js" afterPath="$PROJECT_DIR$/app/view/tree/DevTreeController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/window/EditFileController.js" afterPath="$PROJECT_DIR$/app/view/window/EditFileController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/window/EditFileModel.js" afterPath="$PROJECT_DIR$/app/view/window/EditFileModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.css" afterPath="$PROJECT_DIR$/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.js" afterPath="$PROJECT_DIR$/bootstrap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic.json" afterPath="$PROJECT_DIR$/build/production/program/classic.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/app.js" afterPath="$PROJECT_DIR$/build/production/program/classic/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/index.html" afterPath="$PROJECT_DIR$/build/production/program/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/modern.json" afterPath="$PROJECT_DIR$/build/production/program/modern.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/resources/devxml/i1024.xml" afterPath="$PROJECT_DIR$/build/production/program/resources/devxml/i1024.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/resources/devxml/i823.xml" afterPath="$PROJECT_DIR$/build/production/program/resources/devxml/i823.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/resources/devxml/i830.xml" afterPath="$PROJECT_DIR$/build/production/program/resources/devxml/i830.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/resources/devxml/i831.xml" afterPath="$PROJECT_DIR$/build/production/program/resources/devxml/i831.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/resources/devxml/i852.xml" afterPath="$PROJECT_DIR$/build/production/program/resources/devxml/i852.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/sass/program-all.scss" afterPath="$PROJECT_DIR$/build/temp/production/program/sass/program-all.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/sass/program-all.scss.tmp" afterPath="$PROJECT_DIR$/build/temp/production/program/sass/program-all.scss.tmp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example.scss" afterPath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example.scss.tmp" afterPath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example.scss.tmp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/resources/devsinfo/undefined" afterPath="$PROJECT_DIR$/build/production/program/resources/devsinfo/undefined" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic.json" afterPath="$PROJECT_DIR$/classic.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic/src/view/main/EditFile.js" afterPath="$PROJECT_DIR$/classic/src/view/main/EditFile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" afterPath="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devxml/i1024.xml" afterPath="$PROJECT_DIR$/devxml/i1024.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devxml/i823.xml" afterPath="$PROJECT_DIR$/devxml/i823.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devxml/i830.xml" afterPath="$PROJECT_DIR$/devxml/i830.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devxml/i831.xml" afterPath="$PROJECT_DIR$/devxml/i831.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devxml/i852.xml" afterPath="$PROJECT_DIR$/devxml/i852.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modern.json" afterPath="$PROJECT_DIR$/modern.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/devsinfo/ch3" afterPath="$PROJECT_DIR$/resources/devsinfo/ch3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/devsinfo/chwp2" afterPath="$PROJECT_DIR$/resources/devsinfo/chwp2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/devxml/i1024.xml" afterPath="$PROJECT_DIR$/resources/devxml/i1024.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/devxml/i823.xml" afterPath="$PROJECT_DIR$/resources/devxml/i823.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/devxml/i830.xml" afterPath="$PROJECT_DIR$/resources/devxml/i830.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/devxml/i831.xml" afterPath="$PROJECT_DIR$/resources/devxml/i831.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/devxml/i852.xml" afterPath="$PROJECT_DIR$/resources/devxml/i852.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/devsinfo/undefined" afterPath="$PROJECT_DIR$/resources/devsinfo/undefined" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/example/bootstrap.json" afterPath="$PROJECT_DIR$/sass/example/bootstrap.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/example/example.css" afterPath="$PROJECT_DIR$/sass/example/example.css" />
     </list>
     <ignored path="program.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,79 +758,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classic/src/view/main/Main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#331#632#0" expanded="false" />
-                <marker date="1476587198000" expanded="true" signature="1566:1667" placeholder="..." />
-                <marker date="1476587198000" expanded="true" signature="1681:1693" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/main/MainController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.925926">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xmlRW.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/xmlRW.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TopToolbar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classic/src/view/main/TopToolbar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="170" column="83" selection-start-line="170" selection-start-column="83" selection-end-line="170" selection-end-column="83" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TopToolbarController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39053255">
-              <caret line="169" column="73" selection-start-line="169" selection-start-column="73" selection-end-line="169" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EditFile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classic/src/view/main/EditFile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.2777777">
-              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            <state vertical-scroll-proportion="-6.388889">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding>
-                <marker date="1477997690000" expanded="true" signature="2134:2155" placeholder="..." />
-                <marker date="1477997690000" expanded="true" signature="2156:2312" placeholder="..." />
+                <element signature="e#584#1506#0" expanded="false" />
+                <element signature="e#3231#4333#0" expanded="false" />
+                <marker date="1478060102000" expanded="true" signature="3388:3409" placeholder="..." />
+                <marker date="1478060102000" expanded="true" signature="3410:3566" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditFileController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/window/EditFileController.js">
+      <file leaf-file-name="DevTreeController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/tree/DevTreeController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <caret line="781" column="0" selection-start-line="781" selection-start-column="0" selection-end-line="781" selection-end-column="0" />
+              <folding>
+                <element signature="e#38093#47216#0" expanded="false" />
+                <marker date="1478060207000" expanded="true" signature="4971:4981" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopToolbarController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="106" column="21" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopToolbar.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/classic/src/view/main/TopToolbar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33447686">
+              <caret line="170" column="83" selection-start-line="170" selection-start-column="83" selection-end-line="170" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -143,7 +814,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/view/tab/BasicTabs.js" />
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/app/view/window/RenameWindowModel.js" />
         <option value="$PROJECT_DIR$/app/view/window/RenameWindow.js" />
@@ -182,7 +852,6 @@
         <option value="$PROJECT_DIR$/git.sh" />
         <option value="$PROJECT_DIR$/classic/src/view/main/DrawWeeksWindow.js" />
         <option value="$PROJECT_DIR$/classic/src/view/main/Main.js" />
-        <option value="$PROJECT_DIR$/app/view/tree/DevTreeController.js" />
         <option value="$PROJECT_DIR$/app/view/grid/TypeGridController.js" />
         <option value="$PROJECT_DIR$/app/view/tab/DrawPanelController.js" />
         <option value="$PROJECT_DIR$/app/view/tab/DrawPanel.js" />
@@ -190,10 +859,12 @@
         <option value="$PROJECT_DIR$/classic/src/view/main/RenameWindow.js" />
         <option value="$PROJECT_DIR$/app/view/window/RenameWindowController.js" />
         <option value="$PROJECT_DIR$/app/view/window/EditFileController.js" />
-        <option value="$PROJECT_DIR$/classic/src/view/main/EditFile.js" />
         <option value="$PROJECT_DIR$/app/view/main/MainController.js" />
-        <option value="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" />
+        <option value="$PROJECT_DIR$/resources/devsinfo/ch3" />
         <option value="$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js" />
+        <option value="$PROJECT_DIR$/classic/src/view/main/EditFile.js" />
+        <option value="$PROJECT_DIR$/app/view/tree/DevTreeController.js" />
+        <option value="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" />
       </list>
     </option>
   </component>
@@ -204,7 +875,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1919" />
+    <option name="x" value="-1920" />
     <option name="y" value="26" />
     <option name="width" value="1920" />
     <option name="height" value="963" />
@@ -234,8 +905,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,38 +920,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devsinfo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,38 +973,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="production" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -389,9 +994,103 @@
               <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="window" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="toolbar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -473,17 +1172,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1919" y="26" width="1920" height="963" extended-state="0" />
+    <frame x="-1920" y="26" width="1920" height="963" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2257721" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22790202" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30011454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30011454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -506,13 +1205,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/view/window/AlarmWindowModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/window/DrawWeeksWindowModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -675,13 +1367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classic/src/view/main/DrawWeeksWindow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.333333">
-          <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/devxml/i830.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.875">
@@ -734,13 +1419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/tree/DevTreeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="215" column="33" selection-start-line="215" selection-start-column="33" selection-end-line="215" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/tab/BasicController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.025728988">
@@ -786,18 +1464,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classic/src/view/main/DevTree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53846157">
-          <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.107334524">
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,30 +1479,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classic/src/view/main/RenameWindow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.516295">
-          <caret line="785" column="0" selection-start-line="725" selection-start-column="11" selection-end-line="785" selection-end-column="0" />
-          <folding>
-            <element signature="e#3047#3624#0" expanded="false" />
-            <element signature="e#24879#27325#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/window/RenameWindowController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12864494">
           <caret line="91" column="63" selection-start-line="91" selection-start-column="63" selection-end-line="91" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/window/EditFileController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,7 +1490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,20 +1506,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classic/src/view/main/EditFile.js">
+    <entry file="file://$PROJECT_DIR$/resources/devsinfo/ch3">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.2777777">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding>
-            <marker date="1477997690000" expanded="true" signature="2134:2155" placeholder="..." />
-            <marker date="1477997690000" expanded="true" signature="2156:2312" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="67263" selection-start-line="0" selection-start-column="67263" selection-end-line="0" selection-end-column="67263" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/main/MainController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.925926">
+        <state vertical-scroll-proportion="0.025728988">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
@@ -884,18 +1530,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classic/src/view/main/TopToolbar.js">
+    <entry file="file://$PROJECT_DIR$/app/view/window/EditFileController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3567753">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classic/src/view/main/DrawWeeksWindow.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="170" column="83" selection-start-line="170" selection-start-column="83" selection-end-line="170" selection-end-column="83" />
+          <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classic/src/view/main/DevTree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5385935">
+          <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classic/src/view/main/RenameWindow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33790737">
+          <caret line="815" column="0" selection-start-line="815" selection-start-column="0" selection-end-line="815" selection-end-column="0" />
+          <folding>
+            <element signature="e#3047#3624#0" expanded="false" />
+            <element signature="e#24879#27325#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classic/src/view/main/EditFile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.388889">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <element signature="e#584#1506#0" expanded="false" />
+            <element signature="e#3231#4333#0" expanded="false" />
+            <marker date="1478060102000" expanded="true" signature="3388:3409" placeholder="..." />
+            <marker date="1478060102000" expanded="true" signature="3410:3566" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/tree/DevTreeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="781" column="0" selection-start-line="781" selection-start-column="0" selection-end-line="781" selection-end-column="0" />
+          <folding>
+            <element signature="e#38093#47216#0" expanded="false" />
+            <marker date="1478060207000" expanded="true" signature="4971:4981" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39053255">
-          <caret line="169" column="73" selection-start-line="169" selection-start-column="73" selection-end-line="169" selection-end-column="73" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="21" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classic/src/view/main/TopToolbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33447686">
+          <caret line="170" column="83" selection-start-line="170" selection-start-column="83" selection-end-line="170" selection-end-column="83" />
           <folding />
         </state>
       </provider>

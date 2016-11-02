@@ -157,23 +157,21 @@ Ext.define('program.view.main.toolbar.TopToolbarController', {
                 Ext.Ajax.request({
                     url: "resources/xmlRW.php",
                     async: false,
-                    method:"POST",
+                    method: "POST",
                     params: {
-                        fileName:"devsinfo/" + win.combo.value,
+                        fileName: "devsinfo/" + win.combo.value,
                         content: win.textArea.value,
                         rw: "w"
                     },
                     success: function (response) {
-                        if(win.textArea.value.length==response.responseText){
-                            delayToast("Maasage","save success ."+response.responseText);
-                        }else{
-                            Ext.Msg.alert("Error",response.responseText);
+                        if (win.textArea.value.length == response.responseText) {
+                            delayToast("Maasage", "save success ." + response.responseText);
+                        } else {
+                            Ext.Msg.alert("Error", response.responseText);
                         }
                         console.log(arguments)
                     }
                 })
-
-
             },
             combo: Ext.create("Ext.form.field.ComboBox", {
                 fieldLabel: "Select File",
