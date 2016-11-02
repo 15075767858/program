@@ -720,12 +720,11 @@ Ext.define("program.view.window.RenameWindow", {
                             return
                         }
                         if (v) {
+                            me.deviceName = v;
                             me.saveXml(v)
                         } else {
                             Ext.Msg.alert("Exception", "filename exception .")
                         }
-
-
                     }
                 })
 
@@ -821,8 +820,7 @@ Ext.define("program.view.window.RenameWindow", {
 
             }
         }
-        }
-        ,
+        },
         "->",
         {
             text: "Ok", handler: function () {
@@ -832,9 +830,7 @@ Ext.define("program.view.window.RenameWindow", {
             Ext.MessageBox.prompt("Save", "please input device name", function (ms, v) {
                 if (ms == 'ok') {
                     if (isNaN(v) || v.length != 4) {
-
                         Ext.Msg.alert("Key Exception", "The key ,Does not meet the requirements")
-
                         return;
                     }
                     if (v) {

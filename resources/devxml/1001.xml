@@ -119,7 +119,7 @@
   <Object_Name>ANALOG OUTPUT1</Object_Name>
   <Offset>1.000</Offset>
   <Description>ANALOG OUTPUT1</Description>
-  <Device_Type>0-10=0-100</Device_Type>
+  <Device_Type>hide</Device_Type>
   <COV_Increment>0.500</COV_Increment>
   <High_Limit>100</High_Limit>
   <Low_Limit>0.000</Low_Limit>
@@ -134,7 +134,7 @@
   <Object_Name>ANALOG OUTPUT2</Object_Name>
   <Offset>1.000</Offset>
   <Description>ANALOG OUTPUT2</Description>
-  <Device_Type>0-10=0-100</Device_Type>
+  <Device_Type>hide</Device_Type>
   <COV_Increment>0.500</COV_Increment>
   <High_Limit>100</High_Limit>
   <Low_Limit>0.000</Low_Limit>
