@@ -135,7 +135,7 @@ Ext.define("program.view.window.RenameWindow", {
         }
 
         for (var i = 0; i < fields.length; i++) {
-            //console.log(fields[i])
+            console.log(fields[i])
             var fieldName = fields[i];
             var textfield = null;
             if (fieldName == "Inactive_Text") {
@@ -162,7 +162,8 @@ Ext.define("program.view.window.RenameWindow", {
                         {"name": "0-10=0-100"},
                         {"name": "NTC10K"},
                         {"name": "NTC20K"},
-                        {"name": "BI"}
+                        {"name": "BI"},
+                        {"name": "hide"}
                     ]
                 })
 
@@ -173,7 +174,7 @@ Ext.define("program.view.window.RenameWindow", {
 
                     store: combostore,
                     validator: function (val) {
-                        if (val == "NTC10K" || val == "NTC20K" || val == "BI") {
+                        if (val == "NTC10K" || val == "NTC20K" || val == "BI" || val == "hide") {
                             return true
                         }
                         var arr = val.split("=");
@@ -194,7 +195,8 @@ Ext.define("program.view.window.RenameWindow", {
                     valueField: 'name'
                 }
 
-            } else if (fieldName == 'Alarm') {
+            } else if (fieldName == 'Alarm_Value') {
+                console.log("Alarm_Value")
                 textfield = {
                     fieldLabel: fieldName,
                     name: fieldName,

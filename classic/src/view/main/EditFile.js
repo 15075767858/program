@@ -5,13 +5,15 @@ Ext.define('program.view.window.EditFile', {
         'program.view.window.EditFileController',
         'program.view.window.EditFileModel'
     ],
-    width: 800,
-    frame: true,
-    autoShow: true,
     controller: 'window-editfile',
     viewModel: {
         type: 'window-editfile'
     },
+    
+    width: 800,
+    frame: true,
+    autoShow: true,
+    
     layout: "auto",
     defaults: {
         margin: 10
@@ -24,34 +26,6 @@ Ext.define('program.view.window.EditFile', {
     okHandler: null,
     fileName:null,//button按钮上传的文件名
 
-   /* textArea: function () {
-        return Ext.create("Ext.form.field.TextArea", {
-            width: "100%",
-            border: false,
-            height: 500
-        })
-
-    },
-    fileButton: function () {
-       return  Ext.create("Ext.form.field.FileButton", {
-            xtype: "filebutton",
-            text: "Select File",
-            listeners: {
-                change: function (menu, target, eOpts) {
-                    var win = menu.up("window")
-                    var files = target.target.files;
-                    if (files.length) {
-                        var file = files[0];
-                        var reader = new FileReader();
-                        reader.onload = function () {
-                            win.textArea.setValue(this.result);
-                        };
-                        reader.readAsText(file);
-                    }
-                }
-            }
-        })
-    },*/
     //combo: null,
 
     initComponent: function () {

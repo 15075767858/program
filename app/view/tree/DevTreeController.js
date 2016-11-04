@@ -2063,9 +2063,16 @@ function getDevNamesAll() {
             // url: url,
         },
         success: function (response) {
+            console.log(response)
+            //var text = response.responseText;
+            //aNames = eval(text);
+            try{
+                aNames = Ext.decode(response.responseText);
+            }catch (e){
+                Ext.Msg.alert("Error",response.responseText);
+                throw new Error(e);
+            }
 
-            var text = response.responseText;
-            aNames = eval(text);
         }
     });
     return aNames;

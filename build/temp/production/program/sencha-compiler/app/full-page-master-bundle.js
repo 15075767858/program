@@ -1,2 +1,2 @@
 // @tag full-page
-// @require /Applications/MAMP/htdocs/program/app.js
+// @require /Applications/XAMPP/xamppfiles/htdocs/program/app.js
