@@ -47,9 +47,44 @@ Ext.define('program.view.window.RenameWindowController', {
                     }
                 ]
             }
+
             items.push(fieldcontainer);
         }
 
+        /*items.push(
+            {
+                xtype: "fieldcontainer",
+                layout: "hbox",
+                defaults: {
+                    margin: "0 10",
+
+                },
+                items: [
+                    {
+                        fieldStyle: {
+                            textAlign: "center"
+                        },
+                        margin: "0 10 0 35",
+                        xtype: "textfield",
+                        fieldLabel: "device instance",
+                        flex: 2,
+                        columnWidth: 10,
+                    }, {
+                        xtype: "button",
+                        text: "replace",
+                        flex: 1
+                        //width:80,
+                        //handler: addType.bind(me)
+                    }, {
+                        fieldStyle: {
+                            textAlign: "center"
+                        },
+                        xtype: "textfield",
+                        flex: 1
+                        //marigin:"0 35 0 0"
+                    }]
+            }
+        )*/
 
         var panel = Ext.create("Ext.form.Panel", {
             title: "devices",
@@ -89,7 +124,7 @@ Ext.define('program.view.window.RenameWindowController', {
             var keyField = Ext.create("Ext.form.field.Text", {
                 margin: 10,
                 fieldLabel: "Key",
-                value: (me.devName||"9901")+button.devType+"01"
+                value: (me.devName || "9901") + button.devType + "01"
             })
 
             var win = Ext.create('Ext.window.Window', {
@@ -107,12 +142,12 @@ Ext.define('program.view.window.RenameWindowController', {
                         margin: 10,
                         xtype: "combobox",
                         allowBlank: false,
-                        fieldLabel: 'Net Number',
+                        fieldLabel: 'device instance',
                         store: netNumbers,
                         editable: false,
                         queryMode: 'local',
                         autoSelect: false,
-                        value: me.devName||"9901",
+                        value: me.devName || "9901",
                         listeners: {
                             change: function (field, newValue, oldValue) {
                                 var value = Ext.String.leftPad(newValue, 4, "0");
@@ -129,12 +164,12 @@ Ext.define('program.view.window.RenameWindowController', {
                         margin: 10,
                         xtype: "combobox",
                         allowBlank: false,
-                        fieldLabel: 'Model Address',
+                        fieldLabel: 'instance',
                         store: modelAddress,
                         editable: false,
                         queryMode: 'local',
                         autoSelect: false,
-                        value:"01",
+                        value: "01",
                         listeners: {
                             change: function (field, newValue, oldValue) {
                                 var value = Ext.String.leftPad(newValue, 2, "0");
@@ -166,7 +201,7 @@ Ext.define('program.view.window.RenameWindowController', {
                                 combo.setValue(combo.store.getAt(button.devType));
                             },
                             change: function (field, newValue, oldValue) {
-                                var value=newValue;
+                                var value = newValue;
                                 var values = keyField.getValue().split("");
                                 values[4] = value
                                 keyField.setValue(values.join(''))
@@ -203,28 +238,28 @@ Ext.define('program.view.window.RenameWindowController', {
                         var text = keyField.getValue();
 
                         /*if (text == null) {
-                            Ext.Msg.alert('Info', 'Plase select file name.');
-                            return;
-                        }*/
+                         Ext.Msg.alert('Info', 'Plase select file name.');
+                         return;
+                         }*/
 
                         //win.close();
 
-                        if(isNaN(text)||text.length!=7){
-                            Ext.Msg.alert("Key Exception","The key ,Does not meet the requirements")
+                        if (isNaN(text) || text.length != 7) {
+                            Ext.Msg.alert("Key Exception", "The key ,Does not meet the requirements")
                             return
                         }
 
-                        if(me.query('[key='+text+']').length){
-                            Ext.Msg.alert("Key Exception","has been "+text)
+                        if (me.query('[key=' + text + ']').length) {
+                            Ext.Msg.alert("Key Exception", "has been " + text)
                             return
                         }
 
-                        Ext.MessageBox.prompt("Input","New Name",function(ms,v){
-                            if(ms!='ok'){
-                                return ;
+                        Ext.MessageBox.prompt("Input", "New Name", function (ms, v) {
+                            if (ms != 'ok') {
+                                return;
                             }
-                            me.insrtDevForm(text,v);
-                            Ext.Msg.alert("Massage","Ok.")
+                            me.insrtDevForm(text, v);
+                            Ext.Msg.alert("Massage", "Ok.")
                         })
 
                         //panel.getForm().setValues(me.getFormValues());
