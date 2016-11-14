@@ -11,7 +11,7 @@ Ext.define('program.view.window.RenameWindowController', {
          me.insert(0, chart)
          chart.expand()
          */
-
+        console.log(me)
         var types = ['AI', 'AO', 'AV', 'BI', 'BO', 'BV', 'SCHEDULE'];
 
         var items = [];
@@ -51,13 +51,12 @@ Ext.define('program.view.window.RenameWindowController', {
             items.push(fieldcontainer);
         }
 
-        /*items.push(
+        items.push(
             {
                 xtype: "fieldcontainer",
                 layout: "hbox",
                 defaults: {
                     margin: "0 10",
-
                 },
                 items: [
                     {
@@ -67,24 +66,49 @@ Ext.define('program.view.window.RenameWindowController', {
                         margin: "0 10 0 35",
                         xtype: "textfield",
                         fieldLabel: "device instance",
+                        editable:false,
                         flex: 2,
-                        columnWidth: 10,
+                        value: me.devName,
+                        itemId: "deviceInstance",
+                        columnWidth: 10
                     }, {
                         xtype: "button",
                         text: "replace",
-                        flex: 1
-                        //width:80,
-                        //handler: addType.bind(me)
+                        flex: 1,
+                        handler: function (button) {
+                            var container = button.up();
+                            var oldDevice = container.getComponent("deviceInstance");
+                            var newDevice = container.getComponent("replaceDevice");
+                            oldDevice.setValue(newDevice.getValue())
+                            me.devName=newDevice.getValue();
+                            console.log(me)
+                            me.deviceName=oldDevice.getValue();
+                            me.iterationItems(function(item,i){
+                                console.log(item,i)
+                            })
+                            delayToast("Massage","Replace success");
+                        }
                     }, {
                         fieldStyle: {
                             textAlign: "center"
                         },
+                        validator:function(val){
+                            if(isNaN(val)){
+                                return "please input number .";
+                            }
+                            if(val.length!=4||val<0||val>9999){
+                                return "wrong format ."
+                            }
+                            return true
+                        },
+                        itemId: "replaceDevice",
                         xtype: "textfield",
                         flex: 1
                         //marigin:"0 35 0 0"
-                    }]
+                    }
+                ]
             }
-        )*/
+        )
 
         var panel = Ext.create("Ext.form.Panel", {
             title: "devices",

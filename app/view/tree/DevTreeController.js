@@ -776,8 +776,8 @@ Ext.define('program.view.tree.DevTreeController', {
 
                                     Ext.MessageBox.prompt("Save", "please input file name", function (ms, v) {
                                         if (ms == 'ok') {
-                                            if(!v){
-                                                Ext.Msg.alert("Error",'file')
+                                            if (!v) {
+                                                Ext.Msg.alert("Error", 'file')
                                             }
 
                                             Ext.Ajax.request({
@@ -801,7 +801,6 @@ Ext.define('program.view.tree.DevTreeController', {
                                         }
 
                                     }, this, "", win.fileName)
-
 
 
                                 }
@@ -1903,6 +1902,26 @@ function getNullSchedule(text) {
     });
     return devName;
 }
+
+function myGetValue(nodename, type) {
+    var value = "";
+    Ext.Ajax.request({
+        url: "resources/test1.php",
+        method: "GET",
+        async: false,
+        params: {
+            par: "getvalue",
+            nodename: nodename,
+            type: type
+        },
+        success: function (response) {
+            var text = response.responseText;
+            value = text;
+        }
+    });
+    return value;
+}
+
 function changeDevValue(nodename, type, value) {
     Ext.Ajax.request({
         url: "resources/test1.php",
@@ -2066,10 +2085,10 @@ function getDevNamesAll() {
             console.log(response)
             //var text = response.responseText;
             //aNames = eval(text);
-            try{
+            try {
                 aNames = Ext.decode(response.responseText);
-            }catch (e){
-                Ext.Msg.alert("Error",response.responseText);
+            } catch (e) {
+                Ext.Msg.alert("Error", response.responseText);
                 throw new Error(e);
             }
 

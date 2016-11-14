@@ -412,6 +412,149 @@ Ext.define('program.view.grid.menu.gridmenuController', {
         var gridPanel = this.view.up();
         var datas = gridPanel.datas
         console.log(datas)
+
+        var types = ['AI', 'AO', 'AV', 'BI', 'BO', 'BV', 'SCHEDULE'];
+
+        var netNumbers = []
+        for (var i = 0; i <= 9900; i += 100) {
+            netNumbers.push(i)
+        }
+        var modelAddress = [];
+        for (var i = 0; i <= 99; i++) {
+            modelAddress.push(i);
+        }
+        var pointType = [];
+        for (var i = 0; i < types.length; i++) {
+            pointType.push({
+                name: types[i],
+                value: i
+            })
+        }
+
+        var attributeItems = [];
+
+        attributeItems.push(
+            {fieldLabel: "point index", name: "index", value: gridPanel.index}
+        )
+
+        var keyField = Ext.create("Ext.form.field.Text", {
+            margin: 10,
+            hidden:true,
+            fieldLabel: "Key",
+            name: "key",
+            value: datas.value,
+            listeners:{
+                change:function(field,newValue,oldValue){
+                    console.log(arguments)
+                    var name = myGetValue(newValue,"Object_Name")
+                    field.up().getComponent("title").setValue(name)
+                }
+            }
+        })
+
+        if (gridPanel.datas.type > 10) {
+            attributeItems.push(
+                {
+                    fieldLabel: "title",
+                    name: "title",
+                    value: datas.title
+                }
+            )
+        } else {
+
+            /*attributeItems.push({
+             xtype: "combobox",
+             allowBlank: false,
+             fieldLabel: 'device instance',
+             store: modelAddress,
+             editable: false,
+             queryMode: 'local',
+             autoSelect: false,
+             value: "01",
+             listeners: {
+             change: function (field, newValue, oldValue) {
+             var value = Ext.String.leftPad(newValue, 2, "0");
+             var values = keyField.getValue().split("");
+             values[2] = value[0]
+             values[3] = value[1]
+             keyField.setValue(values.join(''))
+             }
+             }
+             })*/
+            attributeItems.push({
+                xtype: "textfield",
+                editable: false,
+                value: datas.value.substr(0, 4),
+                fieldLabel: "device instance"
+            })
+            attributeItems.push({
+                xtype: "combobox",
+                allowBlank: false,
+                fieldLabel: 'Point Type',
+                store: Ext.create("Ext.data.Store", {
+                    fields: ['name', "value"],
+                    data: pointType
+                }),
+                valueField: "value",
+                displayField: "name",
+                editable: false,
+                queryMode: 'local',
+
+                autoSelect: false,
+                listeners: {
+                    afterrender: function (combo) {
+                        console.log(arguments)
+                        combo.setValue(combo.store.getAt(datas.value.substr(4, 1)));
+                    },
+                    change: function (field, newValue, oldValue) {
+                        var value = newValue;
+                        var values = keyField.getValue().split("");
+                        values[4] = value
+                        console.log(keyField)
+                        keyField.setValue(values.join(''))
+                    }
+                }
+            })
+
+            attributeItems.push({
+                    xtype: "combobox",
+                    allowBlank: false,
+                    fieldLabel: 'Point Number',
+                    store: modelAddress,
+                    editable: false,
+                    queryMode: 'local',
+                    autoSelect: false,
+                    value: "01",
+                    listeners: {
+                        change: function (field, newValue, oldValue) {
+                            var value = Ext.String.leftPad(newValue, 2, "0");
+                            var values = keyField.getValue().split("");
+                            values[5] = value[0];
+                            values[6] = value[1];
+                            keyField.setValue(values.join(''));
+                        }
+                    }
+                }
+            )
+
+            attributeItems.push({
+                xtype: "textfield",
+                name: "title",
+                itemId:"title",
+                value: gridPanel.title,//myGetValue(datas.value,"Object_Name"),
+                fieldLabel: "name"
+            })
+        }
+
+
+        attributeItems.push(keyField)
+        /*attributeItems.push({
+         fieldLabel: "key", name: "key",
+         value: datas.value,
+         hidden: !datas.value,
+         disabled: !datas.value
+         })*/
+
         var win = Ext.create("Ext.window.Window", {
             title: "change attribute",
             autoShow: true,
@@ -419,7 +562,11 @@ Ext.define('program.view.grid.menu.gridmenuController', {
                 xtype: "form",
                 defaultType: "textfield",
                 bodyPadding: 10,
-                items: [
+                defaults: {
+                    margin: 10
+                },
+                items: attributeItems || [
+                    {fieldLabel: "point index", name: "index", value: gridPanel.index},
                     {
                         fieldLabel: "key", name: "key",
                         value: datas.value,
@@ -433,7 +580,6 @@ Ext.define('program.view.grid.menu.gridmenuController', {
                         hidden: !datas.title,
                         disabled: !datas.title
                     },
-                    {fieldLabel: "point index", name: "index", value: gridPanel.index}
                     //{fieldLabel: "lines", name: "lines"}
                 ]
             },
@@ -443,6 +589,15 @@ Ext.define('program.view.grid.menu.gridmenuController', {
 
                     var form = win.down("form");
                     var values = form.getValues();
+                    if (gridPanel.datas.type < 10) {
+                        gridPanel.datas.value=values.key;
+                        changeDevValue(values.key,"Object_Name",values.title);
+
+                    }
+                    console.log(values)
+                    console.log(gridPanel)
+                    //changeDevValue
+
                     MyGridPanel.setIndex(gridPanel, values.index);
                     MyGridPanel.setTitle(gridPanel, values.title);
                     win.close();

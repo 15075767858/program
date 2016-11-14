@@ -563,9 +563,15 @@ Ext.define("program.view.window.RenameWindow", {
         } else if (me.sDevName) {
             me.databaseSources();
         }
-
         me.callParent()
-
+    },
+    iterationItems: function (callback) {
+        var me = this;
+        var items = me.items.items;
+        for (var i = 1; i < items.length; i++) {
+            callback(items[i], i)
+        }
+        return me;
     },
     getXmlStr: function () {
         var me = this;
@@ -828,7 +834,7 @@ Ext.define("program.view.window.RenameWindow", {
             text: "Ok", handler: function () {
             var me = this.up("window");
             console.log(me.sDevName)
-
+            console.log(me.deviceName)
             Ext.MessageBox.prompt("Save", "please input device name", function (ms, v) {
                 if (ms == 'ok') {
                     if (isNaN(v) || v.length != 4) {
@@ -838,12 +844,11 @@ Ext.define("program.view.window.RenameWindow", {
                     if (v) {
                         me.deviceName = v;
                         me.saveXml(me.sDevName)
-
                     } else {
                         Ext.Msg.alert("Exception", "filename exception .")
                     }
                 }
-            }, this, "", me.sDevName)
+            }, this, "", me.deviceName||me.sDevName)
 
             return;
         }
