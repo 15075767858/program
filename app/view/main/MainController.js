@@ -97,6 +97,7 @@ function delayToast(title, html, delay) {
     setTimeout(function () {
         Ext.toast({
             minWidth: 200,
+            minHeight:200,
             title: title,
             html: html,
             align: 'br'

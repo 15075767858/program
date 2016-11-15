@@ -5,7 +5,8 @@ cp -R devsinfo/ resources/devsinfo
 cp -R devxml/ resources/devxml
 
 chmod -R 777 *
-/Users/liuzhencai/bin/Sencha/Cmd/6.1.3.42/sencha app build
+rm -rf build
+sencha app build
 chmod -R 777 *
 cd build/production
 rm -rf modern
