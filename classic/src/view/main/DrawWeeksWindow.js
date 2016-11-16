@@ -14,7 +14,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
 
     height: 768,
     width: 1024,
-    constrainHeader: true,//禁止移出父窗口
+    //constrainHeader: true,//禁止移出父窗口
     autoShow: true,
     layout: 'card',
     resizable: false,
@@ -23,7 +23,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
         hideGroupedHeader: true,
         startCollapsed: true
     }),
-    buttons: [
+    tbar: [
         {
             text: "next",
             id: "drawWindow_next",
