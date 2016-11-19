@@ -649,7 +649,7 @@ $include-ext-tip-tooltip: dynamic(false);;
 $include-ext-util-abstractmixedcollection: dynamic(true);;
 $include-ext-util-audio: dynamic(false);;
 $include-ext-util-bag: dynamic(true);;
-$include-ext-util-base64: dynamic(false);;
+$include-ext-util-base64: dynamic(true);;
 $include-ext-util-bufferedcollection: dynamic(false);;
 $include-ext-util-csv: dynamic(false);;
 $include-ext-util-collection: dynamic(true);;

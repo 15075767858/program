@@ -106,8 +106,8 @@ Ext.define('program.view.tree.DevTreeController', {
                                     },
                                     success: function (response) {
                                         //var lastTime = new Date(response.responseText-0).toLocaleString()+""
-                                        delayToast("Massage",response.responseText,10);
-                                        
+                                        delayToast("Massage", response.responseText, 10);
+
                                     }
                                 })
                             }
@@ -2121,7 +2121,14 @@ function getNodesAll(url) {
         success: function (response) {
             var text = response.responseText;
             var ojson = Ext.decode(text);
+
+            /*for (var i = 0; i < ojson.length; i++) {
+                var text = ojson[i].text;
+                ojson[i].text = Ext.util.Base64.decode(text);
+            }*/
             aNames = ojson
+
+            console.log(ojson);
         }
     });
     return aNames;
