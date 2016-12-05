@@ -12,7 +12,61 @@ Ext.define("program.view.tree.DevTree", {
     viewModel: {
         type: 'devtreemodel'
     },
-    title: "Device",
+    header: {
+        title: "Device",
+        items: [
+            {
+                xtype: "image", src: "", width: 20, height: 20, listeners: {
+                el: {
+                    mouseover: function (e, target) {
+                        console.log(this)
+                        Ext.tip.QuickTipManager.register({
+                            target: target.id, // Target button's ID
+                            title: 'Info',  // QuickTip Header
+                            text: this.component.info // Tip content
+                        });
+                    }
+                },
+                boxready: function () {
+                    var img = this;
+                    var acceptBulb = "resources/img/light_bulb_accept_24px.png";
+                    var deleteBulb = "resources/img/light_bulb_delete_24px.png";
+                    var helpBulb = "resources/img/light_bulb_help_24px.png";
+
+                    engLogin()
+                    setInterval(function () {
+                        engLogin()
+                    }, 300000)
+                    function engLogin() {
+                        img.setSrc(helpBulb)
+                        Ext.Ajax.request({
+                            url: "resources/test1.php?par=englogin",
+                            success: function (response) {
+                                try {
+                                    var resJson = Ext.decode(response.responseText);
+                                    if (resJson.success) {
+                                        img.setSrc(acceptBulb)
+                                        img.info = resJson.info;
+
+                                    } else {
+                                        img.setSrc(helpBulb)
+                                        img.info = resJson.info
+                                    }
+                                } catch (e) {
+                                    console.log(e)
+                                    img.setSrc(deleteBulb)
+                                    img.info = response
+                                }
+
+                            }
+                        })
+                    }
+
+                }
+            }
+            }
+        ]
+    },
     //titleAlign:"center",//标题居中
     titleCollapse: true,
     autoScroll: true,
@@ -40,35 +94,36 @@ Ext.define("program.view.tree.DevTree", {
         checkchange: function (treeModel, check) {
             console.log(arguments)
             var me = this;
-            var treePanle=this;
+            var treePanle = this;
             if (check) {
                 treeModel.set("qtip", "On line")
             } else {
                 treeModel.set("qtip", "Off line")
             }
-            treePanle.viewModel.set("linkDataBase",check);
+            treePanle.viewModel.set("linkDataBase", check);
 
         }
     },
-    tbar: [{
-        text: 'Expand All',
-        scope: this,
-        handler: function (th) {
-            th.up("devtree").down("toolbar").disable();
-            th.up("devtree").expandAll(function () {
-                th.up("devtree").down("toolbar").enable()
-            });
-        }
-    }, {
-        text: 'Collapse All',
-        scope: this,
-        handler: function (th) {
-            th.up("devtree").down("toolbar").disable();
-            th.up("devtree").collapseAll(function () {
-                th.up("devtree").down("toolbar").enable()
-            });
-        }
-    }],
+    tbar: [
+        {
+            text: 'Expand All',
+            scope: this,
+            handler: function (th) {
+                th.up("devtree").down("toolbar").disable();
+                th.up("devtree").expandAll(function () {
+                    th.up("devtree").down("toolbar").enable()
+                });
+            }
+        }, {
+            text: 'Collapse All',
+            scope: this,
+            handler: function (th) {
+                th.up("devtree").down("toolbar").disable();
+                th.up("devtree").collapseAll(function () {
+                    th.up("devtree").down("toolbar").enable()
+                });
+            }
+        }],
 
     initComponent: function () {
         var me = this;
@@ -80,16 +135,17 @@ Ext.define("program.view.tree.DevTree", {
             },
         }
 
-        me.tools = [{
-            type: 'refresh',
-            tooltip: 'Refresh Dev Data',
-            // hidden:true,
-            handler: function (event, toolEl, panelHeader) {
-                devTreeStoreLoad()
+        me.tools = [
+            {
+                type: 'refresh',
+                tooltip: 'Refresh Dev Data',
+                // hidden:true,
+                handler: function (event, toolEl, panelHeader) {
+                    devTreeStoreLoad()
 
-                me.expandAll()
-            }
-        }]
+                    me.expandAll()
+                }
+            }]
         this.callParent();
     }
 });

@@ -7,7 +7,6 @@ Ext.application({
     name: 'program',
 
     extend: 'program.Application',
-
     requires: [
         'program.view.main.Main'
     ],

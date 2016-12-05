@@ -152,6 +152,62 @@ Ext.define('program.view.main.toolbar.TopToolbarController', {
         var win = Ext.create("program.view.window.EditFile", {
             showCombo: true,
             showFileButton: false,
+            typeCombo: Ext.create("Ext.form.field.ComboBox", {
+                fieldLabel: "Fields",
+                store: Ext.create("Ext.data.Store", {
+                    field: ["name", "value"],
+                    data: [{name: "key", value: "value"},
+                        {name: "title", value: "title"}
+                    ]
+                }),
+                displayField: 'name',
+                valueField: 'value',
+                listeners: {
+                    beforedestroy: function () {
+                        return false;
+                    }
+                }
+            }),
+            replaceOkHandler: function (oldValue, newValue) {
+                var me = win;
+                console.log(me.typeCombo.value)
+                var typeName = me.typeCombo.value;
+
+                //try {
+                var resArr = Ext.decode(Ext.decode(me.textArea.value).gridpanelConfigs)
+                var count = 0;
+                for (var i = 0; i < resArr.length; i++) {
+                    var datas = resArr[i].datas;
+                    if (datas[typeName]) {
+                        datas[typeName] = datas[typeName].replace(oldValue, newValue);
+                        count++;
+                    }
+
+                    console.log(datas)
+                }
+
+                Ext.Msg.show({
+                    title: 'Save Changes?',
+                    message: 'Are you want replace <code style="color: red;">' + typeName + '</code> The old value is <code style="color: red;">' + oldValue + '</code> new value is <code style="color: red;">' + newValue + '</code>, You are closing a tab that has unsaved changes. Would you like to save your changes?',
+                    buttons: Ext.Msg.YESNOCANCEL,
+                    icon: Ext.Msg.QUESTION,
+                    fn: function (btn) {
+                        if (btn === 'yes') {
+                            //console.log('Yes pressed');
+                            me.textArea.setValue(Ext.encode(resArr))
+                            Ext.Msg.alert("Massage", "Modified " + count + " places .")
+                            //console.log(Ext.encode(resArr))
+
+                        }
+                    }
+                });
+
+                /*} catch (e) {
+                 throw new Error(e)
+                 Ext.Msg.alert("Massage", "Data Error"+e)
+                 }*/
+
+            },
             okHandler: function () {
 
                 Ext.Ajax.request({
@@ -165,6 +221,7 @@ Ext.define('program.view.main.toolbar.TopToolbarController', {
                     },
                     success: function (response) {
                         if (win.textArea.value.length == response.responseText) {
+
                             delayToast("Maasage", "save success ." + response.responseText);
                         } else {
                             Ext.Msg.alert("Error", response.responseText);
@@ -172,6 +229,13 @@ Ext.define('program.view.main.toolbar.TopToolbarController', {
                         console.log(arguments)
                     }
                 })
+            },
+            listeners: {
+                boxready: function () {
+                    console.log(this)
+
+
+                }
             },
             combo: Ext.create("Ext.form.field.ComboBox", {
                 fieldLabel: "Select File",
@@ -184,6 +248,7 @@ Ext.define('program.view.main.toolbar.TopToolbarController', {
 
                         myAjax('resources/devsinfo/' + newValue, function (response) {
                             win.textArea.setValue(response.responseText);
+
                             console.log(arguments)
                         })
                     }
@@ -297,121 +362,157 @@ Ext.define('program.view.main.toolbar.TopToolbarController', {
     },
     backupClick: function () {
 
-        /* var fileNames = getDevInfoFileNames()
 
-         var namesJsonArr = [];
-         for (var i = 0; i < fileNames.length; i++) {
-         namesJsonArr.push({name: fileNames[i]})
-         }*/
+        Ext.create("program.view.window.Backup")
 
+        /*   var win = Ext.create("Ext.window.Window", {
+         title: "Backup •••",
+         frame: true,
+         width: 800,
+         height: 600,
 
-        var win = Ext.create("Ext.window.Window", {
-            title: "Backup •••",
-            frame: true,
-            width: 800,
-            height: 600,
+         //bodyPadding: 10,
 
-            //bodyPadding: 10,
+         autoShow: true,
+         layout: "border",
+         items: {
+         xtype: "grid",
+         width: "100%",
+         region: 'center',
+         selModel: {
+         mode: "SIMPLE",
+         selType: 'checkboxmodel'
+         },
+         store: Ext.create("Ext.data.Store", {
+         fields: ["name", "lasttime", "size", "filetype"],
+         proxy: {
+         type: "ajax",
+         url: "resources/test1.php?par=getbackupfiles"
+         },
+         autoLoad: true
+         }),
+         columns: [
+         {
+         text: "File Name", dataIndex: "name", flex: 4,
+         renderer: function (val) {
 
-            autoShow: true,
-            layout: "border",
-            items: {
-                xtype: "grid",
-                width: "100%",
-                region: 'center',
-                selModel: {
-                    mode: "SIMPLE",
-                    selType: 'checkboxmodel'
+         return "<a class='adownload' download=" + val + " target='_black' href=resources/devsinfo/" + val + ">" + val + "<span class='x-col-move-top'></span></a>";
+         }
+         },
+         {text: "Last Post", dataIndex: "lasttime", flex: 2},
+         {text: "File Type", dataIndex: "filetype", flex: 1},
+         {
+         text: "File Size", dataIndex: "size", flex: 1, renderer: function (val) {
+         console.log(arguments)
+         return Ext.util.Format.fileSize(val)
+         }
+         }
+         ],
+         listeners: {
+         boxready: function () {
+         setTimeout(function () {
+         var aTag = document.createElement("a");
+         if (aTag.download == undefined) {
+         $(".adownload").mousedown(function (e) {
+         Ext.Msg.alert('Message', "If you can't download properly , Please right click on the save .<br>如果不能正常下载请点击鼠标右键，选择目标另存为。");
+         //e.preventDefault();
+         //return false;
+         })
+         }
+         }, 1000)
+         },
+
+         select: function () {
+         console.log(arguments)
+         },
+         selectionchange: function () {
+         console.log(arguments)
+         }
+         }
+         }
+         ,
+         buttons: [{
+         text: 'Select Path',
+         handler: function () {
+
+         var grid = this.up("window").down("grid")
+         var records = grid.getSelection();
+         console.log(records);
+         var fileNames = "";
+         if (records.length == 0) {
+         Ext.Msg.alert('Status', 'Select a file please.');
+         return;
+         }
+         Ext.MessageBox.progress('please wait', {msg: 'Server Ready ...'});
+         for (var i = 0; i < records.length; i++) {
+         Ext.MessageBox.updateProgress(i + 1 / records.length + 1, 'The server is preparing for the ' + (i + 1));
+         fileNames += "devsinfo/" + records[i].data.name + " ";
+         }
+
+         console.log(fileNames)
+
+         setTimeout(function () {
+
+         Ext.MessageBox.updateProgress(1 / 1, 'The server is preparing for the ' + (records.length ));
+         setTimeout(function () {
+         myAjax("resources/test1.php", function () {
+         location.href = "resources/pragramBackup.tar.gz";
+         //myAjax("resources/pragramBackup.tar.gz")
+         }, {
+         par: "system",
+         command: "tar czvf pragramBackup.tar.gz " + fileNames
+         })
+         //location.href = "resources/devsinfo/" + records[0].data.name
+         //location.href = "resources/FileUD.php?par=downfile&filenames=" + fileNames.substr(0, fileNames.length - 1);
+         Ext.MessageBox.close();
+         win.close();
+         }, 500)
+         }, 1000)
+
+         }
+         }]
+         })*/
+    },
+    RestorClick: function () {
+        //uploadwindow
+        Ext.create("Ext.window.Window",{
+            autoShow:true,
+            liveDrag:true,
+            layout:"hbox",
+            title:"Restor",
+            width:800,
+            height:600,
+            defaults:{
+                width:390,
+                height:560,
+                flex:1,
+                constrain:true,
+                closable:false,
+                draggable:false,
+                resizable:false
+            },
+            items:[
+                {
+                    xtype:"uploadwindow",
+                    x:0,
+                    y:0,
+                    title: "Dev Info",
+                    folder:"devsinfo"
                 },
-                store: Ext.create("Ext.data.Store", {
-                    fields: ["name", "lasttime", "size", "filetype"],
-                    proxy: {
-                        type: "ajax",
-                        url: "resources/test1.php?par=getbackupfiles"
-                    },
-                    autoLoad: true
-                }),
-                columns: [
-                    {
-                        text: "File Name", dataIndex: "name", flex: 4,
-                        renderer: function (val) {
-
-                            return "<a class='adownload' download=" + val + " target='_black' href=resources/devsinfo/" + val + ">" + val + "<span class='x-col-move-top'></span></a>";
-                        }
-                    },
-                    {text: "Last Post", dataIndex: "lasttime", flex: 2},
-                    {text: "File Type", dataIndex: "filetype", flex: 1},
-                    {
-                        text: "File Size", dataIndex: "size", flex: 1, renderer: function (val) {
-                        console.log(arguments)
-                        return Ext.util.Format.fileSize(val)
-                    }
-                    }
-                ],
-                listeners: {
-                    boxready: function () {
-                        setTimeout(function () {
-                            var aTag = document.createElement("a");
-                            if (aTag.download == undefined) {
-                                $(".adownload").mousedown(function (e) {
-                                    Ext.Msg.alert('Message', "If you can't download properly , Please right click on the save .<br>如果不能正常下载请点击鼠标右键，选择目标另存为。");
-                                    //e.preventDefault();
-                                    //return false;
-                                })
-                            }
-                        }, 1000)
-                    },
-
-                    select: function () {
-                        console.log(arguments)
-                    },
-                    selectionchange: function () {
-                        console.log(arguments)
-                    }
+                {
+                    xtype:"uploadwindow",
+                    x:400,
+                    title: "Dev Instance",
+                    folder:"devxml"
+                }
+            ],
+            listeners:{
+                move:function(){
+                    console.log(arguments)
                 }
             }
-            ,
-            buttons: [{
-                text: 'Select Path',
-                handler: function () {
-
-                    var grid = this.up("window").down("grid")
-                    var records = grid.getSelection();
-                    console.log(records);
-                    var fileNames = "";
-                    if (records.length == 0) {
-                        Ext.Msg.alert('Status', 'Select a file please.');
-                        return;
-                    }
-                    Ext.MessageBox.progress('please wait', {msg: 'Server Ready ...'});
-                    for (var i = 0; i < records.length; i++) {
-                        Ext.MessageBox.updateProgress(i + 1 / records.length + 1, 'The server is preparing for the ' + (i + 1));
-                        fileNames += "devsinfo/" + records[i].data.name + " ";
-                    }
-
-                    console.log(fileNames)
-
-                    setTimeout(function () {
-
-                        Ext.MessageBox.updateProgress(1 / 1, 'The server is preparing for the ' + (records.length ));
-                        setTimeout(function () {
-                            myAjax("resources/test1.php", function () {
-                                location.href = "resources/pragramBackup.tar.gz";
-                                //myAjax("resources/pragramBackup.tar.gz")
-                            }, {
-                                par: "system",
-                                command: "tar czvf pragramBackup.tar.gz " + fileNames
-                            })
-                            //location.href = "resources/devsinfo/" + records[0].data.name
-                            //location.href = "resources/FileUD.php?par=downfile&filenames=" + fileNames.substr(0, fileNames.length - 1);
-                            Ext.MessageBox.close();
-                            win.close();
-                        }, 500)
-                    }, 1000)
-
-                }
-            }]
         })
+
     }
 });
 

@@ -39,22 +39,20 @@ Ext.define("program.view.main.toolbar.TopToolbar", {
                             }
                         }, {
                             text: "Save as •••",
-                            handler:"saveAsClick"
+                            handler: "saveAsClick"
                         }, {
-                            text:"replace •••",
-                            handler:"replaceClick"
-                        },{
+                            text: "replace •••",
+                            handler: "replaceClick"
+                        }, {
                             text: "Download •••",
-                            handler:"downloadClick"
+                            handler: "downloadClick"
                         }, {
                             text: "Upload •••",
-                            handler:"uploadClick"
+                            handler: "uploadClick"
                         }, {
                             text: "Backup •••", handler: "backupClick"
                         }, {
-                            text: "Restor •••", handler: function () {
-                                Ext.create("uploadwindow", {})
-                            }
+                            text: "Restor •••", handler: "RestorClick"
                         }, "-", {
                             text: "Exit", handler: function () {
                                 Ext.Msg.show({
@@ -168,7 +166,7 @@ Ext.define("program.view.main.toolbar.TopToolbar", {
                         }, {
                             text: "About",
                             handler: function () {
-                                Ext.Msg.alert('Version', 'SmartIO Programtools 2.32  ');
+                                Ext.Msg.alert('Version', 'SmartIO Programtools 2.33  ');
                             }
                         }
                     ]
@@ -191,25 +189,25 @@ function saveGridpanelsConfigs(fileName) {
     var gridpanels = getCurrentDrawPanelGirdPanels();
     var aGridPanels = [];
     for (var i = 0; i < gridpanels.length; i++) {
-    /*    var typeGridConfig = getGridPanelConfig(gridpanels[i]);
+        /*    var typeGridConfig = getGridPanelConfig(gridpanels[i]);
 
 
-        var storeConfig = getStoreConfig(gridpanels[i]);
+         var storeConfig = getStoreConfig(gridpanels[i]);
 
-        var datas = gridpanels[i].datas;
+         var datas = gridpanels[i].datas;
 
-        if (gridpanels[i].datas.type == 56) {
-            var columns = Ext.getCmp("win" + gridpanels[i].id).down("grid").getColumns();
-            for (var j = 0; j < columns.length; j++) {
-                if (columns[j].hidden) {
-                    datas.rows = j;
-                    break;
-                }
-                datas.rows = 10;
-            }
-        }
-        aGridPanels.push({typegrid: typeGridConfig, store: storeConfig, datas: datas});
-*/
+         if (gridpanels[i].datas.type == 56) {
+         var columns = Ext.getCmp("win" + gridpanels[i].id).down("grid").getColumns();
+         for (var j = 0; j < columns.length; j++) {
+         if (columns[j].hidden) {
+         datas.rows = j;
+         break;
+         }
+         datas.rows = 10;
+         }
+         }
+         aGridPanels.push({typegrid: typeGridConfig, store: storeConfig, datas: datas});
+         */
         var resJson = getTypeGridDatas(gridpanels[i]);
         aGridPanels.push(resJson);
     }
@@ -251,11 +249,11 @@ function getGridPanelRowsIds(gridpanel) {
 
 function getTypeGridDatas(typegrid) {
     var typeGridConfig = getGridPanelConfig(typegrid);
-    var storeConfig=getStoreConfig(typegrid);
-    var datas=typegrid.datas;
-    typeGridConfig =Ext.decode(Ext.encode(typeGridConfig))
-    storeConfig =Ext.decode(Ext.encode(storeConfig))
-    datas =Ext.decode(Ext.encode(datas))
+    var storeConfig = getStoreConfig(typegrid);
+    var datas = typegrid.datas;
+    typeGridConfig = Ext.decode(Ext.encode(typeGridConfig))
+    storeConfig = Ext.decode(Ext.encode(storeConfig))
+    datas = Ext.decode(Ext.encode(datas))
     if (typegrid.datas.type == 56) {
         var columns = Ext.getCmp("win" + typegrid.id).down("grid").getColumns();
         for (var j = 0; j < columns.length; j++) {

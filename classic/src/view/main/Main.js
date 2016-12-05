@@ -5,24 +5,6 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-/*Ext.define('program.view.main.Main', {
- extend: 'Ext.tab.Panel',
- xtype: 'app-main',
-
- requires: [
- 'Ext.plugin.Viewport',
- 'Ext.window.MessageBox',
-
- 'program.view.main.MainController',
- 'program.view.main.MainModel',
- 'program.view.main.List'
- ],
-
- controller: 'main',
- viewModel: 'main',
-
-
- });*/
 Ext.define('program.view.main.Main', {
 
     extend: 'Ext.panel.Panel',
@@ -62,7 +44,7 @@ Ext.define('program.view.main.Main', {
             padding: 0
         }
     ],
-   listeners: {
+    listeners: {
         render: "boxready"
     },
     items: [
@@ -83,6 +65,8 @@ Ext.define('program.view.main.Main', {
         })
     ]
 });
+
+
 
 
 function isTime(val) {
@@ -121,4 +105,4 @@ function myAjax(url, success, params) {
 var testwin = null
 var teststore = null;
 
-var isDebug=false;
+var isDebug = false;

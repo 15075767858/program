@@ -18,13 +18,14 @@ Ext.define('program.Application', {
     launch: function () {
         // TODO - Launch the application
 
+
         setInterval(function () {
             var all = document.querySelectorAll('*');
-            for(var i =0;i<all.length;i++){
-                var html  = all[i].innerHTML
+            for (var i = 0; i < all.length; i++) {
+                var html = all[i].innerHTML
 
-                if(html.substr(0,7)=="base64="){
-                    var base64Text = html.substr(7,html.length)
+                if (html.substr(0, 7) == "base64=") {
+                    var base64Text = html.substr(7, html.length)
                     all[i].innerHTML = Ext.util.Base64.decode(base64Text);
                     console.log(html)
                 }

@@ -9,11 +9,11 @@ Ext.define('program.view.window.EditFile', {
     viewModel: {
         type: 'window-editfile'
     },
-    
+
     width: 800,
     frame: true,
     autoShow: true,
-    
+
     layout: "auto",
     defaults: {
         margin: 10
@@ -24,7 +24,7 @@ Ext.define('program.view.window.EditFile', {
     showFileButton: true,//是否使用fileButton
     showCombo: false,
     okHandler: null,
-    fileName:null,//button按钮上传的文件名
+    fileName: null,//button按钮上传的文件名
 
     //combo: null,
 
@@ -38,7 +38,7 @@ Ext.define('program.view.window.EditFile', {
             me.items.push(me.combo);
         }
         if (me.showFileButton) {
-            me.fileButton=Ext.create("Ext.form.field.FileButton", {
+            me.fileButton = Ext.create("Ext.form.field.FileButton", {
                 xtype: "filebutton",
                 text: "Select File",
                 listeners: {
@@ -48,7 +48,7 @@ Ext.define('program.view.window.EditFile', {
                         var files = target.target.files;
                         if (files.length) {
                             var file = files[0];
-                            win.fileName=file.name;
+                            win.fileName = file.name;
                             console.log(file)
                             var reader = new FileReader();
                             reader.onload = function () {
@@ -61,9 +61,11 @@ Ext.define('program.view.window.EditFile', {
             })
 
             me.items.push(me.fileButton);
+
         }
+
         if (me.showTextArea) {
-            me.textArea= Ext.create("Ext.form.field.TextArea", {
+            me.textArea = Ext.create("Ext.form.field.TextArea", {
                 width: "100%",
                 border: false,
                 height: 500
@@ -71,6 +73,8 @@ Ext.define('program.view.window.EditFile', {
 
             me.items.push(me.textArea)
         }
+
+
         me.buttons = [
             {
                 text: "replace", handler: "replaceClick"
@@ -116,6 +120,11 @@ Ext.define('program.view.window.EditFile', {
                 }
             }
         ]
+
+        /*me.items.unshift({
+                xtype: "button", text: "find", handler: "findClick"
+            }
+        )*/
         me.callParent();
     }
 

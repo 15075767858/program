@@ -10,6 +10,7 @@ Ext.define('program.view.tree.DevTreeController', {
 
         devTreeStoreLoad()
 
+
     },
     itemcontextmenu: function (th, record, item, index, e, eOpts) {
         e.stopEvent();

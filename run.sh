@@ -7,6 +7,8 @@ cp -R devxml/ resources/devxml
 chmod -R 777 *
 rm -rf build
 sencha app build
+cp active.json build/production/program
+cp log.text build/production/program
 chmod -R 777 *
 cd build/production
 rm -rf modern
