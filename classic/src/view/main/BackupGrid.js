@@ -26,7 +26,7 @@ Ext.define('program.view.grid.BackupGrid', {
             fields: ["name", "lasttime", "size", "filetype"],
             proxy: {
                 type: "ajax",
-                url:"resources/test1.php?par=getbackupfiles&folder="+me.folder
+                url: "resources/test1.php?par=getbackupfiles&folder=" + me.folder
             },
             autoLoad: true
         }),
@@ -36,7 +36,7 @@ Ext.define('program.view.grid.BackupGrid', {
     columns: [
         {
             text: "File Name", dataIndex: "src", flex: 1,
-            renderer: function (val,b,record) {
+            renderer: function (val, b, record) {
                 return "<a class='adownload' download=" + val + " target='_black' href=" + val + ">" + record.data.name + "<span class='x-col-move-top'></span></a>";
             }
         },
@@ -70,43 +70,102 @@ Ext.define('program.view.grid.BackupGrid', {
             console.log(arguments)
         }
     },
-    buttons: [{
-        text: 'Select Path',
-        handler: function () {
-            var grid = this.up("grid");
-            var records = grid.getSelection();
-            console.log(records);
-            var fileNames = "";
-            if (records.length == 0) {
-                Ext.Msg.alert('Status', 'Select a file please.');
-                return;
-            }
-            Ext.MessageBox.progress('please wait', {msg: 'Server Ready ...'});
-            for (var i = 0; i < records.length; i++) {
-                Ext.MessageBox.updateProgress(i + 1 / records.length + 1, 'The server is preparing for the ' + (i + 1));
-                fileNames += grid.folder+"/" + records[i].data.name + " ";
-            }
-
-            console.log(fileNames)
-
-            setTimeout(function () {
-
-                Ext.MessageBox.updateProgress(1 / 1, 'The server is preparing for the ' + (records.length ));
-                setTimeout(function () {
-                    myAjax("resources/test1.php", function () {
-                        location.href = "resources/pragramBackup.tar.gz";
-                        //myAjax("resources/pragramBackup.tar.gz")
-                    }, {
-                        par: "system",
-                        command: "tar czvf pragramBackup.tar.gz " + fileNames
-                    })
-                    //location.href = "resources/devsinfo/" + records[0].data.name
-                    //location.href = "resources/FileUD.php?par=downfile&filenames=" + fileNames.substr(0, fileNames.length - 1);
-                    Ext.MessageBox.close();
-                    win.close();
-                }, 500)
-            }, 1000)
-
+    getSelectFileNames: function () {
+        var grid = this;
+        var records = grid.getSelection();
+        console.log(records);
+        if (records.length == 0) {
+            Ext.Msg.alert('Status', 'Select a file please.');
+            return null;
         }
-    }]
+        Ext.MessageBox.progress('please wait', {msg: 'Server Ready ...'});
+
+        var fileNames = "";
+        var files = []
+        for (var i = 0; i < records.length; i++) {
+            Ext.MessageBox.updateProgress(i + 1 / records.length + 1, 'The server is preparing for the ' + (i + 1));
+            fileNames += grid.folder + "/" + records[i].data.name + " ";
+            files.push(grid.folder + "/" + records[i].data.name + " ")
+        }
+        return {filesArr: files, filesStr: fileNames};
+    },
+    buttons: [
+        {
+            text: "delete",
+            handler: function (button) {
+                var grid = this.up("grid");
+                var fileJson = grid.getSelectFileNames();
+                if (fileJson) {
+                    Ext.Msg.show({
+                        title: 'Delete?',
+                        message: "Do you want to delete these " + fileJson.filesArr.length + "  files? ",
+                        buttons: Ext.Msg.YESNOCANCEL,
+                        icon: Ext.Msg.QUESTION,
+                        animateTarget: button,
+                        fn: function (btn) {
+                            if (btn === 'yes') {
+                                myAjax("resources/test1.php", function () {
+                                    Ext.MessageBox.close();
+                                    grid.store.load();
+                                    console.log(arguments)
+                                }, {
+                                    par: "system",
+                                    command: "rm " + fileJson.filesStr
+                                })
+                                console.log('Yes pressed');
+                            }
+                        }
+                    });
+
+
+
+                }
+
+
+            }
+        },
+        {
+            text: 'Select Path',
+            handler: function () {
+                var grid = this.up("grid");
+                var records = grid.getSelection();
+                console.log(records);
+                var fileNames = "";
+                if (records.length == 0) {
+                    Ext.Msg.alert('Status', 'Select a file please.');
+                    return;
+                }
+
+                Ext.MessageBox.progress('please wait', {msg: 'Server Ready ...'});
+
+
+                for (var i = 0; i < records.length; i++) {
+                    Ext.MessageBox.updateProgress(i + 1 / records.length + 1, 'The server is preparing for the ' + (i + 1));
+                    fileNames += grid.folder + "/" + records[i].data.name + " ";
+                }
+
+
+                console.log(fileNames)
+
+                setTimeout(function () {
+
+
+                    Ext.MessageBox.updateProgress(1 / 1, 'The server is preparing for the ' + (records.length ));
+                    setTimeout(function () {
+
+
+                        myAjax("resources/test1.php", function () {
+                            location.href = "resources/pragramBackup.tar.gz";
+                        }, {
+                            par: "system",
+                            command: "tar czvf pragramBackup.tar.gz " + fileNames
+                        })
+
+                        Ext.MessageBox.close();
+                        win.close();
+                    }, 500)
+                }, 1000)
+
+            }
+        }]
 });

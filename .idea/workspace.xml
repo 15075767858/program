@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5634e344-e363-4954-913f-d691016cfd59" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/theme-capture.png" afterPath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/theme-capture.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program.tar.gz" afterPath="$PROJECT_DIR$/build/production/program.tar.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic.json" afterPath="$PROJECT_DIR$/build/production/program/classic.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/app.js" afterPath="$PROJECT_DIR$/build/production/program/classic/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/modern.json" afterPath="$PROJECT_DIR$/build/production/program/modern.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/resources/devxml/i823.xml" afterPath="$PROJECT_DIR$/build/production/program/resources/devxml/i823.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/resources/pragramBackup.tar.gz" afterPath="$PROJECT_DIR$/build/production/program/resources/pragramBackup.tar.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic.json" afterPath="$PROJECT_DIR$/classic.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic/src/view/main/BackupGrid.js" afterPath="$PROJECT_DIR$/classic/src/view/main/BackupGrid.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" afterPath="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump.rdb" afterPath="$PROJECT_DIR$/dump.rdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modern.json" afterPath="$PROJECT_DIR$/modern.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/devxml/i823.xml" afterPath="$PROJECT_DIR$/resources/devxml/i823.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/pragramBackup.tar.gz" afterPath="$PROJECT_DIR$/resources/pragramBackup.tar.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/example/bootstrap.json" afterPath="$PROJECT_DIR$/sass/example/bootstrap.json" />
     </list>
     <ignored path="program.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +44,7 @@
       <file leaf-file-name="TopToolbar.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classic/src/view/main/TopToolbar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="525">
               <caret line="168" column="83" selection-start-line="168" selection-start-column="83" selection-end-line="168" selection-end-column="83" />
               <folding>
                 <element signature="e#8697#9283#0" expanded="false" />
@@ -98,7 +112,6 @@
         <option value="$PROJECT_DIR$/app/view/window/EditFileController.js" />
         <option value="$PROJECT_DIR$/classic/src/view/main/Main.js" />
         <option value="$PROJECT_DIR$/classic/src/view/main/BackupGird.js" />
-        <option value="$PROJECT_DIR$/classic/src/view/main/BackupGrid.js" />
         <option value="$PROJECT_DIR$/classic/src/view/main/Backup.js" />
         <option value="$PROJECT_DIR$/app/Application.js" />
         <option value="$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js" />
@@ -107,6 +120,7 @@
         <option value="$PROJECT_DIR$/classic/src/view/main/EditFile.js" />
         <option value="$PROJECT_DIR$/devxml/i823.xml" />
         <option value="$PROJECT_DIR$/1000.json" />
+        <option value="$PROJECT_DIR$/classic/src/view/main/BackupGrid.js" />
         <option value="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" />
       </list>
     </option>
@@ -180,24 +194,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devxml" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -555,24 +551,25 @@
       <workItem from="1480813449143" duration="3295000" />
       <workItem from="1480901950985" duration="2019000" />
       <workItem from="1481008289683" duration="701000" />
+      <workItem from="1481009016013" duration="5040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83648000" />
+    <option name="totallyTimeSpent" value="88688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="993" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21458998" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21671991" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23751387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28301886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -809,13 +806,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classic/src/view/main/BackupGird.js" />
-    <entry file="file://$PROJECT_DIR$/classic/src/view/main/BackupGrid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="78" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classic/src/view/main/Backup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -962,9 +952,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/classic/src/view/main/BackupGrid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="108" column="54" selection-start-line="108" selection-start-column="54" selection-end-line="108" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classic/src/view/main/TopToolbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="525">
           <caret line="168" column="83" selection-start-line="168" selection-start-column="83" selection-end-line="168" selection-end-column="83" />
           <folding>
             <element signature="e#8697#9283#0" expanded="false" />
