@@ -218,6 +218,7 @@ function saveGridpanelsConfigs(fileName) {
         plants: Ext.encode(drawpanel.datas.plants),
         gridpanelConfigs: Ext.encode(aGridPanels)
     };
+
     console.log(oJson)
     Ext.Ajax.request({
         url: "resources/xmlRW.php",

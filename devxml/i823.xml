@@ -51,6 +51,7 @@
 		<Notify_Type>0</Notify_Type>
 		<Time_Delay>0</Time_Delay>
 		<Notification_Class>1</Notification_Class>
+	</key>
 	<key  number="1001201">
 		<Object_Name>ANALOG VALUE 1</Object_Name>
 		<Description>ANALOG VALUE 1</Description>
