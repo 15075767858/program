@@ -5,7 +5,6 @@
  */
 Ext.define('program.Application', {
     extend: 'Ext.app.Application',
-
     name: 'program',
     //autoCreateViewport:true,
     appFolder: 'app',

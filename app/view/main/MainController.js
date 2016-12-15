@@ -11,6 +11,7 @@ Ext.define('program.view.main.MainController', {
 
     boxready: function () {
 
+
         function autoSave() {
             var fileName = getCurrentDrawPanel().title;
             saveXml(fileName)

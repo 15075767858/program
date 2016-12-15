@@ -31,6 +31,7 @@ Ext.define('program.view.window.EditFile', {
     initComponent: function () {
         var me = this;
         me.items = []
+        console.log(me.showCombo)
         if (me.showCombo) {
             me.items.push(me.combo);
         }
@@ -64,15 +65,14 @@ Ext.define('program.view.window.EditFile', {
 
         }
 
-        if (me.showTextArea) {
-            me.textArea = Ext.create("Ext.form.field.TextArea", {
-                width: "100%",
-                border: false,
-                height: 500
-            })
+        me.textArea = Ext.create("Ext.form.field.TextArea", {
+            width: "100%",
+            border: false,
+            height: 500,
+            hidden: !me.showTextArea
+        })
 
-            me.items.push(me.textArea)
-        }
+        me.items.push(me.textArea)
 
 
         me.buttons = [
@@ -121,11 +121,16 @@ Ext.define('program.view.window.EditFile', {
             }
         ]
 
-        /*me.items.unshift({
-                xtype: "button", text: "find", handler: "findClick"
-            }
-        )*/
+        /* me.items.unshift({
+         xtype: "button", text: "find", handler: "findClick"
+         }
+         )*/
+        console.log("before - initComponent EditFile")
+
+
         me.callParent();
+        console.log("after - initComponent EditFile")
+
     }
 
 });

@@ -163,7 +163,7 @@ Ext.define('program.view.tab.DrawPanelController', {
                     //console.log(grid.el.dom.childNodes[0].childNodes[index])
                     ogridpanle.datas = {index: index}
 
-                    setCurrentPlant(index,grid)
+                    setCurrentPlant(index, grid)
                     //双击事件的操作
                     //grid.el.dom.childNodes[0].childNodes[index].style.backgroundColor = "skyblue";
                 },
@@ -221,15 +221,15 @@ Ext.define('program.view.tab.DrawPanelController', {
                             var aGirdPanels = getCurrentDrawPanelGirdPanels();
                             console.log(aGirdPanels)
 
-                            if(!aGirdPanels.length){
-                                delCurrentDrawPanelPlant(rowIndex,grid);
+                            if (!aGirdPanels.length) {
+                                delCurrentDrawPanelPlant(rowIndex, grid);
 
                             }
 
                             for (var i = 0; aGirdPanels.length; i++) {
                                 console.log(aGirdPanels[i])
                                 if (!aGirdPanels[i]) {
-                                    delCurrentDrawPanelPlant(rowIndex,grid);
+                                    delCurrentDrawPanelPlant(rowIndex, grid);
                                     break;
                                     return;
                                 }
@@ -242,7 +242,7 @@ Ext.define('program.view.tab.DrawPanelController', {
                                         icon: Ext.Msg.WARNING,
                                         fn: function (btn) {
                                             if (btn === 'yes') {
-                                                delCurrentDrawPanelPlant(rowIndex,grid);
+                                                delCurrentDrawPanelPlant(rowIndex, grid);
                                                 for (var j = 0; j < aGirdPanels.length; j++) {
                                                     if (aGirdPanels[j].datas.plantId == plant.id) {
                                                         aGirdPanels[j].close();
@@ -398,11 +398,9 @@ function typegridCache(th) {
             try {
                 //console.log(text)
                 var ojson = Ext.decode(text);
-
                 th.datas.datasArray = Ext.decode(ojson.datasArray);
                 th.datas.gridpanelConfigs = Ext.decode(ojson.gridpanelConfigs);
                 th.datas.plants = Ext.decode(ojson.plants);
-
                 console.log(th.datas.plants)
             } catch (e) {
                 return;

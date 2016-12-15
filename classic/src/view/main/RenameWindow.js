@@ -681,24 +681,43 @@ Ext.define("program.view.window.RenameWindow", {
     },
     saveXml: function (filename) {
         var me = this;
-
         var xmlstr = me.getXmlStr()
         xmlstr = formatXml(xmlstr);
         console.log(xmlstr)
-
+        var filename = "devxml/" + filename + ".xml"
         var datas = {
             rw: "w",
-            fileName: "devxml/" + filename + ".xml",
+            fileName: filename,
             content: '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\r\n' + xmlstr
         }
+
         $.ajax({
             type: "POST",
             url: "resources/xmlRW.php",
             data: datas,
             success: function () {
                 delayToast("Status", "Saved file " + datas.fileName + " successfully.", 0);
+                moveXml(filename);
             }
         });
+        function moveXml(filename) {
+            myAjax(null, function (response) {
+                try {
+                    var resJson = Ext.decode(response.responseText);
+                    if (resJson.success) {
+                        delayToast("Massage", resJson.info)
+                    } else {
+                        Ext.Msg.alert("Massage", resJson.info)
+                    }
+                } catch (e) {
+                    Ext.Msg.alert("error", e)
+                    throw new Error(e);
+                }
+            }, {
+                par: "moveXml",
+                filename: filename
+            })
+        }
 
         setTimeout(function () {
             me.close()
@@ -716,6 +735,7 @@ Ext.define("program.view.window.RenameWindow", {
             })(me, items[i], i)
         }
     },
+
     buttons: [
         {
             text: "Save ...",
@@ -842,13 +862,14 @@ Ext.define("program.view.window.RenameWindow", {
                         return;
                     }
                     if (v) {
+
                         me.deviceName = v;
                         me.saveXml(me.sDevName)
                     } else {
                         Ext.Msg.alert("Exception", "filename exception .")
                     }
                 }
-            }, this, "", me.deviceName||me.sDevName)
+            }, this, "", me.deviceName || me.sDevName)
 
             return;
         }

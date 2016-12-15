@@ -149,112 +149,114 @@ Ext.define('program.view.main.toolbar.TopToolbarController', {
     },
     replaceClick: function () {
 
-        var win = Ext.create("program.view.window.EditFile", {
-            showCombo: true,
-            showFileButton: false,
-            typeCombo: Ext.create("Ext.form.field.ComboBox", {
-                fieldLabel: "Fields",
-                store: Ext.create("Ext.data.Store", {
-                    field: ["name", "value"],
-                    data: [{name: "key", value: "value"},
-                        {name: "title", value: "title"}
-                    ]
-                }),
-                displayField: 'name',
-                valueField: 'value',
-                listeners: {
-                    beforedestroy: function () {
-                        return false;
-                    }
-                }
-            }),
-            replaceOkHandler: function (oldValue, newValue) {
-                var me = win;
-                console.log(me.typeCombo.value)
-                var typeName = me.typeCombo.value;
+        Ext.create("program.view.window.ReplaceDevInfo")
+        /*
+         var win = Ext.create("program.view.window.EditFile", {
+         showCombo: true,
+         showFileButton: false,
+         typeCombo: Ext.create("Ext.form.field.ComboBox", {
+         fieldLabel: "Fields",
+         store: Ext.create("Ext.data.Store", {
+         field: ["name", "value"],
+         data: [{name: "key", value: "value"},
+         {name: "title", value: "title"}
+         ]
+         }),
+         displayField: 'name',
+         valueField: 'value',
+         listeners: {
+         beforedestroy: function () {
+         return false;
+         }
+         }
+         }),
+         replaceOkHandler: function (oldValue, newValue) {
+         var me = win;
+         console.log(me.typeCombo.value)
+         var typeName = me.typeCombo.value;
 
-                //try {
-                var resArr = Ext.decode(Ext.decode(me.textArea.value).gridpanelConfigs)
-                var count = 0;
-                for (var i = 0; i < resArr.length; i++) {
-                    var datas = resArr[i].datas;
-                    if (datas[typeName]) {
-                        datas[typeName] = datas[typeName].replace(oldValue, newValue);
-                        count++;
-                    }
+         //try {
+         var resArr = Ext.decode(Ext.decode(me.textArea.value).gridpanelConfigs)
+         var count = 0;
+         for (var i = 0; i < resArr.length; i++) {
+         var datas = resArr[i].datas;
+         if (datas[typeName]) {
+         datas[typeName] = datas[typeName].replace(oldValue, newValue);
+         count++;
+         }
 
-                    console.log(datas)
-                }
+         console.log(datas)
+         }
 
-                Ext.Msg.show({
-                    title: 'Save Changes?',
-                    message: 'Are you want replace <code style="color: red;">' + typeName + '</code> The old value is <code style="color: red;">' + oldValue + '</code> new value is <code style="color: red;">' + newValue + '</code>, You are closing a tab that has unsaved changes. Would you like to save your changes?',
-                    buttons: Ext.Msg.YESNOCANCEL,
-                    icon: Ext.Msg.QUESTION,
-                    fn: function (btn) {
-                        if (btn === 'yes') {
-                            //console.log('Yes pressed');
-                            me.textArea.setValue(Ext.encode(resArr))
-                            Ext.Msg.alert("Massage", "Modified " + count + " places .")
-                            //console.log(Ext.encode(resArr))
+         Ext.Msg.show({
+         title: 'Save Changes?',
+         message: 'Are you want replace <code style="color: red;">' + typeName + '</code> The old value is <code style="color: red;">' + oldValue + '</code> new value is <code style="color: red;">' + newValue + '</code>, You are closing a tab that has unsaved changes. Would you like to save your changes?',
+         buttons: Ext.Msg.YESNOCANCEL,
+         icon: Ext.Msg.QUESTION,
+         fn: function (btn) {
+         if (btn === 'yes') {
+         //console.log('Yes pressed');
+         me.textArea.setValue(Ext.encode(resArr))
+         Ext.Msg.alert("Massage", "Modified " + count + " places .")
+         //console.log(Ext.encode(resArr))
 
-                        }
-                    }
-                });
+         }
+         }
+         });
 
-                /*} catch (e) {
-                 throw new Error(e)
-                 Ext.Msg.alert("Massage", "Data Error"+e)
-                 }*/
+         /!*} catch (e) {
+         throw new Error(e)
+         Ext.Msg.alert("Massage", "Data Error"+e)
+         }*!/
 
-            },
-            okHandler: function () {
+         },
+         okHandler: function () {
 
-                Ext.Ajax.request({
-                    url: "resources/xmlRW.php",
-                    async: false,
-                    method: "POST",
-                    params: {
-                        fileName: "devsinfo/" + win.combo.value,
-                        content: win.textArea.value,
-                        rw: "w"
-                    },
-                    success: function (response) {
-                        if (win.textArea.value.length == response.responseText) {
+         Ext.Ajax.request({
+         url: "resources/xmlRW.php",
+         async: false,
+         method: "POST",
+         params: {
+         fileName: "devsinfo/" + win.combo.value,
+         content: win.textArea.value,
+         rw: "w"
+         },
+         success: function (response) {
+         if (win.textArea.value.length == response.responseText) {
 
-                            delayToast("Maasage", "save success ." + response.responseText);
-                        } else {
-                            Ext.Msg.alert("Error", response.responseText);
-                        }
-                        console.log(arguments)
-                    }
-                })
-            },
-            listeners: {
-                boxready: function () {
-                    console.log(this)
+         delayToast("Maasage", "save success ." + response.responseText);
+         } else {
+         Ext.Msg.alert("Error", response.responseText);
+         }
+         console.log(arguments)
+         }
+         })
+         },
+         listeners: {
+         boxready: function () {
+         console.log(this)
 
 
-                }
-            },
-            combo: Ext.create("Ext.form.field.ComboBox", {
-                fieldLabel: "Select File",
-                store: getDevInfoFileNames(),
-                editable: false,
+         }
+         },
+         combo: Ext.create("Ext.form.field.ComboBox", {
+         fieldLabel: "Select File",
+         store: getDevInfoFileNames(),
+         editable: false,
 
-                listeners: {
-                    change: function (combo, newValue) {
-                        console.log(arguments)
+         listeners: {
+         change: function (combo, newValue) {
+         console.log(arguments)
 
-                        myAjax('resources/devsinfo/' + newValue, function (response) {
-                            win.textArea.setValue(response.responseText);
+         myAjax('resources/devsinfo/' + newValue, function (response) {
+         win.textArea.setValue(response.responseText);
 
-                            console.log(arguments)
-                        })
-                    }
-                }
-            })
-        })
+         console.log(arguments)
+         })
+         }
+         }
+         })
+         })*/
     },
     downloadClick: function () {
 
@@ -475,39 +477,59 @@ Ext.define('program.view.main.toolbar.TopToolbarController', {
     },
     RestorClick: function () {
         //uploadwindow
-        Ext.create("Ext.window.Window",{
-            autoShow:true,
-            liveDrag:true,
-            layout:"hbox",
-            title:"Restor",
-            width:800,
-            height:600,
-            defaults:{
-                width:390,
-                height:560,
-                flex:1,
-                constrain:true,
-                closable:false,
-                draggable:false,
-                resizable:false
+        Ext.create("Ext.window.Window", {
+            autoShow: true,
+            liveDrag: true,
+            layout: "hbox",
+            title: "Restor",
+            width: 800,
+            height: 600,
+            defaults: {
+                width: 390,
+                height: 560,
+                flex: 1,
+                constrain: true,
+                closable: false,
+                draggable: false,
+                resizable: false
             },
-            items:[
+            items: [
                 {
-                    xtype:"uploadwindow",
-                    x:0,
-                    y:0,
+                    xtype: "uploadwindow",
+                    x: 0,
+                    y: 0,
                     title: "Dev Info",
-                    folder:"devsinfo"
+                    folder: "devsinfo",
+                    FilesAdded: function (upload, files) {
+
+                    }
                 },
                 {
-                    xtype:"uploadwindow",
-                    x:400,
+                    xtype: "uploadwindow",
+                    x: 400,
                     title: "Dev Instance",
-                    folder:"devxml"
+                    folder: "devxml",
+                    callbackEvent: function (eventName, upload, files) {
+                        testupload = upload
+                        testfiles = files
+                        if (eventName == "FilesAdded") {
+                            var files = upload.files;
+                            var fr = new FileReader()
+                            console.log(files)
+
+                            for (var i = 0; i < files.length; i++) {
+                                console.log(files[i].getSource())
+                                console.log(fr.readAsText(files[i].getSource()))
+
+                            }
+
+                        }
+
+                    }
                 }
             ],
-            listeners:{
-                move:function(){
+            listeners: {
+                move: function () {
                     console.log(arguments)
                 }
             }

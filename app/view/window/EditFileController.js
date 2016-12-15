@@ -1,28 +1,13 @@
 Ext.define('program.view.window.EditFileController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.window-editfile',
-    findClick: function () {
-        var me = this.view;
 
-        try {
 
-            var resArr = Ext.decode(Ext.decode(me.textArea.value).gridpanelConfigs)
-            for (var i = 0; i < resArr.length; i++) {
-                console.log(resArr[i].datas)
-
-            }
-
-            console.log(resArr)
-
-        } catch (e) {
-            Ext.Msg.alert("Massage", "Data Error")
-        }
-
-    },
     replaceClick: function () {
+        console.log(this)
 
         var me = this.view;
-
+        console.log(me)
         var win = Ext.create('Ext.window.Window', {
             title: 'Replace •••',
             frame: true,
@@ -35,7 +20,7 @@ Ext.define('program.view.window.EditFileController', {
                 margin: 10
             },
             items: [
-                me.typeCombo,
+                //me.typeCombo,
                 {
                     itemId: "oldvalue",
                     xtype: "textfield",
@@ -55,11 +40,12 @@ Ext.define('program.view.window.EditFileController', {
 
                     var oldValue = win.getComponent("oldvalue").getValue();
                     var newValue = win.getComponent("newvalue").getValue();
-                    if(me.replaceOkHandler){
-                        me.replaceOkHandler(oldValue,newValue)
-                        win.close();
-                        return ;
-                    }
+
+                    //if(me.replaceOkHandler){
+                    //    me.replaceOkHandler(oldValue,newValue)
+                    //    win.close();
+                    //    return ;
+                    //}
                     me.textArea.setValue(me.textArea.value.replaceAll(oldValue, newValue));
 
                     win.close();

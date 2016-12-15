@@ -1,16 +1,3 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <root>
- <plant  name="001">
-  <master_node  number="1">
-   <type>55</type>
-   <slots  number="1">
-    <default>0</default>
-   </slots>
-   <slots  number="2">
-    <default>0</default>
-   </slots>
-  </master_node>
- </plant>
- <plant  name="002">
- </plant>
 </root>

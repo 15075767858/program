@@ -11,7 +11,7 @@
   <Object_Name>UI1 </Object_Name>
   <Offset>0.100</Offset>
   <Description>ANALOG INPUT 1</Description>
-  <Device_Type>BI</Device_Type>
+  <Device_Type>NTC20K</Device_Type>
   <Units>98</Units>
   <Min_Pres_Value>0.00</Min_Pres_Value>
   <Max_Pres_Value>100.000</Max_Pres_Value>
@@ -29,7 +29,7 @@
   <Object_Name>UI2 </Object_Name>
   <Offset>0.000</Offset>
   <Description>ANALOG INPUT2</Description>
-  <Device_Type>BI</Device_Type>
+  <Device_Type>NTC20K</Device_Type>
   <Units>98</Units>
   <Min_Pres_Value>0.000</Min_Pres_Value>
   <Max_Pres_Value>100.000</Max_Pres_Value>
@@ -47,7 +47,7 @@
   <Object_Name>UI3 </Object_Name>
   <Offset>0.000</Offset>
   <Description>ANALOG INPUT3</Description>
-  <Device_Type>BI</Device_Type>
+  <Device_Type>NTC20K</Device_Type>
   <Units>98</Units>
   <Min_Pres_Value>0.000</Min_Pres_Value>
   <Max_Pres_Value>100.000</Max_Pres_Value>
@@ -65,7 +65,7 @@
   <Object_Name>UI4 </Object_Name>
   <Offset>0.000</Offset>
   <Description>ANALOG INPUT4</Description>
-  <Device_Type>BI</Device_Type>
+  <Device_Type>NTC20K</Device_Type>
   <Units>98</Units>
   <Min_Pres_Value>0.000</Min_Pres_Value>
   <Max_Pres_Value>100.000</Max_Pres_Value>

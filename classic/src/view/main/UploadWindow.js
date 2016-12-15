@@ -42,25 +42,31 @@ Ext.define("program.view.window.UploadWindow", {
                     return data.loaded / data.size;
                 }
                 }, "lastModifiedDate", "size", "status", "type"],
-            data: filesData
+            data: me.uploader.files
         })
+        me.down("grid").setStore(store)
+
         //绑定各种事件，并在事件监听函数中做你想做的事
         me.uploader.bind('FilesAdded', function (uploader, files) {
-            console.log(arguments)
-            for (var i = 0; i < files.length; i++) {
-                console.log(files[i].getSource())
-                console.log(files[i].getNative())
-                filesData.push(files[i]);
+
+            if (me.callbackEvent) {
+                me.callbackEvent("FilesAdded", uploader, files)
             }
-            store.reload(filesData)
-            console.log(files)
-            me.down("grid").setStore(store)
+            store.reload()
             //每个事件监听函数都会传入一些很有用的参数，
             //我们可以利用这些参数提供的信息来做比如更新UI，提示上传进度等操作
+            /*console.log(arguments)
+             for (var i = 0; i < files.length; i++) {
+             console.log(files[i].getSource())
+             console.log(files[i].getNative())
+             filesData.push(files[i]);
+             }
+             store.reload(filesData)
+             console.log(files)
+             me.down("grid").setStore(store)*/
         });
         me.uploader.bind('UploadProgress', function (uploader, file) {
             console.log(file)
-
             //var store = Ext.data.StoreManager.lookup('UploadWindowSelectFilesStore');
             store.getById(file.id).set("loaded", file.loaded)
             store.reload()
@@ -86,13 +92,13 @@ Ext.define("program.view.window.UploadWindow", {
         }
     },
     initComponent: function () {
-        var tbar0=Ext.create("Ext.button.Button",{
-            text:"Select Files"
+        var tbar0 = Ext.create("Ext.button.Button", {
+            text: "Select Files"
         })
-        this.browse_buttonId=tbar0.id;
+        this.browse_buttonId = tbar0.id;
         this.tbar = [
             tbar0
-           /* {text: "Select Files", id: "UploadWindowSelectFiles"}*/
+            /* {text: "Select Files", id: "UploadWindowSelectFiles"}*/
         ]
 
         this.buttons = [
