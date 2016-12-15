@@ -48,7 +48,6 @@ Ext.define('program.view.window.EditFileController', {
                     //}
                     me.textArea.setValue(me.textArea.value.replaceAll(oldValue, newValue));
 
-                    win.close();
 
                 }
                 },

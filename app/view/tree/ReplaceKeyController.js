@@ -36,7 +36,7 @@ Ext.define('program.view.tree.ReplaceKeyController', {
                                     Ext.Msg.alert("Exception", "device instance exception .")
                                 }
                             }
-                        })
+                        }, this, false, record.data.text)
                     }
                 }
             ]

@@ -167,7 +167,7 @@ Ext.define('program.view.tree.ReplaceKey', {
                         keyChild.push({
                             qtip: resArr[k].datas.value,
                             qtitle: "key",
-                            text: resArr[k].typegrid.title,
+                            text: resArr[k].typegrid.title+"  ("+resArr[k].datas.value+")",
                             name: resArr[k].typegrid.title,
                             key: resArr[k].datas.value,
                             leaf: true
@@ -178,9 +178,7 @@ Ext.define('program.view.tree.ReplaceKey', {
                     typeChild.push({text: types[j], children: keyChild})
                 }
             }
-
             devArr.push({text: devs[i], children: typeChild})
-
         }
         var root = {
             children: devArr

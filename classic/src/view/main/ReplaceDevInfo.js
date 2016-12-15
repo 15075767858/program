@@ -52,20 +52,19 @@ Ext.define('program.view.window.ReplaceDevInfo', {
             listeners: {
                 change: function (combo, newValue) {
 
-                    myAjax('resources/devsinfo/' + newValue, function (response) {
-                        win.textArea.setValue(response.responseText);
+                    me.loadFile(newValue)
 
-                        treePanel.changeNode(response.responseText)
-                        /*
-                         var root = getTreeStoreRoot(response.responseText)
-                         console.log(root)
-                         treePanel.setStore(Ext.create("Ext.data.TreeStore", {
-                         root: root
-                         }))*/
-                    })
+
                 }
             }
         })
+        me.loadFile = function (filename) {
+            me.currentFile=filename;
+            myAjax('resources/devsinfo/' + filename, function (response) {
+                win.textArea.setValue(response.responseText);
+                treePanel.changeNode(response.responseText)
+            })
+        }
         me.okHandler = function () {
 
             Ext.Ajax.request({
@@ -84,6 +83,7 @@ Ext.define('program.view.window.ReplaceDevInfo', {
                     } else {
                         Ext.Msg.alert("Error", response.responseText);
                     }
+                    me.loadFile(me.currentFile);
                     console.log(arguments)
                 }
             })
@@ -199,8 +199,8 @@ Ext.define('program.view.window.ReplaceDevInfo', {
          })*/
 
         me.add({
-            bind:{
-                html:"Current File is <code style='color: red;font-size: 17px;'>{title}</code>"
+            bind: {
+                html: "Current File is <code style='color: red;font-size: 17px;'>{title}</code>"
             }
         })
 
