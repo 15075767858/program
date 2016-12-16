@@ -1,6 +1,7 @@
 Ext.define('program.view.window.RenameWindowController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.window-renamewindow',
+    types: ['AI', 'AO', 'AV', 'BI', 'BO', 'BV', 'SCHEDULE'],
     boxready: function () {
         var me = this.view;
         /*var chart = Ext.create('program.view.chart.RenameChart', {
@@ -301,13 +302,18 @@ Ext.define('program.view.window.RenameWindowController', {
                             return
                         }
 
+                        console.log(text)
+                        console.log(types)
+
+                        var typeNumber = text.substr(4, 1);
+                        var objname = types[typeNumber] + " + " + "POINT NUMBER";
                         Ext.MessageBox.prompt("Input", "New Name", function (ms, v) {
                             if (ms != 'ok') {
                                 return;
                             }
                             me.insrtDevForm(text, v);
                             Ext.Msg.alert("Massage", "Ok.")
-                        })
+                        }, this, false, objname);
 
                         //panel.getForm().setValues(me.getFormValues());
 
