@@ -66,7 +66,7 @@ Ext.define('program.view.window.RenameWindowController', {
                         margin: "0 10 0 35",
                         xtype: "textfield",
                         fieldLabel: "device instance",
-                        editable:false,
+                        editable: false,
                         flex: 2,
                         value: me.devName,
                         itemId: "deviceInstance",
@@ -80,23 +80,23 @@ Ext.define('program.view.window.RenameWindowController', {
                             var oldDevice = container.getComponent("deviceInstance");
                             var newDevice = container.getComponent("replaceDevice");
                             oldDevice.setValue(newDevice.getValue())
-                            me.devName=newDevice.getValue();
+                            me.devName = newDevice.getValue();
                             console.log(me)
-                            me.deviceName=oldDevice.getValue();
-                            me.iterationItems(function(item,i){
-                                console.log(item,i)
+                            me.deviceName = oldDevice.getValue();
+                            me.iterationItems(function (item, i) {
+                                console.log(item, i)
                             })
-                            delayToast("Massage","Replace success");
+                            delayToast("Massage", "Replace success");
                         }
                     }, {
                         fieldStyle: {
                             textAlign: "center"
                         },
-                        validator:function(val){
-                            if(isNaN(val)){
+                        validator: function (val) {
+                            if (isNaN(val)) {
                                 return "please input number .";
                             }
-                            if(val.length!=4||val<0||val>9999){
+                            if (val.length != 4 || val < 0 || val > 9999) {
                                 return "wrong format ."
                             }
                             return true
@@ -174,12 +174,19 @@ Ext.define('program.view.window.RenameWindowController', {
                         value: me.devName || "9901",
                         listeners: {
                             change: function (field, newValue, oldValue) {
+
+                                var instance = win.getComponent("instance");
+                                var instanceValue = (newValue + "").substr(2, 2)
+                                console.log(instanceValue)
+                                instance.setValue(instanceValue)
+
                                 var value = Ext.String.leftPad(newValue, 4, "0");
                                 var values = keyField.getValue().split("");
                                 values[0] = value[0];
                                 values[1] = value[1];
                                 console.log(values)
                                 keyField.setValue(values.join(''))
+
                                 //Ext.String.insert //补0
                             }
                         }
@@ -191,6 +198,7 @@ Ext.define('program.view.window.RenameWindowController', {
                         fieldLabel: 'instance',
                         store: modelAddress,
                         editable: false,
+                        itemId: "instance",
                         queryMode: 'local',
                         autoSelect: false,
                         value: "01",
@@ -229,16 +237,31 @@ Ext.define('program.view.window.RenameWindowController', {
                                 var values = keyField.getValue().split("");
                                 values[4] = value
                                 keyField.setValue(values.join(''))
+
+                                var pn = field.up().getComponent("pointNumber");
+                                console.log(newValue)
+                                if (newValue == 2 || newValue == 5) {
+                                    pn.setMaxValue(15)
+                                    if (pn.value > 15) {
+                                        pn.setValue(15)
+                                    }
+                                } else {
+                                    pn.setMaxValue(24)
+                                }
+
                             }
                         }
                     },
                     {
                         margin: 10,
-                        xtype: "combobox",
+                        xtype: "numberfield",
                         allowBlank: false,
                         fieldLabel: 'Point Number',
-                        store: modelAddress,
+                        //store: modelAddress,
+                        maxValue: 24,
+                        minValue: 0,
                         editable: false,
+                        itemId: "pointNumber",
                         queryMode: 'local',
                         autoSelect: false,
                         value: "01",
