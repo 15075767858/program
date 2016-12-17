@@ -320,7 +320,7 @@ Ext.define('program.view.window.RenameWindowController', {
                     }
                     },
                     {
-                        text: 'Cancel', handler: function () {
+                        text: 'Close', handler: function () {
                         win.close();
                     }
                     }
@@ -392,7 +392,7 @@ Ext.define('program.view.window.RenameWindowController', {
                     }
                     },
                     {
-                        text: 'Cancel', handler: function () {
+                        text: 'Close', handler: function () {
                         win.close();
                     }
                     }

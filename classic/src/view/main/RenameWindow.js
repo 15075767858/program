@@ -7,7 +7,8 @@ Ext.define("program.view.window.RenameWindow", {
         "program.view.window.RenameWindowModel",
         "program.store.RenameStore"
     ],
-
+    width: 800,
+    height: 1024,
     controller: "window-renamewindow",
     viewModel: {
         type: "window-renamewindow"
@@ -735,7 +736,28 @@ Ext.define("program.view.window.RenameWindow", {
             })(me, items[i], i)
         }
     },
+    relaodRenameWindow: function () {
+        var me = this;
 
+        setTimeout(function () {
+            if (me.sources == "db") {
+                Ext.create('program.view.window.RenameWindow', {
+                    sources: "db",
+                    sDevName: me.sDevName,
+                })
+                return;
+            }
+            if (me.sources == "xml") {
+                Ext.create('program.view.window.RenameWindow', {
+                    sources: "xml",
+                    text: me.text,
+                })
+                return;
+            }
+
+        }, 3000)
+
+    },
     buttons: [
         {
             text: "Save ...",
@@ -815,11 +837,12 @@ Ext.define("program.view.window.RenameWindow", {
                             var newValue = win.getComponent("newvalue").getValue();
                             me.replaceFieldValue(field, oldValue, newValue)
 
+
                             win.close();
                         }
                         },
                         {
-                            text: 'Cancel', handler: function () {
+                            text: 'Close', handler: function () {
                             win.close();
                         }
                         }
@@ -865,6 +888,7 @@ Ext.define("program.view.window.RenameWindow", {
 
                         me.deviceName = v;
                         me.saveXml(me.sDevName)
+                        me.relaodRenameWindow()
                     } else {
                         Ext.Msg.alert("Exception", "filename exception .")
                     }

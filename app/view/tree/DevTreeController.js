@@ -100,10 +100,8 @@ Ext.define('program.view.tree.DevTreeController', {
                                             }
                                             console.log(text)
                                             Ext.create('program.view.window.RenameWindow', {
-                                                //sDevNodeName: sDevNodeName,
+                                                sources:"xml",
                                                 text: text,
-                                                width: 800,
-                                                height: 1024
                                             })
                                             win.close();
                                         }
@@ -666,10 +664,8 @@ Ext.define('program.view.tree.DevTreeController', {
                         handler: function () {
                             console.log(record)
                             Ext.create('program.view.window.RenameWindow', {
-                                //sDevNodeName: sDevNodeName,
                                 sDevName: record.data.text,
-                                width: 800,
-                                height: 1024
+                                sources:"db"
                             })
                         }
                     },
