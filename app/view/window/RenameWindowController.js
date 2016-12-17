@@ -2,6 +2,7 @@ Ext.define('program.view.window.RenameWindowController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.window-renamewindow',
     types: ['AI', 'AO', 'AV', 'BI', 'BO', 'BV', 'SCHEDULE'],
+
     boxready: function () {
         var me = this.view;
         /*var chart = Ext.create('program.view.chart.RenameChart', {
@@ -23,6 +24,9 @@ Ext.define('program.view.window.RenameWindowController', {
                 defaults: {
                     margin: "0 35"
                 },
+                typeAdd: function () {
+
+                },
                 items: [
                     {
                         fieldStyle: {
@@ -32,6 +36,7 @@ Ext.define('program.view.window.RenameWindowController', {
                         fieldLabel: types[i],
                         name: types[i],
                         width: 180,
+                        itemId: "typeNumber",
                         flex: 5
                     }, {
                         xtype: "button",
@@ -145,14 +150,15 @@ Ext.define('program.view.window.RenameWindowController', {
             }
 
             console.log(button.devType)
+            console.log(button.up().getComponent("typeNumber").value)
             console.log(me)
+
             var refDev;
             if (me.devName) {
                 refDev = me.devName;
             } else {
                 refDev = me.sDevName;
             }
-
             var keyField = Ext.create("Ext.form.field.Text", {
                 margin: 10,
                 fieldLabel: "Key",
@@ -313,12 +319,19 @@ Ext.define('program.view.window.RenameWindowController', {
                         console.log(types)
 
                         var typeNumber = text.substr(4, 1);
+                        console.log(me.getFormValues())
+                        if (me.getFormValues().SCHEDULE >= 5) {
+                            Ext.Msg.alert("Massage","SCHDULE max is 5");
+                            return ;
+                        }
                         var objname = types[typeNumber] + text.substr(5, 2);
                         Ext.MessageBox.prompt("Input", "New Name", function (ms, v) {
                             if (ms != 'ok') {
                                 return;
                             }
+
                             me.insrtDevForm(text, v);
+                            panel.getForm().setValues(me.getFormValues());
                             Ext.Msg.alert("Massage", "Ok.")
                         }, this, false, objname);
 

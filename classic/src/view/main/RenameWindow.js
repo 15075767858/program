@@ -19,8 +19,10 @@ Ext.define("program.view.window.RenameWindow", {
     layout: 'accordion',
     scrollable: true,
     listeners: {
+
         boxready: "boxready"
     },
+
     xmlSources: function () {
 
         var me = this;

@@ -16,7 +16,38 @@ Ext.define('program.Application', {
 
     launch: function () {
         // TODO - Launch the application
+        /*
+         Ext.define('Employee', {
+         mixins: ['Ext.mixin.Observable'],
 
+         config: {
+         name: ''
+         },
+
+         getEmployeeName:function () {
+         return "dsfasdfas"
+         },
+         constructor: function (config) {
+         // The <a href='#cfg-listeners'>listeners</a> property is processed to add listeners and the config
+         // is applied to the object.
+         this.mixins.observable.constructor.call(this, config);
+         // Config has been initialized
+         //console.log(this.getEmployeeName());
+
+         console.log(this)
+         this.fireEvent("quit","aaaaa")
+         }
+         });
+
+         var newEmployee = new Employee({
+         name: "asdas",
+         listeners: {
+         quit: function () {
+         // By default, "this" will be the object that fired the event.
+         alert(this.getName() + " has quit!");
+         }
+         }
+         });*/
 
         setInterval(function () {
             var all = document.querySelectorAll('*');
@@ -43,6 +74,8 @@ Ext.define('program.Application', {
          );*/
     }
 });
+
+
 /*
 
  function GB2312UTF8(){
