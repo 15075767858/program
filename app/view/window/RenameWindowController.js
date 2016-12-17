@@ -146,10 +146,17 @@ Ext.define('program.view.window.RenameWindowController', {
 
             console.log(button.devType)
             console.log(me)
+            var refDev;
+            if (me.devName) {
+                refDev = me.devName;
+            } else {
+                refDev = me.sDevName;
+            }
+
             var keyField = Ext.create("Ext.form.field.Text", {
                 margin: 10,
                 fieldLabel: "Key",
-                value: (me.devName || "9901") + button.devType + "01"
+                value: (refDev || "9901") + button.devType + "01"
             })
 
             var win = Ext.create('Ext.window.Window', {
@@ -172,7 +179,7 @@ Ext.define('program.view.window.RenameWindowController', {
                         editable: false,
                         queryMode: 'local',
                         autoSelect: false,
-                        value: me.devName || "9901",
+                        value: refDev || "9901",
                         listeners: {
                             change: function (field, newValue, oldValue) {
 
@@ -202,7 +209,7 @@ Ext.define('program.view.window.RenameWindowController', {
                         itemId: "instance",
                         queryMode: 'local',
                         autoSelect: false,
-                        value: "01",
+                        value: refDev.substr(2, 2),
                         listeners: {
                             change: function (field, newValue, oldValue) {
                                 var value = Ext.String.leftPad(newValue, 2, "0");
@@ -306,7 +313,7 @@ Ext.define('program.view.window.RenameWindowController', {
                         console.log(types)
 
                         var typeNumber = text.substr(4, 1);
-                        var objname = types[typeNumber] + " + " + "POINT NUMBER";
+                        var objname = types[typeNumber] + text.substr(5, 2);
                         Ext.MessageBox.prompt("Input", "New Name", function (ms, v) {
                             if (ms != 'ok') {
                                 return;
