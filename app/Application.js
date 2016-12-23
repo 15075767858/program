@@ -16,9 +16,7 @@ Ext.define('program.Application', {
 
     launch: function () {
 //<script type="text/javascript" src="/www/js/EventAlarm.js"></script>
-var script= document.createElement("script");
-script.src="/js/EventAlarm.js"
-document.body.appendChild(script)
+
         // TODO - Launch the application
         /*
          Ext.define('Employee', {

@@ -890,7 +890,7 @@ Ext.define("program.view.window.RenameWindow", {
 
                         me.deviceName = v;
                         me.saveXml(me.sDevName)
-                        me.relaodRenameWindow()
+                        //me.relaodRenameWindow()
                     } else {
                         Ext.Msg.alert("Exception", "filename exception .")
                     }

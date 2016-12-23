@@ -16,7 +16,10 @@ Ext.define("program.view.tree.DevTree", {
         title: "Device",
         items: [
             {
-                xtype: "image", src: "", width: 20, height: 20, listeners: {
+                xtype: "image", src: "", width: 20, height: 20,
+                hidden:true,
+                disable:true,
+                listeners: {
                 el: {
                     mouseover: function (e, target) {
                         console.log(this)
@@ -28,6 +31,7 @@ Ext.define("program.view.tree.DevTree", {
                     }
                 },
                 boxready: function () {
+                    return ;
                     var img = this;
                     var acceptBulb = "resources/img/light_bulb_accept_24px.png";
                     var deleteBulb = "resources/img/light_bulb_delete_24px.png";
