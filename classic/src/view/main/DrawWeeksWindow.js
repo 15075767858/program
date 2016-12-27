@@ -12,7 +12,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
         type: "window-drawweekswindow"
     },
 
-    height: 768,
+    height: 550,
     width: 1024,
     //constrainHeader: true,//禁止移出父窗口
     autoShow: true,

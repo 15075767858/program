@@ -36,7 +36,7 @@ Ext.define('program.view.main.Main', {
     viewModel: {
         type: 'main'
     },
-    title: "<div style='z-index:0;top:0px;width:100%;line-height:35px;padding:0 0 0 5px;margin:0;font-size: 20px;color:white;'><img style='height:30px;' src='resources/img/PNG/SmartIO.png'/>    SmartIO</div>",
+    title: "<div style='z-index:0;top:0px;width:100%;line-height:35px;padding:0 0 0 5px;margin:0;font-size: 20px;color:white;' class='smartiologo'><img style='height:30px;' src='resources/img/PNG/SmartIO.png'/>    SmartIO </div>",
 
     tbar: [
         {
