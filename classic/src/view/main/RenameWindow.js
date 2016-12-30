@@ -239,6 +239,22 @@ Ext.define("program.view.window.RenameWindow", {
                         }
                     }
                 };
+            } else if (fieldName == "Units") {
+                textfield = {
+                    fieldLabel: fieldName,
+                    name: fieldName,
+                    value: data["Units"],
+                    listeners: {
+                        focus: function (field) {
+                            Ext.create("program.view.window.AttributeTableWin", {
+                                callback: function (value) {
+                                    field.setValue(value)
+                                }
+                            })
+                        }
+                    }
+                }
+
             } else {
                 textfield = {
                     fieldLabel: fieldName,

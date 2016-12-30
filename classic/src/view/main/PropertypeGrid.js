@@ -1,5 +1,3 @@
-
-
 Ext.define("program.view.grid.PropertypeGrid", {
     extend: "Ext.grid.Panel",
     xtype: "propertypegrid",
@@ -69,7 +67,6 @@ Ext.define("program.view.grid.PropertypeGrid", {
 
             },
             beforeedit: function (editor, context, eOpts) {
-
 
 
                 var win = editor.cmp.up();
@@ -330,7 +327,19 @@ Ext.define("program.view.grid.PropertypeGrid", {
                             })
                             return true
                         }
+                        if (rowRecord.data.type == "Units") {
+                            console.log(arguments)
+                            setTimeout(function () {
+                                var attributeTable = Ext.create("program.view.window.AttributeTableWin", {
+                                    callback: function (value) {
+                                        editor.context.column.field.setValue(value)
+                                    }
+                                });
+                                attributeTable.show();
+                            }, 500)
 
+
+                        }
                         if (rowRecord.data.type == "Device_Type") {
 
                             var combostore = Ext.create('Ext.data.Store', {

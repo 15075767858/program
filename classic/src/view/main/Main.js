@@ -18,7 +18,8 @@ Ext.define('program.view.main.Main', {
         //"program.view.Viewport",
         "Ext.chart.*",
         "Ext.window.*",
-        "Ext.data.*"
+        "Ext.data.*",
+        "program.view.massage.ProgressBarWin"
     ],
     style: {
         //background: "rgb(21,127,214)"

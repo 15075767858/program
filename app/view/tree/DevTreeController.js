@@ -100,7 +100,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                             }
                                             console.log(text)
                                             Ext.create('program.view.window.RenameWindow', {
-                                                sources:"xml",
+                                                sources: "xml",
                                                 text: text,
                                             })
                                             win.close();
@@ -665,7 +665,7 @@ Ext.define('program.view.tree.DevTreeController', {
                             console.log(record)
                             Ext.create('program.view.window.RenameWindow', {
                                 sDevName: record.data.text,
-                                sources:"db"
+                                sources: "db"
                             })
                         }
                     },
@@ -882,6 +882,28 @@ Ext.define('program.view.tree.DevTreeController', {
                     {
                         text: "Schedule...",
                         disabled: true
+                    },
+                    {
+                        text: "Update", handler: function () {
+                        var keyArr = getDevAllByDevice(record.data.text);
+
+                        var pbwin = Ext.createByAlias("progressbarwin",
+                            {
+                                y:0,
+                                allCount: keyArr.length
+                            }
+                        )
+                        for (var i = 0; i < keyArr.length; i++) {
+
+                            (function (key, i) {
+                                setTimeout(function () {
+                                    updateKey(key);
+                                    pbwin.setValue(i+1)
+                                }, i * 500)
+                            })(keyArr[i], i)
+                        }
+
+                    }
                     },
                     {
                         text: "BACnetNO.",
@@ -1649,11 +1671,11 @@ Ext.define('program.view.tree.DevTreeController', {
                         },
                         {
                             text: "Synchronous", handler: function () {
-                                Ext.create('program.view.window.SynchrnousWindow', {
-                                    sDevNodeName: sDevNodeName,
-                                    sDevName: sDevName
-                                })
-                            },
+                            Ext.create('program.view.window.SynchrnousWindow', {
+                                sDevNodeName: sDevNodeName,
+                                sDevName: sDevName
+                            })
+                        },
                             listeners: {
                                 boxready: function (menu) {
                                     if (sDevName.substr(2, 2) != "00") {
@@ -1854,293 +1876,6 @@ Ext.define('program.view.tree.DevTreeController', {
                 ]
             })
 
-            function updateKey(key) {
-                var types = {}
-                types.typeKeys0 = {
-                    "Object_Identifier": "0",
-                    "Object_Type": "0",
-                    "Present_Value": "0",
-                    "Description": "ANALOG INPUT 1",
-                    "Device_Type": "NTC20K",
-                    "Status_Flags": "0000",
-                    "Event_State": "0",
-                    "Reliability": "0",
-                    "Out_Of_Service": "0",
-                    "Update_Interval": "1",
-                    "Units": "98",
-                    "Min_Pres_Value": "0",
-                    "Max_Pres_Value": "100",
-                    "Resolution": "0",
-                    "COV_Increment": "1.2",
-                    "Time_Delay": "0",
-                    "Notification_Class": "0",
-                    "High_Limit": "100",
-                    "Low_Limit": "0",
-                    "Deadband": "0.000",
-                    "Limit_Enable": "0",
-                    "Event_Enable": "0",
-                    "Acked_Transitions": "0",
-                    "Notify_Type": "0",
-                    "Update_Time": "2016-12-08 20:31:57",
-                    "Offset": "0",
-                    "Lock_Enable": "0",
-                    "Plant": "AHU_AI",
-                    "Hide": "0",
-                    "Object_Name": "AI1"
-                }
-                types.typeKeys1 = {
-                    "Plant": "AHU_AO",
-                    "Status_Flags": "0000",
-                    "Deadband": "0.000",
-                    "Object_Identifier": "0",
-                    "Units": "1",
-                    "Time_Delay": "0",
-                    "Hide": "0",
-                    "Notification_Class": "0",
-                    "Description": "ANALOG OUTPUT 1",
-                    "High_Limit": "100",
-                    "Low_Limit": "0",
-                    "Lock_Enable": "0",
-                    "Resolution": "100",
-                    "Relinquish_Default": "0",
-                    "Object_Name": "AO1",
-                    "Priority_Array": "NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL",
-                    "Min_Pres_Value": "95",
-                    "Present_Value": "0",
-                    "Max_Pres_Value": "0",
-                    "Limit_Enable": "0",
-                    "Event_State": "0",
-                    "Notify_Type": "0",
-                    "Acked_Transitions": "0",
-                    "Device_Type": "0-10=0-100",
-                    "Update_Time": "2016-12-08 20:32:07",
-                    "Event_Enable": "0",
-                    "Out_Of_Service": "0",
-                    "COV_Increment": "1.2",
-                    "Object_Type": "1",
-                    "Reliability": "0"
-                }
-                types.typeKeys2 = {
-                    "Status_Flags": "0000",
-                    "Plant": "AHU_AV",
-                    "Deadband": "0.000",
-                    "Object_Identifier": "0",
-                    "Units": "98",
-                    "Time_Delay": "0",
-                    "Hide": "0",
-                    "Notification_Class": "0",
-                    "Description": "ANALOG VALUE 1",
-                    "Low_Limit": "0",
-                    "High_Limit": "100",
-                    "Lock_Enable": "0",
-                    "Relinquish_Default": "0",
-                    "Object_Name": "AV1",
-                    "Priority_Array": "NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL",
-                    "Present_Value": "0",
-                    "Event_State": "0",
-                    "Limit_Enable": "0",
-                    "Notify_Type": "0",
-                    "Acked_Transitions": "0",
-                    "Update_Time": "2016-12-08 20:32:13",
-                    "Event_Enable": "0",
-                    "Out_Of_Service": "0",
-                    "COV_Increment": "1.2",
-                    "Reliability": "0",
-                    "Object_Type": "2"
-                }
-                types.typeKeys3 = {
-                    "Object_Identifier": "0",
-                    "Object_Type": "3",
-                    "Present_Value": "0",
-                    "Description": "BINARY INPUT 1",
-                    "Device_Type": "NormalOpen",
-                    "Status_Flags": "0000",
-                    "Event_State": "0",
-                    "Reliability": "0",
-                    "Out_Of_Service": "0",
-                    "Polarity": "0",
-                    "Inactive_Text": "Off",
-                    "Active_Text": "On",
-                    "Change_Of_State_Time": "0.5",
-                    "Change_Of_State_Count": "0",
-                    "Time_Of_State_Count_Reset": "0",
-                    "Elapsed_Active_Time": "1",
-                    "Time_Of_Active_Time_Reset": "0",
-                    "Time_Delay": "0",
-                    "Notification_Class": "0",
-                    "Alarm_Value": "0",
-                    "Event_Enable": "0",
-                    "Acked_Transitions": "0",
-                    "Notify_Type": "0",
-                    "Update_Time": "2016-12-08 20:32:17",
-                    "Lock_Enable": "0",
-                    "Plant": "AHU_BI",
-                    "Hide": "0",
-                    "Object_Name": "BI1"
-                }
-                types.typeKeys4 = {
-                    "Status_Flags": "0000",
-                    "Plant": "AHU_BO",
-                    "Change_Of_State_Count": "1",
-                    "Object_Identifier": "0",
-                    "Time_Delay": "1",
-                    "Description": "Binary Output 1",
-                    "Hide": "0",
-                    "Notification_Class": "1",
-                    "Lock_Enable": "1",
-                    "Relinquish_Default": "1",
-                    "Polarity": "0",
-                    "Object_Name": "BO1",
-                    "Change_Of_State_Time": "1",
-                    "Priority_Array": "NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL",
-                    "Minimum_On_Time": "1",
-                    "Present_Value": "0",
-                    "Event_State": "0",
-                    "Notify_Type": "1",
-                    "Device_Type": "NormalOpen",
-                    "Acked_Transitions": "1",
-                    "Update_Time": "2016-12-08 20:32:22",
-                    "Time_Of_State_Count_Reset": "1",
-                    "Active_Text": "On",
-                    "Event_Enable": "1",
-                    "Time_Of_Active_Time_Reset": "1",
-                    "Elapsed_Active_Time": "1",
-                    "Out_Of_Service": "0",
-                    "Feedback_Value": "1",
-                    "Inactive_Text": "Off",
-                    "Reliability": "0",
-                    "Minimum_Off_Time": "1",
-                    "Object_Type": "4"
-                }
-                types.typeKeys5 = {
-                    "Plant": "AHU_BV",
-                    "Status_Flags": "0000",
-                    "Object_Identifier": "0",
-                    "Change_Of_State_Count": "1",
-                    "Time_Delay": "1",
-                    "Hide": "0",
-                    "Notification_Class": "1",
-                    "Description": "Digital Value 1",
-                    "Alarm_Value": "1",
-                    "Lock_Enable": "1",
-                    "Relinquish_Default": "1",
-                    "Object_Name": "BV1",
-                    "Change_Of_State_Time": "1",
-                    "Priority_Array": "NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL",
-                    "Minimum_On_Time": "1",
-                    "Present_Value": "0",
-                    "Event_State": "0",
-                    "Notify_Type": "1",
-                    "Acked_Transitions": "1",
-                    "Update_Time": "2016-12-09 10:32:23",
-                    "Time_Of_State_Count_Reset": "1",
-                    "Event_Enable": "1",
-                    "Active_Text": "On",
-                    "Time_Of_Active_Time_Reset": "1",
-                    "Elapsed_Active_Time": "1",
-                    "Out_Of_Service": "0",
-                    "Inactive_Text": "Off",
-                    "Reliability": "0",
-                    "Object_Type": "5",
-                    "Minimum_Off_Time": "1"
-                }
-                types.typeKeys6 = {
-                    "Object_Identifier": "17,9922601",
-                    "Object_Type": "17",
-                    "Present_Value": "1",
-                    "Description": "Description 1",
-                    "Effective_Period": "{\"dateRange\":{}}",
-                    "Weekly_Schedule": "{\"Weekly_Schedule\":{}}",
-                    "Exception_Schedule": "{\"Exception_Schedule\":[]}",
-                    "List_Of_Object_Property_References": "{\"List_Of_Object_Property_References\":[]}",
-                    "Priority_For_Writing": "8",
-                    "Update_Time": "2016-12-08 20:32:32",
-                    "Lock_Enable": "0",
-                    "Schedule_Default": "Off",
-                    "Object_Name": "SCHE1"
-                }
-                myAjax(null, function (response) {
-                    try {
-                        var resArr = Ext.decode(response.responseText);
-                        console.log(resArr);
-                        var type = getKeyType(key);
-                        compareKeys(key, resArr, types["typeKeys" + type]);
-                    } catch (e) {
-                        Ext.Msg.alert("Massage", "Error " + e);
-                        throw new Error(e)
-                    }
-                }, {
-                    par: 'getKeyAll',
-                    key: key
-                })
-                function getKeyType(key) {
-                    if (isKey(key)) {
-                        return key.substr(4, 1);
-                    } else {
-                        return false;
-                    }
-                }
-
-                function isKey(key) {
-                    if (typeof key != "string" & typeof key != "number") {
-                        throw new Error("Invald key!" + typeof key)
-                        return false;
-                    }
-                    if (typeof key != "string") {
-                        key = key + ""
-                    }
-                    if (key.length != 7 || isNaN(key)) {
-                        Ext.Msg.show({
-                            title: 'Exception !',
-                            message: 'Found an exception key' + key + ', do you want to delete ?',
-                            buttons: Ext.Msg.YESNOCANCEL,
-                            icon: Ext.Msg.ERROR,
-                            fn: function (btn) {
-                                if (btn === 'yes') {
-                                    deleteKey(key)
-                                }
-                            }
-                        });
-                        return false;
-                    }
-                    return true;
-                }
-
-                function changeKey(oldKey, newKey) {
-
-                    myAjax(null, function (response) {
-
-
-                    }, {
-                        par: "changeKey",
-                        oldKey: oldKey,
-                        newKey: newKey
-                    })
-                }
-
-
-                function compareKeys(device, dbJSON, normalJSON) {
-                    console.log(dbJSON, normalJSON)
-                    var noCount = 0
-                    for (var key in normalJSON) {
-                        if (dbJSON[key]) {
-                            console.log("key = " + key + ", value=" + dbJSON[key] + " 有")
-                        } else {
-                            console.log("key = " + key + ", value=" + normalJSON[key] + " 没有")
-                            changeDevValue(device, key, normalJSON[key]);
-                            noCount++
-                        }
-                    }
-                    var point = noCount ? 1 : 0
-
-                    Ext.Msg.alert("Update Device", "Update " + point + " point , " + noCount + " Attributes .")
-                    console.log(noCount)
-                }
-
-                //myGetValue()
-
-
-            }
 
             function deleteKey(key) {
                 myAjax(null, function (response) {
@@ -2163,6 +1898,296 @@ Ext.define('program.view.tree.DevTreeController', {
                 })
             }
         }
+        function updateKey(key) {
+            var __key = key;
+            console.log(key)
+            var types = {}
+            types.typeKeys0 = {
+                "Object_Identifier": "0",
+                "Object_Type": "0",
+                "Present_Value": "0",
+                "Description": "ANALOG INPUT 1",
+                "Device_Type": "NTC20K",
+                "Status_Flags": "0000",
+                "Event_State": "0",
+                "Reliability": "0",
+                "Out_Of_Service": "0",
+                "Update_Interval": "1",
+                "Units": "98",
+                "Min_Pres_Value": "0",
+                "Max_Pres_Value": "100",
+                "Resolution": "0",
+                "COV_Increment": "1.2",
+                "Time_Delay": "0",
+                "Notification_Class": "0",
+                "High_Limit": "100",
+                "Low_Limit": "0",
+                "Deadband": "0.000",
+                "Limit_Enable": "0",
+                "Event_Enable": "0",
+                "Acked_Transitions": "0",
+                "Notify_Type": "0",
+                "Update_Time": "2016-12-08 20:31:57",
+                "Offset": "0",
+                "Lock_Enable": "0",
+                "Plant": "AHU_AI",
+                "Hide": "0",
+                "Object_Name": "AI1"
+            }
+            types.typeKeys1 = {
+                "Plant": "AHU_AO",
+                "Status_Flags": "0000",
+                "Deadband": "0.000",
+                "Object_Identifier": "0",
+                "Units": "1",
+                "Time_Delay": "0",
+                "Hide": "0",
+                "Notification_Class": "0",
+                "Description": "ANALOG OUTPUT 1",
+                "High_Limit": "100",
+                "Low_Limit": "0",
+                "Lock_Enable": "0",
+                "Resolution": "100",
+                "Relinquish_Default": "0",
+                "Object_Name": "AO1",
+                "Priority_Array": "NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL",
+                "Min_Pres_Value": "95",
+                "Present_Value": "0",
+                "Max_Pres_Value": "0",
+                "Limit_Enable": "0",
+                "Event_State": "0",
+                "Notify_Type": "0",
+                "Acked_Transitions": "0",
+                "Device_Type": "0-10=0-100",
+                "Update_Time": "2016-12-08 20:32:07",
+                "Event_Enable": "0",
+                "Out_Of_Service": "0",
+                "COV_Increment": "1.2",
+                "Object_Type": "1",
+                "Reliability": "0"
+            }
+            types.typeKeys2 = {
+                "Status_Flags": "0000",
+                "Plant": "AHU_AV",
+                "Deadband": "0.000",
+                "Object_Identifier": "0",
+                "Units": "98",
+                "Time_Delay": "0",
+                "Hide": "0",
+                "Notification_Class": "0",
+                "Description": "ANALOG VALUE 1",
+                "Low_Limit": "0",
+                "High_Limit": "100",
+                "Lock_Enable": "0",
+                "Relinquish_Default": "0",
+                "Object_Name": "AV1",
+                "Priority_Array": "NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL",
+                "Present_Value": "0",
+                "Event_State": "0",
+                "Limit_Enable": "0",
+                "Notify_Type": "0",
+                "Acked_Transitions": "0",
+                "Update_Time": "2016-12-08 20:32:13",
+                "Event_Enable": "0",
+                "Out_Of_Service": "0",
+                "COV_Increment": "1.2",
+                "Reliability": "0",
+                "Object_Type": "2"
+            }
+            types.typeKeys3 = {
+                "Object_Identifier": "0",
+                "Object_Type": "3",
+                "Present_Value": "0",
+                "Description": "BINARY INPUT 1",
+                "Device_Type": "NormalOpen",
+                "Status_Flags": "0000",
+                "Event_State": "0",
+                "Reliability": "0",
+                "Out_Of_Service": "0",
+                "Polarity": "0",
+                "Inactive_Text": "Off",
+                "Active_Text": "On",
+                "Change_Of_State_Time": "0.5",
+                "Change_Of_State_Count": "0",
+                "Time_Of_State_Count_Reset": "0",
+                "Elapsed_Active_Time": "1",
+                "Time_Of_Active_Time_Reset": "0",
+                "Time_Delay": "0",
+                "Notification_Class": "0",
+                "Alarm_Value": "0",
+                "Event_Enable": "0",
+                "Acked_Transitions": "0",
+                "Notify_Type": "0",
+                "Update_Time": "2016-12-08 20:32:17",
+                "Lock_Enable": "0",
+                "Plant": "AHU_BI",
+                "Hide": "0",
+                "Object_Name": "BI1"
+            }
+            types.typeKeys4 = {
+                "Status_Flags": "0000",
+                "Plant": "AHU_BO",
+                "Change_Of_State_Count": "1",
+                "Object_Identifier": "0",
+                "Time_Delay": "1",
+                "Description": "Binary Output 1",
+                "Hide": "0",
+                "Notification_Class": "1",
+                "Lock_Enable": "1",
+                "Relinquish_Default": "1",
+                "Polarity": "0",
+                "Object_Name": "BO1",
+                "Change_Of_State_Time": "1",
+                "Priority_Array": "NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL",
+                "Minimum_On_Time": "1",
+                "Present_Value": "0",
+                "Event_State": "0",
+                "Notify_Type": "1",
+                "Device_Type": "NormalOpen",
+                "Acked_Transitions": "1",
+                "Update_Time": "2016-12-08 20:32:22",
+                "Time_Of_State_Count_Reset": "1",
+                "Active_Text": "On",
+                "Event_Enable": "1",
+                "Time_Of_Active_Time_Reset": "1",
+                "Elapsed_Active_Time": "1",
+                "Out_Of_Service": "0",
+                "Feedback_Value": "1",
+                "Inactive_Text": "Off",
+                "Reliability": "0",
+                "Minimum_Off_Time": "1",
+                "Object_Type": "4"
+            }
+            types.typeKeys5 = {
+                "Plant": "AHU_BV",
+                "Status_Flags": "0000",
+                "Object_Identifier": "0",
+                "Change_Of_State_Count": "1",
+                "Time_Delay": "1",
+                "Hide": "0",
+                "Notification_Class": "1",
+                "Description": "Digital Value 1",
+                "Alarm_Value": "1",
+                "Lock_Enable": "1",
+                "Relinquish_Default": "1",
+                "Object_Name": "BV1",
+                "Change_Of_State_Time": "1",
+                "Priority_Array": "NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL",
+                "Minimum_On_Time": "1",
+                "Present_Value": "0",
+                "Event_State": "0",
+                "Notify_Type": "1",
+                "Acked_Transitions": "1",
+                "Update_Time": "2016-12-09 10:32:23",
+                "Time_Of_State_Count_Reset": "1",
+                "Event_Enable": "1",
+                "Active_Text": "On",
+                "Time_Of_Active_Time_Reset": "1",
+                "Elapsed_Active_Time": "1",
+                "Out_Of_Service": "0",
+                "Inactive_Text": "Off",
+                "Reliability": "0",
+                "Object_Type": "5",
+                "Minimum_Off_Time": "1"
+            }
+            types.typeKeys6 = {
+                "Object_Identifier": "17,9922601",
+                "Object_Type": "17",
+                "Present_Value": "1",
+                "Description": "Description 1",
+                "Effective_Period": "{\"dateRange\":{}}",
+                "Weekly_Schedule": "{\"Weekly_Schedule\":{}}",
+                "Exception_Schedule": "{\"Exception_Schedule\":[]}",
+                "List_Of_Object_Property_References": "{\"List_Of_Object_Property_References\":[]}",
+                "Priority_For_Writing": "8",
+                "Update_Time": "2016-12-08 20:32:32",
+                "Lock_Enable": "0",
+                "Schedule_Default": "Off",
+                "Object_Name": "SCHE1"
+            }
+            myAjax(null, function (response) {
+                try {
+                    var resArr = Ext.decode(response.responseText);
+                    console.log(resArr);
+                    var type = getKeyType(key);
+                    compareKeys(key, resArr, types["typeKeys" + type]);
+                } catch (e) {
+                    Ext.Msg.alert("Massage", "Error " + e);
+                    throw new Error(e)
+                }
+            }, {
+                par: 'getKeyAll',
+                key: key
+            })
+            function getKeyType(key) {
+                if (isKey(key)) {
+                    return key.substr(4, 1);
+                } else {
+                    return false;
+                }
+            }
+
+            function isKey(key) {
+                if (typeof key != "string" & typeof key != "number") {
+                    throw new Error("Invald key!" + typeof key)
+                    return false;
+                }
+                if (typeof key != "string") {
+                    key = key + ""
+                }
+                if (key.length != 7 || isNaN(key)) {
+                    Ext.Msg.show({
+                        title: 'Exception !',
+                        message: 'Found an exception key' + key + ', do you want to delete ?',
+                        buttons: Ext.Msg.YESNOCANCEL,
+                        icon: Ext.Msg.ERROR,
+                        fn: function (btn) {
+                            if (btn === 'yes') {
+                                deleteKey(key)
+                            }
+                        }
+                    });
+                    return false;
+                }
+                return true;
+            }
+
+            function changeKey(oldKey, newKey) {
+
+                myAjax(null, function (response) {
+
+
+                }, {
+                    par: "changeKey",
+                    oldKey: oldKey,
+                    newKey: newKey
+                })
+            }
+
+
+            function compareKeys(device, dbJSON, normalJSON) {
+                console.log(dbJSON, normalJSON)
+                var noCount = 0
+                for (var key in normalJSON) {
+                    if (dbJSON[key]) {
+                        console.log("key = " + key + ", value=" + dbJSON[key] + " 有")
+                    } else {
+                        console.log("key = " + key + ", value=" + normalJSON[key] + " 没有")
+                        changeDevValue(device, key, normalJSON[key]);
+                        noCount++
+                    }
+                }
+                var point = noCount ? 1 : 0
+
+                Ext.Msg.alert("Update Device", "key " + __key + " Update " + point + " point , " + noCount + " Attributes .")
+
+            }
+
+            //myGetValue()
+
+
+        }
+
     }
 })
 ;
@@ -2355,7 +2380,19 @@ function getDevAll() {
     }
     return childrenArr;
 }
+function getDevAllByDevice(deviceInstance) {
+    var arr = getDevNamesAll();
+    console.log(arr)
+    return arr.filter(function (value, insudex) {
+        if ((value + "").substr(0, 4) == deviceInstance + "") {
+            return true;
+        } else {
+            return false;
+        }
+    })
 
+
+}
 
 function getTypeByDev(devName) {
     var type = [0, 1, 2, 3, 4, 5];
