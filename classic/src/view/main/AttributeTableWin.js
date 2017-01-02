@@ -10,10 +10,15 @@ Ext.define('program.view.window.AttributeTableWin', {
     viewModel: {
         type: 'window-attributetablewin'
     },
-    modal:true,
+    modal: true,
     title: "Select Attribute",
     autoShow: true,
     width: 600,
+    buttons: [
+        {
+            text: "Close", handler: "closeWin"
+        }
+    ],
     initComponent: function () {
         var me = this;
 

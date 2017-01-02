@@ -1,5 +1,6 @@
 Ext.define('program.view.grid.BackupGrid', {
     extend: 'Ext.grid.Panel',
+    xtype: "backupgrid",
 
     requires: [
         'program.view.grid.BackupGridController',
@@ -10,7 +11,6 @@ Ext.define('program.view.grid.BackupGrid', {
     viewModel: {
         type: 'grid-backupgrid'
     },
-    xtype: "backupgrid",
     width: "100%",
     height: "100%",
     region: 'center',
@@ -26,7 +26,7 @@ Ext.define('program.view.grid.BackupGrid', {
             fields: ["name", "lasttime", "size", "filetype"],
             proxy: {
                 type: "ajax",
-                url: "resources/test1.php?par=getbackupfiles&folder=" + me.folder
+                url: "/program/resources/test1.php?par=getbackupfiles&folder=" + me.folder
             },
             autoLoad: true
         }),
@@ -104,7 +104,7 @@ Ext.define('program.view.grid.BackupGrid', {
                         animateTarget: button,
                         fn: function (btn) {
                             if (btn === 'yes') {
-                                myAjax("resources/test1.php", function () {
+                                myAjax("/program/resources/test1.php", function () {
                                     Ext.MessageBox.close();
                                     grid.store.load();
                                     console.log(arguments)
@@ -154,8 +154,8 @@ Ext.define('program.view.grid.BackupGrid', {
                     setTimeout(function () {
 
 
-                        myAjax("resources/test1.php", function () {
-                            location.href = "resources/pragramBackup.tar.gz";
+                        myAjax("/program/resources/test1.php", function () {
+                            location.href = "/program/resources/pragramBackup.tar.gz";
                         }, {
                             par: "system",
                             command: "tar czvf pragramBackup.tar.gz " + fileNames

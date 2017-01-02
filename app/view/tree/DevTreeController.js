@@ -889,7 +889,7 @@ Ext.define('program.view.tree.DevTreeController', {
 
                         var pbwin = Ext.createByAlias("progressbarwin",
                             {
-                                y:0,
+                                y: 0,
                                 allCount: keyArr.length
                             }
                         )
@@ -898,7 +898,7 @@ Ext.define('program.view.tree.DevTreeController', {
                             (function (key, i) {
                                 setTimeout(function () {
                                     updateKey(key);
-                                    pbwin.setValue(i+1)
+                                    pbwin.setValue(i + 1)
                                 }, i * 500)
                             })(keyArr[i], i)
                         }
@@ -2203,15 +2203,20 @@ function getNetNumberValue(filename) {
         },
         success: function (response) {
             console.log(arguments)
-            //var text = response.responseText
-            //console.log(response)
-            var xml = $($.parseXML(response.responseText));
-            console.log(xml)
-            //var xml = response.responseXML;
-            if (xml) {
-                str = xml.find("root net").text()
-            } else {
-                Ext.Msg.alert("Exception ", "bac_config is not fount .")
+            try {
+
+                //var text = response.responseText
+                //console.log(response)
+                var xml = $($.parseXML(response.responseText));
+                console.log(xml)
+                //var xml = response.responseXML;
+                if (xml) {
+                    str = xml.find("root net").text()
+                } else {
+                    Ext.Msg.alert("Exception ", "bac_config is not fount .")
+                }
+            }catch (e){
+                Ext.Msg.alert("Massage","Error "+response.responseText);
             }
 
         }

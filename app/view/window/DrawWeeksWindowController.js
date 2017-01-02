@@ -135,7 +135,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                                     "second": sS,
                                     "hundredths": 0
                                 },
-                                value: true
+                                value: "0"
                             }, {
                                 time: {
                                     "hour": eH,
@@ -143,7 +143,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                                     "second": eS,
                                     "hundredths": 0
                                 },
-                                value: false
+                                value: "1"
                             }
                         )
                     }
@@ -156,7 +156,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                                 "second": sS,
                                 "hundredths": 0
                             },
-                            value: true
+                            value: "0"
                         }, {
                             time: {
                                 "hour": eH,
@@ -164,7 +164,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                                 "second": eS,
                                 "hundredths": 0
                             },
-                            value: false
+                            value: "1"
                         }
                     )
                 }
