@@ -8,7 +8,7 @@ Ext.application({
 
     extend: 'program.Application',
     requires: [
-        'program.view.main.Main'
+        'program.view.main.*'
     ],
 
     // The name of the initial view to create. With the classic toolkit this class

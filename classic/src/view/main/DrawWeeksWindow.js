@@ -3,8 +3,8 @@ Ext.define("program.view.window.DrawWeeksWindow", {
     alias: "drawweekswindow",
     requires: [
         "program.view.window.DrawWeeksWindowController",
-        "program.view.window.DrawWeeksWindowModel"
-
+        "program.view.window.DrawWeeksWindowModel",
+        "program.model.WeekModel"
     ],
 
     controller: "window-drawweekswindow",
@@ -71,7 +71,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                         delayToast("Status", "Changes saved successfully .", 1000);
                     }
                 });
-                var instance = me.sDevNodeName.substr(0,4)
+                var instance = me.sDevNodeName.substr(0, 4)
                 if (me.sDevName != getNetNumberValue()) {
                     devPublish(instance + ".8.*", me.sDevNodeName + "\r\nWeekly_Schedule\r\n" + (Ext.encode(oJson.pubweekly)).replaceAll("\\s*|\t|\r|\n", ""));
                 }
@@ -135,7 +135,6 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                 minimum: 2649600000,
                 maximum: 2736000000,
                 renderer: function (label, value, lastLabel) {
-                    console.log(arguments)
                     var chaTime = (2736000000 - value) + 2649600000;
                     var time = new Date(chaTime)
                     var hours = time.getHours();
@@ -179,16 +178,26 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                 storeId: "drawWindowStore",
                 groupField: 'SortWeek',
                 //groupDir:"DESC",
-                sortOnLoad: false,
-                fields: ["divId", 'Week', 'StartTime', 'EndTime']
-                //data: dwPars.drawWindowData
+                //sortOnLoad: true,
+                //fields: ["divId", 'Week', 'StartTime', 'EndTime', "level"],
+                model: Ext.createByAlias("WeekModel"),
+                sorters : [{
+                    property: 'level',
+                    direction: 'DESC'
+                }]
             }),
-            features: new Ext.grid.feature.Grouping({
+            listeners:{
+              boxready:function(grid){
+                  testgrid=grid
+              }
+            },
+            /*features: new Ext.grid.feature.Grouping({
 
-                groupHeaderTpl: '{name}{renderedGroupValue} &nbsp;&nbsp;({rows.length} Item{[values.rows.length > 1 ? "s" : ""]})',
-                hideGroupedHeader: true,
-                startCollapsed: true
-            }),
+             groupHeaderTpl: "."||'{name}{renderedGroupValue} &nbsp;&nbsp;({rows.length} Item{[values.rows.length > 1 ? "s" : ""]})',
+             hideGroupedHeader: true,
+             startCollapsed: true
+             }),*/
+
             tbar: [{
                 text: 'Expand All',
                 handler: function () {
@@ -213,8 +222,8 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                         console.log(arguments)
                         var aStarttime = context.newValues.StartTime.split(":");
                         var aEndtime = context.newValues.EndTime.split(":");
-                        var starttime = new Date(1970, 1, 1, aStarttime[0], aStarttime[1], aStarttime[2])
-                        var endtime = new Date(1970, 1, 1, aEndtime[0], aEndtime[1], aEndtime[2])
+                        var starttime = new Date(1970, 1, 1, aStarttime[0], aStarttime[1], aStarttime[2]);
+                        var endtime = new Date(1970, 1, 1, aEndtime[0], aEndtime[1], aEndtime[2]);
                         if (starttime > endtime) {
                             me.dwPars.drawWindowData[context.rowIdx].StartTime = context.originalValues.StartTime
                             me.dwPars.drawWindowData[context.rowIdx].EndTime = context.originalValues.EndTime
@@ -302,9 +311,10 @@ Ext.define("program.view.window.DrawWeeksWindow", {
 
         boxready: function () {
             var me = this;
-            var canIntval= setInterval(isCanvasRender,1)
-            function isCanvasRender(){
-                if(me.el.dom.querySelectorAll("canvas").length>4){
+            var canIntval = setInterval(isCanvasRender, 1)
+
+            function isCanvasRender() {
+                if (me.el.dom.querySelectorAll("canvas").length > 4) {
                     me.controller.dwParsInit.call(me)
                     clearInterval(canIntval)
                     Ext.MessageBox.progress('Message', {msg: 'Server Ready ...'});
@@ -337,16 +347,17 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                 //柱子间隔 27  宽100  高625
                 if (el.tagName != "CANVAS") {
                     return;
-                };
+                }
+                ;
                 console.log(win.pageY)
-                if(win.pageY<100){
-                    return ;
+                if (win.pageY < 100) {
+                    return;
                 }
                 console.log(me.el.getTop(true))
                 var WeekArrJson = me.dwPars.WeekArrJson;
-                var pageLeft = win.pageX-me.el.getLeft(true);
-                for(var i=0;i<WeekArrJson.length;i++){
-                    if(WeekArrJson[i].left<pageLeft&WeekArrJson[i].left+100>pageLeft){
+                var pageLeft = win.pageX - me.el.getLeft(true);
+                for (var i = 0; i < WeekArrJson.length; i++) {
+                    if (WeekArrJson[i].left < pageLeft & WeekArrJson[i].left + 100 > pageLeft) {
                         Ext.create('Ext.menu.Menu', {
                             width: 100,
                             plain: true,
@@ -359,23 +370,23 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                                 handler: function () {
                                     me.addNewBar(win)
                                 }
-                            },{
-                                text:"Paste Time",
-                                disabled:true,
-                                handler:function(){
-                                    me.addNewBar(win,me.copydiv);
+                            }, {
+                                text: "Paste Time",
+                                disabled: true,
+                                handler: function () {
+                                    me.addNewBar(win, me.copydiv);
                                 },
-                                listeners:{
-                                    boxready:function(menu){
+                                listeners: {
+                                    boxready: function (menu) {
                                         console.log(me.copydiv)
-                                        if(me.copydiv){
+                                        if (me.copydiv) {
                                             menu.setDisabled(false);
                                         }
                                     }
                                 }
-                            },"-",{
-                                text:"Time Value",
-                                disabled:true
+                            }, "-", {
+                                text: "Time Value",
+                                disabled: true
                             }
                             ]
                         });
@@ -385,12 +396,11 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                 }
 
 
-
                 win.stopEvent();
             }
         }
     },
-    addNewBar: function (eve,copydiv) {
+    addNewBar: function (eve, copydiv) {
         var win = this;
         var WeekArr = win.dwPars.WeekArrJson
         var dw = win.dwPars.dw;
@@ -409,7 +419,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             if (isBarCollsion(eve.pageX, eve.pageY, posLeftArr[i] + winOffsetLeft, bMarginTop, bWidth, bMaxHeight)) {
                 bLeft = posLeftArr[i];
                 div.addClass(WeekArr[i].name);
-                div.addClass("new"+WeekArr[i].name);
+                div.addClass("new" + WeekArr[i].name);
             }
         }
         if (bLeft) {
@@ -422,15 +432,15 @@ Ext.define("program.view.window.DrawWeeksWindow", {
         win.controller.weekDivAddEvent.call(win, div)
         var tmStart = win.getTimeByLocation(parseInt(div.css("Top")) - bMarginTop);
         var tmEnd = win.getTimeByLocation(parseInt(div.css("Top")) - bMarginTop + parseInt(div.css("height")))
-        if(copydiv){
-            div.attr("startTime",copydiv.attr("startTime")).attr("endTime",copydiv.attr("endTime"));
-        }else{
+        if (copydiv) {
+            div.attr("startTime", copydiv.attr("startTime")).attr("endTime", copydiv.attr("endTime"));
+        } else {
             div.attr("startTime", tmStart).attr("endTime", tmEnd)
         }
         win.weekDivResetPosition()
     },
     getTimeByLocation: function (weizhi) {
-        var me=this;
+        var me = this;
         var time = new Date(me.dwPars.oneDay * (weizhi / me.dwPars.bMaxHeight) + 2649600000);
         return time;
     },

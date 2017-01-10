@@ -894,11 +894,11 @@ Ext.define('program.view.tree.DevTreeController', {
                             }
                         )
                         for (var i = 0; i < keyArr.length; i++) {
-
                             (function (key, i) {
                                 setTimeout(function () {
                                     updateKey(key);
                                     pbwin.setValue(i + 1)
+                                    pbwin.show();
                                 }, i * 500)
                             })(keyArr[i], i)
                         }
@@ -2172,7 +2172,6 @@ Ext.define('program.view.tree.DevTreeController', {
                 })
             }
 
-
             function compareKeys(device, dbJSON, normalJSON) {
                 console.log(dbJSON, normalJSON)
                 var noCount = 0
@@ -2186,7 +2185,6 @@ Ext.define('program.view.tree.DevTreeController', {
                     }
                 }
                 var point = noCount ? 1 : 0
-
                 Ext.Msg.alert("Update Device", "key " + __key + " Update " + point + " point , " + noCount + " Attributes .")
 
             }

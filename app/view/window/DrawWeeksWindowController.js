@@ -4,8 +4,6 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
 
     weekDivAddEvent: function (div) {
         var me = this
-        console.log(me)
-        console.log(div)
         div.hover(
             function () {
                 var tmStart = new Date(div.attr("startTime"))
@@ -98,7 +96,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
             "Weekly_Schedule": []
         }
         me.dwPars.drawWindowData = []
-        WeekArr = me.dwPars.WeekArr
+        var WeekArr = me.dwPars.WeekArr
 
         for (var i = 0; i < WeekArr.length; i++) {
             //console.log(this.up("window").el.dom.getElementsByClassName(WeekArr[i]))
@@ -129,13 +127,18 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                     var eH = endtime.getHours()
                     var eM = endtime.getMinutes()
                     var eS = endtime.getSeconds()
+
+
+                    //将grid数据装入
+
                     me.dwPars.drawWindowData.push({
-                        divId: dayTimeArr[j].id,
-                        SortWeek: (i + 1) + "_" + WeekArr[i],
-                        Week: WeekArr[i],
-                        StartTime: sH + ":" + sM + ":" + sS,
-                        EndTime: eH + ":" + eM + ":" + eS
-                    })
+                     divId: dayTimeArr[j].id,
+                     SortWeek: (i + 1) + "_" + WeekArr[i],
+                     Week: WeekArr[i],
+                     StartTime: sH + ":" + sM + ":" + sS,
+                     EndTime: eH + ":" + eM + ":" + eS
+                     })
+
                     if (isPubWeek) {
                         pubTimeArr.push(
                             {
@@ -189,6 +192,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
         console.log(pubweekly)
         console.log(Ext.encode(pubweekly))
         console.log(Ext.encode(weekly))
+
         return {weekly: weekly, pubweekly: pubweekly};
 
     },
@@ -198,7 +202,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
         var oCanvas = me.dwPars.oCanvas
         var oneDay = me.dwPars.oneDay;
         var bMarginTop = me.dwPars.bMarginTop;
-        WeekArr = me.dwPars.WeekArr;
+        var WeekArr = me.dwPars.WeekArr;
         for (var i = 0; i < WeekArr.length; i++) {
             var dayTimeArr = document.querySelectorAll("." + WeekArr[i]);
             if (dayTimeArr.length > 0) {
