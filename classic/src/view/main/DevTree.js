@@ -146,7 +146,6 @@ Ext.define("program.view.tree.DevTree", {
                 // hidden:true,
                 handler: function (event, toolEl, panelHeader) {
                     devTreeStoreLoad()
-
                     me.expandAll()
                 }
             }]

@@ -71,8 +71,9 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                         delayToast("Status", "Changes saved successfully .", 1000);
                     }
                 });
+                var instance = me.sDevNodeName.substr(0,4)
                 if (me.sDevName != getNetNumberValue()) {
-                    devPublish(me.sDevName + ".8.*", me.sDevNodeName + "\r\nWeekly_Schedule\r\n" + (Ext.encode(oJson.pubweekly)).replaceAll("\\s*|\t|\r|\n", ""));
+                    devPublish(instance + ".8.*", me.sDevNodeName + "\r\nWeekly_Schedule\r\n" + (Ext.encode(oJson.pubweekly)).replaceAll("\\s*|\t|\r|\n", ""));
                 }
                 this.up("window").close()
             }

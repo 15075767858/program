@@ -36,12 +36,12 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                 floating: true,  // usually you want this set to True (default)
                 items: [
                     {
-                        text:"Copy Time",
-                        handler:function(){
-                            me.copydiv=div;
+                        text: "Copy Time",
+                        handler: function () {
+                            me.copydiv = div;
 
                         }
-                    },{
+                    }, {
                         text: 'Delete Time',
                         handler: function () {
                             div.remove()
@@ -61,6 +61,17 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
             pinned: true,
             listeners: {
                 resize: function (th, width, height, e, eOpts) {
+                    console.log(th)
+                    var dayDiv = th.el.dom;
+                    var classList = dayDiv.className.split(' ');
+                    dayDiv.className = classList.map(function (v, index) {
+                        if (v.substr(0, 3) == 'old') {
+                            return 'new' + v.substr(3, v.length);
+                        } else {
+                            return v;
+                        }
+                    }).join(' ')
+
                     var tmStart = me.getTimeByLocation(parseInt(div.css("Top")) - me.dwPars.bMarginTop);
                     var tmEnd = me.getTimeByLocation(parseInt(div.css("Top")) - me.dwPars.bMarginTop + parseInt(div.css("height")))
                     div.attr("startTime", tmStart).attr("endTime", tmEnd)
@@ -90,15 +101,14 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
         WeekArr = me.dwPars.WeekArr
 
         for (var i = 0; i < WeekArr.length; i++) {
-
             //console.log(this.up("window").el.dom.getElementsByClassName(WeekArr[i]))
             var dayTimeArr = document.querySelectorAll("." + WeekArr[i]);
             var newWeeks = document.querySelectorAll(".new" + WeekArr[i]);
-            console.log(newWeeks)
             var oldWeeks = document.querySelectorAll(".old" + WeekArr[i]);
-            var isPubWeek = !(oldWeeks.length ==me.dwPars.WeekArrJson[i].oldCount)
-            if(newWeeks.length>0){
-                isPubWeek=true;
+
+            var isPubWeek = !(oldWeeks.length == me.dwPars.WeekArrJson[i].oldCount)
+            if (newWeeks.length > 0) {
+                isPubWeek = true;
             }
             console.info(isPubWeek)
             weekly.Weekly_Schedule[WeekArr[i]] = []
@@ -133,17 +143,17 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                                     "hour": sH,
                                     "minute": sM,
                                     "second": sS,
-                                    "hundredths": 0
+                                    "hundredths": 1
                                 },
-                                value: "0"
+                                value: true
                             }, {
                                 time: {
                                     "hour": eH,
                                     "minute": eM,
                                     "second": eS,
-                                    "hundredths": 0
+                                    "hundredths": 1
                                 },
-                                value: "1"
+                                value: false
                             }
                         )
                     }
@@ -154,17 +164,17 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                                 "hour": sH,
                                 "minute": sM,
                                 "second": sS,
-                                "hundredths": 0
+                                "hundredths": 1
                             },
-                            value: "0"
+                            value: true
                         }, {
                             time: {
                                 "hour": eH,
                                 "minute": eM,
                                 "second": eS,
-                                "hundredths": 0
+                                "hundredths": 1
                             },
-                            value: "1"
+                            value: false
                         }
                     )
                 }
@@ -250,7 +260,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                     var div = me.dwPars.div()
                     div.addClass(WeekArr[i])
                     div.addClass("old" + WeekArr[i]);
-                    me.dwPars.WeekArrJson[i].oldCount=dweek.length/2
+                    me.dwPars.WeekArrJson[i].oldCount = dweek.length / 2
                     var starttime = new Date(1970, 1, 1, times[j].time.hour, times[j].time.minute, times[j].time.second)
                     var endtime = new Date(1970, 1, 1, times[j + 1].time.hour, times[j + 1].time.minute, times[j + 1].time.second)
 
@@ -272,13 +282,13 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
             var drawWindowData = []
             var WeekArr = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
             var WeekArrJson = [
-                {name: "monday", left: "",oldCount:0},
-                {name: "tuesday", left: "",oldCount:0},
-                {name: "wednesday", left: "",oldCount:0},
-                {name: "thursday", left: "",oldCount:0},
-                {name: "friday", left: "",oldCount:0},
-                {name: "saturday", left: "",oldCount:0},
-                {name: "sunday", left: "",oldCount:0}];
+                {name: "monday", left: "", oldCount: 0},
+                {name: "tuesday", left: "", oldCount: 0},
+                {name: "wednesday", left: "", oldCount: 0},
+                {name: "thursday", left: "", oldCount: 0},
+                {name: "friday", left: "", oldCount: 0},
+                {name: "saturday", left: "", oldCount: 0},
+                {name: "sunday", left: "", oldCount: 0}];
             var dw = me;
             var oCanvas = $(dw.el.dom.querySelectorAll("canvas")[4]);
             var oneDay = 86400000;

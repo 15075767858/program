@@ -902,6 +902,9 @@ Ext.define('program.view.tree.DevTreeController', {
                                 }, i * 500)
                             })(keyArr[i], i)
                         }
+                        devTreeStoreLoad()
+
+                        treePanel.expandAll()
 
                     }
                     },
@@ -1688,6 +1691,9 @@ Ext.define('program.view.tree.DevTreeController', {
                         {
                             text: "Update", handler: function () {
                             updateKey(sDevNodeName);
+                            devTreeStoreLoad()
+
+                            treePanel.expandAll()
                         }
                         },
                         {
@@ -1855,6 +1861,8 @@ Ext.define('program.view.tree.DevTreeController', {
                     {
                         text: "Update", handler: function () {
                         updateKey(sDevNodeName);
+                        devTreeStoreLoad()
+                        treePanel.expandAll()
                     }
                     },
                     {
@@ -2215,8 +2223,8 @@ function getNetNumberValue(filename) {
                 } else {
                     Ext.Msg.alert("Exception ", "bac_config is not fount .")
                 }
-            }catch (e){
-                Ext.Msg.alert("Massage","Error "+response.responseText);
+            } catch (e) {
+                Ext.Msg.alert("Massage", "Error " + response.responseText);
             }
 
         }

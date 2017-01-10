@@ -96,10 +96,20 @@ Ext.define("program.view.main.toolbar.TopToolbar", {
                                             msgTarget: 'side',
                                             allowBlank: false,
                                             anchor: '100%',
-                                            buttonText: 'Select Program...'
-                                        }
+                                            buttonText: 'Select Program...',
+                                            listeners: {
+                                                blur: function () {
 
-                                    ]
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    listeners: {
+                                        boxready: function () {
+                                            var downButton = form.el.dom.querySelector('.x-form-file-input');
+                                            downButton.accept="application/x-gzip"
+                                        }
+                                    }
                                 }
                             )
 
@@ -166,7 +176,7 @@ Ext.define("program.view.main.toolbar.TopToolbar", {
                         }, {
                             text: "About",
                             handler: function () {
-                                Ext.Msg.alert('Version', 'SmartIO Programtools 2.59 ');
+                                Ext.Msg.alert('Version', 'SmartIO Programtools 2.61 ');
                             }
                         }
                     ]
