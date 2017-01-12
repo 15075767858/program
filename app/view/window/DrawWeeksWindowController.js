@@ -1,7 +1,23 @@
 Ext.define('program.view.window.DrawWeeksWindowController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.window-drawweekswindow',
+    nextHandler: function (button) {
+        $(".week").hide();
+        var me = this.view
+        me.fireEvent("divDataToJson")
+        var store = Ext.data.StoreManager.lookup('drawWindowStore');
+        store.setData(me.dwPars.drawWindowData)
 
+        Ext.getCmp("drawWindow_previous").show()
+    },
+    PreviousHandler: function (button) {
+        var me = this.view;
+        $(".week").remove();
+        Ext.getCmp("drawWindow_next").show();
+        var gridjson = me.gridDataToJson();
+        me.fireEvent("dwParsInit");
+        me.fireEvent("jsonToDivData", gridjson);
+    },
     weekDivAddEvent: function (div) {
         var me = this.view
         div.hover(
@@ -572,9 +588,9 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                         wm1.set("Week", values.Week)
                         wm1.set("time", values.endTime)
                         wm1.set("value", values.endActivation)
-                        console.log(wm0,wm1)
-                        gridPanel.store.add([wm0,wm1])
-                        delayToast("Massage","Insert Ok .")
+                        console.log(wm0, wm1)
+                        gridPanel.store.add([wm0, wm1])
+                        delayToast("Massage", "Insert Ok .")
                     }
                     },
                     {

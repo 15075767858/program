@@ -27,21 +27,11 @@ Ext.define("program.view.window.DrawWeeksWindow", {
         {
             text: "next",
             id: "drawWindow_next",
-            handler: function () {
-                $(".week").hide();
-                var me = this.up("window");
-                //me.controller.getDivData.call(me)
-                me.fireEvent("divDataToJson")
-                var store = Ext.data.StoreManager.lookup('drawWindowStore');
-                store.setData(me.dwPars.drawWindowData)
-                var me = this.up("window");
+            handler: function (button) {
+                var me = this.up('window');
+                me.fireEvent("nextHandler")
                 var l = me.getLayout();
-                this.hide()
-
-                //me.fireEvent("jsonToDivData", me.gridDataToJson());
-                //me.fireEvent("weekDivResetPosition");
-                Ext.getCmp("drawWindow_previous").show()
-
+                button.hide()
                 l.setActiveItem(1)
             }
         },
@@ -49,34 +39,21 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             text: "Previous",
             id: "drawWindow_previous",
             hidden: true,
-            handler: function () {
-                $(".week").remove();
-
-                var me = this.up("window");
+            handler: function (button) {
+                var me = this.up('window');
                 var l = me.getLayout();
-                this.hide()
-                //$(".week").show()
-
-                //me.fireEvent("weekDivResetPosition")
-                //me.controller.weekDivResetPosition.call(me)
-                Ext.getCmp("drawWindow_next").show()
-                l.setActiveItem(0)
-                var gridjson = me.gridDataToJson()
-                console.log(gridjson)
-
-                me.fireEvent("dwParsInit");
-
-                me.fireEvent("jsonToDivData", gridjson);
+                button.hide();
+                l.setActiveItem(0);
+                me.fireEvent("PreviousHandler");
             }
         },
         {
             text: "Ok",
             handler: function (th) {
                 var me = this.up("window");
-                //var oJson = me.gridDataToJson()
+                me.fireEvent("PreviousHandler");
+
                 var oJson = me.controller.divDataToJson()
-                //var oJson = me.fireEvent("gridDataToJson")
-                //var oJson = me.gridDataToJson()
                 console.log(oJson)
                 Ext.Ajax.request({
                     url: "resources/test1.php?par=changevaluenopublish&nodename=" + me.sDevNodeName + "&type=Weekly_Schedule",
@@ -426,10 +403,10 @@ Ext.define("program.view.window.DrawWeeksWindow", {
     ],
     listeners: {
         move: function (me) {
-
             me.fireEvent("dwParsInit");
-
         },
+        nextHandler: "nextHandler",
+        PreviousHandler: "PreviousHandler",
         dwParsInit: "dwParsInit",
         jsonToDivData: "jsonToDivData",
         boxready: "boxready",
