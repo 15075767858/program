@@ -29,7 +29,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             id: "drawWindow_next",
             handler: function (button) {
                 var me = this.up('window');
-                me.fireEvent("nextHandler")
+                me.fireEvent("nextHandler");
                 var l = me.getLayout();
                 button.hide()
                 l.setActiveItem(1)
@@ -51,7 +51,11 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             text: "Ok",
             handler: function (th) {
                 var me = this.up("window");
-                me.fireEvent("PreviousHandler");
+                if(me.layout.activeItem.xtype=="gridpanel"){
+                    me.fireEvent("PreviousHandler");
+                }else{
+                    me.fireEvent("nextHandler");
+                }
 
                 var oJson = me.controller.divDataToJson()
                 console.log(oJson)
@@ -68,6 +72,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                 var instance = me.sDevNodeName.substr(0, 4)
                 if (me.sDevName != getNetNumberValue()) {
                     devPublish(instance + ".8.*", me.sDevNodeName + "\r\nWeekly_Schedule\r\n" + (Ext.encode(oJson.pubweekly)).replaceAll("\\s*|\t|\r|\n", ""));
+
                 }
                 this.up("window").close()
             }
