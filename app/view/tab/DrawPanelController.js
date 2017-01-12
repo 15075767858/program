@@ -1209,6 +1209,28 @@ function datasArrayUnique(drawpanel) {
     drawpanel.datas.datasArray = datasArray1;
 }
 
+My.onSpinUp = function () {
+    var oldValue = this.getValue().split(":");
+    var time = new Date(1970, 1, 1, oldValue[0], oldValue[1], oldValue[2]).getTime()
+    time += 10000;
+    var newTime = new Date(time)
+    var H = newTime.getHours()
+    var M = newTime.getMinutes()
+    var S = newTime.getSeconds()
+    //if(newTime>2649600000&newTime<2736000000)
+    this.setValue(H + ":" + M + ":" + S);
+}
+
+My.onSpinDown = function () {
+    var oldValue = this.getValue().split(":");
+    var time = new Date(1970, 1, 1, oldValue[0], oldValue[1], oldValue[2]).getTime()
+    time -= 10000;
+    var newTime = new Date(time)
+    var H = newTime.getHours()
+    var M = newTime.getMinutes()
+    var S = newTime.getSeconds()
+    this.setValue(H + ":" + M + ":" + S);
+}
 /*var node1 = new My.PathNode(1, 1);
 
  var node2_l = new My.PathNode(20, 20);

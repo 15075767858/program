@@ -2,10 +2,10 @@ Ext.define('program.model.WeekModel', {
     extend: 'Ext.data.Model',
     alias: "WeekModel",
     fields: [
-        {name: "divId", type: "string"},
+        //{name: "divId", type: "string"},
         {name: "Week", type: "string"},
-        {name: "StartTime", type: "string"},
-        {name: "EndTime", type: "string"},
+        {name: "time", type: "string"},
+        {name: "value", type: "boolean"},
         {
             name: "level", type: "number", calculate: function (data) {
             var week = data.Week;
@@ -13,5 +13,7 @@ Ext.define('program.model.WeekModel', {
             return weeks.indexOf(week);
         }
         }
+        //{name: "StartTime", type: "string"},
+        //{name: "EndTime", type: "string"},
     ]
 });

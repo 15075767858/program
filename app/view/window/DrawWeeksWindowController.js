@@ -3,7 +3,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
     alias: 'controller.window-drawweekswindow',
 
     weekDivAddEvent: function (div) {
-        var me = this
+        var me = this.view
         div.hover(
             function () {
                 var tmStart = new Date(div.attr("startTime"))
@@ -87,6 +87,61 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
             }
         })
     },
+
+    weekDivResetPosition: function (banimate) {
+        var me = this.view;
+        var WeekArrJson = me.dwPars.WeekArrJson;
+        var oCanvas = me.dwPars.oCanvas;
+        var oneDay = me.dwPars.oneDay;
+        var bMarginTop = me.dwPars.bMarginTop;
+        var WeekArr = me.dwPars.WeekArr;
+        for (var i = 0; i < WeekArr.length; i++) {
+            var dayTimeArr = document.querySelectorAll("." + WeekArr[i]);
+            if (dayTimeArr.length > 0) {
+                for (var j = 0; j < dayTimeArr.length; j++) {
+                    var starttime = new Date($(dayTimeArr[j]).attr("starttime"));
+                    var divStartPageY = parseInt(oCanvas.css("height")) * ((starttime - 2649600000) / oneDay);
+                    //$(dayTimeArr[j]).css("top", divStartPageY + bMarginTop)
+                    var endtime = new Date($(dayTimeArr[j]).attr("endtime"));
+                    var divEndPageY = parseInt(oCanvas.css("height")) * ((endtime - 2649600000) / oneDay);
+                    //$(dayTimeArr[j]).css("height", divEndPageY - divStartPageY + "px");
+                    $(dayTimeArr[j]).animate({
+                        top: divStartPageY + bMarginTop,
+                        height: divEndPageY - divStartPageY
+                    }, 1000)
+                }
+            }
+        }
+        var aWeeks = $(".week");
+        for (var i = 0; i < aWeeks.length; i++) {
+            for (var j = 0; j < WeekArrJson.length; j++) {
+                if ($(aWeeks[i]).hasClass(WeekArrJson[j].name)) {
+                    if (banimate) {
+                        $(aWeeks[i]).css("left", me.dwPars.dw.el.getWidth() / 2.5);
+                        function randomlingdao() {
+                            for (var i = 0; i < 10; i++) {
+                                var a = (Math.random() * 2.5);
+                                if (a > 2 & a < 2.5) {
+                                    return a
+                                }
+                            }
+                            return 2;
+                        }
+
+                        $(aWeeks[i]).animate({
+                            left: WeekArrJson[j].left
+                        }, 1000)
+                    }
+                    else {
+                        $(aWeeks[i]).css("left", WeekArrJson[j].left);
+                    }
+
+
+                }
+            }
+        }
+
+    },
     getDivData: function () {
         var me = this;
         var weekly = {
@@ -132,12 +187,12 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                     //将grid数据装入
 
                     me.dwPars.drawWindowData.push({
-                     divId: dayTimeArr[j].id,
-                     SortWeek: (i + 1) + "_" + WeekArr[i],
-                     Week: WeekArr[i],
-                     StartTime: sH + ":" + sM + ":" + sS,
-                     EndTime: eH + ":" + eM + ":" + eS
-                     })
+                        divId: dayTimeArr[j].id,
+                        SortWeek: (i + 1) + "_" + WeekArr[i],
+                        Week: WeekArr[i],
+                        StartTime: sH + ":" + sM + ":" + sS,
+                        EndTime: eH + ":" + eM + ":" + eS
+                    })
 
                     if (isPubWeek) {
                         pubTimeArr.push(
@@ -189,99 +244,203 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
             }
         }
 
-        console.log(pubweekly)
-        console.log(Ext.encode(pubweekly))
+        //console.log(pubweekly)
+        //console.log(Ext.encode(pubweekly))
         console.log(Ext.encode(weekly))
 
-        return {weekly: weekly, pubweekly: pubweekly};
+        return {weekly: weekly, pubweekly: weekly};
 
     },
-    weekDivResetPosition: function (banimate) {
-        var me = this;
-        var WeekArrJson = me.dwPars.WeekArrJson
-        var oCanvas = me.dwPars.oCanvas
-        var oneDay = me.dwPars.oneDay;
-        var bMarginTop = me.dwPars.bMarginTop;
+    /**
+     * 这个方法用来将 div 转成 数据
+     * @return {{weekly: {Weekly_Schedule: {}}, pubweekly: {Weekly_Schedule: {}}}}
+     */
+    divDataToJson: function () {
+        var me = this.view;
+        var weekly = {
+            "Weekly_Schedule": {}
+        }
+        me.dwPars.drawWindowData = [];
         var WeekArr = me.dwPars.WeekArr;
         for (var i = 0; i < WeekArr.length; i++) {
+            //console.log(this.up("window").el.dom.getElementsByClassName(WeekArr[i]))
             var dayTimeArr = document.querySelectorAll("." + WeekArr[i]);
+            weekly.Weekly_Schedule[WeekArr[i]] = []
             if (dayTimeArr.length > 0) {
                 for (var j = 0; j < dayTimeArr.length; j++) {
                     var starttime = new Date($(dayTimeArr[j]).attr("starttime"));
-                    var divStartPageY = parseInt(oCanvas.css("height")) * ((starttime - 2649600000) / oneDay);
-                    //$(dayTimeArr[j]).css("top", divStartPageY + bMarginTop)
                     var endtime = new Date($(dayTimeArr[j]).attr("endtime"));
-                    var divEndPageY = parseInt(oCanvas.css("height")) * ((endtime - 2649600000) / oneDay);
-                    //$(dayTimeArr[j]).css("height", divEndPageY - divStartPageY + "px");
-                    $(dayTimeArr[j]).animate({
-                        top: divStartPageY + bMarginTop,
-                        height: divEndPageY - divStartPageY
-                    }, 1000)
-                }
-            }
-        }
-        var aWeeks = $(".week");
-        for (var i = 0; i < aWeeks.length; i++) {
-            for (var j = 0; j < WeekArrJson.length; j++) {
-                if ($(aWeeks[i]).hasClass(WeekArrJson[j].name)) {
-                    if (banimate) {
-                        $(aWeeks[i]).css("left", me.dwPars.dw.el.getWidth() / 2.5);
-                        function randomlingdao() {
-                            for (var i = 0; i < 10; i++) {
-                                var a = (Math.random() * 2.5);
-                                if (a > 2 & a < 2.5) {
-                                    return a
-                                }
-                            }
-                            return 2;
+                    var sH = starttime.getHours()
+                    var sM = starttime.getMinutes()
+                    var sS = starttime.getSeconds()
+                    var eH = endtime.getHours()
+                    var eM = endtime.getMinutes()
+                    var eS = endtime.getSeconds()
+                    //var weekhide = true;
+
+
+                    var isWeekHide = dayTimeArr[j].className.indexOf('weekhide') >= 0;
+                    //console.log(dayTimeArr[j].className)
+
+                    /*if (isWeekHide) {
+                     weekhide = false;
+                     }*/
+
+                    //console.log(weekhide)
+
+                    //将grid数据装入
+                    me.dwPars.drawWindowData.push({
+                        Week: WeekArr[i],
+                        hours: sH,
+                        minutes: sM,
+                        seconds: sS,
+                        time: sH + ":" + sM + ":" + sS,
+                        value: !isWeekHide
+                    })
+                    me.dwPars.drawWindowData.push({
+                        Week: WeekArr[i],
+                        hours: eH,
+                        minutes: eM,
+                        seconds: eS,
+                        time: eH + ":" + eM + ":" + eS,
+                        value: false
+                    })
+                    weekly.Weekly_Schedule[WeekArr[i]].push(
+                        {
+                            time: {
+                                "hour": sH,
+                                "minute": sM,
+                                "second": sS,
+                                "hundredths": 1
+                            },
+                            value: !isWeekHide
+                        }, {
+                            time: {
+                                "hour": eH,
+                                "minute": eM,
+                                "second": eS,
+                                "hundredths": 1
+                            },
+                            value: false
                         }
-
-                        $(aWeeks[i]).animate({
-                            left: WeekArrJson[j].left
-                        }, 1000)
-                    }
-                    else {
-                        $(aWeeks[i]).css("left", WeekArrJson[j].left);
-                    }
-
+                    )
 
                 }
+
             }
+
         }
 
+        //console.log(pubweekly)
+        //console.log(Ext.encode(pubweekly))
+        console.log(me.dwPars.drawWindowData)
+        console.log(Ext.encode(weekly))
+
+        return {weekly: weekly, pubweekly: weekly};
     },
-    drawWindowAddDiv: function (d) {
+    /**
+     * 这个方法用来将数据转换成变成 div
+     * 传入一个数据自动清理之前的div
+     * @param  {JSON} d JSON 数据
+     */
+    jsonToDivData: function (d) {
         console.log(d)
-        var me = this;
-        WeekArr = me.dwPars.WeekArr
-        var dw = me.dwPars.dw;
+        var me = this.view;
+        var __this = this;
+        var WeekArr = me.dwPars.WeekArr;
         for (var i = 0; i < WeekArr.length; i++) {
             var dweek = d['Weekly_Schedule'][WeekArr[i]];
             if (dweek) {
+                var startTimes = dweek.filter(function (v) {
+                    return v.value;
+                }).sort(sortDate)
+                var endTimes = dweek.filter(function (v) {
+                    return !v.value
+                }).sort(sortDate)
+                var j = 0;
+                for (; j < startTimes.length; j++) {
+                    me.addDayDiv(dataToDate(startTimes[j]), dataToDate(endTimes[j]), WeekArr[i], "")
+                    /*var starttime = dataToDate(startTimes[j]);
+                     var endtime = dataToDate(endTimes[j]);
+                     if (starttime & endtime) {
+                     var div = me.dwPars.div();
+                     div.attr("starttime", starttime);
+                     div.attr("endtime", endtime);
+                     div.addClass(WeekArr[i])
+                     $(dw.el.dom).append(div)
+                     __this.weekDivAddEvent(div)
+                     //console.log(div[0].style)
+                     //div.addClass("old" + WeekArr[i]);
+                     }*/
+                }
 
-                var times = d['Weekly_Schedule'][WeekArr[i]];
-                for (var j = 0; j < times.length; j += 2) {
-                    var div = me.dwPars.div()
-                    div.addClass(WeekArr[i])
-                    div.addClass("old" + WeekArr[i]);
-                    me.dwPars.WeekArrJson[i].oldCount = dweek.length / 2
-                    var starttime = new Date(1970, 1, 1, times[j].time.hour, times[j].time.minute, times[j].time.second)
-                    var endtime = new Date(1970, 1, 1, times[j + 1].time.hour, times[j + 1].time.minute, times[j + 1].time.second)
 
-                    div.attr("starttime", starttime)
-                    div.attr("endtime", endtime)
-                    div.addClass(WeekArr[i])
-                    $(dw.el.dom).append(div)
-                    me.controller.weekDivAddEvent.call(me, div)
+                //on 减去 off 的时间剩余的off时间
+                var hideTimes = endTimes.slice(startTimes.length, endTimes.length);
+
+                for (j = 0; j < hideTimes.length; j += 2) {
+
+                    me.addDayDiv(dataToDate(hideTimes[j]), dataToDate(hideTimes[j + 1]), WeekArr[i], "weekhide")
                 }
             }
         }
-        me.controller.weekDivResetPosition.call(me, true)
+        function dataToDate(data) {
+            if (data) {
+                return new Date(1970, 1, 1, data.time.hour, data.time.minute, data.time.second);
+            } else {
+                return false;
+            }
+        }
 
-        console.log(d)
+        __this.weekDivResetPosition(true);
+        function sortDate(d1, d2) {
+            var a1 = dataToDate(d1);
+            var a2 = dataToDate(d2);
+            return a1.getTime() > a2.getTime();
+        }
+
+
     },
-    dwParsInit: function () {
-        var me = this;
+
+    drawWindowAddDiv: function (d) {
+        this.jsonToDivData(d);
+        /*return
+         var me = this;
+         var WeekArr = me.dwPars.WeekArr
+         var dw = me.dwPars.dw;
+         for (var i = 0; i < WeekArr.length; i++) {
+         var dweek = d['Weekly_Schedule'][WeekArr[i]];
+         if (dweek) {
+         for (var j = 0; j < dweek.length; j += 2) {
+
+         var div = me.dwPars.div()
+         div.addClass(WeekArr[i])
+         div.addClass("old" + WeekArr[i]);
+         me.dwPars.WeekArrJson[i].oldCount = dweek.length / 2
+         var starttime = new Date(1970, 1, 1, dweek[j].time.hour, dweek[j].time.minute, dweek[j].time.second)
+         var endtime = new Date(1970, 1, 1, dweek[j + 1].time.hour, dweek[j + 1].time.minute, dweek[j + 1].time.second)
+         div.attr("starttime", starttime)
+         div.attr("endtime", endtime)
+         div.addClass(WeekArr[i])
+         $(dw.el.dom).append(div)
+         me.controller.weekDivAddEvent.call(me, div)
+         }
+         }
+         }
+         me.controller.weekDivResetPosition.call(me, true)
+
+         console.log(d)*/
+    },
+    /**
+     * 这个方法用来 初始化
+     */
+    dwParsInit: function (canvasLength) {
+        var me = this.view;
+        var __this = this;
+        if (me.el.dom.querySelectorAll("canvas").length < 5) {
+            return;
+        }
+
         me.dwPars = (function () {
             var drawWindowData = []
             var WeekArr = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
@@ -351,9 +510,181 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                 WeekArr: WeekArr,
                 drawWindowData: drawWindowData
             }
+            console.log(e)
             return e;
         })()
+    },
+    boxready: function () {
+        var me = this.view;
+        var __this = this;
+        var canIntval = setInterval(isCanvasRender, 1)
+
+        function isCanvasRender() {
+            var canvasLength = me.el.dom.querySelectorAll("canvas").length;
+            if (canvasLength > 4) {
+                //me.controller.dwParsInit.call(me)
+                //me.fireEvent("dwParsInit")
+                __this.dwParsInit(canvasLength)
+                clearInterval(canIntval)
+                Ext.MessageBox.progress('Message', {msg: 'Server Ready ...'});
+                var count = 0;
+                var interval_0 = setInterval(function () {
+                    Ext.MessageBox.updateProgress(count / 9, 'Loading,please wait... ');
+                    count++
+                    if (count == 10) {
+                        clearInterval(interval_0)
+                        Ext.MessageBox.close();
+                        myAjax("resources/test1.php?par=getvalue&nodename=" + me.sDevNodeName + "&type=Weekly_Schedule", function (response) {
+                            try {
+                                var text = Ext.decode(response.responseText);
+
+                                if (text) {
+                                    __this.jsonToDivData(text)
+                                }
+                            } catch (e) {
+                                Ext.Msg.alert('Error', 'load data failure .');
+                                throw e;
+                            }
+                        })
+                    }
+                }, 100)
+            }
+        }
+    },
+    insertWeek: function () {
+        var me = this.view;
+        var gridPanel = this.view.down("gridpanel")
+        var wm0 = Ext.createByAlias("WeekModel");
+        var wm1 = Ext.createByAlias("WeekModel");
+
+        var win = Ext.create('Ext.window.Window', {
+                title: "insert",
+                autoShow: true,
+                buttons: [
+                    {
+                        text: "Ok", handler: function () {
+
+                        var form = win.down("form")
+                        var values = form.getValues()
+                        wm0.set("Week", values.Week)
+                        wm0.set("time", values.startTime)
+                        wm0.set("value", values.startActivation)
+                        wm1.set("Week", values.Week)
+                        wm1.set("time", values.endTime)
+                        wm1.set("value", values.endActivation)
+                        console.log(wm0,wm1)
+                        gridPanel.store.add([wm0,wm1])
+                        delayToast("Massage","Insert Ok .")
+                    }
+                    },
+                    {
+                        text: "Close", handler: function () {
+                        win.close();
+                    }
+                    }
+                ],
+                items: {
+                    xtype: "form",
+                    defaults: {
+                        margin: 10,
+                        editable: false
+
+                    },
+                    scrollable: "y",
+                    listeners: {
+                        boxready: function (form) {
+                            //var mm = Ext.createByAlias("MonitorModel")
+                            //form.loadRecord(mm)
+                        }
+                    },
+                    items: [
+                        {
+                            xtype: "combo",
+                            name: "Week",
+                            store: me.dwPars.WeekArr,
+                            allowBlank: false,
+                            fieldLabel: "week",
+                            value: "monday",
+                        },
+                        {
+                            xtype: 'spinnerfield',
+                            name: "startTime",
+                            fieldLabel: "start time",
+                            allowBlank: false,
+                            validator: My.isTime,
+                            value: "0:0:1",
+                            onSpinUp: My.onSpinUp,
+                            onSpinDown: My.onSpinDown,
+                            editable: true
+                        },
+                        {
+                            xtype: 'combo',
+                            name: "startActivation",
+                            fieldLabel: "activation",
+                            store: Ext.create("Ext.data.Store", {
+                                fields: ['name', 'value'],
+                                data: [
+                                    {name: "on", value: true},
+                                    {name: "off", value: false}
+                                ]
+                            }),
+                            displayField: 'name',
+                            valueField: 'value',
+                            autoSelect: true,
+                            listeners: {
+                                render: function (field) {
+                                    console.log(field)
+                                    field.setValue(field.store.getAt(0))
+                                }
+                            }
+                        },
+                        {
+                            xtype: 'spinnerfield',
+                            name: "endTime",
+                            fieldLabel: "end time",
+                            allowBlank: false,
+                            validator: My.isTime,
+                            value: "23:59:59",
+                            onSpinUp: My.onSpinUp,
+                            onSpinDown: My.onSpinDown,
+                            editable: true
+                        },
+                        {
+                            xtype: 'combo',
+                            name: "endActivation",
+                            fieldLabel: "activation",
+                            store: Ext.create("Ext.data.Store", {
+                                fields: ['name', 'value'],
+                                data: [
+                                    {name: "on", value: true},
+                                    {name: "off", value: false}
+                                ]
+                            }),
+                            displayField: 'name',
+                            valueField: 'value',
+                            listeners: {
+                                render: function (field) {
+                                    console.log(field)
+                                    field.setValue(field.store.getAt(1))
+                                }
+                            }
+                        }
+                    ]
+                }
+            })
+            ;
+
 
     }
-
 });
+
+function testNumAdd() {
+    var num = 50;
+    var all = 0;
+    for (var i = 0; i < 652; i++) {
+        num += 50
+        all += num;
+    }
+    //10676500/50/18/60/24 每只50经验 一分钟18  8天完成
+    console.log(all)
+}

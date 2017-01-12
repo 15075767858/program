@@ -5,51 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5634e344-e363-4954-913f-d691016cfd59" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/WeekModel.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/.cvsignore" afterPath="$PROJECT_DIR$/.sencha2/.cvsignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/.gitignore" afterPath="$PROJECT_DIR$/.sencha2/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/Boot.js" afterPath="$PROJECT_DIR$/.sencha2/app/Boot.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/Microloader.js" afterPath="$PROJECT_DIR$/.sencha2/app/Microloader.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/app.defaults.json" afterPath="$PROJECT_DIR$/.sencha2/app/app.defaults.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/bootstrap-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/bootstrap-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/build-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/build-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/build.properties" afterPath="$PROJECT_DIR$/.sencha2/app/build.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/codegen.json" afterPath="$PROJECT_DIR$/.sencha2/app/codegen.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/cordova-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/cordova-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/cordova.defaults.properties" afterPath="$PROJECT_DIR$/.sencha2/app/cordova.defaults.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/defaults.properties" afterPath="$PROJECT_DIR$/.sencha2/app/defaults.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/development.defaults.properties" afterPath="$PROJECT_DIR$/.sencha2/app/development.defaults.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/development.properties" afterPath="$PROJECT_DIR$/.sencha2/app/development.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/ext.properties" afterPath="$PROJECT_DIR$/.sencha2/app/ext.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/find-cmd-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/find-cmd-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/init-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/init-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/js-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/js-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/native.defaults.properties" afterPath="$PROJECT_DIR$/.sencha2/app/native.defaults.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/native.properties" afterPath="$PROJECT_DIR$/.sencha2/app/native.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/package.defaults.properties" afterPath="$PROJECT_DIR$/.sencha2/app/package.defaults.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/package.properties" afterPath="$PROJECT_DIR$/.sencha2/app/package.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/packager-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/packager-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/page-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/page-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/phonegap-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/phonegap-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/phonegap.defaults.properties" afterPath="$PROJECT_DIR$/.sencha2/app/phonegap.defaults.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/plugin.xml" afterPath="$PROJECT_DIR$/.sencha2/app/plugin.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/production.defaults.properties" afterPath="$PROJECT_DIR$/.sencha2/app/production.defaults.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/production.properties" afterPath="$PROJECT_DIR$/.sencha2/app/production.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/refresh-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/refresh-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/resolve-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/resolve-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/resources-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/resources-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/sass-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/sass-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/sencha.cfg" afterPath="$PROJECT_DIR$/.sencha2/app/sencha.cfg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/slice-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/slice-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/testing.defaults.properties" afterPath="$PROJECT_DIR$/.sencha2/app/testing.defaults.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/testing.properties" afterPath="$PROJECT_DIR$/.sencha2/app/testing.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/app/watch-impl.xml" afterPath="$PROJECT_DIR$/.sencha2/app/watch-impl.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/workspace/plugin.xml" afterPath="$PROJECT_DIR$/.sencha2/workspace/plugin.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.sencha/workspace/sencha.cfg" afterPath="$PROJECT_DIR$/.sencha2/workspace/sencha.cfg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/week.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/theme-capture.png" afterPath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/theme-capture.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/tree/DevTreeController.js" afterPath="$PROJECT_DIR$/app/view/tree/DevTreeController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/WeekModel.js" afterPath="$PROJECT_DIR$/app/model/WeekModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/tab/DrawPanelController.js" afterPath="$PROJECT_DIR$/app/view/tab/DrawPanelController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/window/DrawWeeksWindowController.js" afterPath="$PROJECT_DIR$/app/view/window/DrawWeeksWindowController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.css" afterPath="$PROJECT_DIR$/bootstrap.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.js" afterPath="$PROJECT_DIR$/bootstrap.js" />
@@ -58,24 +18,24 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic.json" afterPath="$PROJECT_DIR$/build/production/program/classic.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic.jsonp" afterPath="$PROJECT_DIR$/build/production/program/classic.jsonp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/app.js" afterPath="$PROJECT_DIR$/build/production/program/classic/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/program-all_2.css" afterPath="$PROJECT_DIR$/build/production/program/classic/resources/program-all_2.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/index.html" afterPath="$PROJECT_DIR$/build/production/program/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/microloader.jsp" afterPath="$PROJECT_DIR$/build/production/program/microloader.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/sass/config.rb" afterPath="$PROJECT_DIR$/build/temp/production/program/sass/config.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/sass/program-all.scss" afterPath="$PROJECT_DIR$/build/temp/production/program/sass/program-all.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/sass/program-all.scss.tmp" afterPath="$PROJECT_DIR$/build/temp/production/program/sass/program-all.scss.tmp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/sencha-compiler/app/full-page-master-bundle.js" afterPath="$PROJECT_DIR$/build/temp/production/program/sencha-compiler/app/full-page-master-bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/config.rb" afterPath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/config.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example.css" afterPath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example.scss" afterPath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example.scss.tmp" afterPath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example.scss.tmp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example_1.css" afterPath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example_1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/modern.json" afterPath="$PROJECT_DIR$/build/production/program/modern.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/modern.jsonp" afterPath="$PROJECT_DIR$/build/production/program/modern.jsonp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/modern/app.js" afterPath="$PROJECT_DIR$/build/production/program/modern/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example_2.css" afterPath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example_2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/theme-capture.json" afterPath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/theme-capture.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic.json" afterPath="$PROJECT_DIR$/classic.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic.jsonp" afterPath="$PROJECT_DIR$/classic.jsonp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic/sass/src/view/main/Main.scss" afterPath="$PROJECT_DIR$/classic/sass/src/view/main/Main.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic/src/view/main/DrawWeeksWindow.js" afterPath="$PROJECT_DIR$/classic/src/view/main/DrawWeeksWindow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" afterPath="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump.rdb" afterPath="$PROJECT_DIR$/dump.rdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ext/classic/classic/overrides/event/Event.js" afterPath="$PROJECT_DIR$/ext/classic/classic/overrides/event/Event.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modern.json" afterPath="$PROJECT_DIR$/modern.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/config.rb" afterPath="$PROJECT_DIR$/sass/config.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modern.jsonp" afterPath="$PROJECT_DIR$/modern.jsonp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/example/bootstrap.js" afterPath="$PROJECT_DIR$/sass/example/bootstrap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/example/bootstrap.json" afterPath="$PROJECT_DIR$/sass/example/bootstrap.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" afterPath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" />
     </list>
@@ -106,18 +66,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DrawWeeksWindow.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DrawWeeksWindow.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classic/src/view/main/DrawWeeksWindow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="226" column="50" selection-start-line="226" selection-start-column="50" selection-end-line="226" selection-end-column="50" />
+            <state relative-caret-position="180">
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
               <folding>
                 <element signature="e#339#385#0" expanded="false" />
                 <element signature="e#563#756#0" expanded="false" />
-                <element signature="e#5234#5852#0" expanded="false" />
-                <element signature="e#8807#11943#0" expanded="false" />
-                <element signature="e#15939#17458#0" expanded="false" />
+                <element signature="e#7751#8369#0" expanded="false" />
+                <element signature="e#12691#15507#0" expanded="false" />
+                <element signature="e#15554#18286#0" expanded="false" />
+                <element signature="e#15893#18280#0" expanded="false" />
+                <element signature="e#20052#21751#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopToolbar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classic/src/view/main/TopToolbar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1450">
+              <caret line="178" column="83" selection-start-line="178" selection-start-column="83" selection-end-line="178" selection-end-column="83" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,21 +97,43 @@
       <file leaf-file-name="DrawWeeksWindowController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/window/DrawWeeksWindowController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+            <state relative-caret-position="661">
+              <caret line="576" column="57" selection-start-line="576" selection-start-column="57" selection-end-line="576" selection-end-column="57" />
               <folding>
-                <element signature="e#7419#9724#0" expanded="false" />
-                <marker date="1484048695000" expanded="true" signature="828:834" ph=" " />
+                <element signature="e#5750#9752#0" expanded="false" />
+                <element signature="e#13803#14381#0" expanded="false" />
+                <element signature="e#15273#16285#0" expanded="false" />
+                <marker date="1484203324000" expanded="true" signature="833:839" ph=" " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopToolbar.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/classic/src/view/main/TopToolbar.js">
+      <file leaf-file-name="week.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/week.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classic/sass/src/view/main/Main.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="430">
-              <caret line="178" column="83" selection-start-line="178" selection-start-column="83" selection-end-line="178" selection-end-column="83" />
+              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="88" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -148,8 +142,10 @@
       <file leaf-file-name="WeekModel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/model/WeekModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="20" />
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="20" />
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -161,6 +157,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -170,18 +167,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/view/tab/BasicController.js" />
-        <option value="$PROJECT_DIR$/resources/devsinfo/ch3" />
-        <option value="$PROJECT_DIR$/resources/devxml/1111.xml" />
-        <option value="$PROJECT_DIR$/app/view/grid/TypeGridController.js" />
-        <option value="$PROJECT_DIR$/app/view/grid/menu/gridmenuController.js" />
         <option value="$PROJECT_DIR$/run.sh" />
         <option value="$PROJECT_DIR$/devxml/i830.xml" />
         <option value="$PROJECT_DIR$/classic/src/view/main/BackupGird.js" />
         <option value="$PROJECT_DIR$/classic/src/view/main/Backup.js" />
         <option value="$PROJECT_DIR$/devxml/i823.xml" />
         <option value="$PROJECT_DIR$/1000.json" />
-        <option value="$PROJECT_DIR$/app/view/tab/DrawPanelController.js" />
         <option value="$PROJECT_DIR$/app/view/window/ReplaceDevInfo.js" />
         <option value="$PROJECT_DIR$/app/view/main/MainController.js" />
         <option value="$PROJECT_DIR$/classic/src/view/main/UploadWindow.js" />
@@ -217,10 +208,16 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/app/view/tree/DevTreeController.js" />
         <option value="$PROJECT_DIR$/app/model/week.js" />
+        <option value="$PROJECT_DIR$/test/tsconfig.json" />
+        <option value="$PROJECT_DIR$/ext/classic/classic/overrides/event/Event.js" />
         <option value="$PROJECT_DIR$/app/model/WeekModel.js" />
-        <option value="$PROJECT_DIR$/classic/src/view/main/DrawWeeksWindow.js" />
-        <option value="$PROJECT_DIR$/app/view/window/DrawWeeksWindowController.js" />
+        <option value="$PROJECT_DIR$/classic/sass/src/view/main/Main.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/app/view/tab/DrawPanelController.js" />
+        <option value="$PROJECT_DIR$/test/week.json" />
         <option value="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" />
+        <option value="$PROJECT_DIR$/app/view/window/DrawWeeksWindowController.js" />
+        <option value="$PROJECT_DIR$/classic/src/view/main/DrawWeeksWindow.js" />
       </list>
     </option>
   </component>
@@ -293,7 +290,91 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="classic" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classic" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classic" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classic" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -377,38 +458,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".sencha" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -421,7 +470,7 @@
     <property name="js.eslint.nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../graph" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="SearchEverywhereHistoryKey" value="Application&#9;FILE&#9;file:///Applications/XAMPP/htdocs/program/app/Application.js&#10;getDev&#9;null&#9;null&#10;week&#9;FILE&#9;file:///Applications/XAMPP/htdocs/program/classic/src/view/main/DrawWeeksWindow.js&#10;delayT&#9;null&#9;null&#10;mya&#9;null&#9;null&#10;myajax&#9;null&#9;null&#10;myaj&#9;null&#9;null&#10;myAjax&#9;null&#9;null&#10;delayTo&#9;null&#9;null&#10;top&#9;FILE&#9;file:///Applications/XAMPP/htdocs/program/classic/src/view/main/TopToolbar.js&#10;upload&#9;null&#9;null&#10;delayToast&#9;null&#9;null&#10;changevalue&#9;null&#9;null&#10;myA&#9;null&#9;null" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
@@ -589,19 +638,21 @@
       <workItem from="1483610270131" duration="283000" />
       <workItem from="1483947704916" duration="447000" />
       <workItem from="1483949105448" duration="1393000" />
-      <workItem from="1484018922035" duration="14209000" />
+      <workItem from="1484018922035" duration="22946000" />
+      <workItem from="1484093261509" duration="31644000" />
+      <workItem from="1484179344721" duration="12569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235126000" />
+    <option name="totallyTimeSpent" value="288076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="301" y="23" width="1619" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16296767" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16677235" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -613,6 +664,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -633,46 +685,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ext/packages/core/src/mixin/Observable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/classic/classic/src/Component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="2150" column="6" selection-start-line="2150" selection-start-column="6" selection-end-line="2150" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/window/RenameWindowController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4860">
-          <caret line="324" column="36" selection-start-line="324" selection-start-column="36" selection-end-line="324" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4440">
-          <caret line="296" column="36" selection-start-line="296" selection-start-column="3" selection-end-line="296" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/production/program/classic/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="0" column="2392953" selection-start-line="0" selection-start-column="2392953" selection-end-line="0" selection-end-column="2392953" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/store/RenameStore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -820,13 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classic/src/view/main/Backup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -855,13 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/main/MainController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -881,7 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -889,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -897,7 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -905,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,7 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="375" column="4" selection-start-line="375" selection-start-column="4" selection-end-line="384" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,6 +926,105 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="26" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/tree/DevTreeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="895" column="65" selection-start-line="895" selection-start-column="65" selection-end-line="895" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classic/src/view/main/DevTree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="147" column="38" selection-start-line="147" selection-start-column="38" selection-end-line="147" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/WeekModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="35" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.sencha/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.sencha/.cvsignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/build/ext-all-rtl-sandbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="26" column="226967" selection-start-line="26" selection-start-column="226967" selection-end-line="26" selection-end-column="226967" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/classic/classic/overrides/event/Event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="86" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="440" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/tab/DrawPanelController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="1232" column="1" selection-start-line="1232" selection-start-column="1" selection-end-line="1232" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/main/MainController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-367">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/WeekModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="20" />
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="20" />
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classic/sass/src/view/main/Main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="88" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/week.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -944,96 +1040,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/tree/DevTreeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="895" column="65" selection-start-line="895" selection-start-column="65" selection-end-line="895" selection-end-column="65" />
-          <folding>
-            <element signature="e#113744#114902#0" expanded="false" />
-            <element signature="e#114933#116185#0" expanded="false" />
-            <element signature="e#116216#117307#0" expanded="false" />
-            <element signature="e#117338#118481#0" expanded="false" />
-            <element signature="e#118512#119898#0" expanded="false" />
-            <element signature="e#119929#121234#0" expanded="false" />
-            <element signature="e#121265#121962#0" expanded="false" />
-            <element signature="e#122536#122707#0" expanded="false" />
-            <element signature="e#122741#123672#0" expanded="false" />
-            <element signature="e#123721#123939#0" expanded="false" />
-            <marker date="1484031006000" expanded="true" signature="6243:6253" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classic/src/view/main/DevTree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="147" column="38" selection-start-line="147" selection-start-column="38" selection-end-line="147" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/WeekModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="35" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/WeekModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.sencha/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.sencha/.cvsignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classic/src/view/main/DrawWeeksWindow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="226" column="50" selection-start-line="226" selection-start-column="50" selection-end-line="226" selection-end-column="50" />
-          <folding>
-            <element signature="e#339#385#0" expanded="false" />
-            <element signature="e#563#756#0" expanded="false" />
-            <element signature="e#5234#5852#0" expanded="false" />
-            <element signature="e#8807#11943#0" expanded="false" />
-            <element signature="e#15939#17458#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/window/DrawWeeksWindowController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        <state relative-caret-position="661">
+          <caret line="576" column="57" selection-start-line="576" selection-start-column="57" selection-end-line="576" selection-end-column="57" />
           <folding>
-            <element signature="e#7419#9724#0" expanded="false" />
-            <marker date="1484048695000" expanded="true" signature="828:834" ph=" " />
+            <element signature="e#5750#9752#0" expanded="false" />
+            <element signature="e#13803#14381#0" expanded="false" />
+            <element signature="e#15273#16285#0" expanded="false" />
+            <marker date="1484203324000" expanded="true" signature="833:839" ph=" " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classic/src/view/main/TopToolbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
+        <state relative-caret-position="1450">
           <caret line="178" column="83" selection-start-line="178" selection-start-column="83" selection-end-line="178" selection-end-column="83" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classic/src/view/main/DrawWeeksWindow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#339#385#0" expanded="false" />
+            <element signature="e#563#756#0" expanded="false" />
+            <element signature="e#7751#8369#0" expanded="false" />
+            <element signature="e#12691#15507#0" expanded="false" />
+            <element signature="e#15554#18286#0" expanded="false" />
+            <element signature="e#15893#18280#0" expanded="false" />
+            <element signature="e#20052#21751#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

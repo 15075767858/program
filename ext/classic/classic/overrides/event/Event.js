@@ -379,7 +379,7 @@ Ext.define('Ext.overrides.event.Event', {
 
                 if (event.type === 'contextmenu') {
                     me.button = 2; // IE8/9 reports click as 0, so we can at least attempt to infer here
-                }   
+                }
 
                 // IE8 can throw an error when trying to access properties on a browserEvent
                 // object when the event has been buffered or delayed.  Cache them here
@@ -425,7 +425,7 @@ Ext.define('Ext.overrides.event.Event', {
         // between keydown/keyup pair.
         document.attachEvent('onkeydown', onKeyDown);
         document.attachEvent('onkeyup',   onKeyUp);
-        
+
         window.attachEvent('onunload', function() {
             document.detachEvent('onkeydown', onKeyDown);
             document.detachEvent('onkeyup',   onKeyUp);
