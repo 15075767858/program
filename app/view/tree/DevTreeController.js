@@ -81,7 +81,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                             margin: 10,
                                             xtype: "combobox",
                                             allowBlank: false,
-                                            fieldLabel: 'select file NetNumber',
+                                            fieldLabel: 'select file name',
                                             store: getDevXmlStore(),
                                             editable: false,
                                             queryMode: 'local',
@@ -95,7 +95,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                             text: 'Ok', handler: function () {
                                             var text = win.down("combobox").getValue();
                                             if (text == null) {
-                                                Ext.Msg.alert('Info', 'Plase select file NetNumber.');
+                                                Ext.Msg.alert('Info', 'Plase select file name.');
                                                 return;
                                             }
                                             console.log(text)
@@ -196,10 +196,11 @@ Ext.define('program.view.tree.DevTreeController', {
 
                                     {
                                         margin: 10,
+
                                         allowBlank: false,
                                         editable: false,
                                         value: strnumbervalue,
-                                        fieldLabel: 'select file name',
+                                        fieldLabel: 'select file NetNumber',
                                         xtype: 'textfield',
                                         name: 'name',
                                         allowBlank: false
@@ -210,7 +211,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                         text: 'Ok', handler: function () {
                                         var text = win.down("textfield").getValue();
                                         if (text == null) {
-                                            Ext.Msg.alert('Info', 'Plase select file name.');
+                                            Ext.Msg.alert('Info', 'Plase select file NetNumber.');
                                             return;
                                         }
 
@@ -1453,6 +1454,10 @@ Ext.define('program.view.tree.DevTreeController', {
                                                 }
                                                 console.log(val)
                                                 return val;
+                                            }
+                                        },{
+                                          name:"Object_Name",type:"string",mapping:function(){
+                                              console.log(arguments)
                                             }
                                         },
                                             {name: "identifier", type: "string"},
