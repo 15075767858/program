@@ -81,7 +81,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                             margin: 10,
                                             xtype: "combobox",
                                             allowBlank: false,
-                                            fieldLabel: 'select file name',
+                                            fieldLabel: 'select file NetNumber',
                                             store: getDevXmlStore(),
                                             editable: false,
                                             queryMode: 'local',
@@ -95,7 +95,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                             text: 'Ok', handler: function () {
                                             var text = win.down("combobox").getValue();
                                             if (text == null) {
-                                                Ext.Msg.alert('Info', 'Plase select file name.');
+                                                Ext.Msg.alert('Info', 'Plase select file NetNumber.');
                                                 return;
                                             }
                                             console.log(text)
@@ -181,6 +181,7 @@ Ext.define('program.view.tree.DevTreeController', {
                             var aDevNames = getDevNamesAllDataStore()
 
                             var strnumbervalue = getNetNumberValue();
+                            strnumbervalue = Ext.String.leftPad(strnumbervalue, 4, '0');
                             var win = Ext.create('Ext.window.Window', {
                                 title: 'new schedule',
                                 frame: true,
