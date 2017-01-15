@@ -185,7 +185,7 @@ Ext.define('program.view.tree.DevTreeController', {
                             var win = Ext.create('Ext.window.Window', {
                                 title: 'new schedule',
                                 frame: true,
-                                width: 310,
+                                width: 400,
                                 bodyPadding: 10,
                                 autoShow: true,
                                 defaultType: 'textfield',
@@ -196,11 +196,11 @@ Ext.define('program.view.tree.DevTreeController', {
 
                                     {
                                         margin: 10,
-
                                         allowBlank: false,
                                         editable: false,
                                         value: strnumbervalue,
                                         fieldLabel: 'select file NetNumber',
+                                        labelWidth: 150,
                                         xtype: 'textfield',
                                         name: 'name',
                                         allowBlank: false
@@ -1420,13 +1420,11 @@ Ext.define('program.view.tree.DevTreeController', {
                                             console.log(text[i])
                                             console.log(sDevName)
                                             if (sDevName == (text[i] + "").substr(0, 4)) {
-
                                                 sourceData.push({
                                                     'name': text[i],
                                                     "identifier": "85",
                                                     "arrayIndex": "-1"
                                                 })
-
                                             }
 
                                         }
@@ -1455,9 +1453,26 @@ Ext.define('program.view.tree.DevTreeController', {
                                                 console.log(val)
                                                 return val;
                                             }
-                                        },{
-                                          name:"Object_Name",type:"string",mapping:function(){
-                                              console.log(arguments)
+                                        }, {
+                                            name: "Object_Name", type: "string",
+                                            mapping: function (model) {
+                                                console.log(arguments)
+                                                var data = "";
+                                                Ext.Ajax.request({
+                                                    url: "resources/test1.php",
+                                                    async: false,
+                                                    params: {
+                                                        par: "getvalue",
+                                                        nodename: model.name,
+                                                        type: "Object_Name"
+                                                    },
+                                                    success: function (response) {
+                                                        if (response.status == 200) {
+                                                            data = response.responseText
+                                                        }
+                                                    }
+                                                })
+                                                return data;
                                             }
                                         },
                                             {name: "identifier", type: "string"},
@@ -1512,6 +1527,7 @@ Ext.define('program.view.tree.DevTreeController', {
 
                                                         Ext.Ajax.request({
                                                             url: "resources/test1.php?par=changevaluenopublish&nodename=" + sDevNodeName + "&type=List_Of_Object_Property_References",
+                                                            method: "POST",
                                                             params: {
                                                                 value: Ext.encode(oJson)
                                                             },
@@ -1522,8 +1538,6 @@ Ext.define('program.view.tree.DevTreeController', {
                                                         });
 
                                                         if (sDevName != getNetNumberValue()) {
-
-
                                                             devPublish(sDevName + ".8.*", sDevNodeName + "\r\nList_Of_Object_Property_References\r\n" + (Ext.encode(oJson).replaceAll("\\s*|\t|\r|\n", "")));
                                                         } else {
                                                             myAjax("resources/test1.php?par=changevaluenopublish&nodename=" + sDevNodeName + "&type=Position&value=2", function (response) {
@@ -1542,6 +1556,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                             items: [
                                                 {
                                                     xtype: "gridpanel",
+                                                    itemId:"sourceGridPanel",
                                                     flex: 4,
                                                     border: true,
                                                     margin: 5,
@@ -1556,6 +1571,9 @@ Ext.define('program.view.tree.DevTreeController', {
                                                     columns: [
                                                         {
                                                             header: 'Name', dataIndex: 'name', flex: 1
+                                                        },
+                                                        {
+                                                            header: "Object_Name", dataIndex: "Object_Name", flex: 1
                                                         },
                                                         {
                                                             header: 'Identifier',
@@ -1581,18 +1599,29 @@ Ext.define('program.view.tree.DevTreeController', {
 
                                                     },
                                                     items: [
-                                                        /*{
-                                                         xtype: 'button',
-                                                         margin: "0 0 20 0",
-                                                         text: "→",
-                                                         scale: 'large'
-                                                         },
-                                                         {
-                                                         xtype: 'button',
-                                                         margin: "0 0 0 0",
-                                                         text: "←",
-                                                         scale: 'large'
-                                                         }*/
+                                                        {
+                                                            xtype: 'button',
+                                                            margin: "0 0 300 0",
+                                                            text: "select", handler: function (button) {
+                                                            var source = Ext.data.StoreManager.lookup('refSourceStore');
+                                                            var target = Ext.data.StoreManager.lookup('refTargetStore');
+                                                            var sourceGridPanel = button.up("window").getComponent("sourceGridPanel");
+                                                            var targetGridPanel = button.up("window").getComponent("targetGridPanel");
+
+                                                            target.add(source.remove(sourceGridPanel.getSelection()[0]));
+                                                        }
+                                                        },
+                                                        {
+                                                            xtype: 'button',
+                                                            margin: "0 0 240 0",
+                                                            text: "move", handler: function (button) {
+                                                            var source = Ext.data.StoreManager.lookup('refSourceStore');
+                                                            var target = Ext.data.StoreManager.lookup('refTargetStore');
+                                                            var sourceGridPanel = button.up("window").getComponent("sourceGridPanel");
+                                                            var targetGridPanel = button.up("window").getComponent("targetGridPanel");
+                                                            source.add(target.remove(targetGridPanel.getSelection()[0]));
+                                                        }
+                                                        },
                                                         {
                                                             xtype: 'button',
                                                             margin: "0 0 70 0",
@@ -1607,7 +1636,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                                         {
                                                             xtype: 'button',
                                                             //margin: "0 0 0 0",
-                                                            text: "Clear All ←",
+                                                            text: "Move All ←",
                                                             scale: 'small',
                                                             handler: function () {
                                                                 var source = Ext.data.StoreManager.lookup('refSourceStore');
@@ -1624,6 +1653,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                                     flex: 4,
                                                     border: true,
                                                     margin: 5,
+                                                    itemId:"targetGridPanel",
                                                     viewConfig: {
                                                         plugins: {
                                                             ptype: 'gridviewdragdrop',
@@ -1632,14 +1662,45 @@ Ext.define('program.view.tree.DevTreeController', {
                                                     },
                                                     store: Ext.create('Ext.data.Store', {
                                                         fields: [{name: "name", type: "string"},
+                                                            {
+                                                                name: "Object_Name", type: "string",
+                                                                mapping: function (model) {
+                                                                    console.log(arguments)
+                                                                    var data = "";
+                                                                    Ext.Ajax.request({
+                                                                        url: "resources/test1.php",
+                                                                        async: false,
+                                                                        params: {
+                                                                            par: "getvalue",
+                                                                            nodename: model.name,
+                                                                            type: "Object_Name"
+                                                                        },
+                                                                        success: function (response) {
+                                                                            if (response.status == 200) {
+                                                                                data = response.responseText
+                                                                            }
+                                                                        }
+                                                                    })
+                                                                    return data;
+                                                                }
+                                                            },
                                                             {name: "identifier", type: "string"},
                                                             {name: "arrayIndex", type: "string"}
                                                         ],
+
                                                         storeId: "refTargetStore",
-                                                        data: targetData
+                                                        data: targetData,
+                                                        listeners: {
+                                                            load: function () {
+                                                                console.log(arguments)
+                                                            }
+                                                        }
                                                     }),
                                                     columns: [
                                                         {header: 'Name', dataIndex: 'name', flex: 1},
+                                                        {
+                                                            header: "Object_Name", dataIndex: "Object_Name", flex: 1
+                                                        },
                                                         {
                                                             header: 'Identifier',
                                                             dataIndex: 'identifier',

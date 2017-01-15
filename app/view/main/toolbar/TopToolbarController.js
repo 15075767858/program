@@ -566,7 +566,7 @@ function devPublish(key, value, success) {
 
     Ext.Ajax.request({
         url: "resources/test1.php",
-        method: "GET",
+        method: "POST",
         async: false,
         params: {
             par: "devPublish",
