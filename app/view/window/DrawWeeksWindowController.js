@@ -12,11 +12,63 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
     },
     PreviousHandler: function (button) {
         var me = this.view;
+        var __this = this;
         $(".week").remove();
         Ext.getCmp("drawWindow_next").show();
-        var gridjson = me.gridDataToJson();
+        var gridjson = __this.gridDataToJson();
         me.fireEvent("dwParsInit");
         me.fireEvent("jsonToDivData", gridjson);
+
+    },
+    OkHandler: function () {
+        var __this = this;
+        var me = this.view;
+        var viewModel = me.viewModel;
+        viewModel.data["modify"]["0"] = false;
+        __this.savePublish();
+        me.close();
+    },
+
+    modifyHandler: function () {
+        var __this = this;
+        var me = this.view;
+        var viewModel = me.viewModel;
+        viewModel.data["modify"]["0"] = true;
+        __this.savePublish();
+        me.close();
+    },
+
+    savePublish: function () {
+        var __this = this;
+        var me = this.view;
+
+        if (me.layout.activeItem.xtype == "gridpanel") {
+            me.fireEvent("PreviousHandler");
+        } else {
+            me.fireEvent("nextHandler");
+        }
+
+        var oJson = __this.divDataToJson()
+
+        console.log(oJson)
+
+        Ext.Ajax.request({
+            url: "resources/test1.php?par=changevaluenopublish&nodename=" + me.sDevNodeName + "&type=Weekly_Schedule",
+            params: {
+                value: Ext.encode(oJson.weekly)
+            },
+            success: function (response) {
+                var text = response.responseText;
+                delayToast("Status", "Changes saved successfully .", 1000);
+            }
+        });
+
+        var instance = me.sDevNodeName.substr(0, 4);
+
+        if (me.sDevName != getNetNumberValue()) {
+            devPublish(instance + ".8.*", me.sDevNodeName + "\r\nWeekly_Schedule\r\n" + (Ext.encode(oJson.pubweekly)).replaceAll("\\s*|\t|\r|\n", ""));
+        }
+
     },
     weekDivAddEvent: function (div) {
         var me = this.view
@@ -159,6 +211,11 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
         }
 
     },
+    /**
+     * @Deprecated
+     * 这个方法已经过时 新的方法 {@link divDataToJson}
+     * @return {{weekly: {Weekly_Schedule: {}}, pubweekly: {Weekly_Schedule: {}}}}
+     */
     getDivData: function () {
         var me = this;
         var weekly = {
@@ -199,10 +256,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                     var eH = endtime.getHours()
                     var eM = endtime.getMinutes()
                     var eS = endtime.getSeconds()
-
-
                     //将grid数据装入
-
                     me.dwPars.drawWindowData.push({
                         divId: dayTimeArr[j].id,
                         SortWeek: (i + 1) + "_" + WeekArr[i],
@@ -253,7 +307,6 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                         }
                     )
                 }
-
             }
 
             if (pubTimeArr.length == 0) {
@@ -267,6 +320,41 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
 
         return {weekly: weekly, pubweekly: weekly};
 
+    },
+    /**
+     * 表格数据转换成JSON
+     * @return {{Weekly_Schedule: {}}}
+     */
+    gridDataToJson: function () {
+        var me = this.view;
+        var store = Ext.data.StoreManager.lookup('drawWindowStore');
+        var WeekArr = me.dwPars.WeekArr;
+        var weekly = {
+            "Weekly_Schedule": {}
+        }
+        for (var i = 0; i < WeekArr.length; i++) {
+            var dayArr = [];
+            var days = store.queryRecords('Week', WeekArr[i]);
+            for (var j = 0; j < days.length; j++) {
+                console.log(days[j])
+                var dayData = days[j].data;
+                var times = dayData.time.split(":");
+                var obj = {
+                    dirty: days[j].dirty,
+                    "time": {
+                        "hour": Number(times[0]),
+                        "minute": Number(times[1]),
+                        "second": Number(times[2]),
+                        "hundredths": 1
+                    },
+                    "value": dayData.value
+                };
+                dayArr.push(obj);
+            }
+            weekly["Weekly_Schedule"][WeekArr[i]] = dayArr;
+        }
+        console.log(weekly)
+        return weekly;
     },
     /**
      * 这个方法用来将 div 转成 数据
@@ -294,9 +382,9 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
              iNumber=0;
              }*/
             var dayTimeArr = document.querySelectorAll("." + showWeekArr[iNumber]);
-            weekly.Weekly_Schedule[showWeekArr[iNumber]] = []
+            weekly.Weekly_Schedule[showWeekArr[iNumber]] = [];
 
-            var pubTimeArr = []
+            var pubTimeArr = [];
 
             pubweekly.Weekly_Schedule.push({
                 day: iNumber + 1,
@@ -396,9 +484,9 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
         return {weekly: weekly, pubweekly: pubweekly};
     },
     /**
-     * 这个方法用来将数据转换成变成 div
+     * 这个方法用来将数据转换成变成div
      * 传入一个数据自动清理之前的div
-     * @param  {JSON} d JSON 数据
+     * @param  {JSON} d JSON数据
      */
     jsonToDivData: function (d) {
         console.log(d)
@@ -414,14 +502,27 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                 var endTimes = dweek.filter(function (v) {
                     return !v.value
                 }).sort(sortDate)
+                console.log(startTimes)
+                console.log(endTimes)
                 var j = 0;
+                var weekstr = WeekArr[i];
                 for (; j < startTimes.length; j++) {
-                    me.addDayDiv(dataToDate(startTimes[j]), dataToDate(endTimes[j]), WeekArr[i], "")
+
+                    var isoldWeek = "old" + weekstr;
+                    if (startTimes[j].dirty || endTimes[j].dirty) {
+                        isoldWeek = "new" + weekstr;
+                    }
+                    me.addDayDiv(dataToDate(startTimes[j]), dataToDate(endTimes[j]), [weekstr, isoldWeek])
                 }
                 //on 减去 off 的时间剩余的off时间
                 var hideTimes = endTimes.slice(startTimes.length, endTimes.length);
                 for (j = 0; j < hideTimes.length; j += 2) {
-                    me.addDayDiv(dataToDate(hideTimes[j]), dataToDate(hideTimes[j + 1]), WeekArr[i], "weekhide")
+
+                    var isoldWeek = "old" + weekstr;
+                    if (startTimes[j].dirty || endTimes[j].dirty) {
+                        isoldWeek = "new" + weekstr;
+                    }
+                    me.addDayDiv(dataToDate(hideTimes[j]), dataToDate(hideTimes[j + 1]), [weekstr, "weekhide", isoldWeek])
                 }
             }
         }
@@ -509,12 +610,12 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
             posLeftArr.push(startPoint)
 
             WeekArrJson[0]['left'] = startPoint;
-            console.log(startPoint)
+//            console.log(startPoint)
             var __startPoint = startPoint;
             for (var i = 0; i < 7; i++) {
 
                 var weekleft = Math.ceil(startPoint += bWidth + interval);
-                console.log(weekleft)
+//                console.log(weekleft)
                 posLeftArr.push(weekleft)
                 if (i < 6) {
                     WeekArrJson[i + 1]['left'] = weekleft;
@@ -742,10 +843,6 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
             ;
 
 
-    },
-    modifyHandler: function () {
-        console.log(arguments)
-        console.log(this.view.viewModel)
     }
 });
 

@@ -25,7 +25,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
     }),
     tbar: [
         {
-            text: "next",
+            text: "next ->",
             id: "drawWindow_next",
             handler: function (button) {
                 var me = this.up('window');
@@ -36,7 +36,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             }
         },
         {
-            text: "Previous",
+            text: "<- Previous",
             id: "drawWindow_previous",
             hidden: true,
             handler: function (button) {
@@ -47,36 +47,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                 me.fireEvent("PreviousHandler");
             }
         },
-        {
-            text: "Ok",
-            handler: function (th) {
-                var me = this.up("window");
-                if (me.layout.activeItem.xtype == "gridpanel") {
-                    me.fireEvent("PreviousHandler");
-                } else {
-                    me.fireEvent("nextHandler");
-                }
 
-                var oJson = me.controller.divDataToJson()
-                console.log(oJson)
-                Ext.Ajax.request({
-                    url: "resources/test1.php?par=changevaluenopublish&nodename=" + me.sDevNodeName + "&type=Weekly_Schedule",
-                    params: {
-                        value: Ext.encode(oJson.weekly)
-                    },
-                    success: function (response) {
-                        var text = response.responseText;
-                        delayToast("Status", "Changes saved successfully .", 1000);
-                    }
-                });
-                var instance = me.sDevNodeName.substr(0, 4)
-                if (me.sDevName != getNetNumberValue()) {
-                    devPublish(instance + ".8.*", me.sDevNodeName + "\r\nWeekly_Schedule\r\n" + (Ext.encode(oJson.pubweekly)).replaceAll("\\s*|\t|\r|\n", ""));
-
-                }
-                this.up("window").close()
-            }
-        },
         {
             text: "divDataToJson", hidden: true, handler: function () {
             var me = this.up("window");
@@ -84,50 +55,36 @@ Ext.define("program.view.window.DrawWeeksWindow", {
         }
         }, {
             text: "gridDataToJson", hidden: true, handler: "gridDataToJson"
+        },
+        "->",
+        {
+            scale:"medium",
+            text: "Ok",
+            handler: "OkHandler"
+        },
+        {
+            xtype: "segmentedbutton",
+            bind: "{modify}",
+            allowMultiple: true,
+            items: [{
+                text: "modify",
+                scale:"medium",
+
+                handler: "modifyHandler",
+                value: true,
+                tooltip: "publish modify"
+            }]
         }
 
     ],
-    /**
-     *表格数据转换成JSON
-     */
-    gridDataToJson: function () {
-        var me = this;
-        var store = Ext.data.StoreManager.lookup('drawWindowStore');
-        var WeekArr = me.dwPars.WeekArr;
-        var weekly = {
-            "Weekly_Schedule": {}
-        }
-        for (var i = 0; i < WeekArr.length; i++) {
-            var dayArr = []
-            var days = store.queryRecords('Week', WeekArr[i])
-            for (var j = 0; j < days.length; j++) {
-                var dayData = days[j].data
-                var times = dayData.time.split(":");
 
-                console.log(dayData)
-                var obj = {
-                    "time": {
-                        "hour": Number(times[0]),
-                        "minute": Number(times[1]),
-                        "second": Number(times[2]),
-                        "hundredths": 1
-                    },
-                    "value": dayData.value
-                };
-                dayArr.push(obj);
-            }
-            weekly["Weekly_Schedule"][WeekArr[i]] = dayArr;
-        }
-        console.log(weekly)
-        return weekly;
-    },
     initComponent: function () {
         var me = this;
         me.title = me.sDevNodeName + " Property"
 
         me.callParent();
     },
-    addDayDiv: function (starttime, endtime, week, className) {
+    addDayDiv: function (starttime, endtime,  classList) {
         var me = this;
         var div = me.dwPars.div();
         var dw = me.dwPars.dw;
@@ -136,9 +93,12 @@ Ext.define("program.view.window.DrawWeeksWindow", {
         if (starttime & endtime) {
             div.attr("starttime", starttime);
             div.attr("endtime", endtime);
-            div.addClass(week)
-            div.addClass("old"+week)
-            div.addClass(className)
+            for (var i = 0; i < classList.length; i++) {
+                div.addClass(classList[i]);
+            }
+            //div.addClass(week)
+            //div.addClass("old" + week)
+            //div.addClass(className)
             console.log(div)
             $(dw.el.dom).append(div)
             me.controller.weekDivAddEvent(div)
@@ -236,6 +196,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
         },
         {
             xtype: "gridpanel",
+            margin: 5,
             store: Ext.create('Ext.data.Store', {
                 storeId: "drawWindowStore",
                 groupField: 'SortWeek',
@@ -247,12 +208,12 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                     property: 'level',
                     direction: 'ASC'
                 }, {
-                    property:"timesort"
+                    property: "timesort"
                 }/*{
-                    sortFn:function () {
-                        console.log(arguments)
-                    }
-                }*/]
+                 sortFn:function () {
+                 console.log(arguments)
+                 }
+                 }*/]
             }),
             listeners: {
                 boxready: function (grid) {
@@ -267,12 +228,14 @@ Ext.define("program.view.window.DrawWeeksWindow", {
 
             tbar: [{
                 text: 'Expand All',
+                hidden: true,
                 handler: function () {
                     var me = this.up("gridpanel")
                     me.features[0].expandAll()
                 }
             }, {
                 text: 'Collapse All',
+                hidden: true,
                 handler: function () {
                     var me = this.up("gridpanel")
                     me.features[0].collapseAll()
@@ -280,16 +243,6 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             }, {
                 text: "insert",
                 handler: "insertWeek"
-            }, {
-                xtype: "segmentedbutton",
-                bind:"{modify}",
-                allowMultiple: true,
-                items: [{
-                    text: "modify",
-                    handler:"modifyHandler",
-                    value:true,
-                    tooltip:""
-                }]
             }
             ],
             columnLines: true,
