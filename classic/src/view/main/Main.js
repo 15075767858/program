@@ -87,6 +87,7 @@ function isTime(val) {
 }
 
 function isBarCollsion(x1, y1, x2, y2, w, h) {
+    console.log(arguments)
     if (x1 >= x2 && x1 <= x2 + w && y1 >= y2 && y1 <= y2 + h) {
         return true;
     }

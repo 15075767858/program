@@ -51,9 +51,9 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             text: "Ok",
             handler: function (th) {
                 var me = this.up("window");
-                if(me.layout.activeItem.xtype=="gridpanel"){
+                if (me.layout.activeItem.xtype == "gridpanel") {
                     me.fireEvent("PreviousHandler");
-                }else{
+                } else {
                     me.fireEvent("nextHandler");
                 }
 
@@ -137,6 +137,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             div.attr("starttime", starttime);
             div.attr("endtime", endtime);
             div.addClass(week)
+            div.addClass("old"+week)
             div.addClass(className)
             console.log(div)
             $(dw.el.dom).append(div)
@@ -152,28 +153,30 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             padding: '10 0 0 0',
             store: {
                 fields: ['time', 'open', 'high', 'low', 'close'],
-                data: [{
-                    'time': "Monday",
-                    'close': 2730000000
-                }, {
-                    'time': "Tuesday",
-                    'close': 2730000000
-                }, {
-                    'time': "Wednesday",
-                    'close': 2726000000
-                }, {
-                    'time': "Thursday",
-                    'close': 2730000000
-                }, {
-                    'time': "Friday",
-                    'close': 2730000000
-                }, {
-                    'time': "Saturday",
-                    'close': 2730000000
-                }, {
-                    'time': "Sunday",
-                    'close': 2736000000
-                }
+                data: [
+                    {
+                        'time': "Sunday",
+                        'close': 2736000000
+                    },
+                    {
+                        'time': "Monday",
+                        'close': 2730000000
+                    }, {
+                        'time': "Tuesday",
+                        'close': 2730000000
+                    }, {
+                        'time': "Wednesday",
+                        'close': 2726000000
+                    }, {
+                        'time': "Thursday",
+                        'close': 2730000000
+                    }, {
+                        'time': "Friday",
+                        'close': 2730000000
+                    }, {
+                        'time': "Saturday",
+                        'close': 2730000000
+                    }
                 ]
             },
 
@@ -243,7 +246,13 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                 sorters: [{
                     property: 'level',
                     direction: 'ASC'
-                }]
+                }, {
+                    property:"timesort"
+                }/*{
+                    sortFn:function () {
+                        console.log(arguments)
+                    }
+                }*/]
             }),
             listeners: {
                 boxready: function (grid) {
@@ -271,7 +280,18 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             }, {
                 text: "insert",
                 handler: "insertWeek"
-            }],
+            }, {
+                xtype: "segmentedbutton",
+                bind:"{modify}",
+                allowMultiple: true,
+                items: [{
+                    text: "modify",
+                    handler:"modifyHandler",
+                    value:true,
+                    tooltip:""
+                }]
+            }
+            ],
             columnLines: true,
             rowLines: true,
             plugins: {
@@ -421,20 +441,19 @@ Ext.define("program.view.window.DrawWeeksWindow", {
         el: {
             contextmenu: function (win, el, eOpts) {
                 var me = Ext.getCmp(this.id);
-                console.log(me)
                 //柱子间隔 27  宽100  高625
                 if (el.tagName != "CANVAS") {
                     return;
                 }
                 ;
-                console.log(win.pageY)
                 if (win.pageY < 100) {
                     return;
                 }
-                console.log(me.el.getTop(true))
+                //console.log(me.el.getTop(true))
                 var WeekArrJson = me.dwPars.WeekArrJson;
                 var pageLeft = win.pageX - me.el.getLeft(true);
                 for (var i = 0; i < WeekArrJson.length; i++) {
+                    console.log(WeekArrJson[i].left, pageLeft)
                     if (WeekArrJson[i].left < pageLeft & WeekArrJson[i].left + 100 > pageLeft) {
                         Ext.create('Ext.menu.Menu', {
                             width: 100,
@@ -480,6 +499,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
     },
     addNewBar: function (eve, copydiv) {
         var win = this;
+        var ShowWeekArr = win.dwPars.ShowWeekArr;
         var WeekArr = win.dwPars.WeekArrJson
         var dw = win.dwPars.dw;
         var bWidth = win.dwPars.bWidth;
@@ -491,10 +511,14 @@ Ext.define("program.view.window.DrawWeeksWindow", {
         var bLeft;
         var div = win.dwPars.div()
             .css("top", eve.pageY - winOffsetTop + "px");
-        div.addClass("new")
+        //div.addClass("new")
         for (var i = 0; i < posLeftArr.length; i++) {
             if (isBarCollsion(eve.pageX, eve.pageY, posLeftArr[i] + winOffsetLeft, bMarginTop, bWidth, bMaxHeight)) {
                 bLeft = posLeftArr[i];
+                console.log(WeekArr[i])
+                if (!WeekArr[i]) {
+                    WeekArr[i] = WeekArr[6];
+                }
                 div.addClass(WeekArr[i].name);
                 div.addClass("new" + WeekArr[i].name);
             }

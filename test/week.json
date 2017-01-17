@@ -1,67 +1,48 @@
 {
   "Weekly_Schedule": {
-    "monday": [
-      {
-        "time": {
-          "hour": 5,
-          "minute": 55,
-          "second": 30,
-          "hundredths": 1
-        },
-        "value": false
-      },
-      {
-        "time": {
-          "hour": 7,
-          "minute": 7,
-          "second": 19,
-          "hundredths": 1
-        },
-        "value": false
-      }
-    ],
-    "tuesday": [
-      {
-        "time": {
-          "hour": 6,
-          "minute": 13,
-          "second": 27,
-          "hundredths": 1
-        },
-        "value": true
-      },
-      {
-        "time": {
-          "hour": 7,
-          "minute": 25,
-          "second": 17,
-          "hundredths": 1
-        },
-        "value": false
-      },
-      {
-        "time": {
-          "hour": 11,
-          "minute": 25,
-          "second": 53,
-          "hundredths": 1
-        },
-        "value": true
-      },
-      {
-        "time": {
-          "hour": 12,
-          "minute": 37,
-          "second": 42,
-          "hundredths": 1
-        },
-        "value": false
-      }
-    ],
+    "monday": [],
+    "tuesday": [],
     "wednesday": [],
     "thursday": [],
     "friday": [],
     "saturday": [],
-    "sunday": []
+    "sunday": [
+      {
+        "time": {
+          "hour": 8,
+          "minute": 45,
+          "second": 36,
+          "hundredths": 1
+        },
+        "value": true
+      },
+      {
+        "time": {
+          "hour": 10,
+          "minute": 26,
+          "second": 24,
+          "hundredths": 1
+        },
+        "value": false
+      },
+      {
+        "time": {
+          "hour": 15,
+          "minute": 10,
+          "second": 0,
+          "hundredths": 1
+        },
+        "value": true
+      },
+      {
+        "time": {
+          "hour": 15,
+          "minute": 30,
+          "second": 24,
+          "hundredths": 1
+        },
+        "value": false
+      }
+    ]
   }
 }
