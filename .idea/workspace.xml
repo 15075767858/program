@@ -5,803 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5634e344-e363-4954-913f-d691016cfd59" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program.tar.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/active.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/cache.appcache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic.jsonp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ext/ext-watermark/Read Me.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ext/ext-watermark/demo-files/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ext/ext-watermark/demo-files/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ext/ext-watermark/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ext/ext-watermark/fonts/ext-watermark.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ext/ext-watermark/fonts/ext-watermark.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ext/ext-watermark/fonts/ext-watermark.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ext/ext-watermark/fonts/ext-watermark.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ext/ext-watermark/selection.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ext/ext-watermark/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/breadcrumb/default-arrow-open-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/breadcrumb/default-arrow-open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/breadcrumb/default-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/breadcrumb/default-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/breadcrumb/default-scroll-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/breadcrumb/default-scroll-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/breadcrumb/default-split-arrow-open-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/breadcrumb/default-split-arrow-open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/breadcrumb/default-split-arrow-over-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/breadcrumb/default-split-arrow-over.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/breadcrumb/default-split-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/breadcrumb/default-split-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn-group/btn-group-default-framed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn-group/btn-group-default-framed-notitle-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn-group/btn-group-default-framed-notitle-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn-group/btn-group-default-framed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-disabled-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-disabled-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-disabled-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-focus-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-large-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-disabled-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-disabled-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-disabled-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-focus-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-medium-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-disabled-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-disabled-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-disabled-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-focus-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-small-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-disabled-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-disabled-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-disabled-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-focus-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-large-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-disabled-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-disabled-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-disabled-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-focus-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-medium-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-disabled-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-disabled-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-disabled-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-focus-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-default-toolbar-small-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-focus-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-large-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-focus-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-medium-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-focus-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-pressed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-pressed-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/btn/btn-plain-toolbar-small-pressed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-large-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-large-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-large-s-arrow-b-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-large-s-arrow-b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-large-s-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-large-s-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-medium-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-medium-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-medium-s-arrow-b-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-medium-s-arrow-b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-medium-s-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-medium-s-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-small-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-small-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-small-s-arrow-b-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-small-s-arrow-b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-small-s-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-small-s-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-large-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-large-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-large-s-arrow-b-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-large-s-arrow-b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-large-s-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-large-s-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-medium-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-medium-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-medium-s-arrow-b-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-medium-s-arrow-b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-medium-s-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-medium-s-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-small-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-small-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-small-s-arrow-b-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-small-s-arrow-b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-small-s-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/default-toolbar-small-s-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/grid-cell-small-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/grid-cell-small-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/grid-cell-small-s-arrow-b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/grid-cell-small-s-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/grid-cell-small-s-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-large-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-large-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-large-s-arrow-b-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-large-s-arrow-b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-large-s-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-large-s-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-medium-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-medium-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-medium-s-arrow-b-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-medium-s-arrow-b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-medium-s-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-medium-s-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-small-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-small-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-small-s-arrow-b-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-small-s-arrow-b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-small-s-arrow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/button/plain-toolbar-small-s-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/datepicker/arrow-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/datepicker/arrow-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/datepicker/month-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/dd/drop-add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/dd/drop-no.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/dd/drop-yes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/editor/tb-sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/fieldset/collapse-tool.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/checkbox.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/clear-trigger-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/clear-trigger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/date-trigger-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/date-trigger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/exclamation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/radio.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/search-trigger-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/search-trigger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/spinner-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/spinner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/tag-field-item-close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/trigger-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/form/trigger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/col-move-bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/col-move-top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/columns.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/dd-insert-arrow-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/dd-insert-arrow-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/dirty-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/dirty.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/drop-no.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/drop-yes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/filters/equals.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/filters/find.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/filters/greater_than.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/filters/less_than.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/group-by.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/group-collapse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/group-expand.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/hd-pop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/hmenu-asc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/hmenu-desc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/hmenu-lock.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/hmenu-unlock.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/page-first.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/page-last.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/page-next.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/page-prev.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/pick-button.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/refresh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/sort_asc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/grid/sort_desc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/loadmask/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/magnify.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/menu/default-checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/menu/default-group-checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/menu/default-menu-parent-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/menu/default-menu-parent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/menu/default-scroll-bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/menu/default-scroll-top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/menu/default-unchecked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-bottom-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-bottom-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-bottom-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-bottom-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-left-corners-rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-left-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-left-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-right-corners-rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-right-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-right-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-top-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-collapsed-top-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-left-corners-rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-left-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-left-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-right-corners-rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-right-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-right-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-top-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-default-framed-top-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-bottom-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-bottom-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-bottom-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-bottom-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-left-corners-rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-left-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-left-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-right-corners-rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-right-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-right-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-top-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-collapsed-top-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-left-corners-rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-left-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-left-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-right-corners-rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-right-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-right-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-top-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel-header/panel-header-light-framed-top-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel/panel-default-framed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel/panel-default-framed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel/panel-light-framed-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/panel/panel-light-framed-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/shared/icon-error.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/shared/icon-info.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/shared/icon-question.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/shared/icon-warning.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/sizer/e-handle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/sizer/ne-handle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/sizer/nw-handle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/sizer/s-handle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/sizer/se-handle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/sizer/sw-handle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/slider/slider-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/slider/slider-thumb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/slider/slider-v-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/slider/slider-v-thumb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab-bar/default-plain-scroll-bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab-bar/default-plain-scroll-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab-bar/default-plain-scroll-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab-bar/default-plain-scroll-top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab-bar/default-scroll-bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab-bar/default-scroll-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab-bar/default-scroll-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab-bar/default-scroll-top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-active-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-active-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-active-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-disabled-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-disabled-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-disabled-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-active-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-active-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-active-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-focus-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-bottom-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-active-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-active-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-active-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-disabled-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-disabled-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-disabled-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-active-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-active-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-active-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-focus-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-left-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-active-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-active-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-active-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-disabled-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-disabled-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-disabled-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-active-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-active-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-active-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-focus-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-right-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-active-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-active-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-active-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-disabled-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-disabled-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-disabled-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-active-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-active-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-active-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-focus-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-over-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-over-fbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-over-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tab/tab-default-top-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tip/tip-default-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tip/tip-default-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tip/tip-form-invalid-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tip/tip-form-invalid-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/toolbar/default-more-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/toolbar/default-more.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/toolbar/default-scroll-bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/toolbar/default-scroll-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/toolbar/default-scroll-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/toolbar/default-scroll-top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/toolbar/footer-more-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/toolbar/footer-more.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/toolbar/footer-scroll-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/toolbar/footer-scroll-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tools/tool-sprites-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tools/tool-sprites.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/arrows-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-above.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-add.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-append.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-below.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-between.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-between.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-no.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-no.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-over.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-over.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-under.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-under.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-yes.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/drop-yes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-end-minus-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-end-minus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-end-plus-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-end-plus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-end-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-end.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-line-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-line.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-minus-nl-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-minus-nl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-minus-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-minus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-plus-nl-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-plus-nl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-plus-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-plus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/elbow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/folder-open-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/folder-open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/folder-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/folder.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/leaf-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/leaf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/tree/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/util/splitter/mini-bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/util/splitter/mini-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/util/splitter/mini-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/util/splitter/mini-top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-bottom-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-bottom-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-bottom-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-bottom-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-left-corners-rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-left-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-left-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-right-corners-rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-right-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-right-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-top-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-collapsed-top-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-left-corners-rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-left-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-left-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-right-corners-rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-right-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-right-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-top-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window-header/window-header-default-top-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window/toast/fade-blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window/toast/fader.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window/toast/icon16_error.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window/toast/icon16_info.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window/window-default-corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/images/window/window-default-sides.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/program-all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/program-all_1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/program-all_2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/colorpick/checkerboard.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/colorpick/drag_circle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/colorpick/huegradient.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/colorpick/map_gradient.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/colorpick/pickerslider.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/dashboard/magnify.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/explorer/leaf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/explorer/node.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/grouptabpanel/corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/grouptabpanel/minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/grouptabpanel/plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/itemselector/bottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/itemselector/down.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/itemselector/left.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/itemselector/right.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/itemselector/top.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/itemselector/up.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/statusbar/accept.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/statusbar/exclamation.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/statusbar/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/classic/resources/ux/images/tabscrollermenu/menu.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/log.text" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/microloader.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/modern.jsonp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/d3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/data.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/devsinfo/ch3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/devsinfo/chwp2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/devsinfo/chwp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/devxml/i1024.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/devxml/i1386.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/devxml/i823.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/devxml/i830.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/devxml/i831.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/devxml/i852.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/AI.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/AO.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/AV0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/DI.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/DO.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/DV.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/Delayoff.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/MULTI_INPUT.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/NOT.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/Pulse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/Pulse0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/SCALE.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/SCFM.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/SmartIO.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/aver.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/aver0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/buffer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/com.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/comp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/comp0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/count.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/count0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/delay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/delay0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/do_ao.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/doubleBO.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/enth.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/enth0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/fa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/fa0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/fd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/fd0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/hour.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/hour0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/hy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/hy0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/lock.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/lock0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/log.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/log0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/max.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/max0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/mul.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/mul0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/pdf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/pid.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/pid0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/plus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/plus0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/sub.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/sub0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/switch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/switch0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/timer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/timer0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/tolalazer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/tolalazer.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/tolalazer0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/PNG/zip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/AI.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/AO.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/AV.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/BI.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/BO.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/BV.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/Delayoff.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/Integer.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/NOT.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/SCFM.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/SmartIO.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/Switch.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/add.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/aodo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/aver.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/buffer.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/comp.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/count.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/delay.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/doubleBO.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/enth.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/fa.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/fd.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/hour.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/hy.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/lock.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/logic.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/logie.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/max.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/mul.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/pid.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/pulse.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/px.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/scale.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/select.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/sub.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/test.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/timer.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/tolalazer.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/SVG/zip.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/closeFolder.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/delete.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/light_bulb_accept_24px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/light_bulb_delete_24px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/light_bulb_help_24px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/openFolder.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/square.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/img/zTreeStandard.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/Moxie.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/Moxie.xap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/az.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/be_BY.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/bs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/cy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/hy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/ka.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/kk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/km.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/ku_IQ.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/pt_BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/sq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/th_TH.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/uk_UA.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/zh_CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/i18n/zh_TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.plupload.queue/css/jquery.plupload.queue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.plupload.queue/img/backgrounds.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.plupload.queue/img/buttons-disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.plupload.queue/img/buttons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.plupload.queue/img/delete.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.plupload.queue/img/done.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.plupload.queue/img/error.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.plupload.queue/img/throbber.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.plupload.queue/img/transp50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.plupload.queue/jquery.plupload.queue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.plupload.queue/jquery.plupload.queue.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.ui.plupload/css/jquery.ui.plupload.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.ui.plupload/img/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.ui.plupload/img/plupload.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.ui.plupload/jquery.ui.plupload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/jquery.ui.plupload/jquery.ui.plupload.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/moxie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/moxie.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/plupload.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/plupload.full.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/js/plupload.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/pragramBackup.tar.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/test.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/test1.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/program/resources/xmlRW.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/production/program/sass/config.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/production/program/sass/program-all.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/production/program/sass/program-all.scss.tmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/config.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example.scss.tmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example_1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/program-example_2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/theme-capture.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/theme-capture.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/tree/DevTreeController.js" afterPath="$PROJECT_DIR$/app/view/tree/DevTreeController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/sencha-compiler/app/full-page-master-bundle.js" afterPath="$PROJECT_DIR$/build/temp/production/program/sencha-compiler/app/full-page-master-bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" afterPath="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" />
     </list>
     <ignored path="program.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -840,24 +45,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DevTreeController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DevTreeController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/tree/DevTreeController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="1070" column="62" selection-start-line="1070" selection-start-column="62" selection-end-line="1070" selection-end-column="62" />
+            <state relative-caret-position="244">
+              <caret line="1011" column="55" selection-start-line="1011" selection-start-column="55" selection-end-line="1011" selection-end-column="55" />
               <folding>
-                <element signature="e#62584#63301#0" expanded="false" />
-                <marker date="1487661909000" expanded="true" signature="6243:6253" ph="..." />
+                <element signature="e#62639#63356#0" expanded="false" />
+                <marker date="1487662275000" expanded="true" signature="6243:6253" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopToolbarController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TopToolbarController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="583" column="4" selection-start-line="583" selection-start-column="4" selection-end-line="583" selection-end-column="4" />
+            <state relative-caret-position="396">
+              <caret line="585" column="0" selection-start-line="585" selection-start-column="0" selection-end-line="585" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -948,8 +153,8 @@
         <option value="$PROJECT_DIR$/app/view/window/DrawWeeksWindowController.js" />
         <option value="$PROJECT_DIR$/classic/src/view/main/DrawWeeksWindow.js" />
         <option value="$PROJECT_DIR$/resources/test1.php" />
-        <option value="$PROJECT_DIR$/app/view/tree/DevTreeController.js" />
         <option value="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" />
+        <option value="$PROJECT_DIR$/app/view/tree/DevTreeController.js" />
       </list>
     </option>
   </component>
@@ -1384,16 +589,16 @@
       <workItem from="1484615016270" duration="3019000" />
       <workItem from="1484619184604" duration="117000" />
       <workItem from="1484631119210" duration="10086000" />
-      <workItem from="1487657667438" duration="3745000" />
+      <workItem from="1487657667438" duration="4015000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="331125000" />
+    <option name="totallyTimeSpent" value="331395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1280" height="710" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23182553" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -1402,7 +607,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18932039" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18932039" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1795,6 +1000,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="585" column="0" selection-start-line="585" selection-start-column="0" selection-end-line="585" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classic/src/view/main/TopToolbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1805,20 +1018,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/tree/DevTreeController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="1070" column="62" selection-start-line="1070" selection-start-column="62" selection-end-line="1070" selection-end-column="62" />
+        <state relative-caret-position="244">
+          <caret line="1011" column="55" selection-start-line="1011" selection-start-column="55" selection-end-line="1011" selection-end-column="55" />
           <folding>
-            <element signature="e#62584#63301#0" expanded="false" />
-            <marker date="1487661909000" expanded="true" signature="6243:6253" ph="..." />
+            <element signature="e#62639#63356#0" expanded="false" />
+            <marker date="1487662275000" expanded="true" signature="6243:6253" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="583" column="4" selection-start-line="583" selection-start-column="4" selection-end-line="583" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>

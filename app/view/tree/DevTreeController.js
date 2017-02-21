@@ -1009,7 +1009,7 @@ Ext.define('program.view.tree.DevTreeController', {
                     },
                     {
                         text:"bin download",handler:function () {
-
+                        var devName = record.data.text;
                         var form = Ext.create("Ext.form.Panel", {
                                 width: "100%",
                                 height: "100%",
