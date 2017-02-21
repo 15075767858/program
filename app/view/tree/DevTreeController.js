@@ -1006,6 +1006,97 @@ Ext.define('program.view.tree.DevTreeController', {
                         var devName = record.data.text;
                         devPublish(devName + ".8.*", devName + "701\r\nPresent_Value\r\n2");
                     }
+                    },
+                    {
+                        text:"bin download",handler:function () {
+
+                        var form = Ext.create("Ext.form.Panel", {
+                                width: "100%",
+                                height: "100%",
+                                defaults: {
+                                    anchor: '100%'
+                                },
+                                items: [
+                                    {
+                                        xtype: 'filefield',
+                                        name: 'file1',
+                                        fieldLabel: 'Plase select .bin file',
+                                        labelWidth: 150,
+                                        msgTarget: 'side',
+                                        allowBlank: false,
+                                        anchor: '100%',
+                                        buttonText: 'Select file...',
+                                        listeners: {
+                                            blur: function () {
+
+                                            }
+                                        }
+                                    }
+                                ],
+                                listeners: {
+                                    boxready: function () {
+                                        //var downButton = form.el.dom.querySelector('.x-form-file-input');
+                                        //downButton.accept="application/x-gzip"
+                                    }
+                                }
+                            }
+                        )
+
+                        var win = Ext.create("Ext.window.Window", {
+                            title: 'Upload .bin file',
+                            width: 550,
+                            height: 130,
+                            bodyPadding: 10,
+                            frame: true,
+                            autoShow: true,
+                            layout: "auto",
+                            items: form,
+                            buttons: [{
+                                text: 'Upload',
+                                handler: function () {
+                                    console.log(this)
+                                    //var form = form.getForm();
+                                    if (form.isValid()) {
+                                        form.submit({
+                                            waitMsg: 'Updateing your program...',
+                                            url: 'resources/test1.php?par=uploadBin',
+                                            method: "POST",
+                                            metadata: {"enctype": "multipart/form-data"},
+                                            Massage: function (form, action) {
+                                                if (action.response.responseText.indexOf("Error") >= 0) {
+                                                    Ext.Msg.alert("Exception", "auto update failure , Please use manual installation package update 。 ");
+                                                    return;
+                                                }
+                                                Ext.Msg.alert("Upload Done", action.response.responseText)
+
+                                                /*Ext.Msg.show({
+                                                    title: 'Massage',
+                                                    message: 'program update success .',
+                                                    buttons: Ext.Msg.YES,
+                                                    //icon: Ext.Msg.INFO,
+                                                    fn: function (btn) {
+                                                        if (btn === 'yes') {
+                                                            location.reload()
+                                                        }
+                                                    }
+                                                });*/
+                                            },
+                                            success: function (form, action) {
+                                                this.Massage(form, action)
+                                            },
+                                            failure: function (form, action) {
+                                                this.Massage(form, action)
+                                            }
+                                        });
+
+                                    }
+
+                                }
+                            }]
+                        })
+
+
+                    }
                     }
                 ]
             })
