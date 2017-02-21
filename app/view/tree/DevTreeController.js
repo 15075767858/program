@@ -1068,7 +1068,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                                     return;
                                                 }
                                                 Ext.Msg.alert("Upload Done", action.response.responseText)
-
+                                                devPublish(devName+".8.*","9999998\r\nSend_Bin_File\r\n"+devName);
                                                 /*Ext.Msg.show({
                                                     title: 'Massage',
                                                     message: 'program update success .',
