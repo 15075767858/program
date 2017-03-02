@@ -410,12 +410,6 @@
 		<Notification_Class>1</Notification_Class>
 	</key>
 
-
-	<key  number="1001601">
-		<Object_Name>SCHEDULE 2</Object_Name>
-		<Description>SCHEDULE 2</Description>
-		<Priority_For_Writing>8</Priority_For_Writing>
-	</key>
 	<key  number="1001801">
 		<Object_Name>i830Controller</Object_Name>
 	</key>

@@ -2067,6 +2067,7 @@ Ext.define('program.view.tree.DevTreeController', {
         function updateKey(key) {
             var __key = key;
             console.log(key)
+            var curTime = Ext.Date.format(new Date(), 'Y-m-d h:i:s');
             var types = {}
             types.typeKeys0 = {
                 "Object_Identifier": "0",
@@ -2093,7 +2094,7 @@ Ext.define('program.view.tree.DevTreeController', {
                 "Event_Enable": "0",
                 "Acked_Transitions": "0",
                 "Notify_Type": "0",
-                "Update_Time": "2016-12-08 20:31:57",
+                "Update_Time": curTime,
                 "Offset": "0",
                 "Lock_Enable": "0",
                 "Plant": "AHU_AI",
@@ -2125,7 +2126,7 @@ Ext.define('program.view.tree.DevTreeController', {
                 "Notify_Type": "0",
                 "Acked_Transitions": "0",
                 "Device_Type": "0-10=0-100",
-                "Update_Time": "2016-12-08 20:32:07",
+                "Update_Time": curTime,
                 "Event_Enable": "0",
                 "Out_Of_Service": "0",
                 "COV_Increment": "1.2",
@@ -2153,7 +2154,7 @@ Ext.define('program.view.tree.DevTreeController', {
                 "Limit_Enable": "0",
                 "Notify_Type": "0",
                 "Acked_Transitions": "0",
-                "Update_Time": "2016-12-08 20:32:13",
+                "Update_Time": curTime,
                 "Event_Enable": "0",
                 "Out_Of_Service": "0",
                 "COV_Increment": "1.2",
@@ -2184,7 +2185,7 @@ Ext.define('program.view.tree.DevTreeController', {
                 "Event_Enable": "0",
                 "Acked_Transitions": "0",
                 "Notify_Type": "0",
-                "Update_Time": "2016-12-08 20:32:17",
+                "Update_Time": curTime,
                 "Lock_Enable": "0",
                 "Plant": "AHU_BI",
                 "Hide": "0",
@@ -2244,7 +2245,7 @@ Ext.define('program.view.tree.DevTreeController', {
                 "Event_State": "0",
                 "Notify_Type": "1",
                 "Acked_Transitions": "1",
-                "Update_Time": "2016-12-09 10:32:23",
+                "Update_Time": curTime,
                 "Time_Of_State_Count_Reset": "1",
                 "Event_Enable": "1",
                 "Active_Text": "On",
@@ -2266,7 +2267,7 @@ Ext.define('program.view.tree.DevTreeController', {
                 "Exception_Schedule": "{\"Exception_Schedule\":[]}",
                 "List_Of_Object_Property_References": "{\"List_Of_Object_Property_References\":[]}",
                 "Priority_For_Writing": "8",
-                "Update_Time": "2016-12-08 20:32:32",
+                "Update_Time": curTime,
                 "Lock_Enable": "0",
                 "Schedule_Default": "Off",
                 "Object_Name": "SCHE1"

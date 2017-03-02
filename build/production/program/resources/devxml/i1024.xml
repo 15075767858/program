@@ -468,11 +468,6 @@
   <Alarm_Value>0</Alarm_Value>
   <Notification_Class>1</Notification_Class>
  </key>
- <key  number="1001601">
-  <Object_Name>SCHEDULE1</Object_Name>
-  <Description>SCHEDULE1</Description>
-  <Priority_For_Writing>8</Priority_For_Writing>
- </key>
  <key  number="1001801">
   <Object_Name>i1024Controller</Object_Name>
  </key>
