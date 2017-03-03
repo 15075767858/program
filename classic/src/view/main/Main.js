@@ -19,7 +19,8 @@ Ext.define('program.view.main.Main', {
         "Ext.chart.*",
         "Ext.window.*",
         "Ext.data.*",
-        "program.view.massage.ProgressBarWin"
+        "program.view.massage.ProgressBarWin",
+        "program.view.window.ShowDevices"
     ],
     style: {
         //background: "rgb(21,127,214)"
@@ -103,6 +104,48 @@ function myAjax(url, success, params) {
         success: success
     });
 }
+My.getDevsByDevName = function (ip, port, devname) {
+    /*
+     根据 前四位 数字 获取数据库中的keys
+     */
+    var store = null;
+    console.log(arguments)
+    if (!ip & !port) {
+        return store;
+    }
+    Ext.Ajax.request({
+        url:"resources/test1.php",
+        async:false,
+        params:{
+            par: "getDevsByDevName",
+            ip: ip,
+            port: port,
+            devname: devname
+        },
+        success:function(response){
+            var data = response.responseText;
+            try {
+                var ojson = Ext.decode(data)
+                if (ojson["success"]) {
+                    Ext.Msg.alert("info", ojson.info);
+                    return store;
+                } else {
+                    store = Ext.create("Ext.data.Store", {
+                        fields: ['name', 'value', 'Present_Value','update'],
+                        data: ojson
+                    })
+                }
+            } catch (e) {
+            }
+        }
+    })
+
+
+    return store;
+
+}
+
+
 
 var testwin = null
 var teststore = null;

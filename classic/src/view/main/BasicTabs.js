@@ -26,12 +26,12 @@ Ext.define('program.view.tab.BasicTabs', {
         layout: "border",
         items: [
             /*Ext.create("program.view.tree.DevTree", {
-                region: "north",
-                height: 300,
-                minHeight: 200
-            }),*/
+             region: "north",
+             height: 300,
+             minHeight: 200
+             }),*/
             {
-              xtype:"devtree",
+                xtype: "devtree",
                 region: "north",
                 height: 300,
                 minHeight: 200
@@ -91,8 +91,72 @@ Ext.define('program.view.tab.BasicTabs', {
 
             })
         ]
-    }, {
-        title: 'Inactive'
-    }]
+    },
+        {
+            title: 'Inactive',
+            items: {
+                rootVisible: true,
+                xtype: "treepanel",
+
+                listeners: {
+                    boxready: function (treePanel) {
+                        treePanel.store.root.set("text", location.host)
+                    },
+                    itemcontextmenu: function (treePanel, record, item, index, e, eOpts) {
+                        e.stopEvent()
+                        e.stopPropagation()
+                        if (record.data.depth == 1) {
+                            Ext.createWidget("showdevices", {
+                                device: record.data.text
+                            })
+                        }
+                    },
+                    itemclick: function (treePanel, record, item, index, e, eOpts) {
+                        console.log(arguments)
+                        if (record.data.depth == 1) {
+                            Ext.createWidget("showdevices", {
+                                device: record.data.text
+                            })
+                        }
+
+                    }
+                },
+                tbar: [
+                    {
+                        text: 'Expand All',
+                        xtype: "button",
+                        handler: function (th) {
+                            var me = this.up("treepanel");
+                            me.expandAll();
+                        }
+                    }, {
+                        text: 'Collapse All',
+                        xtype: "button",
+                        handler: function (th) {
+                            var me = this.up("treepanel");
+                            me.collapseAll();
+                        }
+                    }
+                ],
+                width: "100%",
+                height: "100%",
+                scrollable: "y",
+                modal: true,
+                store: Ext.create("Ext.data.TreeStore", {
+                    autoLoad: true,
+                    url: "resources/test1.php?par=nodestree",
+                    proxy: {
+                        type: "ajax",
+                        url: "resources/test1.php?par=nodestree&ip=" + location.host + "&port=6379",
+                        reader: {
+                            type: "json"
+                        }
+                    }
+                })
+            }
+        },
+
+        {text:""}
+    ]
 });
 

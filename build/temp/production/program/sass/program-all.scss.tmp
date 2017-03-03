@@ -798,6 +798,8 @@ $include-program-view-window-renamewindowcontroller: dynamic(false);;
 $include-program-view-window-renamewindowmodel: dynamic(false);;
 $include-program-view-window-replacedevinfocontroller: dynamic(false);;
 $include-program-view-window-replacedevinfomodel: dynamic(false);;
+$include-program-view-window-showdevicescontroller: dynamic(false);;
+$include-program-view-window-showdevicesmodel: dynamic(false);;
 $include-program-view-window-synchrnouswindowcontroller: dynamic(false);;
 $include-program-view-window-synchrnouswindowmodel: dynamic(false);;
 $include-pulse: dynamic(true);;
