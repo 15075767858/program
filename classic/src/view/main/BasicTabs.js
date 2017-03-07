@@ -56,7 +56,9 @@ Ext.define('program.view.tab.BasicTabs', {
                             return Ext.String.format('<img src="{0}" width="67px" height="33px"/>', value);
                         }
                     },
-                    {draggable: false, menuDisabled: true, sortable: false, header: 'name', dataIndex: 'name', flex: 1}
+                    {draggable: false, menuDisabled: true, sortable: false, header: 'name', dataIndex: 'name', width:1,resizeable:false},
+                    {draggable: false, menuDisabled: true, sortable: false, header: 'name', dataIndex: 'title', flex: 1},
+
                 ],
                 autoShow: true,
 

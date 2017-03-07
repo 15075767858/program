@@ -2535,13 +2535,19 @@ function changeDevValue(nodename, type, value) {
         }
     });
 }
-function getDevAll() {
+
+
+function getDevAllUniqueNames(){
     var aNames = getDevNamesAll();
     aNames = getArrayBeforeFour(aNames);
     aNames.sort(function (a, b) {
         return a - b//parseInt(a) - parseInt(b);
     });
     aNames = aNames.unique1();
+    return aNames;
+}
+function getDevAll() {
+    var aNames = getDevAllUniqueNames()
     var childrenArr = [];
     for (var i = 0; i < aNames.length; i++) {
         childrenArr.push({

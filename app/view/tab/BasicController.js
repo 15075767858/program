@@ -17,6 +17,7 @@ Ext.define('program.view.tab.BasicController', {
         var aTables = Ext.get("leftPanelIcons").select(".x-grid-item")
 
         Ext.each(aTables.elements, function (el) {
+
             var dd = new Ext.dd.DragSource(el, {
                 ddGroup: "IconDragDropGroup",
                 isTarget: false
@@ -27,8 +28,8 @@ Ext.define('program.view.tab.BasicController', {
                 console.log(typeName)
                 if (getCurrentPlant()) {
                 } else {
-                    Ext.Msg.alert('Massage',"Please select a Plant .")
-                    return ;
+                    Ext.Msg.alert('Massage', "Please select a Plant .")
+                    return;
                 }
                 var store = Ext.create(typeName, {})
 

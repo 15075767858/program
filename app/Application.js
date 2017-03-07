@@ -64,6 +64,11 @@ Ext.define('program.Application', {
                 }
             }
         }, 10000)
+
+
+        setTimeout(function () {
+            myProgramInitPoint();
+        }, 3000)
     },
 
     onAppUpdate: function () {
@@ -79,6 +84,36 @@ Ext.define('program.Application', {
 });
 
 
+myProgramInitPoint = function () {
+    var devNames = getDevAllUniqueNames();
+
+    for (var i = 0; i < devNames.length; i++) {
+        Ext.Ajax.request({
+            url: "/program/resources/devxml/"+devNames[i]+".xml",
+        }).then(function (response) {
+            if (response.responseXML) {
+                console.log(arguments)
+                xmlToDevPoint(response.responseXML);
+            }
+        })
+    }
+    function xmlToDevPoint(xml){
+        var keys = xml.querySelectorAll("key");
+        for(var i=0;i<keys.length;i++){
+            var key = keys[i].getAttribute("number");
+
+            var tags = keys[i].querySelectorAll("*");
+
+            for(var j=0;j<tags.length;j++){
+                var tag = tags[j]
+                var type = tag.tagName;
+                var value = tag.innerHTML;
+                changeDevValue(key,type,value)
+                //console.log(key,type,value)
+            }
+        }
+    }
+}
 /*
 
  function GB2312UTF8(){
