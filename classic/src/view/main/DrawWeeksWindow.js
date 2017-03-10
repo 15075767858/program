@@ -62,6 +62,24 @@ Ext.define("program.view.window.DrawWeeksWindow", {
         {
             ui:"default",
             scale:"medium",
+            text: "SAVE",
+            handler: function(){
+                Ext.Ajax.request({
+                    url: "resources/test1.php",
+                    params: {
+                        par: "save"
+                    },
+                    success: function (response) {
+                        //var lastTime = new Date(response.responseText-0).toLocaleString()+""
+                        delayToast("Massage", response.responseText, 10);
+
+                    }
+                })
+            }
+        },
+        {
+            ui:"default",
+            scale:"medium",
             text: "Ok",
             handler: "OkHandler"
         },
