@@ -25,6 +25,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
     }),
     tbar: [
         {
+            ui:"default",
             text: "next ->",
             id: "drawWindow_next",
             handler: function (button) {
@@ -36,6 +37,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             }
         },
         {
+            ui:"default",
             text: "<- Previous",
             id: "drawWindow_previous",
             hidden: true,
@@ -58,6 +60,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
         },
         "->",
         {
+            ui:"default",
             scale:"medium",
             text: "Ok",
             handler: "OkHandler"
@@ -67,9 +70,9 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             bind: "{modify}",
             allowMultiple: true,
             items: [{
+                ui:"default",
                 text: "modify",
                 scale:"medium",
-
                 handler: "modifyHandler",
                 value: true,
                 tooltip: "publish modify"
@@ -106,6 +109,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
 
     },
     items: [
+
         {
             xtype: 'chart',
             width: 1000,
@@ -242,6 +246,7 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                 }
             }, {
                 text: "insert",
+
                 handler: "insertWeek"
             }
             ],

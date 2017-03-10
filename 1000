@@ -35,16 +35,18 @@
     <slot_number>0</slot_number>
    </slots>
    <slots  number="2">
-    <default>0</default>
+    <node>2</node>
+    <slot_number>0</slot_number>
    </slots>
   </master_node>
   <master_node  number="5">
    <type>53</type>
    <slots  number="1">
-    <default>0</default>
+    <node>1</node>
+    <slot_number>2</slot_number>
    </slots>
    <slots  number="2">
-    <node>7</node>
+    <node>8</node>
     <slot_number>2</slot_number>
    </slots>
   </master_node>
@@ -57,9 +59,20 @@
     <default>0</default>
    </slots>
   </master_node>
+  <master_node  number="7">
+   <type>55</type>
+   <slots  number="1">
+    <node>3</node>
+    <slot_number>2</slot_number>
+   </slots>
+   <slots  number="2">
+    <node>4</node>
+    <slot_number>0</slot_number>
+   </slots>
+  </master_node>
  </plant>
  <plant  name="002">
-  <master_node  number="7">
+  <master_node  number="8">
    <type>51</type>
    <slots  number="1">
     <default>0</default>

@@ -509,8 +509,11 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                 for (; j < startTimes.length; j++) {
 
                     var isoldWeek = "old" + weekstr;
-                    if (startTimes[j].dirty || endTimes[j].dirty) {
-                        isoldWeek = "new" + weekstr;
+
+                    if (!!startTimes[j] & !!endTimes[j]) {
+                        if (startTimes[j].dirty || endTimes[j].dirty) {
+                            isoldWeek = "new" + weekstr;
+                        }
                     }
                     me.addDayDiv(dataToDate(startTimes[j]), dataToDate(endTimes[j]), [weekstr, isoldWeek])
                 }
@@ -519,8 +522,10 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                 for (j = 0; j < hideTimes.length; j += 2) {
 
                     var isoldWeek = "old" + weekstr;
-                    if (startTimes[j].dirty || endTimes[j].dirty) {
-                        isoldWeek = "new" + weekstr;
+                    if (!!startTimes[j] & !!endTimes[j]) {
+                        if (startTimes[j].dirty || endTimes[j].dirty) {
+                            isoldWeek = "new" + weekstr;
+                        }
                     }
                     me.addDayDiv(dataToDate(hideTimes[j]), dataToDate(hideTimes[j + 1]), [weekstr, "weekhide", isoldWeek])
                 }
