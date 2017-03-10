@@ -11,7 +11,6 @@ Ext.define("program.view.window.DrawWeeksWindow", {
     viewModel: {
         type: "window-drawweekswindow"
     },
-
     height: 550,
     width: 1024,
     //constrainHeader: true,//禁止移出父窗口
@@ -26,7 +25,9 @@ Ext.define("program.view.window.DrawWeeksWindow", {
     tbar: [
         {
             ui:"default",
-            text: "next ->",
+            cls:"phoneButton",
+            scale:"medium",
+            text: "Next ->",
             id: "drawWindow_next",
             handler: function (button) {
                 var me = this.up('window');
@@ -38,6 +39,9 @@ Ext.define("program.view.window.DrawWeeksWindow", {
         },
         {
             ui:"default",
+            cls:"phoneButton",
+
+            scale:"medium",
             text: "<- Previous",
             id: "drawWindow_previous",
             hidden: true,
@@ -61,8 +65,10 @@ Ext.define("program.view.window.DrawWeeksWindow", {
         "->",
         {
             ui:"default",
+            cls:"phoneButton",
+
             scale:"medium",
-            text: "SAVE",
+            text: "Save",
             handler: function(){
                 Ext.Ajax.request({
                     url: "resources/test1.php",
@@ -72,15 +78,17 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                     success: function (response) {
                         //var lastTime = new Date(response.responseText-0).toLocaleString()+""
                         delayToast("Massage", response.responseText, 10);
-
                     }
                 })
             }
         },
         {
             ui:"default",
+            cls:"phoneButton",
+
             scale:"medium",
             text: "Ok",
+
             handler: "OkHandler"
         },
         {
@@ -89,7 +97,9 @@ Ext.define("program.view.window.DrawWeeksWindow", {
             allowMultiple: true,
             items: [{
                 ui:"default",
-                text: "modify",
+                cls:"phoneButton",
+
+                text: "Modify",
                 scale:"medium",
                 handler: "modifyHandler",
                 value: true,
@@ -255,16 +265,18 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                     var me = this.up("gridpanel")
                     me.features[0].expandAll()
                 }
-            }, {
+            },
+                {
                 text: 'Collapse All',
                 hidden: true,
                 handler: function () {
+
                     var me = this.up("gridpanel")
                     me.features[0].collapseAll()
                 }
-            }, {
-                text: "insert",
-
+            },
+                {
+                text: "Insert",
                 handler: "insertWeek"
             }
             ],
@@ -301,7 +313,6 @@ Ext.define("program.view.window.DrawWeeksWindow", {
                     dataIndex: 'Week',
                     flex: 1
                 },
-
                 {
                     text: 'time', dataIndex: 'time', flex: 1
                     , editor: {

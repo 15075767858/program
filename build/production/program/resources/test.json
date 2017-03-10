@@ -1,3 +1,3 @@
-1101601
+8888601
 Weekly_Schedule
-{"Weekly_Schedule":[{"day":1,"value":[]},{"day":2,"value":[]},{"day":3,"value":[]},{"day":4,"value":[]},{"day":5,"value":[]},{"day":6,"value":[]},{"day":7,"value":[]}]}
+{"Weekly_Schedule":[{"day":1,"value":[{"time":{"hour":0,"minute":0,"second":1,"hundredths":1},"value":true},{"time":{"hour":0,"minute":0,"second":1,"hundredths":1},"value":false}]},{"day":2,"value":[]},{"day":3,"value":[]},{"day":4,"value":[]},{"day":5,"value":[]},{"day":6,"value":[]},{"day":7,"value":[]}]}

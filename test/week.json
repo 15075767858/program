@@ -1,48 +1,48 @@
 {
   "Weekly_Schedule": {
-    "monday": [],
+    "monday": [
+      {
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 1,
+          "hundredths": 1
+        },
+        "value": true
+      },
+      {
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 1,
+          "hundredths": 1
+        },
+        "value": false
+      },
+      {
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 1,
+          "hundredths": 1
+        },
+        "value": false
+      },
+      {
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 1,
+          "hundredths": 1
+        },
+        "value": false
+      }
+    ],
     "tuesday": [],
     "wednesday": [],
     "thursday": [],
     "friday": [],
     "saturday": [],
-    "sunday": [
-      {
-        "time": {
-          "hour": 8,
-          "minute": 45,
-          "second": 36,
-          "hundredths": 1
-        },
-        "value": true
-      },
-      {
-        "time": {
-          "hour": 10,
-          "minute": 26,
-          "second": 24,
-          "hundredths": 1
-        },
-        "value": false
-      },
-      {
-        "time": {
-          "hour": 15,
-          "minute": 10,
-          "second": 0,
-          "hundredths": 1
-        },
-        "value": true
-      },
-      {
-        "time": {
-          "hour": 15,
-          "minute": 30,
-          "second": 24,
-          "hundredths": 1
-        },
-        "value": false
-      }
-    ]
+    "sunday": []
   }
 }

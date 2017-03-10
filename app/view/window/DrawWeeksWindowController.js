@@ -7,7 +7,6 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
         me.fireEvent("divDataToJson")
         var store = Ext.data.StoreManager.lookup('drawWindowStore');
         store.setData(me.dwPars.drawWindowData)
-
         Ext.getCmp("drawWindow_previous").show()
     },
     PreviousHandler: function (button) {
@@ -375,6 +374,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
         me.dwPars.drawWindowData = [];
         var showWeekArr = me.dwPars.WeekArr;
         //var showWeekArr = me.dwPars.ShowWeekArr;
+        console.log(showWeekArr)
         for (var i = 0; i < showWeekArr.length; i++) {
             //console.log(this.up("window").el.dom.getElementsByClassName(showWeekArr[i]))
             var iNumber = i;
@@ -424,6 +424,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                         value: false
                     });
 
+                    
                     pubTimeArr.push(
                         {
                             time: {
@@ -727,8 +728,6 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
     insertWeek: function () {
         var me = this.view;
         var gridPanel = this.view.down("gridpanel")
-        var wm0 = Ext.createByAlias("WeekModel");
-        var wm1 = Ext.createByAlias("WeekModel");
 
         var win = Ext.create('Ext.window.Window', {
                 title: "insert",
@@ -736,6 +735,8 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                 buttons: [
                     {
                         text: "Ok", handler: function () {
+                        var wm0 = Ext.createByAlias("WeekModel");
+                        var wm1 = Ext.createByAlias("WeekModel");
 
                         var form = win.down("form")
                         var values = form.getValues()
@@ -746,7 +747,8 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                         wm1.set("time", values.endTime)
                         wm1.set("value", values.endActivation)
                         console.log(wm0, wm1)
-                        gridPanel.store.add([wm0, wm1])
+                        //gridPanel.store.add([wm0, wm1])
+                        gridPanel.store.add(wm0)
                         delayToast("Massage", "Insert Ok .")
                     }
                     },
@@ -807,7 +809,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                             listeners: {
                                 render: function (field) {
                                     console.log(field)
-                                    field.setValue(field.store.getAt(0))
+                                    field.setValue(field.store.getAt(1))
                                 }
                             }
                         },
@@ -820,7 +822,8 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                             value: "23:59:59",
                             onSpinUp: My.onSpinUp,
                             onSpinDown: My.onSpinDown,
-                            editable: true
+                            editable: true,
+                            hidden: true
                         },
                         {
                             xtype: 'combo',
@@ -840,7 +843,9 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                                     console.log(field)
                                     field.setValue(field.store.getAt(1))
                                 }
-                            }
+                            },
+                            hidden: true
+
                         }
                     ]
                 }
