@@ -616,35 +616,22 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
             posLeftArr.push(startPoint)
 
             WeekArrJson[0]['left'] = startPoint;
-//            console.log(startPoint)
             var __startPoint = startPoint;
             for (var i = 0; i < 7; i++) {
 
                 var weekleft = Math.ceil(startPoint += bWidth + interval);
-//                console.log(weekleft)
                 posLeftArr.push(weekleft)
                 if (i < 6) {
                     WeekArrJson[i + 1]['left'] = weekleft;
                 }
             }
-            //posLeftArr.unshift(posLeftArr.pop())
             posLeftArr.push(posLeftArr.shift())
             console.log(posLeftArr)
             for (var i = 0; i < WeekArrJson.length; i++) {
                 WeekArrJson[i].left = posLeftArr[i]
             }
             WeekArrJson[6].left = __startPoint
-            /*var resWeekArrJson = []
-             for (var i = 0; i < WeekArrJson.length; i++) {
-             var day = WeekArrJson[i+1];
-
-             if (WeekArrJson[i + 1]) {
-             day.left=WeekArrJson[i+1].left
-             }else{
-             day.left=startPoint
-             }
-             resWeekArrJson.push(day)
-             }*/
+     
             console.log(WeekArrJson)
             var bMaxHeight = oCanvas.attr("height");
             var bMarginTopHeight = parseInt(bMarginTop) + parseInt(bMaxHeight);
@@ -661,8 +648,6 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                 return div;
             }
 
-            //.css("top", bMarginTop + "px");
-            //.css("top", win.pageY - winOffsetTop + "px");
             var e = {
                 ShowWeekArr: ShowWeekArr,
                 WeekArrJson: WeekArrJson,

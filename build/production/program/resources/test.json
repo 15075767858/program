@@ -1,3 +1,3 @@
-8888601
+1001601
 Weekly_Schedule
-{"Weekly_Schedule":[{"day":1,"value":[{"time":{"hour":0,"minute":0,"second":1,"hundredths":1},"value":true},{"time":{"hour":0,"minute":0,"second":1,"hundredths":1},"value":false}]},{"day":2,"value":[]},{"day":3,"value":[]},{"day":4,"value":[]},{"day":5,"value":[]},{"day":6,"value":[]},{"day":7,"value":[]}]}
+{"Weekly_Schedule":[{"day":1,"value":[]},{"day":2,"value":[]},{"day":3,"value":[]},{"day":4,"value":[]},{"day":5,"value":[]},{"day":6,"value":[]},{"day":7,"value":[{"time":{"hour":5,"minute":33,"second":26,"hundredths":1},"value":true},{"time":{"hour":6,"minute":46,"second":43,"hundredths":1},"value":false}]}]}
