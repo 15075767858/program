@@ -393,7 +393,6 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
 
             if (dayTimeArr.length > 0) {
                 for (var j = 0; j < dayTimeArr.length; j++) {
-                    console.log(dayTimeArr[j])
                     var starttime = new Date($(dayTimeArr[j]).attr("starttime"));
                     var endtime = new Date($(dayTimeArr[j]).attr("endtime"));
                     var sH = starttime.getHours();
@@ -424,7 +423,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                         value: false
                     });
 
-                    
+
                     pubTimeArr.push(
                         {
                             time: {
@@ -481,7 +480,17 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
         //console.log(Ext.encode(pubweekly))
         //console.log(me.dwPars.drawWindowData)
         //console.log(Ext.encode(weekly))
-
+        for (var i = 0; i < showWeekArr.length; i++) {
+            var hArr = weekly.Weekly_Schedule[showWeekArr[i]];
+            if (hArr.length > 0) {
+                var hArr = hArr.sort(function (a, b) {
+                    var d1 = new Date(1970, 1, 1, a.time.hour, a.time.minute, a.time.second).getTime();
+                    var d2 = new Date(1970, 1, 1, b.time.hour, b.time.minute, b.time.second).getTime();
+                    return d1 - d2;
+                })
+                weekly.Weekly_Schedule[showWeekArr[i]] = hArr
+            }
+        }
         return {weekly: weekly, pubweekly: pubweekly};
     },
     /**
@@ -631,7 +640,7 @@ Ext.define('program.view.window.DrawWeeksWindowController', {
                 WeekArrJson[i].left = posLeftArr[i]
             }
             WeekArrJson[6].left = __startPoint
-     
+
             console.log(WeekArrJson)
             var bMaxHeight = oCanvas.attr("height");
             var bMarginTopHeight = parseInt(bMarginTop) + parseInt(bMaxHeight);

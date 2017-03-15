@@ -3,8 +3,35 @@
     "monday": [
       {
         "time": {
-          "hour": 0,
-          "minute": 0,
+          "hour": 11,
+          "minute": 40,
+          "second": 1,
+          "hundredths": 1
+        },
+        "value": false
+      },
+      {
+        "time": {
+          "hour": 11,
+          "minute": 41,
+          "second": 11,
+          "hundredths": 1
+        },
+        "value": true
+      },
+      {
+        "time": {
+          "hour": 11,
+          "minute": 42,
+          "second": 11,
+          "hundredths": 1
+        },
+        "value": false
+      },
+      {
+        "time": {
+          "hour": 11,
+          "minute": 43,
           "second": 1,
           "hundredths": 1
         },
@@ -12,30 +39,93 @@
       },
       {
         "time": {
-          "hour": 0,
-          "minute": 0,
-          "second": 1,
+          "hour": 11,
+          "minute": 44,
+          "second": 11,
           "hundredths": 1
         },
         "value": false
       },
       {
         "time": {
-          "hour": 0,
-          "minute": 0,
-          "second": 1,
+          "hour": 11,
+          "minute": 45,
+          "second": 11,
+          "hundredths": 1
+        },
+        "value": true
+      },
+      {
+        "time": {
+          "hour": 11,
+          "minute": 46,
+          "second": 21,
           "hundredths": 1
         },
         "value": false
       },
       {
         "time": {
-          "hour": 0,
-          "minute": 0,
-          "second": 1,
+          "hour": 11,
+          "minute": 47,
+          "second": 21,
+          "hundredths": 1
+        },
+        "value": true
+      },
+      {
+        "time": {
+          "hour": 11,
+          "minute": 48,
+          "second": 11,
           "hundredths": 1
         },
         "value": false
+      },
+      {
+        "time": {
+          "hour": 11,
+          "minute": 49,
+          "second": 21,
+          "hundredths": 1
+        },
+        "value": true
+      },
+      {
+        "time": {
+          "hour": 11,
+          "minute": 50,
+          "second": 21,
+          "hundredths": 1
+        },
+        "value": false
+      },
+      {
+        "time": {
+          "hour": 11,
+          "minute": 51,
+          "second": 11,
+          "hundredths": 1
+        },
+        "value": true
+      },
+      {
+        "time": {
+          "hour": 11,
+          "minute": 52,
+          "second": 11,
+          "hundredths": 1
+        },
+        "value": false
+      },
+      {
+        "time": {
+          "hour": 11,
+          "minute": 53,
+          "second": 21,
+          "hundredths": 1
+        },
+        "value": true
       }
     ],
     "tuesday": [],
@@ -43,6 +133,25 @@
     "thursday": [],
     "friday": [],
     "saturday": [],
-    "sunday": []
+    "sunday": [
+      {
+        "time": {
+          "hour": 6,
+          "minute": 21,
+          "second": 4,
+          "hundredths": 1
+        },
+        "value": true
+      },
+      {
+        "time": {
+          "hour": 7,
+          "minute": 34,
+          "second": 21,
+          "hundredths": 1
+        },
+        "value": false
+      }
+    ]
   }
 }
