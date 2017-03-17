@@ -83,13 +83,39 @@ Ext.define('program.Application', {
     }
 });
 
+function generateAllPointByXml() {
+    Ext.Ajax.request({
+        url: "/program/test/1.xml",
+    }).then(function (response) {
+        if (response.responseXML) {
+            console.log(arguments)
+            xmlToDevPoint(response.responseXML);
 
+        }
+    })
+    function xmlToDevPoint(xml) {
+        var keys = xml.querySelectorAll("point");
+        for (var i = 0; i < keys.length; i++) {
+            var key = keys[i].getAttribute("key");
+
+            var tags = keys[i].querySelectorAll("*");
+
+            for (var j = 0; j < tags.length; j++) {
+                var tag = tags[j]
+                var type = tag.tagName;
+                var value = tag.innerHTML;
+                changeDevValue(key, type, value)
+                //console.log(key,type,value)
+            }
+        }
+    }
+}
 myProgramInitPoint = function () {
     var devNames = getDevAllUniqueNames();
 
     for (var i = 0; i < devNames.length; i++) {
         Ext.Ajax.request({
-            url: "/program/resources/devxml/"+devNames[i]+".xml",
+            url: "/program/resources/devxml/" + devNames[i] + ".xml",
         }).then(function (response) {
             if (response.responseXML) {
                 console.log(arguments)
@@ -97,18 +123,18 @@ myProgramInitPoint = function () {
             }
         })
     }
-    function xmlToDevPoint(xml){
+    function xmlToDevPoint(xml) {
         var keys = xml.querySelectorAll("key");
-        for(var i=0;i<keys.length;i++){
+        for (var i = 0; i < keys.length; i++) {
             var key = keys[i].getAttribute("number");
 
             var tags = keys[i].querySelectorAll("*");
 
-            for(var j=0;j<tags.length;j++){
+            for (var j = 0; j < tags.length; j++) {
                 var tag = tags[j]
                 var type = tag.tagName;
                 var value = tag.innerHTML;
-                changeDevValue(key,type,value)
+                changeDevValue(key, type, value)
                 //console.log(key,type,value)
             }
         }

@@ -2,13 +2,28 @@ Ext.define('program.view.tree.DevTreeController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.imgtree',
     render: function (th) {
-        var store = Ext.create("Ext.data.TreeStore", {
-            storeId: "devtreestore"
+        Ext.create("Ext.data.TreeStore", {
+            storeId: "devtreestore",
         })
-    },
-    boxready: function () {
 
-        devTreeStoreLoad()
+    },
+    boxready: function (tree) {
+        var store = Ext.create("Ext.data.TreeStore", {
+            storeId: "devtreestore",
+            autoLoad: true,
+            url: "resources/main.php?par=getDeviceTree",
+            //defaultRootText:location.host+"",
+            proxy: {
+                type: "ajax",
+                url: "resources/main.php?par=getDeviceTree",
+                reader: {
+                    type: "json"
+                }
+            }
+        })
+
+        tree.setStore(store)
+        //devTreeStoreLoad()
 
     },
     repalceDeviceInstance: function (oldValue, newValue) {
@@ -1008,7 +1023,7 @@ Ext.define('program.view.tree.DevTreeController', {
                     }
                     },
                     {
-                        text:"bin download",handler:function () {
+                        text: "bin download", handler: function () {
                         var devName = record.data.text;
                         var form = Ext.create("Ext.form.Panel", {
                                 width: "100%",
@@ -1068,18 +1083,18 @@ Ext.define('program.view.tree.DevTreeController', {
                                                     return;
                                                 }
                                                 Ext.Msg.alert("Upload Done", action.response.responseText)
-                                                devPublish(devName+".8.*","9999998\r\nSend_Bin_File\r\n"+devName);
+                                                devPublish(devName + ".8.*", "9999998\r\nSend_Bin_File\r\n" + devName);
                                                 /*Ext.Msg.show({
-                                                    title: 'Massage',
-                                                    message: 'program update success .',
-                                                    buttons: Ext.Msg.YES,
-                                                    //icon: Ext.Msg.INFO,
-                                                    fn: function (btn) {
-                                                        if (btn === 'yes') {
-                                                            location.reload()
-                                                        }
-                                                    }
-                                                });*/
+                                                 title: 'Massage',
+                                                 message: 'program update success .',
+                                                 buttons: Ext.Msg.YES,
+                                                 //icon: Ext.Msg.INFO,
+                                                 fn: function (btn) {
+                                                 if (btn === 'yes') {
+                                                 location.reload()
+                                                 }
+                                                 }
+                                                 });*/
                                             },
                                             success: function (form, action) {
                                                 this.Massage(form, action)
@@ -1466,7 +1481,19 @@ Ext.define('program.view.tree.DevTreeController', {
 
                                     var sourceData = [];
                                     var targetData = [];
-
+                                    var objList = [];
+                                    Ext.Ajax.request({
+                                        async:false,
+                                        url:"resources/main.php?par=getDevList",
+                                        success:function(response){
+                                            try{
+                                                objList = Ext.decode(response.responseText);
+                                            }catch (e){
+                                                console.log(arguments)
+                                                Ext.Msg.alert("Exception","load Object_Name failure .")
+                                            }
+                                        }
+                                    })
                                     myAjax("resources/test1.php?par=getvalue&nodename=" + sDevNodeName + "&type=List_Of_Object_Property_References", function (response) {
                                         var text;
                                         try {
@@ -1493,26 +1520,46 @@ Ext.define('program.view.tree.DevTreeController', {
                                             if (instance.length == 1) {
                                                 instance = "0" + instance;
                                             }
+                                            var key = dev + type + instance;
+                                            var obj ="";
+                                            objList.find(function(v){
+                                                if(v.value==key){
+                                                    obj=v.name;
+                                                    return v;
+                                                }
+                                            })
+
                                             targetData.push({
-                                                'name': dev + type + instance,
+                                                'name': key,
+                                                'Object_Name':obj,
                                                 "identifier": text[i].propertyIdentifier,
                                                 "arrayIndex": text[i].propertyArrayIndex
                                             });
                                         }
                                     })
                                     console.log(targetData)
+                                    var netNumber = getNetNumberValue()
+
+
 
                                     for (var i = 0; i < text.length; i++) {
-                                        console.log(i)
-
-                                        if (sDevName == getNetNumberValue()) {
-                                            sourceData.push({'name': text[i], "identifier": "85", "arrayIndex": "-1"})
+                                        var key = text[i];
+                                        var obj = "";
+                                        objList.find(function(v){
+                                            if(v.value==key){
+                                                obj=v.name;
+                                                return v;
+                                            }
+                                        })
+                                        if (sDevName == netNumber) {
+                                            sourceData.push({'name': key,
+                                                'Object_Name':obj,
+                                                "identifier": "85", "arrayIndex": "-1"})
                                         } else {
-                                            console.log(text[i])
-                                            console.log(sDevName)
-                                            if (sDevName == (text[i] + "").substr(0, 4)) {
+                                            if (sDevName == (key + "").substr(0, 4)) {
                                                 sourceData.push({
-                                                    'name': text[i],
+                                                    'name': key,
+                                                    'Object_Name':obj,
                                                     "identifier": "85",
                                                     "arrayIndex": "-1"
                                                 })
@@ -1527,8 +1574,13 @@ Ext.define('program.view.tree.DevTreeController', {
                                             }
                                         }
                                     }
+
+
+
                                     console.log(targetData)
                                     console.log(sourceData)
+
+
                                     Ext.create('Ext.data.Store', {
                                         fields: [{
                                             name: "name", type: "string", convert: function (val) {
@@ -1541,13 +1593,15 @@ Ext.define('program.view.tree.DevTreeController', {
                                                 if ((val + "").length == 4) {
                                                     val = "000" + val;
                                                 }
-                                                console.log(val)
                                                 return val;
                                             }
                                         }, {
                                             name: "Object_Name", type: "string",
-                                            mapping: function (model) {
-                                                console.log(arguments)
+                                           /* mapping: function (model) {
+                                                console.log(model["Object_Name"],model["Object_Name"].length)
+                                                if(model["Object_Name"].trim().length!=0){
+                                                   return
+                                                }
                                                 var data = "";
                                                 Ext.Ajax.request({
                                                     url: "resources/test1.php",
@@ -1564,7 +1618,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                                     }
                                                 })
                                                 return data;
-                                            }
+                                            }*/
                                         },
                                             {name: "identifier", type: "string"},
                                             {name: "arrayIndex", type: "string"}
@@ -1572,7 +1626,6 @@ Ext.define('program.view.tree.DevTreeController', {
                                         storeId: "refSourceStore",
                                         data: sourceData
                                     }),
-
                                         Ext.create("Ext.window.Window", {
                                             title: sDevNodeName + " References",
                                             //title: "References",
@@ -1593,7 +1646,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                                         }
                                                         for (var i = 0; i < aItems.length; i++) {
                                                             console.log(aItems[i].data.name)
-                                                            if (sDevName == "1000" || sDevName == getNetNumberValue()) {
+                                                            if (sDevName == "1000" || sDevName ==netNumber) {
                                                                 oJson['List_Of_Object_Property_References'].push({
                                                                     "objectIdentifier": {
                                                                         "type": parseInt((aItems[i].data.name + "").substr(4, 1)),
@@ -1647,7 +1700,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                             items: [
                                                 {
                                                     xtype: "gridpanel",
-                                                    itemId:"sourceGridPanel",
+                                                    itemId: "sourceGridPanel",
                                                     flex: 4,
                                                     border: true,
                                                     margin: 5,
@@ -1744,7 +1797,7 @@ Ext.define('program.view.tree.DevTreeController', {
                                                     flex: 4,
                                                     border: true,
                                                     margin: 5,
-                                                    itemId:"targetGridPanel",
+                                                    itemId: "targetGridPanel",
                                                     viewConfig: {
                                                         plugins: {
                                                             ptype: 'gridviewdragdrop',
@@ -1755,12 +1808,11 @@ Ext.define('program.view.tree.DevTreeController', {
                                                         fields: [{name: "name", type: "string"},
                                                             {
                                                                 name: "Object_Name", type: "string",
-                                                                mapping: function (model) {
+                                                                /*mapping: function (model) {
                                                                     console.log(arguments)
                                                                     var data = "";
                                                                     Ext.Ajax.request({
                                                                         url: "resources/test1.php",
-                                                                        async: false,
                                                                         params: {
                                                                             par: "getvalue",
                                                                             nodename: model.name,
@@ -1769,11 +1821,13 @@ Ext.define('program.view.tree.DevTreeController', {
                                                                         success: function (response) {
                                                                             if (response.status == 200) {
                                                                                 data = response.responseText
+                                                                                model.set("Object_Name",data)
+
                                                                             }
                                                                         }
                                                                     })
                                                                     return data;
-                                                                }
+                                                                }*/
                                                             },
                                                             {name: "identifier", type: "string"},
                                                             {name: "arrayIndex", type: "string"}
@@ -2359,6 +2413,8 @@ Ext.define('program.view.tree.DevTreeController', {
 
 function getNetNumberValue(filename) {
     var str = "";
+    return "1000";
+
     Ext.Ajax.request({
         url: "resources/xmlRW.php",
         async: false,
@@ -2537,7 +2593,7 @@ function changeDevValue(nodename, type, value) {
 }
 
 
-function getDevAllUniqueNames(){
+function getDevAllUniqueNames() {
     var aNames = getDevNamesAll();
     aNames = getArrayBeforeFour(aNames);
     aNames.sort(function (a, b) {

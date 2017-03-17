@@ -137,17 +137,20 @@ Ext.define("program.view.window.RenameWindow", {
             return;
         }
 
+
         for (var i = 0; i < fields.length; i++) {
             console.log(fields[i])
             var fieldName = fields[i];
             var textfield = null;
+
+
             if (fieldName == "Inactive_Text") {
                 textfield = {
                     fieldLabel: fieldName,
                     name: fieldName,
                     xtype: "combobox",
                     editable: false,
-                    store: ActiveJson.get("Inactive_Text_Defaults")
+                    store: me.I_T_D
                 }
             } else if (fieldName == "Active_Text") {
                 textfield = {
@@ -155,7 +158,7 @@ Ext.define("program.view.window.RenameWindow", {
                     name: fieldName,
                     xtype: "combobox",
                     editable: false,
-                    store: ActiveJson.get("Active_Text_Defaults")
+                    store: me.A_T_D
                 }
             } else if (fieldName == "Device_Type") {
                 var combostore = Ext.create('Ext.data.Store', {
@@ -198,7 +201,8 @@ Ext.define("program.view.window.RenameWindow", {
                     valueField: 'name'
                 }
 
-            } else if (fieldName == 'Alarm_Value') {
+            }
+            else if (fieldName == 'Alarm_Value') {
                 console.log("Alarm_Value")
                 textfield = {
                     fieldLabel: fieldName,
@@ -220,7 +224,8 @@ Ext.define("program.view.window.RenameWindow", {
                         }
                     }
                 };
-            } else if (fieldName == "Object_Name") {
+            } else if (fieldName == "Object_Name")
+            {
                 textfield = {
                     fieldLabel: fieldName,
                     name: fieldName,
@@ -568,12 +573,15 @@ Ext.define("program.view.window.RenameWindow", {
         me.type0 = ["Object_Name", "Offset", "Description", "Device_Type", "Units", "Min_Pres_Value", "Max_Pres_Value", "COV_Increment", "High_Limit", "Low_Limit", "Deadband", "Limit_Enable", "Event_Enable", "Notify_Type", "Time_Delay", "Notification_Class"];
         me.type1 = ["Object_Name", "Offset", "Description", "Device_Type", "COV_Increment", "High_Limit", "Low_Limit", "Deadband", "Limit_Enable", "Event_Enable", "Notify_Type", "Time_Delay", "Notification_Class"];
         me.type2 = ["Object_Name", "Description", "COV_Increment", "High_Limit", "Low_Limit", "Deadband", "Limit_Enable", "Event_Enable", "Notify_Type", "Time_Delay", "Notification_Class"];
-        me.type3 = ["Object_Name", "Description", "Device_Type", "Inactive_Text", "Active_Text", "Event_Enable", "Notify_Type", "Time_Delay", "Alarm_Value", "Notification_Class"];
+        me.type3 = ["Object_Name", "Description", "Device" +
+        "", "Inactive_Text", "Active_Text", "Event_Enable", "Notify_Type", "Time_Delay", "Alarm_Value", "Notification_Class"];
         me.type4 = ["Object_Name", "Description", "Device_Type", "Inactive_Text", "Active_Text", "Event_Enable", "Notify_Type", "Time_Delay", "Alarm_Value", "Notification_Class"];
         me.type5 = ["Object_Name", "Description", "Device_Type", "Inactive_Text", "Active_Text", "Event_Enable", "Notify_Type", "Time_Delay", "Alarm_Value", "Notification_Class"];
         me.type6 = ["Object_Name", "Description", "Priority_For_Writing", "Alarm"];
         me.type8 = ['Object_Name'];
 
+        me.I_T_D = ActiveJson.get("Inactive_Text_Defaults")
+        me.A_T_D = ActiveJson.get("Active_Text_Defaults")
         var fields = ["AI_count", "AO_count", "AV_count", "BI_count", "BO_count", "BV_count", "SCHEDULE_count"].concat(me.type0).concat(me.type1).concat(me.type2).concat(me.type3).concat(me.type4).concat(me.type5).concat(me.type6);
         me.fields = fields;
         if (me.text) {
