@@ -5,7 +5,8 @@ $rw = $_POST['rw'];
 $ip = $_SERVER["SERVER_ADDR"];
 if ($ip != "127.0.0.1") {
     if (file_exists($fn)) {
-        chmod($fn, 0777);
+        //chmod($fn, 0777);
+        system("chmod 777 ".$fn);
     }
 
 }

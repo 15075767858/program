@@ -176,7 +176,7 @@ Ext.define("program.view.main.toolbar.TopToolbar", {
                         }, {
                             text: "About",
                             handler: function () {
-                                Ext.Msg.alert('Version', 'SmartIO Programtools 2.87 ');
+                                Ext.Msg.alert('Version', 'SmartIO Programtools 2.88 ');
                             }
                         }
                     ]

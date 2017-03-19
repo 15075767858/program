@@ -1,3 +1,102 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <root>
+ <plant  name="001">
+  <master_node  number="1">
+   <type>51</type>
+   <slots  number="1">
+    <default>0</default>
+   </slots>
+   <slots  number="2">
+    <default>0</default>
+   </slots>
+  </master_node>
+  <master_node  number="2">
+   <type>52</type>
+   <slots  number="1">
+    <default>0</default>
+   </slots>
+   <slots  number="2">
+    <node>3</node>
+    <slot_number>0</slot_number>
+   </slots>
+  </master_node>
+  <master_node  number="3">
+   <type>3</type>
+   <key>1001304</key>
+  </master_node>
+  <master_node  number="4">
+   <type>3</type>
+   <key>1001305</key>
+  </master_node>
+  <master_node  number="5">
+   <type>4</type>
+   <key>1001401</key>
+  </master_node>
+  <master_node  number="6">
+   <type>0</type>
+   <key>1002005</key>
+  </master_node>
+  <master_node  number="7">
+   <type>1</type>
+   <key>1002102</key>
+  </master_node>
+  <master_node  number="8">
+   <type>5</type>
+   <key>1001504</key>
+  </master_node>
+  <master_node  number="9">
+   <type>4</type>
+   <key>1001404</key>
+  </master_node>
+  <master_node  number="10">
+   <type>5</type>
+   <key>1001502</key>
+  </master_node>
+  <master_node  number="11">
+   <type>0</type>
+   <key>1002001</key>
+  </master_node>
+  <master_node  number="12">
+   <type>0</type>
+   <key>1001003</key>
+  </master_node>
+  <master_node  number="13">
+   <type>0</type>
+   <key>1001002</key>
+  </master_node>
+  <master_node  number="14">
+   <type>0</type>
+   <key>1001002</key>
+  </master_node>
+  <master_node  number="15">
+   <type>1</type>
+   <key>1001101</key>
+  </master_node>
+  <master_node  number="16">
+   <type>52</type>
+   <slots  number="1">
+    <default>0</default>
+   </slots>
+   <slots  number="2">
+    <default>0</default>
+   </slots>
+  </master_node>
+  <master_node  number="17">
+   <type>73</type>
+   <slots  number="1">
+    <default>1</default>
+   </slots>
+   <slots  number="2">
+    <default>0</default>
+   </slots>
+   <slots  number="3">
+    <default>0</default>
+   </slots>
+   <slots  number="4">
+    <default>0</default>
+   </slots>
+  </master_node>
+ </plant>
+ <plant  name="002">
+ </plant>
 </root>

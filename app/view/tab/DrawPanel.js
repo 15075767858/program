@@ -97,7 +97,6 @@ Ext.define("program.view.tab.DrawPanel", {
                      } else {
                      aData = slotsJson[typeName].initData(defaultValue);
                      }*/
-
                     aData = slotsJson[typeName].initData(defaultValue);
 
                     aData[1].value = Number.valueOf()(value.substr(5, 6));

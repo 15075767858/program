@@ -68,7 +68,7 @@ class DeviceTree
 
         $arr = array();
         for ($i = 0; $i <= 6; $i++) {
-            $children = $this->getChildren($arList, $devValue . (string)$i, $redis);
+            $children = $this->getChildren($arList, $devValue . (string)$i, $redis,$i);
             if (sizeof($children)) {
                 array_push($arr, array('text' => $types[$i], 'leaf' => false, 'children' => $children));
             }
@@ -76,7 +76,7 @@ class DeviceTree
         return $arr;
     }
 
-    function getChildren($arList, $devValue, $redis)
+    function getChildren($arList, $devValue, $redis,$type)
     {
         $arr = array();
         foreach ($arList as $value) {
@@ -84,7 +84,12 @@ class DeviceTree
                 //$Object_Name = $redis->hGet($value, 'Object_Name');
                 $Object_Name = hGet($redis, $value, "Object_Name");
 
-                array_push($arr, array('leaf' => true, 'text' => $Object_Name, 'value' => $value));
+                array_push($arr, array('leaf' => true, 'text' => $Object_Name, 'value' => $value,'type'=>$type));
+                if($type>=5){
+                    array_push($arr, array('leaf' => true, 'text' => $Object_Name, 'value' => $value,'type'=>$type,"allowDrop"=>false,'allowDrag'=>false));
+
+                }
+
             }
         }
         return $arr;
