@@ -44,8 +44,10 @@ class DeviceTree
     function getDevs($arList)
     {
         $redis = $this->redis;
+        $ip = $_SERVER["SERVER_ADDR"];
 
-        $root = array('checked' => true, 'qtip' => "On Line", 'text' => "127.0.0.1", 'children' => array());
+
+        $root = array('checked' => true, 'qtip' => "On Line", 'text' => $ip , 'children' => array());
         $arr = array();
 
         foreach ($arList as $value) {
@@ -56,7 +58,7 @@ class DeviceTree
             array_push($root['children'], array('leaf' => false, 'text' => $value, 'children' => $this->getDevChildren($arList, $value, $redis)));
         }
         //echo json_encode($root);
-        echo json_encode(array('text' => "127.0.0.1", 'children' => array($root)));
+        echo json_encode(array('text' => $ip, 'children' => array($root)));
         //return $arr;
     }
 
