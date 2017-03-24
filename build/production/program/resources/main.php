@@ -84,9 +84,10 @@ class DeviceTree
                 //$Object_Name = $redis->hGet($value, 'Object_Name');
                 $Object_Name = hGet($redis, $value, "Object_Name");
 
-                array_push($arr, array('leaf' => true, 'text' => $Object_Name, 'value' => $value,'type'=>$type));
-                if($type>=5){
+                if($type>=6){
                     array_push($arr, array('leaf' => true, 'text' => $Object_Name, 'value' => $value,'type'=>$type,"allowDrop"=>false,'allowDrag'=>false));
+                }else{
+                    array_push($arr, array('leaf' => true, 'text' => $Object_Name, 'value' => $value,'type'=>$type));
 
                 }
 

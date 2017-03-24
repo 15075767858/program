@@ -68,7 +68,7 @@ Ext.define('program.Application', {
 
         setTimeout(function () {
             myProgramInitPoint();
-        }, 3000)
+        }, 10000)
     },
 
     onAppUpdate: function () {
