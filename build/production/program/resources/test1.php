@@ -20,16 +20,19 @@ date_default_timezone_set("PRC");
 
 
 if ($par == "getDevsAll") {
+    echo json_encode(getDevsAll($arList));
+}
+if ($par == "devXmlInit") {
     $devsAllArr = getDevsAll($arList);
-    $start_time = microtime(true);
+    $start_time = time();
     for ($i = 0; $i < sizeof($devsAllArr); $i++) {
         $filename = "devxml/" . $devsAllArr[$i] . ".xml";
         if (file_exists($filename)) {
             devXmlInit($filename, $redis);
         }
     }
-    $end_time = microtime(true);
-    echo $end_time-$start_time;
+    $end_time = time();
+    echo $end_time - $start_time;
 }
 
 function devXmlInit($filename, $redis)
@@ -39,7 +42,7 @@ function devXmlInit($filename, $redis)
     for ($i = 0; $i < sizeof($xml->key); $i++) {
         $key = $xml->key[$i]->attributes()["number"];
         foreach ($xml->key[$i] as $type => $value) {
-            changeValue($redis,$key,$type,$value);
+            changeValue($redis, $key, $type, $value);
         }
     }
 }
@@ -478,8 +481,8 @@ if ($par == "changevalue") {
 }
 function changeValue($redis, $nodeName, $type, $value)
 {
-     $redis->hSet($nodeName, $type, $value);
-     $redis->publish(substr($nodeName, 0, 4) . ".8.*", $nodeName . "\r\n" . $type . "\r\n" . $value);
+    $redis->hSet($nodeName, $type, $value."");
+    $redis->publish(substr($nodeName, 0, 4) . ".8.*", $nodeName . "\r\n" . $type . "\r\n" . $value."");
     setRedisUpdateTime($redis, $nodeName);
 }
 

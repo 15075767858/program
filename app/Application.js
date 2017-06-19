@@ -68,10 +68,9 @@ Ext.define('program.Application', {
 
         setTimeout(function () {
             Ext.Ajax.request({
-                url:"resources/test1.php?par=getDevsAll"
+                url:"resources/test1.php?par=devXmlInit"
             }).then(function(response){
-                
-
+                delayToast("info","Device Initialize has done ."+response.responseText);
             })
         //    myProgramInitPoint();
         }, 10000)

@@ -61,7 +61,19 @@ class DeviceTree
         echo json_encode(array('text' => $ip, 'children' => array($root)));
         //return $arr;
     }
+    function getDevsAll($arList)
+    {
+        $arr = [];
+        foreach ($arList as $key => $value) {
+            $str = substr($value, 0, 4);
+            if (arrIsHaveStr($arr, $str) == 0) {
+                array_push($arr, $str);
+            }
+        }
+        sort($arr);
+        return $arr;
 
+    }
     function getDevChildren($arList, $devValue, $redis)
     {
         $types = array('AI', 'AO', 'AV', 'BI', 'BO', 'BV', "Schedule");
@@ -88,7 +100,6 @@ class DeviceTree
                     array_push($arr, array('leaf' => true, 'text' => $Object_Name, 'value' => $value,'type'=>$type,"allowDrop"=>false,'allowDrag'=>false));
                 }else{
                     array_push($arr, array('leaf' => true, 'text' => $Object_Name, 'value' => $value,'type'=>$type));
-
                 }
 
             }
