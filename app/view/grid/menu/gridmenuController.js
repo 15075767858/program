@@ -483,7 +483,8 @@ Ext.define('program.view.grid.menu.gridmenuController', {
              })*/
             attributeItems.push({
                 xtype: "textfield",
-                editable: false,
+                editable: true,
+                name:"device",
                 value: datas.value.substr(0, 4),
                 fieldLabel: "device instance"
             })
@@ -590,14 +591,13 @@ Ext.define('program.view.grid.menu.gridmenuController', {
                     var form = win.down("form");
                     var values = form.getValues();
                     if (gridPanel.datas.type < 10) {
+                        values.key=values.device + values.key.substr(4,7)
                         gridPanel.datas.value=values.key;
                         changeDevValue(values.key,"Object_Name",values.title);
-
                     }
                     console.log(values)
                     console.log(gridPanel)
                     //changeDevValue
-
                     MyGridPanel.setIndex(gridPanel, values.index);
                     MyGridPanel.setTitle(gridPanel, values.title);
                     win.close();
@@ -642,7 +642,6 @@ Ext.define('program.view.grid.menu.gridmenuController', {
     Rename: function (menu) {
 
         var girdpanel = menu.up("typegrid");
-
         var win = Ext.create("Ext.window.Window", {
             title: "Change Name",
             width: 280,

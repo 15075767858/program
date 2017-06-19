@@ -15,15 +15,18 @@ Ext.define('program.view.grid.TypeGridController', {
         }
 
         var gridWidth = 90;
+
         th.getHeader().on({
+
             click: function () {
                 console.log(this.getWidth() == gridWidth)
                 var curGridWidth = this.getWidth();
                 var setWidth;
-                if (th.title.length * 13 > 130) {
+                var desWidth=180;
+                if (th.title.length * 13 > desWidth) {
                     setWidth = th.title.length * 13
                 } else {
-                    setWidth = 130
+                    setWidth = desWidth
                 }
                 if (this.getWidth() == gridWidth) {
                     th.animate({
@@ -119,7 +122,8 @@ Ext.define('program.view.grid.TypeGridController', {
                     }
                 }
             });
-        };
+        }
+        ;
 
         if (panel.datas.type == 80) {
             Ext.create('Ext.data.Store', {

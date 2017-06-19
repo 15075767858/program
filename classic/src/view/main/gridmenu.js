@@ -94,21 +94,21 @@ Ext.define("program.view.grid.menu.gridmenu", {
         }, disabled: true
     }, {
         text: "attribute",
-        itemId:"attribute",
+        itemId: "attribute",
         handler: "attribute"
     },
         {
             text: 'Rename',
             itemId: "Rename",
-            disabled: true,
+            //disabled: true,
             handler: "Rename"
         }, {
             text: 'New plant',
-            hidden:true,
+            hidden: true,
             disabled: true
         }, {
             text: 'Reorder',//排序
-            hidden:true,
+            hidden: true,
             disabled: true
         }, {
             text: 'Property',
@@ -124,23 +124,19 @@ Ext.define("program.view.grid.menu.gridmenu", {
         }, {
             text: 'PinSlots',
             itemId: 'PinSlots',
-            hidden:true,
+            hidden: true,
             disabled: true
         }, {
             text: 'Backup',
             itemId: 'Backup',
-            hidden:true,
+            hidden: true,
             disabled: true
         }, {
             text: 'Restor',
-            hidden:true,
+            hidden: true,
             itemId: 'Restor',
             disabled: true
         }
-    ]/*,
-     listeners:{
-     click:function(){
-     console.log(arguments)
-     }
-     }*/
+    ],
+
 });
