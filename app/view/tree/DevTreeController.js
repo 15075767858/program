@@ -2413,7 +2413,6 @@ Ext.define('program.view.tree.DevTreeController', {
 
 function getNetNumberValue(filename) {
     var str = "";
-    return "1000";
 
     Ext.Ajax.request({
         url: "resources/xmlRW.php",
@@ -2438,6 +2437,7 @@ function getNetNumberValue(filename) {
                 }
             } catch (e) {
                 Ext.Msg.alert("Massage", "Error " + response.responseText);
+                str="1000"
             }
 
         }

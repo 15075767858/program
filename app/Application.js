@@ -67,7 +67,13 @@ Ext.define('program.Application', {
 
 
         setTimeout(function () {
-            myProgramInitPoint();
+            Ext.Ajax.request({
+                url:"resources/test1.php?par=getDevsAll"
+            }).then(function(response){
+                
+
+            })
+        //    myProgramInitPoint();
         }, 10000)
     },
 
