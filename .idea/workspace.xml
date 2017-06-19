@@ -5,32 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5634e344-e363-4954-913f-d691016cfd59" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1001.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1002.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1003.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1004.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1005.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1006.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1007.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1008.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1009.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1010.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1011.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1012.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1013.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1014.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1015.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1016.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1017.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1018.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1100.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1111.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/devxml/1200.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Application.js" afterPath="$PROJECT_DIR$/app/Application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program.tar.gz" afterPath="$PROJECT_DIR$/build/production/program.tar.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic.json" afterPath="$PROJECT_DIR$/build/production/program/classic.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic.jsonp" afterPath="$PROJECT_DIR$/build/production/program/classic.jsonp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/app.js" afterPath="$PROJECT_DIR$/build/production/program/classic/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/microloader.jsp" afterPath="$PROJECT_DIR$/build/production/program/microloader.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/modern.json" afterPath="$PROJECT_DIR$/build/production/program/modern.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/modern.jsonp" afterPath="$PROJECT_DIR$/build/production/program/modern.jsonp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/resources/main.php" afterPath="$PROJECT_DIR$/build/production/program/resources/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/resources/test1.php" afterPath="$PROJECT_DIR$/build/production/program/resources/test1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic.json" afterPath="$PROJECT_DIR$/classic.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic.jsonp" afterPath="$PROJECT_DIR$/classic.jsonp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump.rdb" afterPath="$PROJECT_DIR$/dump.rdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modern.json" afterPath="$PROJECT_DIR$/modern.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modern.jsonp" afterPath="$PROJECT_DIR$/modern.jsonp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/main.php" afterPath="$PROJECT_DIR$/resources/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/test1.php" afterPath="$PROJECT_DIR$/resources/test1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/example/bootstrap.json" afterPath="$PROJECT_DIR$/sass/example/bootstrap.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" afterPath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" />
     </list>
     <ignored path="program.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -543,12 +537,12 @@
       <workItem from="1496219463360" duration="587000" />
       <workItem from="1496878310758" duration="952000" />
       <workItem from="1497788786829" duration="4274000" />
-      <workItem from="1497826667807" duration="4479000" />
+      <workItem from="1497826667807" duration="4676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431045000" />
+    <option name="totallyTimeSpent" value="431242000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="42" y="23" width="1878" height="1057" extended-state="6" />

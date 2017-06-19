@@ -104,9 +104,11 @@ Ext.define("program.view.grid.menu.gridmenu", {
             handler: "Rename"
         }, {
             text: 'New plant',
+            hidden:true,
             disabled: true
         }, {
             text: 'Reorder',//排序
+            hidden:true,
             disabled: true
         }, {
             text: 'Property',
@@ -122,13 +124,16 @@ Ext.define("program.view.grid.menu.gridmenu", {
         }, {
             text: 'PinSlots',
             itemId: 'PinSlots',
+            hidden:true,
             disabled: true
         }, {
             text: 'Backup',
             itemId: 'Backup',
+            hidden:true,
             disabled: true
         }, {
             text: 'Restor',
+            hidden:true,
             itemId: 'Restor',
             disabled: true
         }
