@@ -510,16 +510,14 @@ Ext.define('program.view.main.toolbar.TopToolbarController', {
                     title: "Dev Instance",
                     folder: "devxml",
                     callbackEvent: function (eventName, upload, files) {
-                        testupload = upload
-                        testfiles = files
                         if (eventName == "FilesAdded") {
                             var files = upload.files;
                             var fr = new FileReader()
                             console.log(files)
 
                             for (var i = 0; i < files.length; i++) {
-                                console.log(files[i].getSource())
-                                console.log(fr.readAsText(files[i].getSource()))
+                                //console.log(files[i].getSource())
+                                //console.log(fr.readAsText(files[i].getSource()))
 
                             }
 
