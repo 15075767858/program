@@ -468,7 +468,9 @@ if ($par == "changevaluenopublish") {
     }
     //echo "{type:'".$type."',value:'"."12313"."'}";
     setRedisUpdateTime($redis, $nodeName);
-    echo $redis->hSet($nodeName, $type, $value);
+    changeValue($redis,$nodeName,$type,$value);
+    //echo $redis->hSet($nodeName, $type, $value);
+    $redis->close();
 }
 if ($par == "changevalue") {
     $nodeName = $_REQUEST["nodename"];
@@ -476,7 +478,7 @@ if ($par == "changevalue") {
     if (isset($_REQUEST["value"])) {
         $value = $_REQUEST["value"];
     }
-
+    changeValue($redis,$nodeName,$type,$value);
     $redis->close();
 }
 function changeValue($redis, $nodeName, $type, $value)
