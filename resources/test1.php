@@ -203,7 +203,6 @@ if ($par == "delFile") {
 if ($par == "getvalue") {
     $nodeName = $_REQUEST['nodename'];
     $type = $_REQUEST['type'];
-
     echo hGet($redis, $nodeName, $type);
     //$value = mb_convert_encoding($redis->hGet($nodeName, $type), 'UTF-8', 'GBK');
     //$value = $redis->hGet($nodeName, $type);

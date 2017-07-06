@@ -130,14 +130,10 @@ Ext.define("program.view.window.RenameWindow", {
         var keyType = data.key.substr(4, 1);
         var fields = me["type" + keyType];
         var fieldsItems = [];
-
-
         if (!fields) {
             console.log("fields=" + fields)
             return;
         }
-
-
         for (var i = 0; i < fields.length; i++) {
             console.log(fields[i])
             var fieldName = fields[i];
@@ -224,8 +220,7 @@ Ext.define("program.view.window.RenameWindow", {
                         }
                     }
                 };
-            } else if (fieldName == "Object_Name")
-            {
+            } else if (fieldName == "Object_Name") {
                 textfield = {
                     fieldLabel: fieldName,
                     name: fieldName,
@@ -361,8 +356,12 @@ Ext.define("program.view.window.RenameWindow", {
             store.setData(datas)
             for (var i = 0; i < datas.length; i++) {
                 var gridpanel = me.createDevForm(datas[i]);
-                me.items.push(gridpanel);
-                gridpanel.getForm().loadRecord(store.getAt(i));
+                console.log(gridpanel)
+                if (gridpanel != undefined) {
+                    me.items.push(gridpanel);
+                    gridpanel.getForm().loadRecord(store.getAt(i));
+
+                }
 
             }
 

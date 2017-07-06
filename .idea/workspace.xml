@@ -5,9 +5,493 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5634e344-e363-4954-913f-d691016cfd59" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ext/ext-watermark/Read Me.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ext/ext-watermark/demo-files/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ext/ext-watermark/demo-files/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ext/ext-watermark/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ext/ext-watermark/fonts/ext-watermark.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ext/ext-watermark/fonts/ext-watermark.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ext/ext-watermark/fonts/ext-watermark.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ext/ext-watermark/fonts/ext-watermark.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ext/ext-watermark/selection.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ext/ext-watermark/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/breadcrumb/default-arrow-open-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/breadcrumb/default-arrow-open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/breadcrumb/default-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/breadcrumb/default-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/breadcrumb/default-scroll-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/breadcrumb/default-scroll-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/breadcrumb/default-split-arrow-open-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/breadcrumb/default-split-arrow-open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/breadcrumb/default-split-arrow-over-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/breadcrumb/default-split-arrow-over.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/breadcrumb/default-split-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/breadcrumb/default-split-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-large-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-large-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-large-s-arrow-b-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-large-s-arrow-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-large-s-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-large-s-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-medium-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-medium-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-medium-s-arrow-b-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-medium-s-arrow-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-medium-s-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-medium-s-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-small-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-small-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-small-s-arrow-b-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-small-s-arrow-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-small-s-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-small-s-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-large-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-large-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-large-s-arrow-b-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-large-s-arrow-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-large-s-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-large-s-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-medium-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-medium-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-medium-s-arrow-b-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-medium-s-arrow-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-medium-s-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-medium-s-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-small-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-small-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-small-s-arrow-b-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-small-s-arrow-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-small-s-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/default-toolbar-small-s-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/grid-cell-small-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/grid-cell-small-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/grid-cell-small-s-arrow-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/grid-cell-small-s-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/grid-cell-small-s-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-large-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-large-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-large-s-arrow-b-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-large-s-arrow-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-large-s-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-large-s-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-medium-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-medium-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-medium-s-arrow-b-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-medium-s-arrow-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-medium-s-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-medium-s-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-small-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-small-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-small-s-arrow-b-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-small-s-arrow-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-small-s-arrow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/button/plain-toolbar-small-s-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/datepicker/arrow-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/datepicker/arrow-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/datepicker/month-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/dd/drop-add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/dd/drop-no.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/dd/drop-yes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/editor/tb-sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/fieldset/collapse-tool.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/checkbox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/clear-trigger-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/clear-trigger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/date-trigger-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/date-trigger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/exclamation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/radio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/search-trigger-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/search-trigger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/spinner-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/spinner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/tag-field-item-close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/trigger-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/form/trigger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/col-move-bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/col-move-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/columns.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/dd-insert-arrow-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/dd-insert-arrow-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/dirty-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/dirty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/drop-no.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/drop-yes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/filters/equals.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/filters/find.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/filters/greater_than.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/filters/less_than.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/group-by.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/group-collapse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/group-expand.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/hd-pop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/hmenu-asc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/hmenu-desc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/hmenu-lock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/hmenu-unlock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/page-first.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/page-last.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/page-next.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/page-prev.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/pick-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/refresh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/sort_asc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/grid/sort_desc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/loadmask/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/magnify.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/menu/default-checked.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/menu/default-group-checked.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/menu/default-menu-parent-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/menu/default-menu-parent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/menu/default-scroll-bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/menu/default-scroll-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/menu/default-unchecked.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/shared/icon-error.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/shared/icon-info.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/shared/icon-question.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/shared/icon-warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/sizer/e-handle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/sizer/ne-handle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/sizer/nw-handle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/sizer/s-handle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/sizer/se-handle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/sizer/sw-handle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/slider/slider-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/slider/slider-thumb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/slider/slider-v-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/slider/slider-v-thumb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tab-bar/default-plain-scroll-bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tab-bar/default-plain-scroll-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tab-bar/default-plain-scroll-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tab-bar/default-plain-scroll-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tab-bar/default-scroll-bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tab-bar/default-scroll-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tab-bar/default-scroll-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tab-bar/default-scroll-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tab/tab-default-close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/toolbar/default-more-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/toolbar/default-more.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/toolbar/default-scroll-bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/toolbar/default-scroll-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/toolbar/default-scroll-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/toolbar/default-scroll-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/toolbar/footer-more-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/toolbar/footer-more.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/toolbar/footer-scroll-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/toolbar/footer-scroll-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tools/tool-sprites-dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tools/tool-sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/arrows-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-above.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-add.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-append.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-below.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-between.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-between.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-no.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-no.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-over.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-over.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-under.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-under.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-yes.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/drop-yes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-end-minus-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-end-minus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-end-plus-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-end-plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-end-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-end.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-line-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-minus-nl-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-minus-nl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-minus-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-minus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-plus-nl-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-plus-nl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-plus-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/elbow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/folder-open-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/folder-open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/folder-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/folder.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/leaf-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/leaf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/tree/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/util/splitter/mini-bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/util/splitter/mini-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/util/splitter/mini-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/util/splitter/mini-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/window/toast/fade-blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/window/toast/fader.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/window/toast/icon16_error.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/images/window/toast/icon16_info.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/program-all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/program-all_1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/program-all_2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/colorpick/checkerboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/colorpick/drag_circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/colorpick/huegradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/colorpick/map_gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/colorpick/pickerslider.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/dashboard/magnify.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/explorer/leaf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/explorer/node.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/grouptabpanel/corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/grouptabpanel/minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/grouptabpanel/plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/itemselector/bottom.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/itemselector/down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/itemselector/left.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/itemselector/right.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/itemselector/top.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/itemselector/up.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/statusbar/accept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/statusbar/exclamation.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/statusbar/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/classic/resources/ux/images/tabscrollermenu/menu.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/d3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/data.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/devsinfo/ch3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/devsinfo/chwp2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/devsinfo/chwp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/devxml/i1024.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/devxml/i1386.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/devxml/i823.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/devxml/i830.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/devxml/i831.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/devxml/i852.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/AI.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/AO.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/AV0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/DI.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/DO.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/DV.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/Delayoff.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/MULTI_INPUT.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/NOT.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/Pulse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/Pulse0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/SCALE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/SCFM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/SmartIO.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/aver.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/aver0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/buffer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/com.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/comp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/comp0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/count.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/count0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/delay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/delay0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/do_ao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/doubleBO.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/enth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/enth0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/fa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/fa0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/fd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/fd0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/hour.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/hour0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/hy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/hy0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/lock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/lock0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/log.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/log0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/max.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/max0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/mul.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/mul0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/pdf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/pid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/pid0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/plus0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/sub.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/sub0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/switch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/switch0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/timer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/timer0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/tolalazer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/tolalazer.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/tolalazer0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/PNG/zip.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/AI.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/AO.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/AV.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/BI.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/BO.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/BV.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/Delayoff.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/Integer.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/NOT.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/SCFM.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/SmartIO.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/Switch.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/add.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/aodo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/aver.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/buffer.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/comp.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/count.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/delay.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/doubleBO.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/enth.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/fa.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/fd.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/hour.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/hy.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/lock.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/logic.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/logie.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/max.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/mul.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/pid.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/pulse.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/px.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/scale.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/select.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/sub.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/test.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/timer.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/tolalazer.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/SVG/zip.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/closeFolder.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/delete.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/light_bulb_accept_24px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/light_bulb_delete_24px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/light_bulb_help_24px.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/openFolder.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/square.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/img/zTreeStandard.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/Moxie.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/Moxie.xap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/az.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/be_BY.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/bs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/cy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/en.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/et.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/fa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/hy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/ka.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/kk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/km.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/ku_IQ.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/lt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/ms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/pt_BR.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/sq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/sr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/th_TH.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/uk_UA.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/vi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/zh_CN.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/i18n/zh_TW.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.plupload.queue/css/jquery.plupload.queue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.plupload.queue/img/backgrounds.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.plupload.queue/img/buttons-disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.plupload.queue/img/buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.plupload.queue/img/delete.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.plupload.queue/img/done.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.plupload.queue/img/error.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.plupload.queue/img/throbber.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.plupload.queue/img/transp50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.plupload.queue/jquery.plupload.queue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.plupload.queue/jquery.plupload.queue.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.ui.plupload/css/jquery.ui.plupload.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.ui.plupload/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.ui.plupload/img/plupload.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.ui.plupload/jquery.ui.plupload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/jquery.ui.plupload/jquery.ui.plupload.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/moxie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/moxie.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/plupload.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/plupload.full.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/js/plupload.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/main.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/pragramBackup.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/test.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/test1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/development/program/resources/xmlRW.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/development/program/sass/config.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/development/program/sass/program-all.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/development/program/sass/program-all.scss.tmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/temp/development/program/sencha-compiler/app/full-page-master-bundle.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/theme-capture.png" afterPath="$PROJECT_DIR$/build/temp/production/program/slicer-temp/theme-capture.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1000" afterPath="$PROJECT_DIR$/1000" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1000.json" afterPath="$PROJECT_DIR$/1000.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.css" afterPath="$PROJECT_DIR$/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.js" afterPath="$PROJECT_DIR$/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program.tar.gz" afterPath="$PROJECT_DIR$/build/production/program.tar.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic.json" afterPath="$PROJECT_DIR$/build/production/program/classic.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic.jsonp" afterPath="$PROJECT_DIR$/build/production/program/classic.jsonp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/classic/app.js" afterPath="$PROJECT_DIR$/build/production/program/classic/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/microloader.jsp" afterPath="$PROJECT_DIR$/build/production/program/microloader.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/modern.json" afterPath="$PROJECT_DIR$/build/production/program/modern.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/modern.jsonp" afterPath="$PROJECT_DIR$/build/production/program/modern.jsonp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/program/resources/test1.php" afterPath="$PROJECT_DIR$/build/production/program/resources/test1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic.json" afterPath="$PROJECT_DIR$/classic.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic.jsonp" afterPath="$PROJECT_DIR$/classic.jsonp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic/src/view/main/RenameWindow.js" afterPath="$PROJECT_DIR$/classic/src/view/main/RenameWindow.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" afterPath="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump.rdb" afterPath="$PROJECT_DIR$/dump.rdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modern.json" afterPath="$PROJECT_DIR$/modern.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modern.jsonp" afterPath="$PROJECT_DIR$/modern.jsonp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/test1.php" afterPath="$PROJECT_DIR$/resources/test1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/example/bootstrap.js" afterPath="$PROJECT_DIR$/sass/example/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/example/bootstrap.json" afterPath="$PROJECT_DIR$/sass/example/bootstrap.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" afterPath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" />
     </list>
     <ignored path="program.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,92 +520,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test1.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/test1.php">
+      <file leaf-file-name="RenameWindow.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classic/src/view/main/RenameWindow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="487" column="42" selection-start-line="487" selection-start-column="42" selection-end-line="487" selection-end-column="42" />
+            <state relative-caret-position="255">
+              <caret line="362" column="0" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
               <folding>
-                <element signature="e#9761#13215#0#PHP" expanded="false" />
-                <element signature="e#13216#13565#0#PHP" expanded="false" />
+                <element signature="e#625#4135#0" expanded="false" />
+                <element signature="e#985#3923#0" expanded="false" />
+                <element signature="e#3972#4086#0" expanded="false" />
+                <element signature="e#4461#9338#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DevTreeController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/tree/DevTreeController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37545">
-              <caret line="2503" column="14" selection-start-line="2503" selection-start-column="12" selection-end-line="2503" selection-end-column="14" />
-              <folding>
-                <marker date="1496480937000" expanded="true" signature="6707:6717" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TopToolbar.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TopToolbar.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classic/src/view/main/TopToolbar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="179" column="29" selection-start-line="179" selection-start-column="29" selection-end-line="179" selection-end-column="29" />
+            <state relative-caret-position="148">
+              <caret line="173" column="34" selection-start-line="173" selection-start-column="34" selection-end-line="173" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopToolbarController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js">
+      <file leaf-file-name="RenameWindowController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/window/RenameWindowController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="663" column="20" selection-start-line="663" selection-start-column="20" selection-end-line="663" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gridmenuController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/grid/menu/gridmenuController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6180">
-              <caret line="412" column="35" selection-start-line="412" selection-start-column="35" selection-end-line="412" selection-end-column="35" />
-              <folding>
-                <element signature="e#17047#18115#0" expanded="false" />
-                <element signature="e#18150#18951#0" expanded="false" />
-                <element signature="e#19598#20509#0" expanded="false" />
-                <marker date="1497842827000" expanded="true" signature="25091:25168" ph="..." />
-                <marker date="1497842827000" expanded="true" signature="26128:26205" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gridmenu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classic/src/view/main/gridmenu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2100">
-              <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TypeGridController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/grid/TypeGridController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            <state relative-caret-position="420">
+              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -181,7 +609,6 @@
         <option value="$PROJECT_DIR$/test/week.json" />
         <option value="$PROJECT_DIR$/classic/src/view/main/DevTree.js" />
         <option value="$PROJECT_DIR$/test/nodes.json" />
-        <option value="$PROJECT_DIR$/classic/src/view/main/RenameWindow.js" />
         <option value="$PROJECT_DIR$/resources/xmlRW.php" />
         <option value="$PROJECT_DIR$/app/view/tab/DrawPanel.js" />
         <option value="$PROJECT_DIR$/app/view/tree/DevTreeController.js" />
@@ -192,8 +619,9 @@
         <option value="$PROJECT_DIR$/classic/src/view/main/gridmenu.js" />
         <option value="$PROJECT_DIR$/app/view/grid/TypeGridController.js" />
         <option value="$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js" />
-        <option value="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" />
         <option value="$PROJECT_DIR$/resources/test1.php" />
+        <option value="$PROJECT_DIR$/classic/src/view/main/RenameWindow.js" />
+        <option value="$PROJECT_DIR$/classic/src/view/main/TopToolbar.js" />
       </list>
     </option>
   </component>
@@ -238,7 +666,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,20 +681,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,57 +804,10 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grid" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grid" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -450,7 +816,7 @@
     <property name="js.eslint.nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../www" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="SearchEverywhereHistoryKey" value="delayT&#9;FILE&#9;file:///Applications/XAMPP/htdocs/program/ext/packages/core/src/util/DelayedTask.js&#10;myAjax&#9;null&#9;null&#10;Application&#9;FILE&#9;file:///Applications/XAMPP/htdocs/program/app/Application.js&#10;getDev&#9;null&#9;null&#10;week&#9;FILE&#9;file:///Applications/XAMPP/htdocs/program/classic/src/view/main/DrawWeeksWindow.js&#10;mya&#9;null&#9;null&#10;myajax&#9;null&#9;null&#10;myaj&#9;null&#9;null&#10;delayTo&#9;null&#9;null&#10;top&#9;FILE&#9;file:///Applications/XAMPP/htdocs/program/classic/src/view/main/TopToolbar.js&#10;upload&#9;null&#9;null&#10;delayToast&#9;null&#9;null&#10;changevalue&#9;null&#9;null&#10;myA&#9;null&#9;null" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
@@ -669,25 +1035,28 @@
       <workItem from="1497826667807" duration="4676000" />
       <workItem from="1497842204684" duration="2330000" />
       <workItem from="1497931291801" duration="536000" />
-      <workItem from="1499075437150" duration="349000" />
+      <workItem from="1499075437150" duration="442000" />
+      <workItem from="1499083375946" duration="297000" />
+      <workItem from="1499251064122" duration="1034000" />
+      <workItem from="1499300372356" duration="2017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="434457000" />
+    <option name="totallyTimeSpent" value="437898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="42" y="23" width="1238" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21989967" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.229097" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -719,20 +1088,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ext/classic/theme-neptune/sass/var/button/Button.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/build/ext-all-rtl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261405">
-          <caret line="21" column="2043489" selection-start-line="21" selection-start-column="2043489" selection-end-line="21" selection-end-column="2043489" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/WeekModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -924,13 +1279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classic/src/view/main/RenameWindow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/main/MainController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -999,13 +1347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6180">
           <caret line="412" column="35" selection-start-line="412" selection-start-column="35" selection-end-line="412" selection-end-column="35" />
-          <folding>
-            <element signature="e#17047#18115#0" expanded="false" />
-            <element signature="e#18150#18951#0" expanded="false" />
-            <element signature="e#19598#20509#0" expanded="false" />
-            <marker date="1497842827000" expanded="true" signature="25091:25168" ph="..." />
-            <marker date="1497842827000" expanded="true" signature="26128:26205" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,7 +1354,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2100">
           <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,19 +1372,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/tree/DevTreeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37545">
-          <caret line="2503" column="14" selection-start-line="2503" selection-start-column="12" selection-end-line="2503" selection-end-column="14" />
-          <folding>
-            <marker date="1496480937000" expanded="true" signature="6707:6717" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/main/toolbar/TopToolbarController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="9945">
           <caret line="663" column="20" selection-start-line="663" selection-start-column="20" selection-end-line="663" selection-end-column="20" />
           <folding />
         </state>
@@ -1052,28 +1382,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
+        <state relative-caret-position="1530">
           <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classic/src/view/main/TopToolbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="179" column="29" selection-start-line="179" selection-start-column="29" selection-end-line="179" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/test1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="487" column="42" selection-start-line="487" selection-start-column="42" selection-end-line="487" selection-end-column="42" />
+        <state relative-caret-position="780">
+          <caret line="240" column="5" selection-start-line="240" selection-start-column="5" selection-end-line="240" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/tree/DevTreeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="2501" column="6" selection-start-line="2501" selection-start-column="6" selection-end-line="2501" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/window/RenameWindowModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/window/RenameWindowController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classic/src/view/main/RenameWindow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="362" column="0" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
           <folding>
-            <element signature="e#9761#13215#0#PHP" expanded="false" />
-            <element signature="e#13216#13565#0#PHP" expanded="false" />
+            <element signature="e#625#4135#0" expanded="false" />
+            <element signature="e#985#3923#0" expanded="false" />
+            <element signature="e#3972#4086#0" expanded="false" />
+            <element signature="e#4461#9338#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classic/src/view/main/TopToolbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="173" column="34" selection-start-line="173" selection-start-column="34" selection-end-line="173" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

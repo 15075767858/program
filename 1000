@@ -18,4 +18,6 @@
    <key>1001203</key>
   </master_node>
  </plant>
+ <plant  name="002">
+ </plant>
 </root>
