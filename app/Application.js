@@ -15,7 +15,22 @@ Ext.define('program.Application', {
     ],
 
     launch: function () {
-
+Ext.Ajax.request({
+            url: "resources/main.php?par=getLoginInfo",
+            method: "post",
+            success: function (response) {
+                try {
+                    var resJson = Ext.decode(response.responseText);
+                    if (resJson.isLogin) {
+                    } else {
+                        window.location.href = "/"
+                    }
+                } catch (e) {
+                    Ext.Msg.alert('error', e + response.responseText);
+                    throw new Error(e);
+                }
+            }
+        })
 //<script type="text/javascript" src="/www/js/EventAlarm.js"></script>
 
         // TODO - Launch the application

@@ -137,6 +137,10 @@ if ($par == "getDevList") {
     $a = new DeviceTree();
     $a->getDevList();
 }
+if ($par == 'getLoginInfo') {
+    session_start();
+    echo json_encode($_SESSION);
+}
 function getRedisConect($ip = "127.0.0.1", $port = "6379")
 {
     error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
