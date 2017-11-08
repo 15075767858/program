@@ -15,15 +15,16 @@ Ext.define('program.Application', {
     ],
 
     launch: function () {
-Ext.Ajax.request({
+        Ext.Ajax.request({
             url: "resources/main.php?par=getLoginInfo",
             method: "post",
             success: function (response) {
                 try {
                     var resJson = Ext.decode(response.responseText);
-                    if (resJson.isLogin) {
-                    } else {
-                        window.location.href = "/"
+                    if (resJson.isLogin) {} else {
+                        if (location.hash !== "#nopassword") {
+                            window.location.href = "/"
+                        }
                     }
                 } catch (e) {
                     Ext.Msg.alert('error', e + response.responseText);
@@ -31,7 +32,7 @@ Ext.Ajax.request({
                 }
             }
         })
-//<script type="text/javascript" src="/www/js/EventAlarm.js"></script>
+        //<script type="text/javascript" src="/www/js/EventAlarm.js"></script>
 
         // TODO - Launch the application
         /*
@@ -83,11 +84,11 @@ Ext.Ajax.request({
 
         setTimeout(function () {
             Ext.Ajax.request({
-                url:"resources/test1.php?par=devXmlInit"
-            }).then(function(response){
-                delayToast("info","Device Initialize has done ."+response.responseText);
+                url: "resources/test1.php?par=devXmlInit"
+            }).then(function (response) {
+                delayToast("info", "Device Initialize has done ." + response.responseText);
             })
-        //    myProgramInitPoint();
+            //    myProgramInitPoint();
         }, 10000)
     },
 
@@ -113,6 +114,7 @@ function generateAllPointByXml() {
 
         }
     })
+
     function xmlToDevPoint(xml) {
         var keys = xml.querySelectorAll("point");
         for (var i = 0; i < keys.length; i++) {
@@ -143,6 +145,7 @@ myProgramInitPoint = function () {
             }
         })
     }
+
     function xmlToDevPoint(xml) {
         var keys = xml.querySelectorAll("key");
         for (var i = 0; i < keys.length; i++) {
