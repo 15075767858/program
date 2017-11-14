@@ -12,7 +12,6 @@ Ext.define("program.view.tree.DevTree", {
     viewModel: {
         type: 'devtreemodel'
     },
-
     header: {
         title: "Device",
         items: [
